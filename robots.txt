@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://online-calculators.com/sitemap.xml
+
+# Block build artifacts
+Disallow: /scripts/
+Disallow: /vendor/

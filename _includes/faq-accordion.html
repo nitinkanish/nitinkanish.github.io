@@ -1,0 +1,16 @@
+{% assign faqs = include.faqs %}
+{% if faqs and faqs.size > 0 %}
+<section class="faq-section" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    {% for faq in faqs %}
+    <details class="faq-item" {% if forloop.first %}open{% endif %}>
+      <summary class="faq-question">{{ faq.question }}</summary>
+      <div class="faq-answer">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

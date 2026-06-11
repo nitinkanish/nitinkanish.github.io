@@ -1,0 +1,61 @@
+---
+layout: default
+---
+{% assign cat_slug = page.slug | default: page.category %}
+{% assign cat_calcs = site.data.calculators | where: "category", cat_slug %}
+{% assign cat_data = nil %}
+{% for c in site.data.categories %}
+  {% if c.slug == cat_slug %}
+    {% assign cat_data = c %}
+  {% endif %}
+{% endfor %}
+
+<article class="category-page">
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li aria-current="page">{{ page.title | default: cat_data.title }}</li>
+        </ol>
+      </nav>
+      <h1>{{ page.title | default: cat_data.title }}</h1>
+      <p class="page-lead">{{ page.description | default: cat_data.description }}</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section aria-labelledby="calcs-heading">
+      <h2 id="calcs-heading">{{ cat_calcs.size }} Calculators</h2>
+      <div class="calc-grid">
+        {% for calc in cat_calcs %}
+          {% include calculator-card.html calculator=calc %}
+        {% endfor %}
+      </div>
+    </section>
+
+    {% if page.content != "" %}
+    <section class="content-section prose">
+      {{ content }}
+    </section>
+    {% endif %}
+
+    {% assign faqs = page.faqs | default: cat_data.faqs %}
+    {% include faq-accordion.html faqs=faqs %}
+
+    <section class="related-section" aria-labelledby="related-cats-heading">
+      <h2 id="related-cats-heading">Explore More Categories</h2>
+      <div class="category-grid">
+        {% for cat in site.data.categories %}
+          {% unless cat.slug == cat_slug %}
+          <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="category-card">
+            <span class="category-icon icon-{{ cat.icon }}"></span>
+            <h3>{{ cat.title }}</h3>
+            <p>{{ cat.description | truncate: 80 }}</p>
+          </a>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</article>

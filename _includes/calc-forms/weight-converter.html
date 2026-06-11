@@ -1,0 +1,33 @@
+<form id="calc-form" class="calc-form" novalidate>
+  <div class="converter-grid">
+    <div class="form-group">
+      <label class="form-label" for="from_value">From</label>
+      <input type="number" id="from_value" name="from_value" class="form-input" value="1" data-validate="required|number" inputmode="decimal">
+      <select name="from_unit" class="form-select" style="margin-top:0.5rem">
+        <option value="kg" selected>Kilograms</option>
+        <option value="g">Grams</option>
+        <option value="mg">Milligrams</option>
+        <option value="lb">Pounds</option>
+        <option value="oz">Ounces</option>
+        <option value="st">Stones</option>
+        <option value="t">Metric Tons</option>
+      </select>
+    </div>
+    <div class="converter-swap">
+      <button type="button" class="swap-btn" aria-label="Swap units">⇄</button>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="to_value">To</label>
+      <input type="number" id="to_value" name="to_value" class="form-input" readonly>
+      <select name="to_unit" class="form-select" style="margin-top:0.5rem">
+        <option value="lb" selected>Pounds</option>
+        <option value="kg">Kilograms</option>
+        <option value="g">Grams</option>
+        <option value="oz">Ounces</option>
+        <option value="st">Stones</option>
+        <option value="t">Metric Tons</option>
+      </select>
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results" aria-live="polite"></div>

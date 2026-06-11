@@ -1,0 +1,117 @@
+---
+layout: default
+title: Free Online Calculators
+description: Fast, accurate, and free online calculators for finance, health, math, business, and unit conversion.
+permalink: /
+---
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Free Online Calculators</h1>
+    <p class="hero-subtitle">{{ site.description }}</p>
+
+    <div class="hero-search search-wrapper">
+      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <label for="hero-search" class="visually-hidden">Search calculators</label>
+      <input type="search" id="hero-search" class="search-input" placeholder="Search EMI, BMI, GST, SIP calculators..." autocomplete="off" aria-controls="hero-search-results">
+      <div id="hero-search-results" class="search-results" role="listbox" hidden></div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value">{{ site.data.calculators.size }}+</div>
+        <div class="stat-label">Calculators</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">{{ site.data.categories.size }}</div>
+        <div class="stat-label">Categories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Free Forever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Popular Calculators</h2>
+      <a href="{{ '/categories/' | relative_url }}" class="section-link">View all →</a>
+    </div>
+    <div class="calc-grid">
+      {% assign popular = site.data.calculators | where_exp: "c", "c.popular == true" %}
+      {% for calc in popular limit:6 %}
+        {% include calculator-card.html calculator=calc %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse by Category</h2>
+    </div>
+    <div class="category-grid">
+      {% for cat in site.data.categories limit:9 %}
+      <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="category-card">
+        <span class="category-icon icon-{{ cat.icon }}"></span>
+        <h3>{{ cat.title }}</h3>
+        <p>{{ cat.description | truncate: 80 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Calculators</h2>
+    </div>
+    <div class="calc-grid">
+      {% assign featured = site.data.calculators | where_exp: "c", "c.featured == true" %}
+      {% for calc in featured limit:6 %}
+        {% include calculator-card.html calculator=calc %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Recently Added</h2>
+    </div>
+    <div class="calc-grid">
+      {% assign recent = site.data.calculators | sort: "date_added" | reverse %}
+      {% for calc in recent limit:4 %}
+        {% include calculator-card.html calculator=calc %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header">
+      <h2>From the Blog</h2>
+      <a href="{{ '/blog/' | relative_url }}" class="section-link">Read more →</a>
+    </div>
+    <div class="blog-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="blog-card">
+        <a href="{{ post.url | relative_url }}">
+          <div class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }} · {{ post.reading_time }} min read</div>
+          <h3 class="blog-card-title">{{ post.title }}</h3>
+          <p class="blog-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

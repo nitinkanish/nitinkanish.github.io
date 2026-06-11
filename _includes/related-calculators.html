@@ -1,0 +1,13 @@
+{% assign category = include.category %}
+{% assign current_slug = include.current_slug %}
+{% assign related = site.data.calculators | where: "category", category %}
+<section class="related-section" aria-labelledby="related-heading">
+  <h2 id="related-heading">Related Calculators</h2>
+  <div class="calc-grid">
+    {% for calc in related %}
+      {% unless calc.slug == current_slug %}
+        {% include calculator-card.html calculator=calc %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>

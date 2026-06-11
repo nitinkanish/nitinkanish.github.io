@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% include seo.html %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/images/icon-192.png' | relative_url }}">
+<meta name="theme-color" content="{{ site.pwa.theme_color }}" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1B4B" media="(prefers-color-scheme: dark)">
+
+{% include schema/website.html %}
+{% if page.layout == 'calculator' or page.collection == 'calculators' %}
+  {% include schema/calculator.html %}
+  {% include schema/breadcrumb.html %}
+  {% include schema/faq.html %}
+  {% include schema/howto.html %}
+{% elsif page.layout == 'category' %}
+  {% include schema/breadcrumb.html %}
+  {% include schema/faq.html %}
+{% elsif page.layout == 'post' %}
+  {% include schema/article.html %}
+  {% include schema/breadcrumb.html %}
+{% endif %}
+
+<script src="{{ '/assets/js/theme-init.js' | relative_url }}"></script>

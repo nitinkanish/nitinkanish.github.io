@@ -1,5 +1,105 @@
+# Online Calculators — Production Jekyll Calculator Website
+# GitHub Pages compatible (no custom plugins required)
 
-title: Calculator Hub
-description: SEO-friendly online calculators website
-theme:
+title: Online Calculators
+tagline: Free Online Calculators for Everyone
+description: >-
+  Fast, accurate, and free online calculators for finance, health, math, business,
+  and unit conversion. EMI, SIP, BMI, GST, percentage, and 1000+ more calculators.
+url: "https://online-calculators.com"
+baseurl: ""
+lang: en
+locale: en_US
+
+author:
+  name: Online Calculators Team
+  email: contact@online-calculators.com
+  url: /about/
+
+social:
+  twitter: onlinecalculators
+  github: online-calculators
+  linkedin: online-calculators
+
+# GitHub Pages supported plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  calculators:
+    output: true
+    permalink: /:category/:name/
+  categories:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: calculators
+    values:
+      layout: calculator
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      author: Online Calculators Team
+
+# Markdown
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  toc_levels: 2..4
+
+# Sass
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - scripts
+  - README.md
+  - DEPLOYMENT.md
+  - .git
+  - .gitignore
+
+# Include
+include:
+  - _pages
+  - robots.txt
+  - manifest.json
+  - sw.js
+  - CNAME
+
+# PWA
+pwa:
+  name: Online Calculators
+  short_name: Calculators
+  theme_color: "#4F46E5"
+  background_color: "#FFFFFF"
+
+# SEO
+google_analytics: # UA-XXXXXXXX or G-XXXXXXXX
+
+# Build settings
+timezone: UTC
+future: true
+show_excerpts: true
+paginate: 10

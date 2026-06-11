@@ -1,0 +1,30 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ site.url }}/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "logo": {{ '/assets/images/icon-192.png' | absolute_url | jsonify }},
+  "sameAs": [
+    {% if site.social.github %}"https://github.com/{{ site.social.github }}"{% endif %}
+    {% if site.social.twitter %}{% if site.social.github %},{% endif %}"https://twitter.com/{{ site.social.twitter }}"{% endif %}
+  ]
+}
+</script>

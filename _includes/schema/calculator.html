@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "applicationCategory": "CalculatorApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": {{ site.author.name | jsonify }}
+  }
+}
+</script>

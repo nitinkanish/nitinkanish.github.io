@@ -1,0 +1,138 @@
+emi-calculator:
+  steps:
+    - "Enter the loan principal amount (total borrowed)."
+    - "Input the annual interest rate offered by your lender."
+    - "Specify the loan tenure in months."
+    - "The calculator instantly computes your monthly EMI, total interest, and total payment."
+  examples:
+    - title: "Home Loan Example"
+      description: "₹50,00,000 loan at 8.5% for 20 years (240 months)"
+      result: "EMI = ₹43,391/month, Total Interest = ₹54,13,840"
+    - title: "Car Loan Example"
+      description: "₹8,00,000 loan at 9% for 5 years (60 months)"
+      result: "EMI = ₹16,608/month, Total Interest = ₹1,96,480"
+  intro: |
+    An **EMI (Equated Monthly Installment) Calculator** is an essential financial tool that helps borrowers understand exactly how much they need to pay each month toward their loan. Whether you're planning a home purchase, car loan, personal loan, or education loan, knowing your EMI in advance empowers you to make informed borrowing decisions and plan your monthly budget effectively.
+
+    ## What is EMI?
+
+    EMI stands for Equated Monthly Installment — a fixed amount paid by a borrower to a lender on a specific date each calendar month. Each EMI payment consists of two components: the principal amount (the original loan) and the interest charged on the outstanding balance. In the early months of a loan, a larger portion of your EMI goes toward interest, while in later months, more goes toward principal repayment. This is known as amortization.
+
+    ## How EMI is Calculated
+
+    The standard EMI formula used by banks and financial institutions worldwide is:
+
+    **EMI = P × r × (1+r)^n / ((1+r)^n - 1)**
+
+    Where:
+    - **P** = Principal loan amount
+    - **r** = Monthly interest rate (annual rate ÷ 12 ÷ 100)
+    - **n** = Loan tenure in months
+
+    ## Why Use an EMI Calculator?
+
+    Using an online EMI calculator before applying for a loan offers several advantages. You can compare loan offers from different lenders, determine an affordable loan amount based on your income, understand the total interest cost over the loan tenure, and plan prepayments to reduce your interest burden. Financial advisors recommend keeping your total EMI obligations below 40-50% of your monthly net income.
+
+    ## Types of Loans and EMI
+
+    **Home Loans** typically have the longest tenures (up to 30 years) and largest principal amounts. Even a 0.25% difference in interest rate can save lakhs over the loan tenure. **Car Loans** usually range from 1-7 years with higher interest rates than home loans. **Personal Loans** are unsecured with shorter tenures and higher rates. **Education Loans** often have moratorium periods where EMI doesn't start immediately.
+
+    ## Factors Affecting Your EMI
+
+    Several factors influence your EMI amount: the principal loan amount (higher loan = higher EMI), interest rate (even 0.5% makes a significant difference), loan tenure (longer tenure = lower EMI but more total interest), type of interest (fixed vs floating rate), and processing fees (not included in EMI but affect total cost).
+
+    ## Tips for Managing EMI
+
+    Make prepayments when possible to reduce principal and save interest. Consider a balance transfer if another lender offers significantly lower rates. Maintain a good credit score (750+) to negotiate better rates. Build an emergency fund covering 6 months of EMIs. Never borrow more than you can comfortably repay.
+
+sip-calculator:
+  steps:
+    - "Enter your monthly SIP investment amount."
+    - "Set the expected annual return rate (historical equity average is 10-12%)."
+    - "Choose your investment period in years."
+    - "View projected corpus, total invested, and wealth gained."
+  examples:
+    - title: "₹5,000/month SIP for 10 years at 12%"
+      description: "Monthly investment of ₹5,000 with 12% annual returns"
+      result: "Invested ₹6,00,000 → Corpus ₹11,61,695 (Gain ₹5,61,695)"
+    - title: "₹10,000/month SIP for 20 years at 12%"
+      description: "Long-term wealth building with ₹10,000 monthly SIP"
+      result: "Invested ₹24,00,000 → Corpus ₹99,91,479 (Gain ₹75,91,479)"
+  intro: |
+    A **SIP (Systematic Investment Plan) Calculator** helps investors project the future value of their mutual fund investments made through regular monthly contributions. SIP is one of the most popular investment methods in India, allowing investors to build wealth gradually through disciplined, automated investing.
+
+    ## What is SIP?
+
+    A Systematic Investment Plan is a method of investing a fixed sum regularly (typically monthly) in mutual funds. Instead of trying to time the market with a lump sum investment, SIP allows you to invest consistently regardless of market conditions. This approach leverages **rupee cost averaging** — when markets are down, your fixed amount buys more units, and when markets are up, you buy fewer units, averaging out your purchase cost over time.
+
+    ## SIP Returns Formula
+
+    The future value of a SIP is calculated using the compound interest formula for regular investments:
+
+    **FV = P × ((1+r)^n - 1) / r × (1+r)**
+
+    Where P is monthly investment, r is monthly return rate, and n is total number of months.
+
+    ## Benefits of SIP Investing
+
+    SIP investing offers numerous advantages: you can start with as little as ₹500/month, it removes the need to time the market, compounding works powerfully over long periods, it's automated and disciplined, and you benefit from rupee cost averaging. Historically, equity mutual funds in India have delivered 10-15% annual returns over 10+ year periods, though past performance doesn't guarantee future results.
+
+    ## Choosing the Right SIP Amount
+
+    Financial planners recommend investing 20-30% of monthly income in SIPs for long-term goals. Use the 50-30-20 rule: 50% needs, 30% wants, 20% savings/investments. Increase your SIP annually (step-up SIP) by 10-15% to accelerate wealth creation. Align SIP amount with specific goals — retirement, children's education, or home down payment.
+
+bmi-calculator:
+  steps:
+    - "Select metric (kg/cm) or imperial (lbs/inches) units."
+    - "Enter your current weight."
+    - "Enter your height."
+    - "View your BMI score and health category instantly."
+  examples:
+    - title: "Average Adult"
+      description: "Weight 70 kg, Height 170 cm"
+      result: "BMI = 24.2 (Normal weight)"
+    - title: "Athletic Build"
+      description: "Weight 85 kg, Height 180 cm"
+      result: "BMI = 26.2 (Slightly overweight — may be muscular)"
+  intro: |
+    The **Body Mass Index (BMI) Calculator** is a widely used screening tool that estimates body fat based on your height and weight. While BMI doesn't directly measure body fat, it provides a useful starting point for assessing whether your weight falls within a healthy range for your height.
+
+    ## Understanding BMI Categories
+
+    The World Health Organization classifies BMI into these categories: **Underweight** (BMI below 18.5), **Normal weight** (18.5 to 24.9), **Overweight** (25 to 29.9), and **Obese** (30 and above). These ranges apply to most adults aged 18-65.
+
+    ## Limitations of BMI
+
+    BMI is a useful population-level metric but has limitations for individuals. It doesn't distinguish between muscle and fat mass — athletes may have high BMI despite low body fat. It doesn't account for fat distribution (abdominal fat is riskier). Age, sex, and ethnicity can affect interpretation. Asian populations may face health risks at lower BMI thresholds.
+
+    ## Using BMI for Health Goals
+
+    Use BMI as one data point alongside waist circumference, body composition analysis, blood pressure, cholesterol levels, and overall fitness. Consult a healthcare provider for personalized health assessment. If your BMI is outside the normal range, focus on sustainable lifestyle changes — balanced nutrition and regular physical activity — rather than crash diets.
+
+gst-calculator:
+  steps:
+    - "Choose whether your amount is GST exclusive or inclusive."
+    - "Enter the amount in rupees."
+    - "Select the applicable GST rate (5%, 12%, 18%, or 28%)."
+    - "View base amount, GST amount, CGST, SGST, and total."
+  examples:
+    - title: "GST Exclusive — ₹10,000 at 18%"
+      description: "Adding 18% GST to base amount"
+      result: "GST = ₹1,800, Total = ₹11,800"
+    - title: "GST Inclusive — ₹11,800 at 18%"
+      description: "Extracting GST from inclusive price"
+      result: "Base = ₹10,000, GST = ₹1,800"
+  intro: |
+    The **GST (Goods and Services Tax) Calculator** is an indispensable tool for businesses, freelancers, and consumers in India. GST replaced multiple indirect taxes with a unified tax system effective July 1, 2017, and understanding how to calculate it correctly is essential for pricing, invoicing, and tax compliance.
+
+    ## GST Rates in India
+
+    India has four main GST rate slabs: **5%** (essential items like food grains, medicines), **12%** (processed foods, computers), **18%** (most goods and services — the standard rate), and **28%** (luxury items, automobiles). Some items are zero-rated or exempt.
+
+    ## CGST, SGST, and IGST
+
+    For intra-state transactions, GST is split equally into CGST (Central GST) and SGST (State GST). For inter-state transactions, IGST (Integrated GST) applies. Our calculator shows the CGST and SGST breakdown assuming intra-state supply.
+
+    ## GST Inclusive vs Exclusive
+
+    **GST Exclusive** pricing means GST is added on top of the base price — common in B2B invoicing. **GST Inclusive** pricing means the displayed price already includes GST — common in retail. To extract GST from an inclusive price: Base = Inclusive Price ÷ (1 + Rate/100).

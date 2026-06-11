@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog
+description: Guides, tutorials, and explanations for financial, health, and mathematical calculations.
+permalink: /blog/
+---
+
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li aria-current="page">Blog</li>
+      </ol>
+    </nav>
+    <h1>Online Calculators Blog</h1>
+    <p class="page-lead">Guides, tutorials, and in-depth explanations to help you understand the math behind our calculators.</p>
+  </div>
+</header>
+
+<div class="container section">
+  <div class="blog-grid">
+    {% for post in site.posts %}
+    <article class="blog-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="blog-card-meta">{{ post.date | date: "%B %d, %Y" }} · {{ post.reading_time }} min read</div>
+        <h2 class="blog-card-title">{{ post.title }}</h2>
+        <p class="blog-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</div>

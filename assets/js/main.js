@@ -1,0 +1,202 @@
+/**
+ * Online Calculators — Theme, Navigation, Search, PWA
+ */
+(function () {
+  'use strict';
+
+  // Theme toggle
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+    });
+  }
+
+  // Mobile nav
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  }
+
+  // Mega menu
+  const megaTrigger = document.querySelector('.mega-trigger');
+  const megaMenu = document.querySelector('.mega-menu');
+  if (megaTrigger && megaMenu) {
+    megaTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = megaMenu.classList.toggle('open');
+      megaTrigger.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', () => {
+      megaMenu.classList.remove('open');
+      megaTrigger.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  // Search
+  initSearch();
+
+  // PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => { /* offline optional */ });
+    });
+  }
+})();
+
+function initSearch() {
+  const dataEl = document.getElementById('search-data');
+  if (!dataEl) return;
+
+  let data;
+  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
+
+  const inputs = [
+    document.getElementById('global-search'),
+    document.getElementById('hero-search')
+  ].filter(Boolean);
+
+  inputs.forEach((input) => setupSearchInput(input, data));
+}
+
+function setupSearchInput(input, data) {
+  const wrapper = input.closest('.search-wrapper') || input.parentElement;
+  let resultsEl = wrapper.querySelector('.search-results');
+  if (!resultsEl) {
+    resultsEl = document.createElement('div');
+    resultsEl.id = input.id + '-results';
+    resultsEl.className = 'search-results';
+    resultsEl.setAttribute('role', 'listbox');
+    resultsEl.hidden = true;
+    wrapper.appendChild(resultsEl);
+  }
+
+  let activeIndex = -1;
+  let currentResults = [];
+
+  input.addEventListener('input', () => {
+    activeIndex = -1;
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 1) {
+      hideResults();
+      return;
+    }
+    currentResults = search(q, data).slice(0, 8);
+    renderResults(resultsEl, currentResults, q);
+    showResults(input, resultsEl);
+  });
+
+  input.addEventListener('keydown', (e) => {
+    const items = resultsEl.querySelectorAll('.search-result-item');
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+      updateActive(items, activeIndex);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, 0);
+      updateActive(items, activeIndex);
+    } else if (e.key === 'Enter' && activeIndex >= 0) {
+      e.preventDefault();
+      items[activeIndex]?.click();
+    } else if (e.key === 'Escape') {
+      hideResults();
+      input.blur();
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!wrapper.contains(e.target)) hideResults();
+  });
+
+  function hideResults() {
+    resultsEl.hidden = true;
+    input.setAttribute('aria-expanded', 'false');
+  }
+
+  function showResults(inp, el) {
+    el.hidden = false;
+    inp.setAttribute('aria-expanded', 'true');
+  }
+}
+
+function search(query, data) {
+  const results = [];
+  const q = query.toLowerCase();
+
+  (data.calculators || []).forEach((calc) => {
+    const score = matchScore(q, [
+      calc.title,
+      calc.description,
+      calc.category,
+      ...(calc.keywords || [])
+    ]);
+    if (score > 0) results.push({ ...calc, type: 'calculator', score });
+  });
+
+  (data.categories || []).forEach((cat) => {
+    const score = matchScore(q, [cat.title, cat.description, cat.slug]);
+    if (score > 0) results.push({ ...cat, type: 'category', score });
+  });
+
+  return results.sort((a, b) => b.score - a.score);
+}
+
+function matchScore(query, fields) {
+  let score = 0;
+  fields.forEach((field) => {
+    if (!field) return;
+    const f = field.toLowerCase();
+    if (f === query) score += 100;
+    else if (f.startsWith(query)) score += 50;
+    else if (f.includes(query)) score += 20;
+  });
+  return score;
+}
+
+function renderResults(container, results, query) {
+  container.innerHTML = '';
+  if (results.length === 0) {
+    container.innerHTML = '<div class="search-result-item"><span class="result-meta">No results found</span></div>';
+    return;
+  }
+
+  results.forEach((item, i) => {
+    const el = document.createElement('a');
+    el.href = item.url;
+    el.className = 'search-result-item';
+    el.setAttribute('role', 'option');
+    el.id = `search-option-${i}`;
+    el.innerHTML = `
+      <div class="result-title">${highlight(item.title, query)}</div>
+      <div class="result-meta">${item.type === 'category' ? 'Category' : item.category}</div>
+    `;
+    container.appendChild(el);
+  });
+}
+
+function highlight(text, query) {
+  const idx = text.toLowerCase().indexOf(query.toLowerCase());
+  if (idx < 0) return escapeHtml(text);
+  return escapeHtml(text.slice(0, idx)) +
+    '<strong>' + escapeHtml(text.slice(idx, idx + query.length)) + '</strong>' +
+    escapeHtml(text.slice(idx + query.length));
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function updateActive(items, index) {
+  items.forEach((item, i) => item.classList.toggle('active', i === index));
+}

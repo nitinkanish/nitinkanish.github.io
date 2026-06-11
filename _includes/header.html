@@ -1,0 +1,70 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.title }} — Home">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.15"/>
+        <text x="16" y="22" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">∑</text>
+      </svg>
+      <span class="logo-text">{{ site.title }}</span>
+    </a>
+
+    <div class="header-search" role="search">
+      <label for="global-search" class="visually-hidden">Search calculators</label>
+      <div class="search-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="global-search"
+          class="search-input"
+          placeholder="Search 1000+ calculators..."
+          autocomplete="off"
+          aria-autocomplete="list"
+          aria-controls="search-results"
+          aria-expanded="false"
+          role="combobox"
+        >
+        <div id="search-results" class="search-results" role="listbox" hidden></div>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
+        <li class="has-mega">
+          <button class="mega-trigger" aria-expanded="false" aria-haspopup="true">Categories</button>
+          <div class="mega-menu" role="menu">
+            <div class="mega-grid">
+              {% for cat in site.data.categories limit:8 %}
+              <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="mega-item" role="menuitem">
+                <span class="mega-icon icon-{{ cat.icon }}"></span>
+                <span>{{ cat.title }}</span>
+              </a>
+              {% endfor %}
+            </div>
+            <a href="{{ '/categories/' | relative_url }}" class="mega-view-all">View all categories →</a>
+          </div>
+        </li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,157 @@
+- slug: finance
+  title: Finance Calculators
+  icon: finance
+  description: >-
+    Plan your financial future with EMI, SIP, FD, compound interest, and loan calculators.
+    Make informed investment and borrowing decisions with accurate projections.
+  keywords:
+    - finance calculator
+    - loan calculator
+    - investment calculator
+  faqs:
+    - question: What finance calculators are available?
+      answer: >-
+        Our finance section includes EMI, SIP, FD, compound interest, and more calculators
+        for loans, investments, and savings planning.
+    - question: Are these calculators accurate for Indian financial products?
+      answer: >-
+        Yes. Our calculators support Indian numbering formats and common financial products
+        like mutual fund SIPs, fixed deposits, and home loans.
+    - question: Do I need to create an account?
+      answer: >-
+        No. All calculators are completely free and require no registration or personal data.
+
+- slug: mortgage
+  title: Mortgage Calculators
+  icon: mortgage
+  description: >-
+    Calculate monthly mortgage payments, affordability, and amortization schedules
+    for home loans and property financing.
+  keywords:
+    - mortgage calculator
+    - home loan calculator
+  faqs:
+    - question: How is EMI calculated for a home loan?
+      answer: >-
+        EMI uses the formula EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal,
+        r is monthly interest rate, and n is tenure in months.
+
+- slug: health
+  title: Health Calculators
+  icon: health
+  description: >-
+    Track your wellness with BMI, BMR, calorie, and fitness calculators.
+    Understand your body metrics and set achievable health goals.
+  keywords:
+    - health calculator
+    - bmi calculator
+    - fitness calculator
+  faqs:
+    - question: What is a healthy BMI range?
+      answer: >-
+        For adults, a BMI between 18.5 and 24.9 is generally considered healthy.
+        BMI below 18.5 is underweight; 25–29.9 is overweight; 30+ is obese.
+    - question: How accurate are calorie calculators?
+      answer: >-
+        Calorie estimates use established formulas (Mifflin-St Jeor) and provide
+        a reliable baseline. Individual metabolism may vary.
+
+- slug: math
+  title: Math & Percentage Calculators
+  icon: math
+  description: >-
+    Solve everyday math problems with percentage, age, and scientific calculators.
+    Quick, accurate results for students and professionals.
+  keywords:
+    - math calculator
+    - percentage calculator
+    - scientific calculator
+  faqs:
+    - question: Can I use the scientific calculator offline?
+      answer: >-
+        Yes. Install Online Calculators as a PWA for offline access to cached calculators.
+
+- slug: converters
+  title: Unit Converters
+  icon: converters
+  description: >-
+    Convert length, weight, temperature, and more between metric and imperial units
+    instantly with precision.
+  keywords:
+    - unit converter
+    - length converter
+    - temperature converter
+  faqs:
+    - question: Which unit systems are supported?
+      answer: >-
+        We support metric (SI), imperial (US/UK), and common scientific units
+        across all converter tools.
+
+- slug: business
+  title: Business Calculators
+  icon: business
+  description: >-
+    Calculate profit margins, GST, markup, and business metrics to optimize
+    pricing and tax compliance for your enterprise.
+  keywords:
+    - business calculator
+    - gst calculator
+    - profit margin calculator
+  faqs:
+    - question: Does the GST calculator support Indian tax slabs?
+      answer: >-
+        Yes. Our GST calculator supports standard Indian GST rates of 5%, 12%, 18%, and 28%.
+
+- slug: construction
+  title: Construction Calculators
+  icon: construction
+  description: >-
+    Estimate materials, areas, volumes, and costs for construction and renovation projects.
+  keywords:
+    - construction calculator
+    - area calculator
+
+- slug: education
+  title: Education Calculators
+  icon: education
+  description: >-
+    GPA, grade, and academic calculators for students and educators.
+  keywords:
+    - education calculator
+    - gpa calculator
+
+- slug: statistics
+  title: Statistics Calculators
+  icon: statistics
+  description: >-
+    Mean, median, standard deviation, and statistical analysis tools for data professionals.
+  keywords:
+    - statistics calculator
+    - standard deviation calculator
+
+- slug: scientific
+  title: Scientific Calculators
+  icon: scientific
+  description: >-
+    Advanced scientific and engineering calculators for complex mathematical operations.
+  keywords:
+    - scientific calculator
+    - engineering calculator
+
+- slug: date-time
+  title: Date & Time Calculators
+  icon: date-time
+  description: >-
+    Calculate age, date differences, and time intervals with precision.
+  keywords:
+    - age calculator
+    - date calculator
+
+- slug: fitness
+  title: Fitness Calculators
+  icon: fitness
+  description: >-
+    Track macros, heart rate zones, and workout metrics for optimal fitness performance.
+  keywords:
+    - fitness calculator
+    - macro calculator

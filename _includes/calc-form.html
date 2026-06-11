@@ -1,0 +1,18 @@
+{% assign t = include.type | default: page.calculator_type %}
+{% case t %}
+  {% when 'emi' %}{% include calc-forms/emi.html %}
+  {% when 'sip' %}{% include calc-forms/sip.html %}
+  {% when 'fd' %}{% include calc-forms/fd.html %}
+  {% when 'compound-interest' %}{% include calc-forms/compound-interest.html %}
+  {% when 'bmi' %}{% include calc-forms/bmi.html %}
+  {% when 'bmr' %}{% include calc-forms/bmr.html %}
+  {% when 'calorie' %}{% include calc-forms/calorie.html %}
+  {% when 'percentage' %}{% include calc-forms/percentage.html %}
+  {% when 'age' %}{% include calc-forms/age.html %}
+  {% when 'scientific' %}{% include calc-forms/scientific.html %}
+  {% when 'length-converter' %}{% include calc-forms/length-converter.html %}
+  {% when 'weight-converter' %}{% include calc-forms/weight-converter.html %}
+  {% when 'temperature-converter' %}{% include calc-forms/temperature-converter.html %}
+  {% when 'profit-margin' %}{% include calc-forms/profit-margin.html %}
+  {% when 'gst' %}{% include calc-forms/gst.html %}
+{% endcase %}

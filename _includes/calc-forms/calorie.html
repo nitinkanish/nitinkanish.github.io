@@ -1,0 +1,37 @@
+<form id="calc-form" class="calc-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="sex">Sex</label>
+      <select id="sex" name="sex" class="form-select">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="age">Age (years)</label>
+      <input type="number" id="age" name="age" class="form-input" value="30" min="15" data-validate="required|number|min:15" inputmode="numeric">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="weight">Weight (kg)</label>
+      <input type="number" id="weight" name="weight" class="form-input" value="70" min="20" data-validate="required|number|min:20" inputmode="decimal">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="height">Height (cm)</label>
+      <input type="number" id="height" name="height" class="form-input" value="170" min="100" data-validate="required|number|min:100" inputmode="decimal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="activity">Activity Level</label>
+    <select id="activity" name="activity" class="form-select">
+      <option value="sedentary">Sedentary</option>
+      <option value="light">Light</option>
+      <option value="moderate" selected>Moderate</option>
+      <option value="active">Active</option>
+      <option value="very">Very Active</option>
+    </select>
+  </div>
+</form>
+<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

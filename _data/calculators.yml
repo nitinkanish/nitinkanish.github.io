@@ -1,0 +1,543 @@
+# Master calculator registry — drives search, categories, and internal linking
+# Run `ruby scripts/generate_pages.rb` to auto-generate collection pages from this file
+
+- title: EMI Calculator
+  slug: emi-calculator
+  category: finance
+  icon: emi
+  description: Calculate monthly EMI for home, car, and personal loans with amortization breakdown.
+  keywords:
+    - emi calculator
+    - loan emi calculator
+    - home loan emi
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-01-15
+  calculator_type: emi
+  formula: "EMI = P × r × (1+r)^n / ((1+r)^n - 1)"
+  faqs:
+    - question: What is EMI?
+      answer: EMI (Equated Monthly Installment) is a fixed payment made by a borrower to a lender on a specified date each month.
+    - question: How is EMI calculated?
+      answer: EMI is calculated using the formula EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is monthly interest rate, and n is tenure in months.
+    - question: Does EMI include principal and interest?
+      answer: Yes. Each EMI payment consists of both principal repayment and interest on the outstanding loan balance.
+    - question: Can I prepay my loan to reduce EMI?
+      answer: Prepayment reduces the outstanding principal, which can lower your EMI or shorten the loan tenure depending on your lender's terms.
+    - question: What is a good EMI to income ratio?
+      answer: Financial experts recommend keeping total EMIs below 40-50% of your monthly net income.
+    - question: How does interest rate affect EMI?
+      answer: Higher interest rates increase EMI, while lower rates decrease it. Even a 0.5% rate change can significantly impact total interest paid.
+    - question: Is EMI the same as monthly payment?
+      answer: For standard amortizing loans, EMI equals the monthly payment. Some loans may have additional fees not included in EMI.
+    - question: Can EMI change during the loan tenure?
+      answer: For fixed-rate loans, EMI remains constant. For floating-rate loans, EMI may change when interest rates are revised.
+    - question: What is the difference between reducing and flat interest rate?
+      answer: Reducing balance calculates interest on outstanding principal (lower total interest). Flat rate calculates on original principal throughout tenure.
+    - question: How do I calculate EMI manually?
+      answer: Divide annual interest rate by 12 for monthly rate (r), multiply principal (P) by r × (1+r)^n / ((1+r)^n - 1) where n is months.
+
+- title: SIP Calculator
+  slug: sip-calculator
+  category: finance
+  icon: sip
+  description: Estimate mutual fund SIP returns with step-up options and wealth projection charts.
+  keywords:
+    - sip calculator
+    - mutual fund sip calculator
+    - sip return calculator
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-01-20
+  calculator_type: sip
+  formula: "FV = P × ((1+r)^n - 1) / r × (1+r)"
+  faqs:
+    - question: What is SIP?
+      answer: SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly in mutual funds.
+    - question: How are SIP returns calculated?
+      answer: SIP returns use compound interest formula accounting for monthly investments and expected annual returns.
+    - question: What is a good SIP return rate?
+      answer: Equity mutual funds have historically returned 10-15% annually over long periods, though past performance doesn't guarantee future results.
+    - question: Can I change my SIP amount?
+      answer: Yes. Most mutual funds allow you to increase, decrease, or pause your SIP anytime.
+    - question: What is step-up SIP?
+      answer: Step-up SIP automatically increases your investment amount annually, accelerating wealth creation.
+    - question: Is SIP better than lump sum investment?
+      answer: SIP reduces timing risk through rupee cost averaging and is ideal for regular savers. Lump sum may outperform in rising markets.
+    - question: What is the minimum SIP amount?
+      answer: Most mutual funds allow SIP starting from ₹500 per month.
+    - question: Are SIP returns guaranteed?
+      answer: No. Mutual fund returns depend on market performance and are subject to market risks.
+    - question: What is XIRR in SIP?
+      answer: XIRR (Extended Internal Rate of Return) measures actual annualized returns accounting for irregular cash flows.
+    - question: How long should I invest in SIP?
+      answer: SIP works best for long-term goals (5+ years) allowing compounding to maximize returns.
+
+- title: FD Calculator
+  slug: fd-calculator
+  category: finance
+  icon: fd
+  description: Calculate fixed deposit maturity amount with quarterly, monthly, and annual compounding.
+  keywords:
+    - fd calculator
+    - fixed deposit calculator
+    - fd interest calculator
+  popular: true
+  featured: false
+  date_added: 2025-02-01
+  calculator_type: fd
+  formula: "A = P × (1 + r/n)^(n×t)"
+  faqs:
+    - question: What is a Fixed Deposit?
+      answer: A Fixed Deposit (FD) is a financial instrument where you deposit a lump sum for a fixed tenure at a predetermined interest rate.
+    - question: How is FD interest calculated?
+      answer: FD interest uses compound interest formula A = P(1 + r/n)^(nt) where P is principal, r is annual rate, n is compounding frequency, t is years.
+    - question: What is the difference between cumulative and non-cumulative FD?
+      answer: Cumulative FD reinvests interest (paid at maturity). Non-cumulative FD pays interest periodically (monthly/quarterly).
+    - question: Is FD interest taxable?
+      answer: Yes. FD interest is added to your income and taxed per your income tax slab. TDS applies if interest exceeds ₹40,000/year.
+    - question: Can I break an FD before maturity?
+      answer: Yes, but banks charge a penalty (typically 0.5-1%) and pay reduced interest rates.
+    - question: Which compounding frequency gives highest returns?
+      answer: More frequent compounding (monthly > quarterly > annually) yields slightly higher returns.
+    - question: Are FDs safe?
+      answer: Bank FDs up to ₹5 lakh per bank are insured by DICGC, making them very safe investments.
+    - question: What is the minimum FD amount?
+      answer: Most banks accept FDs starting from ₹1,000 to ₹10,000.
+    - question: Can NRIs open FDs in India?
+      answer: Yes. NRIs can open NRE or NRO fixed deposits with Indian banks.
+    - question: How does FD compare to mutual funds?
+      answer: FDs offer guaranteed returns with lower risk. Mutual funds offer higher potential returns with market risk.
+
+- title: Compound Interest Calculator
+  slug: compound-interest-calculator
+  category: finance
+  icon: compound
+  description: Calculate compound interest with regular contributions and visualize wealth growth over time.
+  keywords:
+    - compound interest calculator
+    - interest calculator
+    - compounding calculator
+  popular: true
+  featured: true
+  date_added: 2025-02-10
+  calculator_type: compound-interest
+  formula: "A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)]"
+  faqs:
+    - question: What is compound interest?
+      answer: Compound interest is interest calculated on the initial principal plus accumulated interest from previous periods.
+    - question: What is the compound interest formula?
+      answer: A = P(1 + r/n)^(nt) where A is final amount, P is principal, r is annual rate, n is compounding frequency, t is time in years.
+    - question: What is the Rule of 72?
+      answer: Divide 72 by the annual interest rate to estimate years needed to double your investment.
+    - question: How often should interest compound?
+      answer: More frequent compounding (daily/monthly) yields higher returns than annual compounding.
+    - question: What is simple vs compound interest?
+      answer: Simple interest is calculated only on principal. Compound interest includes interest on previously earned interest.
+    - question: Can compound interest work against me?
+      answer: Yes. Credit card debt and loans use compound interest, making debt grow faster if not paid promptly.
+    - question: What rate should I use for calculations?
+      answer: Use realistic expected returns — 6-7% for FDs, 10-12% for equity investments, based on your investment type.
+    - question: How does time affect compound interest?
+      answer: Time is the most powerful factor. Starting early allows compounding to work over more periods.
+    - question: What is continuous compounding?
+      answer: Continuous compounding uses e^(rt) formula where interest compounds infinitely often, yielding maximum growth.
+    - question: Is compound interest used in loans?
+      answer: Most loans use reducing balance (similar to compound effect) where interest is charged on outstanding balance.
+
+- title: BMI Calculator
+  slug: bmi-calculator
+  category: health
+  icon: bmi
+  description: Calculate Body Mass Index and get personalized health category recommendations.
+  keywords:
+    - bmi calculator
+    - body mass index calculator
+    - bmi chart
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-01-10
+  calculator_type: bmi
+  formula: "BMI = weight (kg) / height (m)²"
+  faqs:
+    - question: What is BMI?
+      answer: BMI (Body Mass Index) is a measure of body fat based on height and weight, used to categorize weight status.
+    - question: How is BMI calculated?
+      answer: BMI = weight in kilograms divided by height in meters squared (kg/m²).
+    - question: What is a healthy BMI?
+      answer: A BMI between 18.5 and 24.9 is considered healthy for most adults.
+    - question: Is BMI accurate for everyone?
+      answer: BMI doesn't distinguish muscle from fat. Athletes may have high BMI despite low body fat.
+    - question: What BMI is considered obese?
+      answer: BMI of 30 or higher is classified as obese. 25-29.9 is overweight.
+    - question: Can children use this BMI calculator?
+      answer: This calculator is for adults. Children require age and sex-specific BMI percentile charts.
+    - question: How can I lower my BMI?
+      answer: Combine balanced nutrition with regular physical activity. Consult a healthcare provider for personalized advice.
+    - question: Does BMI differ by ethnicity?
+      answer: Some health organizations suggest lower BMI thresholds for Asian populations due to higher health risks at lower weights.
+    - question: What is BMI Prime?
+      answer: BMI Prime is your BMI divided by 25 (upper healthy limit). Values above 1.0 indicate overweight.
+    - question: Should I rely only on BMI?
+      answer: No. Combine BMI with waist circumference, body composition, and overall health markers for a complete picture.
+
+- title: BMR Calculator
+  slug: bmr-calculator
+  category: health
+  icon: bmr
+  description: Calculate Basal Metabolic Rate to understand daily calorie needs at rest.
+  keywords:
+    - bmr calculator
+    - basal metabolic rate calculator
+    - metabolism calculator
+  popular: true
+  date_added: 2025-02-15
+  calculator_type: bmr
+  formula: "BMR (M) = 10W + 6.25H - 5A + 5; BMR (F) = 10W + 6.25H - 5A - 161"
+  faqs:
+    - question: What is BMR?
+      answer: BMR (Basal Metabolic Rate) is the calories your body burns at complete rest to maintain vital functions.
+    - question: How is BMR calculated?
+      answer: We use the Mifflin-St Jeor equation, considered the most accurate for most people.
+    - question: What is the difference between BMR and TDEE?
+      answer: BMR is calories at rest. TDEE (Total Daily Energy Expenditure) includes activity and exercise calories.
+    - question: How can I increase my BMR?
+      answer: Build muscle through strength training, stay hydrated, get adequate sleep, and eat sufficient protein.
+    - question: Does age affect BMR?
+      answer: Yes. BMR typically decreases with age due to muscle loss and metabolic changes.
+    - question: Do men have higher BMR than women?
+      answer: Generally yes, due to greater muscle mass and larger body size on average.
+    - question: How accurate is BMR calculation?
+      answer: Formulas provide estimates within 10% for most people. Individual metabolism varies.
+    - question: Should I eat below my BMR to lose weight?
+      answer: No. Eating below BMR long-term can slow metabolism. Create moderate deficits from TDEE instead.
+    - question: What factors affect BMR?
+      answer: Age, sex, weight, height, muscle mass, genetics, hormones, and health conditions all influence BMR.
+    - question: How do I use BMR for weight loss?
+      answer: Calculate TDEE from BMR, then consume 300-500 calories below TDEE for sustainable weight loss.
+
+- title: Calorie Calculator
+  slug: calorie-calculator
+  category: health
+  icon: calorie
+  description: Calculate daily calorie needs for weight loss, maintenance, or muscle gain goals.
+  keywords:
+    - calorie calculator
+    - daily calorie calculator
+    - tdee calculator
+  popular: true
+  featured: false
+  date_added: 2025-02-20
+  calculator_type: calorie
+  formula: "TDEE = BMR × Activity Factor"
+  faqs:
+    - question: How many calories should I eat per day?
+      answer: It depends on age, sex, weight, height, and activity level. Use our calculator for a personalized estimate.
+    - question: What is TDEE?
+      answer: Total Daily Energy Expenditure is the total calories you burn including all daily activities and exercise.
+    - question: How many calories for weight loss?
+      answer: A deficit of 500 calories per day typically results in about 0.5 kg (1 lb) weight loss per week.
+    - question: How many calories for muscle gain?
+      answer: A surplus of 300-500 calories above TDEE supports muscle growth while minimizing fat gain.
+    - question: Do calorie needs change with exercise?
+      answer: Yes. More active lifestyles require significantly more calories than sedentary ones.
+    - question: Are all calories equal?
+      answer: Calorie count matters for weight, but nutrient quality affects health, satiety, and body composition.
+    - question: How often should I recalculate calories?
+      answer: Recalculate every 5-10 kg of weight change or when activity level changes significantly.
+    - question: What activity level should I choose?
+      answer: Be honest about your lifestyle. Most people overestimate activity. When in doubt, choose one level lower.
+    - question: Do men need more calories than women?
+      answer: Generally yes, due to higher muscle mass and larger average body size.
+    - question: Can I trust online calorie calculators?
+      answer: They provide good starting estimates. Adjust based on real-world results over 2-4 weeks.
+
+- title: Percentage Calculator
+  slug: percentage-calculator
+  category: math
+  icon: percentage
+  description: Calculate percentages, percentage change, increase, decrease, and fraction conversions.
+  keywords:
+    - percentage calculator
+    - percent calculator
+    - percentage increase calculator
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-01-05
+  calculator_type: percentage
+  formula: "Percentage = (Part / Whole) × 100"
+  faqs:
+    - question: How do I calculate a percentage?
+      answer: Divide the part by the whole and multiply by 100. Example — 25/200 × 100 = 12.5%.
+    - question: How to calculate percentage increase?
+      answer: ((New Value - Old Value) / Old Value) × 100 gives the percentage increase.
+    - question: How to calculate percentage decrease?
+      answer: ((Old Value - New Value) / Old Value) × 100 gives the percentage decrease.
+    - question: How to find what percent one number is of another?
+      answer: Divide the first number by the second and multiply by 100.
+    - question: How to add a percentage to a number?
+      answer: Multiply the number by (1 + percentage/100). Example — 200 + 15% = 200 × 1.15 = 230.
+    - question: How to subtract a percentage from a number?
+      answer: Multiply the number by (1 - percentage/100). Example — 200 - 15% = 200 × 0.85 = 170.
+    - question: What is percentage point vs percent?
+      answer: A percentage point is the absolute difference between percentages. 10% to 15% is a 5 point increase but 50% relative increase.
+    - question: How to convert fraction to percentage?
+      answer: Divide numerator by denominator and multiply by 100. 3/4 = 0.75 × 100 = 75%.
+    - question: How to convert percentage to decimal?
+      answer: Divide by 100. 45% = 0.45.
+    - question: What is reverse percentage?
+      answer: Finding the original amount before a percentage was applied. If 80 is 80% of X, then X = 80/0.80 = 100.
+
+- title: Age Calculator
+  slug: age-calculator
+  category: math
+  icon: age
+  description: Calculate exact age in years, months, days, hours, and minutes from date of birth.
+  keywords:
+    - age calculator
+    - date of birth calculator
+    - how old am i
+  popular: true
+  date_added: 2025-01-25
+  calculator_type: age
+  formula: "Age = Current Date - Date of Birth"
+  faqs:
+    - question: How is age calculated?
+      answer: Age is the difference between the current date and date of birth, accounting for leap years.
+    - question: Does the calculator account for leap years?
+      answer: Yes. Our age calculator correctly handles leap years and varying month lengths.
+    - question: Can I calculate age between any two dates?
+      answer: Yes. Enter any start and end date to calculate the exact duration between them.
+    - question: How do I calculate age in months for a baby?
+      answer: Enter the birth date and today's date to get age in years, months, and days.
+    - question: What timezone is used?
+      answer: Calculations use your local browser timezone for the current date.
+    - question: How is age used in legal contexts?
+      answer: Legal age is typically calculated as completed years on the relevant date, which may differ from exact age.
+    - question: Can I find what date I will be a certain age?
+      answer: Add the desired years to your birth date to find when you'll reach that age.
+    - question: How many days old am I?
+      answer: Our calculator shows your exact age in days, hours, and minutes.
+    - question: Is age calculated differently in Korea?
+      answer: Korean age traditionally adds one year at birth and another on New Year's Day. Our calculator uses international age.
+    - question: How to calculate age for forms?
+      answer: Most forms require age as of a specific date. Use our calculator with that reference date.
+
+- title: Scientific Calculator
+  slug: scientific-calculator
+  category: math
+  icon: scientific
+  description: Full-featured scientific calculator with trigonometry, logarithms, and advanced functions.
+  keywords:
+    - scientific calculator
+    - online scientific calculator
+    - math calculator
+  popular: true
+  featured: true
+  date_added: 2025-03-01
+  calculator_type: scientific
+  formula: "Varies by operation"
+  faqs:
+    - question: What functions does this scientific calculator support?
+      answer: Trigonometry (sin, cos, tan), logarithms, exponentials, powers, roots, factorials, and constants (π, e).
+    - question: Can I use keyboard shortcuts?
+      answer: Yes. Use number keys, operators, and Enter to calculate. Escape clears the display.
+    - question: Does it support radians and degrees?
+      answer: Yes. Toggle between DEG and RAD modes for trigonometric calculations.
+    - question: Is calculation history saved?
+      answer: The current session history is shown on screen but not persisted between visits.
+    - question: Can I use this calculator offline?
+      answer: Yes, when installed as a PWA, the scientific calculator works offline.
+    - question: How precise are calculations?
+      answer: Results use JavaScript double-precision floating point (about 15-17 significant digits).
+    - question: Does it support parentheses?
+      answer: Yes. Use parentheses to control order of operations in complex expressions.
+    - question: What is the order of operations?
+      answer: PEMDAS — Parentheses, Exponents, Multiplication/Division, Addition/Subtraction.
+    - question: Can I copy results?
+      answer: Click the result or use the copy button to copy the value to your clipboard.
+    - question: Is this suitable for exams?
+      answer: Check your exam rules. Some exams prohibit calculators or require specific approved models.
+
+- title: Length Converter
+  slug: length-converter
+  category: converters
+  icon: length
+  description: Convert between meters, feet, inches, miles, kilometers, and more length units.
+  keywords:
+    - length converter
+    - feet to meters
+    - inch to cm converter
+  popular: true
+  featured: false
+  date_added: 2025-02-05
+  calculator_type: length-converter
+  formula: "Target = Source × Conversion Factor"
+  faqs:
+    - question: How many feet in a meter?
+      answer: 1 meter = 3.28084 feet.
+    - question: How many cm in an inch?
+      answer: 1 inch = 2.54 centimeters exactly.
+    - question: How to convert miles to kilometers?
+      answer: Multiply miles by 1.60934 to get kilometers.
+    - question: What is a nautical mile?
+      answer: A nautical mile is 1,852 meters, used in aviation and maritime navigation.
+    - question: How many yards in a mile?
+      answer: 1 mile = 1,760 yards.
+    - question: What is the difference between US and UK miles?
+      answer: Both use the same mile (1,609.344 meters). Some other imperial units differ between US and UK.
+    - question: How to convert height from feet/inches to cm?
+      answer: Convert feet to inches (×12), add remaining inches, then multiply total inches by 2.54.
+    - question: What is a light-year?
+      answer: Distance light travels in one year, approximately 9.461 × 10¹⁵ meters.
+    - question: How accurate are conversions?
+      answer: We use internationally standardized conversion factors with up to 6 decimal precision.
+    - question: Can I convert between metric and imperial?
+      answer: Yes. All common metric and imperial length units are supported.
+
+- title: Weight Converter
+  slug: weight-converter
+  category: converters
+  icon: weight
+  description: Convert between kilograms, pounds, ounces, grams, stones, and more weight units.
+  keywords:
+    - weight converter
+    - kg to lbs
+    - pounds to kg converter
+  popular: true
+  date_added: 2025-02-08
+  calculator_type: weight-converter
+  formula: "Target = Source × Conversion Factor"
+  faqs:
+    - question: How many pounds in a kilogram?
+      answer: 1 kilogram = 2.20462 pounds.
+    - question: How many grams in an ounce?
+      answer: 1 ounce = 28.3495 grams.
+    - question: How to convert stones to kg?
+      answer: 1 stone = 6.35029 kilograms. Multiply stones by 6.35029.
+    - question: What is the difference between mass and weight?
+      answer: Mass (kg) is the amount of matter. Weight is the force of gravity on mass. They're used interchangeably in everyday contexts.
+    - question: How many ounces in a pound?
+      answer: 1 pound = 16 ounces.
+    - question: How to convert body weight from lbs to kg?
+      answer: Divide pounds by 2.20462 or multiply by 0.453592.
+    - question: What is a metric ton?
+      answer: 1 metric ton (tonne) = 1,000 kilograms.
+    - question: How many pounds in a stone?
+      answer: 1 stone = 14 pounds.
+    - question: Are US and UK tons different?
+      answer: Yes. US ton = 2,000 lbs. UK (long) ton = 2,240 lbs. Metric tonne = 2,204.62 lbs.
+    - question: How precise are weight conversions?
+      answer: We use standard conversion factors accurate to 6 decimal places.
+
+- title: Temperature Converter
+  slug: temperature-converter
+  category: converters
+  icon: temperature
+  description: Convert between Celsius, Fahrenheit, and Kelvin temperature scales instantly.
+  keywords:
+    - temperature converter
+    - celsius to fahrenheit
+    - fahrenheit to celsius
+  popular: true
+  featured: false
+  date_added: 2025-02-12
+  calculator_type: temperature-converter
+  formula: "°F = (°C × 9/5) + 32; K = °C + 273.15"
+  faqs:
+    - question: How to convert Celsius to Fahrenheit?
+      answer: Multiply Celsius by 9/5 and add 32. Formula — °F = (°C × 9/5) + 32.
+    - question: How to convert Fahrenheit to Celsius?
+      answer: Subtract 32 from Fahrenheit, then multiply by 5/9. Formula — °C = (°F - 32) × 5/9.
+    - question: What is absolute zero?
+      answer: Absolute zero is 0 Kelvin (-273.15°C or -459.67°F), the lowest possible temperature.
+    - question: How to convert Celsius to Kelvin?
+      answer: Add 273.15 to Celsius. K = °C + 273.15.
+    - question: At what temperature are Celsius and Fahrenheit equal?
+      answer: -40 degrees. -40°C = -40°F.
+    - question: What is normal body temperature?
+      answer: 37°C (98.6°F), though normal range is 36.1-37.2°C (97-99°F).
+    - question: What is room temperature in Fahrenheit?
+      answer: Room temperature is typically 20-22°C (68-72°F).
+    - question: Why are there different temperature scales?
+      answer: Celsius is based on water's freezing/boiling points. Fahrenheit uses a different reference. Kelvin is an absolute scale for science.
+    - question: How to convert oven temperatures?
+      answer: 180°C ≈ 350°F (moderate oven). 200°C ≈ 400°F (hot oven).
+    - question: Is Kelvin used in everyday life?
+      answer: Kelvin is primarily used in scientific and engineering applications, not everyday temperature measurement.
+
+- title: Profit Margin Calculator
+  slug: profit-margin-calculator
+  category: business
+  icon: profit
+  description: Calculate gross, operating, and net profit margins for your business pricing strategy.
+  keywords:
+    - profit margin calculator
+    - margin calculator
+    - markup calculator
+  popular: true
+  date_added: 2025-03-05
+  calculator_type: profit-margin
+  formula: "Profit Margin = (Revenue - Cost) / Revenue × 100"
+  faqs:
+    - question: What is profit margin?
+      answer: Profit margin is the percentage of revenue that remains as profit after deducting costs.
+    - question: What is a good profit margin?
+      answer: Varies by industry. 10-20% net margin is healthy for many businesses. Tech companies often have higher margins.
+    - question: What is gross vs net profit margin?
+      answer: Gross margin uses only COGS. Net margin accounts for all expenses including operating costs, taxes, and interest.
+    - question: How to calculate markup vs margin?
+      answer: Margin = (Price - Cost) / Price. Markup = (Price - Cost) / Cost. A 25% margin equals 33.3% markup.
+    - question: How to improve profit margins?
+      answer: Reduce costs, increase prices strategically, improve efficiency, and focus on high-margin products.
+    - question: What is operating profit margin?
+      answer: Operating margin = Operating Income / Revenue × 100, excluding taxes and interest.
+    - question: Can profit margin exceed 100%?
+      answer: Margin cannot exceed 100% (that would mean cost is negative). Markup can exceed 100%.
+    - question: How does discounting affect margins?
+      answer: Small discounts significantly reduce margins. A 10% price cut on 30% margin product reduces margin to about 18%.
+    - question: What industries have highest margins?
+      answer: Software, pharmaceuticals, luxury goods, and financial services typically have high profit margins.
+    - question: Should I focus on margin or volume?
+      answer: Balance both. High volume with thin margins can be profitable, but ensure cash flow covers operating costs.
+
+- title: GST Calculator
+  slug: gst-calculator
+  category: business
+  icon: gst
+  description: Calculate GST inclusive and exclusive amounts for Indian tax rates of 5%, 12%, 18%, and 28%.
+  keywords:
+    - gst calculator
+    - gst inclusive calculator
+    - india gst calculator
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-01-08
+  calculator_type: gst
+  formula: "GST Amount = Price × Rate / 100; Inclusive Price = Price × (1 + Rate/100)"
+  faqs:
+    - question: What is GST?
+      answer: GST (Goods and Services Tax) is an indirect tax levied on supply of goods and services in India.
+    - question: What are GST rates in India?
+      answer: Standard rates are 5%, 12%, 18%, and 28%. Some items are exempt or taxed at 0.25% or 3%.
+    - question: How to calculate GST exclusive amount?
+      answer: GST Amount = Base Price × GST Rate / 100. Total = Base Price + GST Amount.
+    - question: How to calculate GST from inclusive price?
+      answer: Base Price = Inclusive Price / (1 + GST Rate/100). GST = Inclusive Price - Base Price.
+    - question: What is CGST and SGST?
+      answer: For intra-state sales, GST is split equally into CGST (Central) and SGST (State). Inter-state uses IGST.
+    - question: Who needs to register for GST?
+      answer: Businesses with annual turnover exceeding ₹20 lakh (₹10 lakh for special category states) must register.
+    - question: What is input tax credit?
+      answer: ITC allows businesses to claim credit for GST paid on purchases against GST collected on sales.
+    - question: Is GST applicable on exports?
+      answer: Exports are zero-rated. Exporters can claim refund on input taxes paid.
+    - question: How to calculate reverse GST?
+      answer: To extract GST from inclusive price — divide by (1 + rate/100). Example — ₹118 inclusive at 18% = ₹118/1.18 = ₹100 base.
+    - question: What items are GST exempt?
+      answer: Fresh fruits, vegetables, milk, bread, educational services, and healthcare are among exempt categories.

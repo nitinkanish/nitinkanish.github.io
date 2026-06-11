@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="blog-post">
+  <header class="post-header">
+    <div class="container container-narrow">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li aria-current="page">{{ page.title }}</li>
+        </ol>
+      </nav>
+      <h1>{{ page.title }}</h1>
+      <div class="post-meta">
+        <span>{{ page.author | default: site.author.name }}</span>
+        <span>{{ page.date | date: "%B %d, %Y" }}</span>
+        <span>{{ page.reading_time }} min read</span>
+        {% if page.categories %}<span>{{ page.categories | join: ', ' }}</span>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="container container-narrow">
+    {% if page.toc %}
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      {{ content | toc_only }}
+    </nav>
+    {% endif %}
+
+    <div class="post-content prose">
+      {{ content }}
+    </div>
+
+    {% if page.tags %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <a href="{{ '/blog/tag/' | append: tag | append: '/' | relative_url }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

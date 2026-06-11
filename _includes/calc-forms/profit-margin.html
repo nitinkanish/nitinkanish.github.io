@@ -1,0 +1,14 @@
+<form id="calc-form" class="calc-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="revenue">Revenue / Selling Price (₹)</label>
+      <input type="number" id="revenue" name="revenue" class="form-input" value="10000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="cost">Cost Price (₹)</label>
+      <input type="number" id="cost" name="cost" class="form-input" value="7000" min="0" data-validate="required|number|min:0" inputmode="decimal">
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

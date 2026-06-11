@@ -1,0 +1,31 @@
+---
+layout: default
+title: All Calculator Categories
+description: Browse all calculator categories including finance, health, math, business, and unit converters.
+permalink: /categories/
+---
+
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li aria-current="page">Categories</li>
+      </ol>
+    </nav>
+    <h1>All Calculator Categories</h1>
+    <p class="page-lead">Browse {{ site.data.categories.size }} categories with {{ site.data.calculators.size }}+ free online calculators.</p>
+  </div>
+</header>
+
+<div class="container section">
+  <div class="category-grid">
+    {% for cat in site.data.categories %}
+    <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="category-card">
+      <span class="category-icon icon-{{ cat.icon }}"></span>
+      <h3>{{ cat.title }}</h3>
+      <p>{{ cat.description | truncate: 100 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>

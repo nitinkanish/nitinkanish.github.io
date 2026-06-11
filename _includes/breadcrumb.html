@@ -1,0 +1,20 @@
+{% if include.items %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="{{ '/' | relative_url }}"><span itemprop="name">Home</span></a>
+      <meta itemprop="position" content="1">
+    </li>
+    {% for item in include.items %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      {% if item.url and forloop.last == false %}
+        <a itemprop="item" href="{{ item.url | relative_url }}"><span itemprop="name">{{ item.name }}</span></a>
+      {% else %}
+        <span itemprop="name" aria-current="page">{{ item.name }}</span>
+      {% endif %}
+      <meta itemprop="position" content="{{ forloop.index | plus: 1 }}">
+    </li>
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}

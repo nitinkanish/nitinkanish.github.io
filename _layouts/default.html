@@ -1,22 +1,13 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang | default: 'en' }}">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ page.title }} | {{ site.title }}</title>
-<link rel="stylesheet" href="/assets/css/style.css">
+  {% include head.html %}
 </head>
 <body>
-<header>
-<h1>{{ site.title }}</h1>
-<nav>
-<a href="/">Home</a>
-<a href="/calculators/">Calculators</a>
-<a href="/about/">About</a>
-</nav>
-</header>
-<main>{{ content }}</main>
-<footer>© {{ site.time | date: '%Y' }} Calculator Hub</footer>
+  {% include header.html %}
+  <main id="main-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
 </body>
 </html>

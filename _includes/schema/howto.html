@@ -1,0 +1,27 @@
+{% if page.formula %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": {{ page.title | append: ' — How to Calculate' | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter your values",
+      "text": "Fill in the required input fields in the calculator form above."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "View results",
+      "text": "Results are calculated instantly as you type."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Apply the formula",
+      "text": {{ page.formula | prepend: 'Formula: ' | jsonify }}
+    }
+  ]
+}
+</script>
+{% endif %}
