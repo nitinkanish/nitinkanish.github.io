@@ -1,10 +1,13 @@
 {% assign category = include.category %}
 {% assign current_slug = include.current_slug %}
 {% assign related = site.data.calculators | where: "category", category %}
-<section class="related-section" aria-labelledby="related-heading">
-  <h2 id="related-heading">Related Calculators</h2>
-  <div class="calc-grid">
-    {% for calc in related %}
+<section class="related-section related-section--inline" aria-labelledby="related-heading">
+  <div class="related-section-header">
+    <h2 id="related-heading">Related Calculators</h2>
+    <a href="{{ category | prepend: '/' | append: '/' | relative_url }}" class="section-link">View all in {{ category | replace: '-', ' ' | capitalize }} →</a>
+  </div>
+  <div class="calc-grid calc-grid--related">
+    {% for calc in related limit:5 %}
       {% unless calc.slug == current_slug %}
         {% include calculator-card.html calculator=calc %}
       {% endunless %}

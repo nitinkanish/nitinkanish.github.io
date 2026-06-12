@@ -19,6 +19,9 @@ layout: default
           <li aria-current="page">{{ page.title | default: cat_data.title }}</li>
         </ol>
       </nav>
+      <div class="page-header-icon icon-tint-{{ cat_slug }}" aria-hidden="true">
+        {% include icon.html name=cat_data.icon size=32 %}
+      </div>
       <h1>{{ page.title | default: cat_data.title }}</h1>
       <p class="page-lead">{{ page.description | default: cat_data.description }}</p>
     </div>
@@ -48,11 +51,7 @@ layout: default
       <div class="category-grid">
         {% for cat in site.data.categories %}
           {% unless cat.slug == cat_slug %}
-          <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="category-card">
-            <span class="category-icon icon-{{ cat.icon }}"></span>
-            <h3>{{ cat.title }}</h3>
-            <p>{{ cat.description | truncate: 80 }}</p>
-          </a>
+            {% include category-card.html category=cat %}
           {% endunless %}
         {% endfor %}
       </div>

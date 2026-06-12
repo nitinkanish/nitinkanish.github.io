@@ -42,7 +42,7 @@
             <div class="mega-grid">
               {% for cat in site.data.categories limit:8 %}
               <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="mega-item" role="menuitem">
-                <span class="mega-icon icon-{{ cat.icon }}"></span>
+                <span class="mega-icon icon-tint-{{ cat.slug }}">{% include icon.html name=cat.icon size=18 %}</span>
                 <span>{{ cat.title }}</span>
               </a>
               {% endfor %}

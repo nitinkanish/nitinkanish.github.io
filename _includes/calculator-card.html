@@ -1,10 +1,16 @@
 {% assign calc = include.calculator %}
-<article class="calc-card">
+{% assign variant = include.variant | default: 'default' %}
+<article class="calc-card calc-card--{{ variant }}">
   <a href="{{ calc.category | prepend: '/' | append: '/' | append: calc.slug | append: '/' | relative_url }}" class="calc-card-link">
-    <div class="calc-card-icon icon-{{ calc.icon | default: 'default' }}" aria-hidden="true"></div>
+    <div class="calc-card-icon icon-tint-{{ calc.category }}" aria-hidden="true">
+      {% include icon.html name=calc.icon size=22 %}
+    </div>
     <div class="calc-card-body">
-      <h3 class="calc-card-title">{{ calc.title }}</h3>
-      <p class="calc-card-desc">{{ calc.description | truncate: 90 }}</p>
+      <div class="calc-card-top">
+        <h3 class="calc-card-title">{{ calc.title }}</h3>
+        <span class="calc-card-arrow" aria-hidden="true">→</span>
+      </div>
+      <p class="calc-card-desc">{{ calc.description | truncate: 100 }}</p>
       <span class="calc-card-category">{{ calc.category | replace: '-', ' ' | capitalize }}</span>
     </div>
   </a>

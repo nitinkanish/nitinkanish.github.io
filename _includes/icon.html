@@ -1,0 +1,19 @@
+{% assign key = include.name | default: 'default' %}
+{% assign symbol = site.data.icons[key] | default: key %}
+{% assign size = include.size | default: 24 %}
+{% assign extra_class = include.class | default: '' %}
+<svg
+  class="icon {{ extra_class }}"
+  width="{{ size }}"
+  height="{{ size }}"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <use href="#icon-{{ symbol }}"></use>
+</svg>

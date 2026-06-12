@@ -1,0 +1,43 @@
+// Lucide icon system + category tints
+.icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+$icon-tints: (
+  finance: (#4F46E5, #EEF2FF),
+  mortgage: (#7C3AED, #EDE9FE),
+  health: (#059669, #D1FAE5),
+  math: (#8B5CF6, #EDE9FE),
+  converters: (#0891B2, #CFFAFE),
+  business: (#D97706, #FEF3C7),
+  construction: (#EA580C, #FFEDD5),
+  education: (#2563EB, #DBEAFE),
+  statistics: (#DB2777, #FCE7F3),
+  scientific: (#6366F1, #E0E7FF),
+  date-time: (#0D9488, #CCFBF1),
+  fitness: (#16A34A, #DCFCE7)
+);
+
+@each $cat, $colors in $icon-tints {
+  $fg: nth($colors, 1);
+  $bg: nth($colors, 2);
+
+  .icon-tint-#{$cat} {
+    color: $fg;
+    background: $bg;
+
+    [data-theme="dark"] & {
+      background: rgba($fg, 0.15);
+      color: lighten($fg, 15%);
+    }
+  }
+}
+
+// Default tint fallback
+[class*="icon-tint-"] {
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

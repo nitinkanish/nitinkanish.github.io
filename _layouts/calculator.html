@@ -22,8 +22,17 @@ layout: default
         </ol>
       </nav>
 
-      <h1>{{ page.title }}</h1>
-      <p class="calc-lead">{{ page.description | default: calc_data.description }}</p>
+      <div class="calc-header-title">
+        {% if calc_data.icon %}
+        <div class="page-header-icon icon-tint-{{ page.category }}" aria-hidden="true">
+          {% include icon.html name=calc_data.icon size=28 %}
+        </div>
+        {% endif %}
+        <div>
+          <h1>{{ page.title }}</h1>
+          <p class="calc-lead">{{ page.description | default: calc_data.description }}</p>
+        </div>
+      </div>
 
       <div class="calc-meta">
         <span class="meta-item">
@@ -101,6 +110,9 @@ layout: default
 
       {% assign faqs = page.faqs | default: calc_data.faqs %}
       {% include faq-accordion.html faqs=faqs %}
+
+      {% assign current_slug = page.slug | default: page.name %}
+      {% include related-calculators.html category=page.category current_slug=current_slug %}
     </div>
 
     <aside class="calc-sidebar">
@@ -110,11 +122,14 @@ layout: default
         <p class="sidebar-formula"><code>{{ page.formula | default: calc_data.formula }}</code></p>
         {% endif %}
       </div>
+      {% if calc_data.icon %}
+      <div class="sidebar-card glass-card sidebar-calc-icon icon-tint-{{ page.category }}">
+        {% include icon.html name=calc_data.icon size=40 %}
+        <p>{{ page.title }}</p>
+      </div>
+      {% endif %}
     </aside>
   </div>
-
-  {% assign current_slug = page.slug | default: page.name %}
-  {% include related-calculators.html category=page.category current_slug=current_slug %}
 </article>
 
 <script src="{{ '/assets/js/calculator-engine.js' | relative_url }}" defer></script>

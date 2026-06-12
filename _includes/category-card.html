@@ -1,0 +1,12 @@
+{% assign cat = include.category %}
+{% assign calc_count = site.data.calculators | where: "category", cat.slug | size %}
+<a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="category-card">
+  <div class="category-icon icon-tint-{{ cat.slug }}" aria-hidden="true">
+    {% include icon.html name=cat.icon size=22 %}
+  </div>
+  <div class="category-card-body">
+    <h3>{{ cat.title }}</h3>
+    <p>{{ cat.description | truncate: 80 }}</p>
+    <span class="category-count">{{ calc_count }} calculator{% if calc_count != 1 %}s{% endif %}</span>
+  </div>
+</a>
