@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const root = document.querySelector('[data-calculator="scientific"]');
   const display = document.getElementById('sci-display');
   const expression = document.getElementById('sci-expression');
-  if (!display) return;
+  if (!root || !display) return;
+
+  const UI = window.DashboardUI;
+  const engine = new CalculatorEngine({});
 
   let current = '0';
   let stored = '';
@@ -66,8 +70,28 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
       default: break;
     }
-    display.textContent = formatDisplay(current);
+    const formatted = formatDisplay(current);
+    display.textContent = formatted;
+    publishResult(formatted);
   }
+
+  function publishResult(val) {
+    UI.publishDashboard(engine, {
+      primary: val,
+      metrics: [angleMode === 'deg' ? 'Degrees' : 'Radians', expression.textContent || '—', '10 digits'],
+      compare: val,
+      shareBadge: 'Scientific',
+      shareText: `Scientific calc result: ${val}`,
+      insights: [
+        { icon: '🔢', text: `Current result: ${val}` },
+        { icon: '📐', text: `Angle mode: ${angleMode === 'deg' ? 'Degrees (DEG)' : 'Radians (RAD)'}.` },
+        { icon: '⌨️', text: 'Keyboard supported: 0–9, operators, Enter (=), Escape (clear).' },
+        { icon: '💡', text: 'Use sin, cos, tan, log, ln, sqrt, and power functions for advanced math.' }
+      ]
+    });
+  }
+
+  publishResult('0');
 
   function applyFunc(fn, x) {
     const rad = angleMode === 'deg' ? x * Math.PI / 180 : x;

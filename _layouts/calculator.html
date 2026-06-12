@@ -8,129 +8,360 @@ layout: default
   {% endif %}
 {% endfor %}
 {% assign content_data = site.data.calc_content[page.slug] %}
-
+{% assign calc_type = page.calculator_type | default: calc_data.calculator_type %}
 {% assign cat_title = page.category | replace: '-', ' ' | capitalize %}
+{% assign faqs = page.faqs | default: calc_data.faqs %}
+{% assign current_slug = page.slug | default: page.name %}
+{% assign dash = site.data.dashboard_pages[page.slug] %}
+{% unless dash %}{% assign dash = site.data.dashboard_pages['emi-calculator'] %}{% endunless %}
+{% assign w = dash.widget %}
+{% assign related_calcs = site.data.calculators | where: "category", page.category %}
 
-<article class="calculator-page" data-calculator="{{ page.calculator_type | default: calc_data.calculator_type }}">
-  <header class="calc-header">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ page.category | prepend: '/' | append: '/' | relative_url }}">{{ cat_title }}</a></li>
-          <li aria-current="page">{{ page.title }}</li>
-        </ol>
-      </nav>
+<article class="calculator-page calculator-dashboard" data-calculator="{{ calc_type }}" data-slug="{{ page.slug }}">
 
-      <div class="calc-header-title">
-        {% if calc_data.icon %}
-        <div class="page-header-icon icon-tint-{{ page.category }}" aria-hidden="true">
-          {% include icon.html name=calc_data.icon size=28 %}
+  <!-- SECTION 1: Hero -->
+  <section class="dash-hero">
+    <div class="container dash-hero-grid">
+      <div class="dash-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ page.category | prepend: '/' | append: '/' | relative_url }}">{{ cat_title }}</a></li>
+            <li aria-current="page">{{ page.title }}</li>
+          </ol>
+        </nav>
+        <div class="dash-hero-badge-row">
+          {% if calc_data.icon %}
+          <span class="dash-hero-icon icon-tint-{{ page.category }}">{% include icon.html name=calc_data.icon size=22 %}</span>
+          {% endif %}
+          <span class="dash-trust-badge">✓ {{ dash.trust_badge }}</span>
         </div>
-        {% endif %}
-        <div>
-          <h1>{{ page.title }}</h1>
-          <p class="calc-lead">{{ page.description | default: calc_data.description }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="dash-hero-value">{{ page.description | default: calc_data.description }}</p>
+        <div class="dash-trust-row">
+          <div class="dash-rating" aria-label="4.9 out of 5 stars">
+            <span class="dash-stars">★★★★★</span>
+            <span>4.9</span>
+            <span class="dash-rating-count">(2,400+ reviews)</span>
+          </div>
+          <span class="dash-usage">{{ dash.usage_stat }}</span>
+        </div>
+        <div class="dash-hero-share">
+          <span>Share:</span>
+          <button type="button" class="dash-share-btn" data-share="whatsapp" data-share-text="{{ page.title }} — Free on {{ site.title }}">WhatsApp</button>
+          <button type="button" class="dash-share-btn" data-share="twitter" data-share-text="{{ page.title }}">X</button>
+          <button type="button" class="dash-share-btn" data-share="linkedin">LinkedIn</button>
+          <button type="button" class="dash-share-btn" data-share="copy">Copy</button>
         </div>
       </div>
-
-      <div class="calc-meta">
-        <span class="meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          {{ site.author.name }}
-        </span>
-        <span class="meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Updated {{ page.last_updated | default: site.time | date: "%B %d, %Y" }}
-        </span>
+      <div class="dash-hero-visual" aria-hidden="true">
+        <div class="dash-illus dash-illus--{{ page.category }}">
+          <div class="dash-illus-chart"></div>
+          <div class="dash-illus-coins"><span></span><span></span><span></span></div>
+          <div class="dash-illus-badge">{{ dash.hero_badge }}</div>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <div class="container calc-layout">
-    <div class="calc-main">
-      <section class="calc-widget glass-card" aria-label="Calculator">
-        <div id="calculator-app" data-type="{{ page.calculator_type | default: calc_data.calculator_type }}">
-          {% assign calc_type = page.calculator_type | default: calc_data.calculator_type %}
-          {% include calc-form.html type=calc_type %}
+  <!-- SECTION 2: Calculator Dashboard -->
+  <section class="dash-section" id="calculator-dashboard" aria-labelledby="calc-dash-heading">
+    <div class="container">
+      <h2 id="calc-dash-heading" class="visually-hidden">{{ page.title }}</h2>
+      <div class="dash-calc-grid">
+        <div class="dash-input-card">
+          <div class="dash-card-header">
+            <div>
+              <h3>{{ w.input_title }}</h3>
+              <p>{{ w.input_subtitle }}</p>
+            </div>
+          </div>
+          <div id="calculator-app" data-type="{{ calc_type }}">
+            {% include calc-form.html type=calc_type %}
+          </div>
         </div>
-      </section>
-
-      {% if page.formula or calc_data.formula %}
-      <section class="content-section" aria-labelledby="formula-heading">
-        <h2 id="formula-heading">Formula</h2>
-        <div class="formula-box">
-          <code>{{ page.formula | default: calc_data.formula }}</code>
+        <div class="dash-results-card" id="dash-results-panel">
+          <div class="dash-card-header">
+            <div>
+              <h3>{{ w.results_title }}</h3>
+            </div>
+            <span class="dash-live-dot" aria-label="Live updating">Live</span>
+          </div>
+          <div class="dash-wealth-hero">
+            <span class="dash-wealth-label">{{ w.primary_label }}</span>
+            <div class="dash-wealth-value" id="dash-wealth" data-value="0">—</div>
+          </div>
+          <div class="dash-metrics-grid">
+            <div class="dash-metric">
+              <span class="dash-metric-label">{{ w.metric_1_label }}</span>
+              <strong id="dash-metric-1">—</strong>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-metric-label">{{ w.metric_2_label }}</span>
+              <strong id="dash-metric-2" class="text-success">—</strong>
+            </div>
+            <div class="dash-metric dash-metric--highlight">
+              <span class="dash-metric-label">{{ w.metric_3_label }}</span>
+              <strong id="dash-metric-3">—</strong>
+            </div>
+          </div>
         </div>
-        {% if page.formula_explanation %}
-        <div class="prose">{{ page.formula_explanation }}</div>
-        {% endif %}
-      </section>
-      {% endif %}
+      </div>
+    </div>
+  </section>
 
-      {% assign steps = page.steps | default: content_data.steps %}
-      {% if steps %}
-      <section class="content-section" aria-labelledby="steps-heading">
-        <h2 id="steps-heading">Step-by-Step Calculation</h2>
-        <ol class="steps-list">
-          {% for step in steps %}
-          <li>{{ step }}</li>
+  {% if dash.timeline %}
+  <section class="dash-section dash-section--alt" aria-labelledby="timeline-heading">
+    <div class="container">
+      <h2 id="timeline-heading">{{ dash.timeline.title }}</h2>
+      <p class="dash-section-lead">{{ dash.timeline.lead }}</p>
+      <div class="wealth-timeline" id="wealth-timeline"></div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if dash.chart %}
+  <section class="dash-section" aria-labelledby="chart-heading">
+    <div class="container">
+      <div class="dash-section-header">
+        <h2 id="chart-heading">{{ dash.chart.title }}</h2>
+        <div class="dash-chart-tabs" role="tablist">
+          {% for tab in dash.chart.tabs %}
+          <button type="button" class="dash-chart-tab{% if forloop.first %} active{% endif %}" data-chart-tab="{{ tab | slugify }}" role="tab">{{ tab }}</button>
           {% endfor %}
-        </ol>
-      </section>
-      {% endif %}
+        </div>
+      </div>
+      <div class="dash-chart-wrap">
+        <canvas id="growth-chart" role="img" aria-label="{{ dash.chart.title }}"></canvas>
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
-      {% assign examples = page.examples | default: content_data.examples %}
-      {% if examples %}
-      <section class="content-section" aria-labelledby="examples-heading">
-        <h2 id="examples-heading">Worked Examples</h2>
-        <div class="examples-grid">
-          {% for ex in examples %}
-          <div class="example-card">
-            <h3>{{ ex.title }}</h3>
-            <p>{{ ex.description }}</p>
-            {% if ex.result %}<p class="example-result"><strong>Result:</strong> {{ ex.result }}</p>{% endif %}
+  {% if dash.goals %}
+  <section class="dash-section dash-section--alt" aria-labelledby="goals-heading">
+    <div class="container">
+      <h2 id="goals-heading">{% if page.category == 'health' %}Set Your Health Goal{% else %}What Are You Planning For?{% endif %}</h2>
+      <p class="dash-section-lead">Select a goal to see your progress update in real time.</p>
+      <div class="goals-grid">
+        {% for goal in dash.goals %}
+        <button type="button" class="goal-card" data-goal data-target="{{ goal.target }}" data-years="{{ goal.years | default: 10 }}">
+          <span class="goal-emoji">{{ goal.emoji }}</span>
+          <span class="goal-label">{{ goal.label }}</span>
+          <div class="goal-ring" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><circle class="goal-ring-bg" cx="50" cy="50" r="45"/><circle class="goal-ring-fill" cx="50" cy="50" r="45"/></svg>
+            <span class="goal-pct">0%</span>
+          </div>
+          <span class="goal-remaining">—</span>
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if dash.compare %}
+  <section class="dash-section" aria-labelledby="compare-heading">
+    <div class="container">
+      <h2 id="compare-heading">{{ dash.compare.title }}</h2>
+      <p class="dash-section-lead">{{ dash.compare.lead }}</p>
+      <div class="compare-grid">
+        {% for card in dash.compare.cards %}
+        <div class="compare-card{% if card.highlight %} compare-card--you{% endif %}">
+          <span class="compare-label">{{ card.label }}</span>
+          <strong{% if card.value_id %} id="{{ card.value_id }}"{% endif %}>{{ card.value | default: "—" }}</strong>
+          <span class="compare-sub">{{ card.sub }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="dash-section dash-section--alt" aria-labelledby="insights-heading">
+    <div class="container">
+      <h2 id="insights-heading">{% if page.category == 'health' %}Health Insights{% else %}Smart Insights{% endif %}</h2>
+      <p class="dash-section-lead">Personalized takeaways from your numbers.</p>
+      <div class="insights-grid" id="insights-grid"></div>
+    </div>
+  </section>
+
+  <section class="dash-section" id="share-section" aria-labelledby="share-heading">
+    <div class="container">
+      <h2 id="share-heading">{{ dash.share.title }}</h2>
+      <div class="share-layout">
+        <div class="share-result-card" id="share-result-card">
+          <div class="share-card-brand">{{ site.title }}</div>
+          <h3>{{ dash.share.card_heading }}</h3>
+          <div class="share-card-wealth" id="share-wealth">—</div>
+          <div class="share-card-stats">
+            <div><span id="share-label-1">{{ w.metric_1_label }}</span><strong id="share-stat-1">—</strong></div>
+            <div><span id="share-label-2">{{ w.metric_2_label }}</span><strong id="share-stat-2">—</strong></div>
+            <div><span id="share-label-3">{{ w.metric_3_label }}</span><strong id="share-stat-3">—</strong></div>
+          </div>
+          <div class="share-card-badge" id="share-badge">—</div>
+        </div>
+        <div class="share-actions">
+          <button type="button" class="btn btn-primary" data-share="whatsapp">Share on WhatsApp</button>
+          <button type="button" class="btn btn-secondary" data-share="facebook">Facebook</button>
+          <button type="button" class="btn btn-secondary" data-share="twitter">Share on X</button>
+          <button type="button" class="btn btn-secondary" data-share="linkedin">LinkedIn</button>
+          <button type="button" class="btn btn-secondary" data-share="copy">Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if dash.examples %}
+  <section class="dash-section dash-section--alt" aria-labelledby="examples-heading">
+    <div class="container">
+      <div class="dash-section-header">
+        <h2 id="examples-heading">Real-Life Examples</h2>
+        <div class="carousel-nav">
+          <button type="button" data-carousel-prev aria-label="Previous examples">←</button>
+          <button type="button" data-carousel-next aria-label="Next examples">→</button>
+        </div>
+      </div>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track" id="examples-carousel">
+          {% for ex in dash.examples %}
+          <div class="example-dash-card" data-example='{{ ex.data | jsonify }}'>
+            <span class="example-dash-label">{{ ex.label }}</span>
+            <p>{{ ex.desc }}</p>
+            <div class="example-dash-result" aria-live="polite">—</div>
+            <div class="example-mini-chart" aria-hidden="true"></div>
+            <button type="button" class="example-apply-btn">Try this example</button>
           </div>
           {% endfor %}
         </div>
-      </section>
-      {% endif %}
-
-      <section class="content-section prose" aria-labelledby="intro-heading">
-        <h2 id="intro-heading">About {{ page.title }}</h2>
-        {% if page.intro_content %}
-          {{ page.intro_content | markdownify }}
-        {% elsif content_data.intro %}
-          {{ content_data.intro | markdownify }}
-        {% else %}
-          <p>{{ page.description | default: calc_data.description }}</p>
-          <p>Use the calculator above to get instant, accurate results. Our tools are free, require no registration, and work on all devices.</p>
-        {% endif %}
-      </section>
-
-      {% assign faqs = page.faqs | default: calc_data.faqs %}
-      {% include faq-accordion.html faqs=faqs %}
-
-      {% assign current_slug = page.slug | default: page.name %}
-      {% include related-calculators.html category=page.category current_slug=current_slug %}
+      </div>
     </div>
+  </section>
+  {% endif %}
 
-    <aside class="calc-sidebar">
-      <div class="sidebar-card glass-card">
-        <h3>Quick Reference</h3>
-        {% if page.formula or calc_data.formula %}
-        <p class="sidebar-formula"><code>{{ page.formula | default: calc_data.formula }}</code></p>
-        {% endif %}
+  {% if page.formula or calc_data.formula %}
+  <section class="dash-section" aria-labelledby="formula-heading">
+    <div class="container">
+      <div class="formula-edu-card">
+        <div class="formula-edu-content">
+          <h2 id="formula-heading">The Formula Behind It</h2>
+          <div class="formula-edu-box"><code>{{ page.formula | default: calc_data.formula }}</code></div>
+          {% if dash.formula_vars %}
+          <div class="formula-vars">
+            <h3>Variables</h3>
+            <ul>{% for v in dash.formula_vars %}<li>{{ v }}</li>{% endfor %}</ul>
+          </div>
+          {% endif %}
+          {% assign steps = page.steps | default: content_data.steps %}
+          {% if steps %}
+          <h3>How It Works</h3>
+          <ol class="steps-list">{% for step in steps %}<li>{{ step }}</li>{% endfor %}</ol>
+          {% endif %}
+        </div>
+        <div class="formula-edu-visual" aria-hidden="true"><div class="formula-growth-demo"></div></div>
       </div>
-      {% if calc_data.icon %}
-      <div class="sidebar-card glass-card sidebar-calc-icon icon-tint-{{ page.category }}">
-        {% include icon.html name=calc_data.icon size=40 %}
-        <p>{{ page.title }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="dash-section dash-section--alt content-section prose" aria-labelledby="intro-heading">
+    <div class="container container-narrow">
+      <h2 id="intro-heading">About {{ page.title }}</h2>
+      {% if content_data.intro %}{{ content_data.intro | markdownify }}
+      {% else %}<p>{{ page.description | default: calc_data.description }}</p>{% endif %}
+    </div>
+  </section>
+
+  <section class="dash-section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-search-wrap">
+        <label for="faq-search" class="visually-hidden">Search FAQs</label>
+        <input type="search" id="faq-search" class="form-input" placeholder="Search questions...">
       </div>
-      {% endif %}
-    </aside>
+      <div class="faq-list" id="faq-list">
+        {% for faq in faqs %}
+        <details class="faq-item" {% if forloop.index <= 3 %}open{% endif %}>
+          <summary class="faq-question">{{ faq.question }}</summary>
+          <div class="faq-answer"><p>{{ faq.answer }}</p></div>
+        </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% if dash.community %}
+  <section class="dash-section dash-section--alt" aria-labelledby="community-heading">
+    <div class="container">
+      <h2 id="community-heading">Community Stories</h2>
+      <p class="dash-section-lead">Real experiences from people like you.</p>
+      <div class="community-feed">
+        {% for post in dash.community %}
+        <article class="community-card">
+          <p class="community-story">"{{ post.story }}"</p>
+          <p class="community-result">{{ post.result }}</p>
+          <div class="community-actions">
+            <button type="button" class="community-like" data-like aria-label="Like">
+              ♥ <span class="like-count">{{ post.likes }}</span>
+            </button>
+            <span class="community-comments">💬 {{ post.comments }}</span>
+            <button type="button" class="community-share" data-share="twitter" data-share-text="{{ post.story }}">Share</button>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="dash-section" aria-labelledby="related-heading">
+    <div class="container">
+      <h2 id="related-heading">Related Calculators</h2>
+      <div class="related-explorer">
+        {% for cat in site.data.categories limit:6 %}
+        <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="explorer-card icon-tint-{{ cat.slug }}">
+          {% include icon.html name=cat.icon size=24 %}
+          <span>{{ cat.title | replace: ' Calculators', '' }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="calc-grid calc-grid--related" style="margin-top:2rem">
+        {% for calc in related_calcs limit:4 %}
+          {% unless calc.slug == current_slug %}
+            {% include calculator-card.html calculator=calc %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="dash-section dash-section--alt" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <h2 id="newsletter-heading">{{ dash.newsletter.title }}</h2>
+          <p>{{ dash.newsletter.text }}</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Email</label>
+          <input type="email" id="newsletter-email" class="form-input" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-msg" hidden role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar" aria-hidden="true">
+    <div class="mobile-sticky-wealth">
+      <span>{{ dash.sticky_label }}</span>
+      <strong id="sticky-wealth">—</strong>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" data-sticky-share>Share</button>
   </div>
 </article>
 
 <script src="{{ '/assets/js/calculator-engine.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/calculators/' | append: page.calculator_type | default: calc_data.calculator_type | append: '.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/dashboard-ui.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/dashboard-core.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/calculators/' | append: calc_type | append: '.js' | relative_url }}" defer></script>

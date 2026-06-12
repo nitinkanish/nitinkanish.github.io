@@ -1,33 +1,65 @@
-<form id="calc-form" class="calc-form" novalidate>
-  <div class="form-row">
-    <div class="form-group">
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="principal">Initial Principal (₹)</label>
-      <input type="number" id="principal" name="principal" class="form-input" value="100000" min="0" data-validate="required|number" inputmode="decimal">
+      <span class="dash-field-value" id="principal-display">₹1,00,000</span>
     </div>
-    <div class="form-group">
+    <input type="range" id="principal-range" class="dash-range" min="0" max="2000000" step="10000" value="100000" aria-label="Principal slider">
+    <input type="number" id="principal" name="principal" class="form-input dash-input" value="100000" min="0" data-validate="required|number" inputmode="decimal">
+    <div class="dash-chips" data-target="principal">
+      <button type="button" class="dash-chip" data-value="0">₹0</button>
+      <button type="button" class="dash-chip active" data-value="100000">₹1L</button>
+      <button type="button" class="dash-chip" data-value="500000">₹5L</button>
+    </div>
+  </div>
+
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="monthly">Monthly Contribution (₹)</label>
-      <input type="number" id="monthly" name="monthly" class="form-input" value="5000" min="0" data-validate="number" inputmode="decimal">
+      <span class="dash-field-value" id="monthly-display">₹5,000</span>
+    </div>
+    <input type="range" id="monthly-range" class="dash-range" min="0" max="50000" step="500" value="5000" aria-label="Monthly contribution slider">
+    <input type="number" id="monthly" name="monthly" class="form-input dash-input" value="5000" min="0" data-validate="number" inputmode="decimal">
+    <div class="dash-chips" data-target="monthly">
+      <button type="button" class="dash-chip" data-value="0">₹0</button>
+      <button type="button" class="dash-chip active" data-value="5000">₹5K</button>
+      <button type="button" class="dash-chip" data-value="10000">₹10K</button>
     </div>
   </div>
-  <div class="form-row">
-    <div class="form-group">
+
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="rate">Annual Rate (%)</label>
-      <input type="number" id="rate" name="rate" class="form-input" value="10" min="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+      <span class="dash-field-value" id="rate-display">10%</span>
     </div>
-    <div class="form-group">
-      <label class="form-label" for="years">Time Period (years)</label>
-      <input type="number" id="years" name="years" class="form-input" value="10" min="1" data-validate="required|number|min:1" inputmode="numeric">
+    <input type="range" id="rate-range" class="dash-range" min="4" max="20" step="0.5" value="10" aria-label="Rate slider">
+    <input type="number" id="rate" name="rate" class="form-input dash-input" value="10" min="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+    <div class="dash-chips" data-target="rate">
+      <button type="button" class="dash-chip" data-value="8">8%</button>
+      <button type="button" class="dash-chip active" data-value="10">10%</button>
+      <button type="button" class="dash-chip" data-value="12">12%</button>
     </div>
   </div>
-  <div class="form-group">
-    <label class="form-label" for="compound">Compounding Frequency</label>
-    <select id="compound" name="compound" class="form-select">
-      <option value="1">Annually</option>
-      <option value="4">Quarterly</option>
-      <option value="12" selected>Monthly</option>
-      <option value="365">Daily</option>
-    </select>
+
+  <div class="form-row dash-form-row">
+    <div class="dash-field">
+      <div class="dash-field-header">
+        <label class="form-label" for="years">Time Period (years)</label>
+        <span class="dash-field-value" id="years-display">10 yrs</span>
+      </div>
+      <input type="range" id="years-range" class="dash-range" min="1" max="40" step="1" value="10" aria-label="Years slider">
+      <input type="number" id="years" name="years" class="form-input dash-input" value="10" min="1" data-validate="required|number|min:1" inputmode="numeric">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="compound">Compounding</label>
+      <select id="compound" name="compound" class="form-select">
+        <option value="1">Annually</option>
+        <option value="4">Quarterly</option>
+        <option value="12" selected>Monthly</option>
+        <option value="365">Daily</option>
+      </select>
+    </div>
   </div>
 </form>
-<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
 <div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

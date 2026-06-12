@@ -1,14 +1,32 @@
-<form id="calc-form" class="calc-form" novalidate>
-  <div class="form-row">
-    <div class="form-group">
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="revenue">Revenue / Selling Price (₹)</label>
-      <input type="number" id="revenue" name="revenue" class="form-input" value="10000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+      <span class="dash-field-value" id="revenue-display">₹10,000</span>
     </div>
-    <div class="form-group">
+    <input type="range" id="revenue-range" class="dash-range" min="1000" max="1000000" step="1000" value="10000" aria-label="Revenue slider">
+    <input type="number" id="revenue" name="revenue" class="form-input dash-input" value="10000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+    <div class="dash-chips" data-target="revenue">
+      <button type="button" class="dash-chip" data-value="5000">₹5K</button>
+      <button type="button" class="dash-chip active" data-value="10000">₹10K</button>
+      <button type="button" class="dash-chip" data-value="50000">₹50K</button>
+      <button type="button" class="dash-chip" data-value="100000">₹1L</button>
+    </div>
+  </div>
+
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="cost">Cost Price (₹)</label>
-      <input type="number" id="cost" name="cost" class="form-input" value="7000" min="0" data-validate="required|number|min:0" inputmode="decimal">
+      <span class="dash-field-value" id="cost-display">₹7,000</span>
+    </div>
+    <input type="range" id="cost-range" class="dash-range" min="0" max="900000" step="500" value="7000" aria-label="Cost slider">
+    <input type="number" id="cost" name="cost" class="form-input dash-input" value="7000" min="0" data-validate="required|number|min:0" inputmode="decimal">
+    <div class="dash-chips" data-target="cost">
+      <button type="button" class="dash-chip" data-value="5000">₹5K</button>
+      <button type="button" class="dash-chip active" data-value="7000">₹7K</button>
+      <button type="button" class="dash-chip" data-value="8000">₹8K</button>
     </div>
   </div>
 </form>
-<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
 <div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

@@ -1,0 +1,417 @@
+# Per-calculator dashboard content — drives layout sections & copy
+emi-calculator:
+  trust_badge: "Trusted by 80,000+ home loan borrowers"
+  usage_stat: "30K+ EMI calculations this month"
+  hero_badge: "EMI"
+  widget:
+    input_title: "Loan Details"
+    input_subtitle: "Adjust amount, rate, and tenure to see your EMI instantly"
+    results_title: "Live EMI Breakdown"
+    primary_label: "Monthly EMI"
+    metric_1_label: "Principal Amount"
+    metric_2_label: "Total Interest"
+    metric_3_label: "Total Payment"
+  timeline:
+    title: "Loan Repayment Journey"
+    lead: "See how your loan balance reduces over time."
+  chart:
+    title: "Amortization Overview"
+    tabs: ["Balance", "Principal Paid", "Interest Paid"]
+  goals:
+    - { emoji: "🏠", label: "Dream Home", target: 5000000, years: 20 }
+    - { emoji: "🚗", label: "Car Loan", target: 1500000, years: 5 }
+    - { emoji: "🎓", label: "Education", target: 2000000, years: 10 }
+  compare:
+    title: "How Does Your EMI Compare?"
+    lead: "See how your loan stacks up against typical borrowers."
+    cards:
+      - { label: "Average Home Loan", value: "₹35,000/mo", sub: "₹45L · 20 yrs · 8.5%" }
+      - { label: "Your EMI", value_id: "compare-you", sub: "Based on your inputs", highlight: true }
+      - { label: "Lower Rate (7.5%)", value: "₹31,200/mo", sub: "Same loan, better rate" }
+  share:
+    title: "Share Your EMI Plan"
+    card_heading: "My Loan EMI Plan"
+  examples:
+    - { label: "Home Loan", desc: "₹50L · 8.5% · 20 yrs", data: { principal: 5000000, rate: 8.5, tenure: 240 } }
+    - { label: "Car Loan", desc: "₹8L · 9% · 5 yrs", data: { principal: 800000, rate: 9, tenure: 60 } }
+    - { label: "Personal Loan", desc: "₹3L · 12% · 3 yrs", data: { principal: 300000, rate: 12, tenure: 36 } }
+  community:
+    - { story: "Reduced tenure by 3 years with annual prepayments.", result: "Saved ₹4.2L in interest", likes: 312, comments: 48 }
+    - { story: "Compared 5 banks before finalizing home loan.", result: "0.4% lower rate = ₹2.8L saved", likes: 445, comments: 62 }
+  newsletter: { title: "Smart Borrowing Tips", text: "Weekly guides on loans, rates, and prepayment strategies." }
+  formula_vars: ["P — Principal loan amount", "r — Monthly interest rate (annual ÷ 12)", "n — Tenure in months"]
+  sticky_label: "Monthly EMI"
+
+sip-calculator:
+  trust_badge: "Loved by 100,000+ investors"
+  usage_stat: "50K+ projections this month"
+  hero_badge: "SIP"
+  widget:
+    input_title: "Adjust Your Plan"
+    input_subtitle: "Slide, tap presets, or type exact values"
+    results_title: "Live Projection"
+    primary_label: "Final Wealth"
+    metric_1_label: "Total Investment"
+    metric_2_label: "Interest Earned"
+    metric_3_label: "Money Multiplier"
+  timeline:
+    title: "Your Wealth Journey"
+    lead: "Watch your money grow year by year — like stories on your feed."
+  chart:
+    title: "Growth Visualization"
+    tabs: ["Total Growth", "Contributions", "Interest Earned", "Inflation Adjusted"]
+  goals:
+    - { emoji: "🏠", label: "House", target: 5000000, years: 15 }
+    - { emoji: "🚗", label: "Car", target: 1500000, years: 5 }
+    - { emoji: "🎓", label: "Education", target: 2500000, years: 12 }
+    - { emoji: "🌍", label: "Travel", target: 500000, years: 3 }
+    - { emoji: "💰", label: "Retirement", target: 20000000, years: 25 }
+  compare:
+    title: "How Do You Compare?"
+    lead: "Anonymous community benchmarks — see where you stand."
+    cards:
+      - { label: "Average Investor", value: "₹5K/mo", sub: "Corpus: ₹50 Lakhs" }
+      - { label: "Your Projection", value_id: "compare-you", sub: "Based on current inputs", highlight: true }
+      - { label: "Top 10% Investors", value: "₹1.2 Crore", sub: "25-year disciplined SIP" }
+  share:
+    title: "Share Your Results"
+    card_heading: "My SIP Projection"
+  examples:
+    - { label: "Starter SIP", desc: "₹3K/mo · 10 yrs · 12%", data: { lumpsum: 0, monthly: 3000, return: 12, years: 10 } }
+    - { label: "Balanced Growth", desc: "₹5K/mo · 10 yrs · 12%", data: { lumpsum: 0, monthly: 5000, return: 12, years: 10 } }
+    - { label: "Wealth Creator", desc: "₹10K/mo · 20 yrs · 12%", data: { lumpsum: 0, monthly: 10000, return: 12, years: 20 } }
+  community:
+    - { story: "Started SIP at 25 with ₹3,000/month.", result: "Reached ₹10 Lakhs in 6 years", likes: 284, comments: 42 }
+    - { story: "Step-up SIP increased wealth 40% faster.", result: "₹45L corpus at age 38", likes: 512, comments: 67 }
+  newsletter: { title: "Weekly Investing Insights", text: "Financial tips, market context, and calculator updates." }
+  formula_vars: ["P — Monthly SIP amount", "r — Monthly return rate", "n — Total months invested"]
+  sticky_label: "Projected Wealth"
+
+fd-calculator:
+  trust_badge: "Used by 40,000+ savers nationwide"
+  usage_stat: "15K+ FD projections this month"
+  hero_badge: "FD"
+  widget:
+    input_title: "Fixed Deposit Details"
+    input_subtitle: "Plan your lump-sum deposit with confidence"
+    results_title: "Maturity Projection"
+    primary_label: "Maturity Amount"
+    metric_1_label: "Principal Deposited"
+    metric_2_label: "Interest Earned"
+    metric_3_label: "Effective Yield"
+  timeline:
+    title: "Deposit Growth Timeline"
+    lead: "Track how your FD compounds over the tenure."
+  chart:
+    title: "Interest Accumulation"
+    tabs: ["Total Value", "Principal", "Interest"]
+  goals:
+    - { emoji: "🛡️", label: "Emergency Fund", target: 500000, years: 2 }
+    - { emoji: "🎯", label: "Short Goal", target: 1000000, years: 3 }
+    - { emoji: "💰", label: "Retirement Buffer", target: 5000000, years: 10 }
+  compare:
+    title: "FD Rate Comparison"
+    lead: "See how your deposit compares to market averages."
+    cards:
+      - { label: "Bank FD Avg", value: "6.5% p.a.", sub: "1-year tenure" }
+      - { label: "Your Maturity", value_id: "compare-you", sub: "Based on your inputs", highlight: true }
+      - { label: "Senior Citizen FD", value: "7.5% p.a.", sub: "Typical premium rate" }
+  share: { title: "Share FD Projection", card_heading: "My Fixed Deposit Plan" }
+  examples:
+    - { label: "1 Year FD", desc: "₹1L · 7% · Quarterly", data: { principal: 100000, rate: 7, years: 1, compound: 4 } }
+    - { label: "5 Year FD", desc: "₹5L · 7.5% · Quarterly", data: { principal: 500000, rate: 7.5, years: 5, compound: 4 } }
+  community:
+    - { story: "Laddered FDs across 3 banks for safety.", result: "7.2% blended return", likes: 156, comments: 23 }
+  newsletter: { title: "Savings & FD Insights", text: "Rate alerts and safe investing tips weekly." }
+  formula_vars: ["P — Principal amount", "r — Annual interest rate", "n — Compounding frequency", "t — Time in years"]
+  sticky_label: "Maturity Amount"
+
+compound-interest-calculator:
+  trust_badge: "Trusted by 60,000+ investors"
+  usage_stat: "20K+ compound growth models this month"
+  hero_badge: "GROWTH"
+  widget:
+    input_title: "Investment Plan"
+    input_subtitle: "Model lump sum + monthly contributions with compounding"
+    results_title: "Wealth Projection"
+    primary_label: "Final Amount"
+    metric_1_label: "Total Invested"
+    metric_2_label: "Interest Earned"
+    metric_3_label: "Growth Multiple"
+  timeline: { title: "Compounding Journey", lead: "See the power of compounding unfold year by year." }
+  chart: { title: "Growth Breakdown", tabs: ["Total", "Invested", "Interest", "Inflation Adj."] }
+  goals:
+    - { emoji: "💰", label: "₹1 Crore", target: 10000000, years: 20 }
+    - { emoji: "🏠", label: "Home Down Payment", target: 3000000, years: 8 }
+  compare:
+    title: "Compounding vs Simple Interest"
+    lead: "See the difference compounding makes."
+    cards:
+      - { label: "Simple Interest", value: "Lower returns", sub: "No reinvestment" }
+      - { label: "Your Compound Growth", value_id: "compare-you", sub: "With reinvestment", highlight: true }
+      - { label: "Top Long-term Investors", value: "12-15% CAGR", sub: "Equity historical avg" }
+  share: { title: "Share Growth Plan", card_heading: "My Wealth Projection" }
+  examples:
+    - { label: "Monthly Saver", desc: "₹5K/mo · 10% · 10 yrs", data: { principal: 0, monthly: 5000, rate: 10, years: 10, compound: 12 } }
+  community:
+    - { story: "Started investing early at 22.", result: "2x wealth vs starting at 30", likes: 389, comments: 51 }
+  newsletter: { title: "Wealth Building Weekly", text: "Compound interest strategies and tips." }
+  formula_vars: ["P — Principal", "PMT — Monthly contribution", "r — Rate per period", "n — Number of periods"]
+  sticky_label: "Final Amount"
+
+bmi-calculator:
+  trust_badge: "Used by 200,000+ health-conscious users"
+  usage_stat: "75K+ BMI checks this month"
+  hero_badge: "BMI"
+  widget:
+    input_title: "Your Measurements"
+    input_subtitle: "Enter height and weight for instant BMI analysis"
+    results_title: "Your BMI Result"
+    primary_label: "Body Mass Index"
+    metric_1_label: "Category"
+    metric_2_label: "Healthy Range"
+    metric_3_label: "Weight Status"
+  timeline: { title: "BMI Category Guide", lead: "Understand where you fall on the health spectrum." }
+  chart: { title: "BMI Scale", tabs: ["Your BMI", "Categories", "Trend"] }
+  goals:
+    - { emoji: "🎯", label: "Healthy BMI", target: 22, years: 1 }
+    - { emoji: "💪", label: "Fitness Goal", target: 24, years: 1 }
+  compare:
+    title: "Population Comparison"
+    lead: "How your BMI compares to averages."
+    cards:
+      - { label: "India Average", value: "BMI 24.0", sub: "Adult population" }
+      - { label: "Your BMI", value_id: "compare-you", sub: "Current reading", highlight: true }
+      - { label: "Healthy Range", value: "18.5 – 24.9", sub: "WHO standard" }
+  share: { title: "Share BMI Result", card_heading: "My Health Check" }
+  examples:
+    - { label: "Average Adult", desc: "70 kg · 170 cm", data: { weight: 70, height: 170, unit: "metric" } }
+    - { label: "Athletic Build", desc: "85 kg · 180 cm", data: { weight: 85, height: 180, unit: "metric" } }
+  community:
+    - { story: "Tracked BMI monthly alongside workouts.", result: "Moved from overweight to normal in 8 months", likes: 523, comments: 78 }
+  newsletter: { title: "Health & Wellness Tips", text: "Weekly nutrition and fitness insights." }
+  formula_vars: ["Weight (kg)", "Height (m)", "BMI = weight / height²"]
+  sticky_label: "Your BMI"
+
+bmr-calculator:
+  trust_badge: "Trusted by fitness enthusiasts"
+  usage_stat: "20K+ metabolism calculations this month"
+  hero_badge: "BMR"
+  widget:
+    input_title: "Body Profile"
+    input_subtitle: "Calculate your basal metabolic rate"
+    results_title: "Metabolism Results"
+    primary_label: "Basal Metabolic Rate"
+    metric_1_label: "Daily TDEE"
+    metric_2_label: "Weight Loss Target"
+    metric_3_label: "Activity Level"
+  compare:
+    title: "Metabolism Benchmarks"
+    lead: "Compare your BMR to typical ranges."
+    cards:
+      - { label: "Average Male", value: "1,600 kcal", sub: "Age 30" }
+      - { label: "Your BMR", value_id: "compare-you", sub: "Personal estimate", highlight: true }
+      - { label: "Active Lifestyle", value: "+400 kcal", sub: "Exercise bonus" }
+  share: { title: "Share BMR Result", card_heading: "My Metabolism" }
+  examples:
+    - { label: "Male 30", desc: "70 kg · 175 cm · Moderate", data: { weight: 70, height: 175, age: 30, sex: "male", activity: "moderate" } }
+  community:
+    - { story: "Used BMR to set calorie targets.", result: "Lost 8 kg in 4 months sustainably", likes: 267, comments: 34 }
+  newsletter: { title: "Fitness Nutrition Weekly", text: "Metabolism and macro tips." }
+  formula_vars: ["Weight (kg)", "Height (cm)", "Age", "Sex — Mifflin-St Jeor equation"]
+  sticky_label: "BMR"
+
+calorie-calculator:
+  trust_badge: "Used by 150,000+ dieters & athletes"
+  usage_stat: "35K+ calorie plans this month"
+  hero_badge: "KCAL"
+  widget:
+    input_title: "Daily Calorie Planner"
+    input_subtitle: "Find your maintenance, deficit, and surplus targets"
+    results_title: "Calorie Targets"
+    primary_label: "Daily Calorie Needs"
+    metric_1_label: "Weight Loss"
+    metric_2_label: "Maintenance"
+    metric_3_label: "Muscle Gain"
+  compare:
+    title: "Calorie Guidelines"
+    lead: "How your needs compare to recommendations."
+    cards:
+      - { label: "Avg Adult Male", value: "2,500 kcal", sub: "Maintenance" }
+      - { label: "Your TDEE", value_id: "compare-you", sub: "Personalized", highlight: true }
+      - { label: "Weight Loss", value: "-500 kcal", sub: "Safe deficit" }
+  share: { title: "Share Calorie Plan", card_heading: "My Daily Calories" }
+  examples:
+    - { label: "Office Worker", desc: "70 kg · Sedentary", data: { weight: 70, height: 170, age: 30, sex: "male", activity: "sedentary" } }
+  community:
+    - { story: "Tracked calories for 90 days.", result: "Lost 6 kg without crash dieting", likes: 412, comments: 56 }
+  newsletter: { title: "Nutrition Weekly", text: "Calorie and macro guidance." }
+  formula_vars: ["BMR × Activity Factor = TDEE"]
+  sticky_label: "Daily Calories"
+
+percentage-calculator:
+  trust_badge: "Used by students & professionals"
+  usage_stat: "40K+ percentage calculations this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Percentage Calculator"
+    input_subtitle: "X% of Y, change, increase, decrease — all modes"
+    results_title: "Result"
+    primary_label: "Answer"
+    metric_1_label: "Calculation Type"
+    metric_2_label: "Input Values"
+    metric_3_label: "Formula Used"
+  share: { title: "Share Result", card_heading: "Percentage Calculation" }
+  examples:
+    - { label: "15% of 200", desc: "Basic percentage", data: { mode: "of", value1: 15, value2: 200 } }
+    - { label: "Price increase", desc: "20% markup on 500", data: { mode: "increase", value1: 500, value2: 20 } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["Percentage = (Part / Whole) × 100"]
+  sticky_label: "Result"
+
+age-calculator:
+  trust_badge: "Used by millions worldwide"
+  usage_stat: "55K+ age calculations this month"
+  hero_badge: "AGE"
+  widget:
+    input_title: "Date of Birth"
+    input_subtitle: "Get exact age in years, months, days, and more"
+    results_title: "Your Exact Age"
+    primary_label: "Age"
+    metric_1_label: "Total Days"
+    metric_2_label: "Total Months"
+    metric_3_label: "Next Birthday"
+  share: { title: "Share Age Result", card_heading: "My Exact Age" }
+  examples:
+    - { label: "Born 1990", desc: "Jan 15, 1990", data: { birthdate: "1990-01-15" } }
+  newsletter: { title: "Life Planning Tips", text: "Age-related milestones and planning." }
+  formula_vars: ["Age = End Date − Birth Date"]
+  sticky_label: "Your Age"
+
+scientific-calculator:
+  trust_badge: "Free advanced math tool"
+  usage_stat: "25K+ sessions this month"
+  hero_badge: "SCI"
+  widget:
+    input_title: "Scientific Calculator"
+    input_subtitle: "Trigonometry, logarithms, powers, and more"
+    results_title: "Result"
+    primary_label: "Answer"
+    metric_1_label: "Mode"
+    metric_2_label: "Last Operation"
+    metric_3_label: "Precision"
+  share: { title: "Share", card_heading: "Scientific Calculator" }
+  newsletter: { title: "Math & Science", text: "Formulas and problem-solving tips." }
+  formula_vars: ["PEMDAS order of operations"]
+  sticky_label: "Result"
+
+length-converter:
+  trust_badge: "Precise unit conversions"
+  usage_stat: "18K+ conversions this month"
+  hero_badge: "LENGTH"
+  widget:
+    input_title: "Length Converter"
+    input_subtitle: "Convert between metric and imperial instantly"
+    results_title: "Converted Value"
+    primary_label: "Result"
+    metric_1_label: "From"
+    metric_2_label: "To"
+    metric_3_label: "In Meters"
+  share: { title: "Share Conversion", card_heading: "Length Conversion" }
+  examples:
+    - { label: "Feet to Meters", desc: "5 feet", data: { from_value: 5, from_unit: "ft", to_unit: "m" } }
+  newsletter: { title: "Unit Conversion Guide", text: "Metric vs imperial explained." }
+  sticky_label: "Result"
+
+weight-converter:
+  trust_badge: "Accurate weight conversions"
+  usage_stat: "16K+ conversions this month"
+  hero_badge: "WEIGHT"
+  widget:
+    input_title: "Weight Converter"
+    input_subtitle: "Kilograms, pounds, ounces, and more"
+    results_title: "Converted Value"
+    primary_label: "Result"
+    metric_1_label: "From"
+    metric_2_label: "To"
+    metric_3_label: "In Kilograms"
+  share: { title: "Share Conversion", card_heading: "Weight Conversion" }
+  examples:
+    - { label: "Kg to Lbs", desc: "70 kg", data: { from_value: 70, from_unit: "kg", to_unit: "lb" } }
+  newsletter: { title: "Conversion Tips", text: "Weight units explained." }
+  sticky_label: "Result"
+
+temperature-converter:
+  trust_badge: "Instant temperature conversion"
+  usage_stat: "12K+ conversions this month"
+  hero_badge: "TEMP"
+  widget:
+    input_title: "Temperature Converter"
+    input_subtitle: "Celsius, Fahrenheit, and Kelvin"
+    results_title: "Converted Temperature"
+    primary_label: "Result"
+    metric_1_label: "Celsius"
+    metric_2_label: "Fahrenheit"
+    metric_3_label: "Kelvin"
+  share: { title: "Share Conversion", card_heading: "Temperature Conversion" }
+  examples:
+    - { label: "Room Temp", desc: "25°C to °F", data: { from_value: 25, from_unit: "c", to_unit: "f" } }
+  newsletter: { title: "Science Snippets", text: "Temperature facts and formulas." }
+  sticky_label: "Result"
+
+profit-margin-calculator:
+  trust_badge: "Used by 30,000+ businesses"
+  usage_stat: "12K+ margin analyses this month"
+  hero_badge: "PROFIT"
+  widget:
+    input_title: "Profit & Margin"
+    input_subtitle: "Calculate margins, markup, and profitability"
+    results_title: "Margin Analysis"
+    primary_label: "Profit Margin"
+    metric_1_label: "Gross Profit"
+    metric_2_label: "Markup"
+    metric_3_label: "Revenue"
+  compare:
+    title: "Industry Benchmarks"
+    lead: "How your margins compare."
+    cards:
+      - { label: "Retail Average", value: "25-35%", sub: "Gross margin" }
+      - { label: "Your Margin", value_id: "compare-you", sub: "Current inputs", highlight: true }
+      - { label: "SaaS Average", value: "70-80%", sub: "Software industry" }
+  share: { title: "Share Margin Analysis", card_heading: "My Profit Margin" }
+  examples:
+    - { label: "Product Sale", desc: "Cost ₹700 · Sell ₹1000", data: { revenue: 10000, cost: 7000 } }
+  community:
+    - { story: "Raised prices 8% after margin analysis.", result: "Profit up 22% same volume", likes: 198, comments: 29 }
+  newsletter: { title: "Business Finance Weekly", text: "Pricing and margin strategies." }
+  formula_vars: ["Margin = (Revenue − Cost) / Revenue × 100"]
+  sticky_label: "Profit Margin"
+
+gst-calculator:
+  trust_badge: "Trusted by Indian businesses"
+  usage_stat: "45K+ GST calculations this month"
+  hero_badge: "GST"
+  widget:
+    input_title: "GST Calculator"
+    input_subtitle: "Add or remove GST at 5%, 12%, 18%, or 28%"
+    results_title: "Tax Breakdown"
+    primary_label: "Total Amount"
+    metric_1_label: "Base Amount"
+    metric_2_label: "GST Amount"
+    metric_3_label: "CGST + SGST"
+  compare:
+    title: "GST Slab Reference"
+    lead: "Common rates for Indian goods & services."
+    cards:
+      - { label: "Essentials", value: "5% GST", sub: "Food grains, medicines" }
+      - { label: "Your Calculation", value_id: "compare-you", sub: "Current inputs", highlight: true }
+      - { label: "Standard Rate", value: "18% GST", sub: "Most goods & services" }
+  share: { title: "Share GST Calculation", card_heading: "My GST Breakdown" }
+  examples:
+    - { label: "Exclusive", desc: "₹10,000 + 18% GST", data: { amount: 10000, rate: 18, mode: "exclusive" } }
+    - { label: "Inclusive", desc: "₹11,800 incl. 18%", data: { amount: 11800, rate: 18, mode: "inclusive" } }
+  community:
+    - { story: "Automated GST on all invoices.", result: "Zero filing errors this quarter", likes: 234, comments: 31 }
+  newsletter: { title: "GST & Tax Updates", text: "Indian tax compliance tips weekly." }
+  formula_vars: ["GST = Base × Rate / 100", "Inclusive: Base = Total / (1 + Rate/100)"]
+  sticky_label: "Total Amount"

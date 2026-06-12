@@ -1,18 +1,68 @@
-<form id="calc-form" class="calc-form" novalidate>
-  <div class="form-row">
-    <div class="form-group">
-      <label class="form-label" for="monthly">Monthly Investment (₹)</label>
-      <input type="number" id="monthly" name="monthly" class="form-input" value="5000" min="100" data-validate="required|number|min:100" inputmode="decimal">
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="lumpsum">Initial Investment</label>
+      <span class="dash-field-value" id="lumpsum-display">₹0</span>
     </div>
-    <div class="form-group">
-      <label class="form-label" for="return">Expected Return (% p.a.)</label>
-      <input type="number" id="return" name="return" class="form-input" value="12" min="1" step="0.5" data-validate="required|number|min:1" inputmode="decimal">
+    <input type="range" id="lumpsum-range" class="dash-range" min="0" max="1000000" step="10000" value="0" aria-label="Initial investment slider">
+    <input type="number" id="lumpsum" name="lumpsum" class="form-input dash-input" value="0" min="0" step="1000" inputmode="decimal">
+    <div class="dash-chips" data-target="lumpsum">
+      <button type="button" class="dash-chip" data-value="0">₹0</button>
+      <button type="button" class="dash-chip" data-value="100000">₹1L</button>
+      <button type="button" class="dash-chip" data-value="500000">₹5L</button>
+      <button type="button" class="dash-chip" data-value="1000000">₹10L</button>
     </div>
   </div>
-  <div class="form-group">
-    <label class="form-label" for="years">Investment Period (years)</label>
-    <input type="number" id="years" name="years" class="form-input" value="10" min="1" data-validate="required|number|min:1" inputmode="numeric">
+
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="monthly">Monthly Contribution</label>
+      <span class="dash-field-value" id="monthly-display">₹5,000</span>
+    </div>
+    <input type="range" id="monthly-range" class="dash-range" min="500" max="100000" step="500" value="5000" aria-label="Monthly contribution slider">
+    <input type="number" id="monthly" name="monthly" class="form-input dash-input" value="5000" min="500" data-validate="required|number|min:500" inputmode="decimal">
+    <div class="dash-chips" data-target="monthly">
+      <button type="button" class="dash-chip" data-value="3000">₹3K</button>
+      <button type="button" class="dash-chip" data-value="5000">₹5K</button>
+      <button type="button" class="dash-chip" data-value="10000">₹10K</button>
+      <button type="button" class="dash-chip" data-value="25000">₹25K</button>
+    </div>
+  </div>
+
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="return">Expected Return (% p.a.)</label>
+      <span class="dash-field-value" id="return-display">12%</span>
+    </div>
+    <input type="range" id="return-range" class="dash-range" min="4" max="20" step="0.5" value="12" aria-label="Expected return slider">
+    <input type="number" id="return" name="return" class="form-input dash-input" value="12" min="1" step="0.5" data-validate="required|number|min:1" inputmode="decimal">
+    <div class="dash-chips" data-target="return">
+      <button type="button" class="dash-chip" data-value="8">8%</button>
+      <button type="button" class="dash-chip" data-value="10">10%</button>
+      <button type="button" class="dash-chip" data-value="12">12%</button>
+      <button type="button" class="dash-chip" data-value="15">15%</button>
+    </div>
+  </div>
+
+  <div class="form-row dash-form-row">
+    <div class="dash-field">
+      <div class="dash-field-header">
+        <label class="form-label" for="years">Investment Period (years)</label>
+        <span class="dash-field-value" id="years-display">10 yrs</span>
+      </div>
+      <input type="range" id="years-range" class="dash-range" min="1" max="40" step="1" value="10" aria-label="Investment period slider">
+      <input type="number" id="years" name="years" class="form-input dash-input" value="10" min="1" data-validate="required|number|min:1" inputmode="numeric">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="compound">Compounding</label>
+      <select id="compound" name="compound" class="form-select">
+        <option value="12" selected>Monthly</option>
+        <option value="4">Quarterly</option>
+        <option value="1">Annually</option>
+      </select>
+    </div>
   </div>
 </form>
-<div id="calc-results" class="calc-results" aria-live="polite"></div>
+
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
 <div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

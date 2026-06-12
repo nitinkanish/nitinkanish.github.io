@@ -11,6 +11,9 @@ baseurl: ""
 lang: en
 locale: en_US
 
+# Google Analytics 4
+google_analytics: G-BJLB2TWL8B
+
 author:
   name: Online Calculators Team
   email: contact@online-calculators.com
@@ -92,11 +95,8 @@ include:
 pwa:
   name: Online Calculators
   short_name: Calculators
-  theme_color: "#4F46E5"
+  theme_color: "#5B5CF6"
   background_color: "#000000"
-
-# SEO
-google_analytics: # UA-XXXXXXXX or G-XXXXXXXX
 
 # Build settings
 timezone: UTC

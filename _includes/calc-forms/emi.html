@@ -1,18 +1,48 @@
-<form id="calc-form" class="calc-form" novalidate>
-  <div class="form-row">
-    <div class="form-group">
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="principal">Loan Amount (₹)</label>
-      <input type="number" id="principal" name="principal" class="form-input" value="1000000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+      <span class="dash-field-value" id="principal-display">₹10,00,000</span>
     </div>
-    <div class="form-group">
-      <label class="form-label" for="rate">Annual Interest Rate (%)</label>
-      <input type="number" id="rate" name="rate" class="form-input" value="8.5" min="0.1" step="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+    <input type="range" id="principal-range" class="dash-range" min="100000" max="10000000" step="50000" value="1000000" aria-label="Loan amount slider">
+    <input type="number" id="principal" name="principal" class="form-input dash-input" value="1000000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+    <div class="dash-chips" data-target="principal">
+      <button type="button" class="dash-chip" data-value="500000">₹5L</button>
+      <button type="button" class="dash-chip active" data-value="1000000">₹10L</button>
+      <button type="button" class="dash-chip" data-value="2500000">₹25L</button>
+      <button type="button" class="dash-chip" data-value="5000000">₹50L</button>
     </div>
   </div>
-  <div class="form-group">
-    <label class="form-label" for="tenure">Loan Tenure (months)</label>
-    <input type="number" id="tenure" name="tenure" class="form-input" value="240" min="1" data-validate="required|number|min:1" inputmode="numeric">
+
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="rate">Interest Rate (% p.a.)</label>
+      <span class="dash-field-value" id="rate-display">8.5%</span>
+    </div>
+    <input type="range" id="rate-range" class="dash-range" min="5" max="18" step="0.1" value="8.5" aria-label="Interest rate slider">
+    <input type="number" id="rate" name="rate" class="form-input dash-input" value="8.5" min="0.1" step="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+    <div class="dash-chips" data-target="rate">
+      <button type="button" class="dash-chip" data-value="7.5">7.5%</button>
+      <button type="button" class="dash-chip active" data-value="8.5">8.5%</button>
+      <button type="button" class="dash-chip" data-value="9.5">9.5%</button>
+      <button type="button" class="dash-chip" data-value="10.5">10.5%</button>
+    </div>
+  </div>
+
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="tenure">Loan Tenure (months)</label>
+      <span class="dash-field-value" id="tenure-display">240 mo</span>
+    </div>
+    <input type="range" id="tenure-range" class="dash-range" min="12" max="360" step="6" value="240" aria-label="Loan tenure slider">
+    <input type="number" id="tenure" name="tenure" class="form-input dash-input" value="240" min="1" data-validate="required|number|min:1" inputmode="numeric">
+    <div class="dash-chips" data-target="tenure">
+      <button type="button" class="dash-chip" data-value="60">5 yr</button>
+      <button type="button" class="dash-chip" data-value="120">10 yr</button>
+      <button type="button" class="dash-chip active" data-value="240">20 yr</button>
+      <button type="button" class="dash-chip" data-value="360">30 yr</button>
+    </div>
   </div>
 </form>
-<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
 <div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

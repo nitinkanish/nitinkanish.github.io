@@ -1,0 +1,91 @@
+goals:
+  - id: house
+    emoji: "🏠"
+    label: House
+    target: 5000000
+    years: 15
+  - id: car
+    emoji: "🚗"
+    label: Car
+    target: 1500000
+    years: 5
+  - id: education
+    emoji: "🎓"
+    label: Education
+    target: 2500000
+    years: 12
+  - id: travel
+    emoji: "🌍"
+    label: Travel
+    target: 500000
+    years: 3
+  - id: retirement
+    emoji: "💰"
+    label: Retirement
+    target: 20000000
+    years: 25
+
+benchmarks:
+  average_monthly: 5000
+  average_corpus: 5000000
+  top10_corpus: 12000000
+
+community:
+  - story: "Started SIP at 25 with ₹3,000/month. Never missed a month."
+    result: "Reached ₹10 Lakhs in 6 years"
+    likes: 284
+    comments: 42
+  - story: "Increased SIP by 10% every year. Compounding did the heavy lifting."
+    result: "₹45L corpus at age 38"
+    likes: 512
+    comments: 67
+  - story: "Switched from FD to equity SIP. Best financial decision ever."
+    result: "2.8x returns vs inflation"
+    likes: 198
+    comments: 31
+  - story: "Used step-up SIP for child's education fund."
+    result: "Goal achieved 2 years early"
+    likes: 356
+    comments: 55
+
+sip_examples:
+  - monthly: 3000
+    years: 10
+    rate: 12
+    label: "Starter SIP"
+  - monthly: 5000
+    years: 10
+    rate: 12
+    label: "Balanced Growth"
+  - monthly: 10000
+    years: 15
+    rate: 12
+    label: "Aggressive Builder"
+  - monthly: 15000
+    years: 20
+    rate: 12
+    label: "Wealth Creator"
+  - monthly: 25000
+    years: 25
+    rate: 12
+    label: "Retirement Focus"
+
+related_groups:
+  - title: Finance
+    slug: finance
+    icon: finance
+  - title: Investment
+    slug: finance
+    icon: sip
+  - title: Retirement
+    slug: finance
+    icon: compound
+  - title: Loan
+    slug: finance
+    icon: emi
+  - title: Tax
+    slug: business
+    icon: gst
+  - title: Insurance
+    slug: finance
+    icon: fd

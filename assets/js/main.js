@@ -13,6 +13,7 @@
       const next = current === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) { /* noop */ }
+      window.OCAnalytics?.trackThemeChange(next);
     });
   }
 
@@ -23,6 +24,7 @@
     navToggle.addEventListener('click', () => {
       const open = navMenu.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', open);
+      if (open) window.OCAnalytics?.trackNav('mobile');
     });
   }
 
@@ -34,6 +36,7 @@
       e.stopPropagation();
       const open = megaMenu.classList.toggle('open');
       megaTrigger.setAttribute('aria-expanded', open);
+      if (open) window.OCAnalytics?.trackNav('mega_menu');
     });
     document.addEventListener('click', () => {
       megaMenu.classList.remove('open');
@@ -47,7 +50,9 @@
   // PWA
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js').catch(() => { /* offline optional */ });
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => window.OCAnalytics?.trackServiceWorker(true))
+        .catch(() => window.OCAnalytics?.trackServiceWorker(false));
     });
   }
 })();
@@ -90,8 +95,9 @@ function setupSearchInput(input, data) {
       return;
     }
     currentResults = search(q, data).slice(0, 8);
-    renderResults(resultsEl, currentResults, q);
+    renderResults(resultsEl, currentResults, q, input);
     showResults(input, resultsEl);
+    window.OCAnalytics?.trackSearch(input.id, q, currentResults.length);
   });
 
   input.addEventListener('keydown', (e) => {
@@ -162,7 +168,7 @@ function matchScore(query, fields) {
   return score;
 }
 
-function renderResults(container, results, query) {
+function renderResults(container, results, query, input) {
   container.innerHTML = '';
   if (results.length === 0) {
     container.innerHTML = '<div class="search-result-item"><span class="result-meta">No results found</span></div>';
@@ -179,6 +185,9 @@ function renderResults(container, results, query) {
       <div class="result-title">${highlight(item.title, query)}</div>
       <div class="result-meta">${item.type === 'category' ? 'Category' : item.category}</div>
     `;
+    el.addEventListener('click', () => {
+      window.OCAnalytics?.trackSearchResultClick(item, query);
+    });
     container.appendChild(el);
   });
 }

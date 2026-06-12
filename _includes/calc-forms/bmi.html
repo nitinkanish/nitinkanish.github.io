@@ -1,4 +1,4 @@
-<form id="calc-form" class="calc-form" novalidate>
+<form id="calc-form" class="calc-form dash-form" novalidate>
   <div class="form-group">
     <label class="form-label" for="unit">Unit System</label>
     <select id="unit" name="unit" class="form-select">
@@ -6,16 +6,24 @@
       <option value="imperial">Imperial (lbs, inches)</option>
     </select>
   </div>
-  <div class="form-row">
-    <div class="form-group">
+
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="weight">Weight</label>
-      <input type="number" id="weight" name="weight" class="form-input" value="70" min="1" data-validate="required|number|min:1" inputmode="decimal">
+      <span class="dash-field-value" id="weight-display">70 kg</span>
     </div>
-    <div class="form-group">
+    <input type="range" id="weight-range" class="dash-range" min="30" max="150" step="1" value="70" aria-label="Weight slider">
+    <input type="number" id="weight" name="weight" class="form-input dash-input" value="70" min="1" data-validate="required|number|min:1" inputmode="decimal">
+  </div>
+
+  <div class="dash-field">
+    <div class="dash-field-header">
       <label class="form-label" for="height">Height</label>
-      <input type="number" id="height" name="height" class="form-input" value="170" min="1" data-validate="required|number|min:1" inputmode="decimal">
+      <span class="dash-field-value" id="height-display">170 cm</span>
     </div>
+    <input type="range" id="height-range" class="dash-range" min="120" max="220" step="1" value="170" aria-label="Height slider">
+    <input type="number" id="height" name="height" class="form-input dash-input" value="170" min="1" data-validate="required|number|min:1" inputmode="decimal">
   </div>
 </form>
-<div id="calc-results" class="calc-results" aria-live="polite"></div>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
 <div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>
