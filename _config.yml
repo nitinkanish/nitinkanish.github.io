@@ -93,7 +93,7 @@ pwa:
   name: Online Calculators
   short_name: Calculators
   theme_color: "#4F46E5"
-  background_color: "#FFFFFF"
+  background_color: "#000000"
 
 # SEO
 google_analytics: # UA-XXXXXXXX or G-XXXXXXXX

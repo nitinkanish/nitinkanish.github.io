@@ -3,6 +3,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="{{ '/' | relative_url }}" class="logo">
+          {% include logo.html size=28 %}
           <span class="logo-text">{{ site.title }}</span>
         </a>
         <p class="footer-tagline">{{ site.description | truncate: 120 }}</p>

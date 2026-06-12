@@ -1,0 +1,11 @@
+{% assign logo_size = include.size | default: 32 %}
+<img
+  src="{{ '/assets/images/logo.png' | relative_url }}"
+  alt=""
+  class="logo-img"
+  width="{{ logo_size }}"
+  height="{{ logo_size }}"
+  aria-hidden="true"
+  loading="eager"
+  decoding="async"
+>

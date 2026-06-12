@@ -4,6 +4,8 @@ const PRECACHE = [
   '/assets/css/main.css',
   '/assets/js/main.js',
   '/assets/js/calculator-engine.js',
+  '/assets/images/logo.png',
+  '/assets/images/favicon.ico',
   '/manifest.json'
 ];
 

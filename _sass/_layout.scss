@@ -41,7 +41,12 @@
   &:hover { color: var(--color-primary); }
 }
 
-.logo-icon { color: var(--color-primary); }
+.logo-img {
+  display: block;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
 
 .header-search {
   flex: 1;
