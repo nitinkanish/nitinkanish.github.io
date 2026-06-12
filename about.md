@@ -1,8 +1,10 @@
 ---
 layout: default
 title: About Online Calculators
+seo_title: About Online Calculators — Free Tools for Everyone
 description: Learn about Online Calculators — free, accurate, and fast online calculators for everyone.
 permalink: /about/
+last_modified_at: 2025-06-11
 ---
 
 <header class="page-header">
@@ -24,6 +26,25 @@ permalink: /about/
   <h2>Built for Performance</h2>
   <p>Online Calculators is built with modern web standards for blazing-fast load times, mobile-first design, offline PWA support, and WCAG 2.1 accessibility compliance.</p>
 
+  <h2>Connect With Us</h2>
+  <p>
+    Follow Online Calculators on
+    <a href="{{ site.social.linkedin }}" rel="noopener noreferrer">LinkedIn</a>
+    and explore the project on
+    <a href="{{ site.social.github }}" rel="noopener noreferrer">GitHub</a>.
+  </p>
+
+  <h2>Legal</h2>
+  <p>
+    <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a> ·
+    <a href="{{ '/terms-of-service/' | relative_url }}">Terms of Service</a> ·
+    <a href="{{ '/cookie-policy/' | relative_url }}">Cookie Policy</a>
+  </p>
+
   <h2>Contact</h2>
-  <p>Have feedback or calculator requests? Reach us at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+  <p>
+    <strong>{{ site.legal.operator }}</strong><br>
+    {{ site.legal.address }}<br>
+    Email: <a href="mailto:{{ site.legal.email }}">{{ site.legal.email }}</a>
+  </p>
 </div>

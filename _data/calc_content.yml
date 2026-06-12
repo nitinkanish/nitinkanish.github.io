@@ -136,3 +136,298 @@ gst-calculator:
     ## GST Inclusive vs Exclusive
 
     **GST Exclusive** pricing means GST is added on top of the base price — common in B2B invoicing. **GST Inclusive** pricing means the displayed price already includes GST — common in retail. To extract GST from an inclusive price: Base = Inclusive Price ÷ (1 + Rate/100).
+
+fd-calculator:
+  steps:
+    - "Enter your lump-sum deposit amount in rupees."
+    - "Set the annual interest rate offered by your bank."
+    - "Choose tenure in years and compounding frequency (quarterly is common)."
+    - "View maturity amount, interest earned, and effective yield instantly."
+  examples:
+    - title: "1-Year FD at 7%"
+      description: "₹1,00,000 deposited for 1 year, quarterly compounding"
+      result: "Maturity ≈ ₹1,07,185"
+    - title: "5-Year FD at 7.5%"
+      description: "₹5,00,000 for 5 years, quarterly compounding"
+      result: "Maturity ≈ ₹7,25,000+ depending on bank rate"
+  intro: |
+    A **Fixed Deposit (FD) Calculator** helps you project how much your lump-sum savings will grow over a fixed tenure at a guaranteed interest rate. FDs remain one of the most popular savings instruments in India because they offer predictable returns with DICGC insurance protection up to ₹5 lakh per bank per depositor.
+
+    ## How FD Interest Works
+
+    Fixed deposits use **compound interest** — interest is calculated on the principal plus previously credited interest at each compounding interval. The formula is **A = P × (1 + r/n)^(n×t)** where P is principal, r is annual rate, n is compounding frequency per year, and t is tenure in years.
+
+    ## Choosing Compounding Frequency
+
+    Banks typically offer monthly, quarterly, half-yearly, or annual compounding. More frequent compounding yields slightly higher maturity amounts. Senior citizens often receive 0.25–0.50% higher rates. Compare rates across banks and consider laddering FDs across tenures for liquidity.
+
+    ## FD vs Other Investments
+
+    FDs prioritize **capital safety** over high returns. Equity SIPs may deliver higher long-term growth but carry market risk. Use FDs for emergency funds, short-term goals, and the debt portion of a diversified portfolio.
+
+compound-interest-calculator:
+  steps:
+    - "Enter your initial principal (lump sum), if any."
+    - "Add optional monthly contributions."
+    - "Set expected annual return rate and compounding frequency."
+    - "Choose investment period in years to see final wealth."
+  examples:
+    - title: "₹1L lump sum, 10% for 10 years"
+      description: "Single investment with annual compounding"
+      result: "Grows to ≈ ₹2,59,374"
+    - title: "₹5K/month at 12% for 15 years"
+      description: "Regular investing with monthly compounding"
+      result: "Corpus exceeds ₹25 lakhs"
+  intro: |
+    The **Compound Interest Calculator** demonstrates how money grows when earnings are reinvested — the foundation of long-term wealth building. Einstein reportedly called compound interest the eighth wonder of the world; whether apocryphal or not, the math is undeniable over decades.
+
+    ## The Power of Compounding
+
+    Compound interest means you earn returns on your returns. A ₹1 lakh investment at 10% grows to ₹2.59 lakh in 10 years without any additional contributions. Add monthly investments and the effect accelerates dramatically. The **Rule of 72** estimates doubling time: divide 72 by your annual rate (72 ÷ 10 = 7.2 years to double at 10%).
+
+    ## Simple vs Compound Interest
+
+    Simple interest applies only to the original principal. Compound interest reinvests earnings, creating exponential growth curves. Loans and credit cards often work against you with compounding; investments work for you. Understanding both sides helps you make smarter financial decisions.
+
+    ## Practical Applications
+
+    Use this calculator to model mutual fund returns, PPF growth, recurring deposits, retirement corpus targets, and education fund planning. Adjust the rate conservatively — 6–7% for debt-like returns, 10–12% for long-term equity assumptions.
+
+bmr-calculator:
+  steps:
+    - "Select your sex (male or female)."
+    - "Enter age, weight in kg, and height in cm."
+    - "Choose your typical activity level."
+    - "View BMR, TDEE, and calorie targets for weight goals."
+  examples:
+    - title: "Male, 30 years, 70 kg, 175 cm"
+      description: "Moderate activity level"
+      result: "BMR ≈ 1,680 kcal · TDEE ≈ 2,604 kcal"
+  intro: |
+    The **BMR (Basal Metabolic Rate) Calculator** estimates how many calories your body burns at complete rest to maintain vital functions — breathing, circulation, cell repair, and brain activity. BMR accounts for 60–75% of total daily calorie expenditure for most people.
+
+    ## Mifflin-St Jeor Equation
+
+    We use the Mifflin-St Jeor formula, considered the most accurate for general populations: **Men:** 10×weight + 6.25×height − 5×age + 5. **Women:** 10×weight + 6.25×height − 5×age − 161. Results are in kilocalories (kcal) per day.
+
+    ## From BMR to TDEE
+
+    Multiply BMR by an activity factor to get **TDEE (Total Daily Energy Expenditure)** — your maintenance calories. Sedentary (×1.2), lightly active (×1.375), moderately active (×1.55), very active (×1.725), or extremely active (×1.9). Eat below TDEE to lose weight; above to gain muscle.
+
+    ## Using BMR for Fitness Goals
+
+    Recalculate when your weight changes by 5+ kg. Never eat below BMR long-term without medical supervision. Combine calorie targets with adequate protein (1.6–2.2 g per kg body weight) and resistance training for body recomposition.
+
+calorie-calculator:
+  steps:
+    - "Enter sex, age, weight, and height."
+    - "Select your daily activity level honestly."
+    - "Review maintenance, weight loss, and muscle gain calorie targets."
+    - "Adjust based on progress over 2–4 weeks."
+  examples:
+    - title: "Female, 28 years, 65 kg, sedentary"
+      description: "Office job, little exercise"
+      result: "TDEE ≈ 1,650 kcal · Loss target ≈ 1,150 kcal"
+  intro: |
+    The **Daily Calorie Calculator** estimates how many calories you need per day based on your body profile and activity level. Whether your goal is fat loss, maintenance, or muscle gain, accurate calorie targets are the foundation of evidence-based nutrition planning.
+
+    ## How Calorie Needs Are Calculated
+
+    First we calculate BMR using the Mifflin-St Jeor equation, then multiply by an activity factor to determine TDEE. A **500 kcal daily deficit** typically produces about 0.5 kg (1 lb) of fat loss per week. A **300 kcal surplus** supports lean muscle gain with minimal fat gain when combined with strength training.
+
+    ## Quality Matters, Not Just Quantity
+
+    Calories determine weight change, but **macronutrient balance** affects body composition, energy, and satiety. Prioritize whole foods, lean protein, fiber-rich carbohydrates, and healthy fats. Track results for 2–4 weeks and adjust by 100–200 kcal if progress stalls.
+
+    ## Who Should Use This Tool
+
+    Athletes optimizing performance, individuals starting a weight loss journey, people recovering from illness who need maintenance estimates, and anyone building a sustainable meal plan benefit from knowing their TDEE starting point.
+
+percentage-calculator:
+  steps:
+    - "Choose calculation type (X% of Y, change, increase, decrease, etc.)."
+    - "Enter the required values in the input fields."
+    - "Results update instantly with the formula used."
+  examples:
+    - title: "15% of 200"
+      description: "Basic percentage of a number"
+      result: "30"
+    - title: "20% increase on 500"
+      description: "Markup calculation"
+      result: "600"
+  intro: |
+    The **Percentage Calculator** solves everyday math problems involving percentages — discounts, markups, tax calculations, grade scores, tip calculations, and financial analysis. No manual formula memorization required.
+
+    ## Common Percentage Calculations
+
+    **X% of Y:** Multiply Y by X/100. **What percent is X of Y?** Divide X by Y and multiply by 100. **Percentage change:** ((New − Old) / Old) × 100. **Increase by X%:** Multiply by (1 + X/100). **Decrease by X%:** Multiply by (1 − X/100).
+
+    ## Real-World Uses
+
+    Calculate sale discounts during shopping, determine exam scores, compute year-over-year business growth, figure tip amounts at restaurants, analyze investment returns, and convert between fractions and percentages for homework or professional reports.
+
+    ## Tips for Accuracy
+
+    Distinguish between **percentage points** (absolute difference) and **percent change** (relative difference). A rate moving from 10% to 15% is a 5 percentage point increase but a 50% relative increase. Always clarify which measure your context requires.
+
+age-calculator:
+  steps:
+    - "Enter your date of birth."
+    - "Optionally set an end date (defaults to today)."
+    - "View exact age in years, months, and days."
+    - "See total days lived and next birthday countdown."
+  examples:
+    - title: "Born January 15, 1990"
+      description: "Age calculated as of today"
+      result: "35+ years with exact months and days"
+  intro: |
+    The **Age Calculator** computes your exact age down to years, months, and days — useful for official forms, eligibility checks, milestone celebrations, and curiosity. Unlike mental math, it correctly handles leap years and varying month lengths.
+
+    ## How Exact Age Is Calculated
+
+    Age is the difference between two dates, accounting for whether the current day has passed the birth day in the current month. If not, we borrow days from the previous month. Leap years add an extra day in February every four years (with century exceptions).
+
+    ## Common Use Cases
+
+    Verify eligibility for school admission, government schemes, insurance policies, retirement benefits, driving licenses, and sports age categories. Calculate how many days until a milestone birthday. Determine tenure for employment or membership duration between any two dates.
+
+    ## International Age Systems
+
+    This calculator uses **international age** (age at last birthday). Some cultures use East Asian traditional counting where a person is 1 at birth. For legal purposes, always confirm which system your jurisdiction requires.
+
+scientific-calculator:
+  steps:
+    - "Use on-screen buttons or your keyboard to enter expressions."
+    - "Toggle DEG/RAD mode for trigonometric functions."
+    - "Apply functions like sin, cos, tan, log, sqrt, and powers."
+    - "Press equals or Enter to compute the result."
+  examples:
+    - title: "sin(30°)"
+      description: "Trigonometry in degree mode"
+      result: "0.5"
+    - title: "√144 + 2³"
+      description: "Combined operations"
+      result: "20"
+  intro: |
+    Our **free online Scientific Calculator** provides advanced mathematical functions beyond basic arithmetic — trigonometry, logarithms, exponentials, powers, roots, and constants π and e. Ideal for students, engineers, and professionals who need quick calculations without installing software.
+
+    ## Supported Functions
+
+    Trigonometric: sin, cos, tan (with degree/radian toggle). Logarithmic: log (base 10), ln (natural log). Power operations: x², x^y, √x. Additional: factorial, reciprocal, negation, and constants π ≈ 3.14159 and e ≈ 2.71828.
+
+    ## Keyboard Shortcuts
+
+    Type numbers and operators directly. Press **Enter** to calculate, **Escape** to clear, and **Backspace** to delete the last digit. Keyboard input makes extended calculations faster than clicking alone.
+
+    ## Precision and Limitations
+
+    Results use IEEE 754 double-precision floating point (~15 significant digits). For extremely large numbers, results may display in scientific notation. This tool is excellent for homework and professional estimates but verify critical engineering calculations independently.
+
+length-converter:
+  steps:
+    - "Enter the value you want to convert."
+    - "Select the source unit (e.g., feet, meters, inches)."
+    - "Select the target unit."
+    - "View the converted result and equivalent in meters."
+  examples:
+    - title: "5 feet to meters"
+      description: "Imperial to metric height conversion"
+      result: "1.524 meters"
+    - title: "100 cm to inches"
+      description: "Metric to imperial"
+      result: "39.37 inches"
+  intro: |
+    The **Length Converter** instantly converts between metric and imperial length units — meters, kilometers, centimeters, millimeters, feet, inches, yards, and miles. Essential for international travel, engineering, construction, fitness tracking, and education.
+
+    ## Standard Conversion Factors
+
+    Conversions flow through the **meter** as the SI base unit: 1 foot = 0.3048 m (exact), 1 inch = 2.54 cm (exact), 1 mile = 1.609344 km. Our tool uses internationally standardized factors for accuracy up to six decimal places.
+
+    ## Popular Conversions
+
+    Height: feet/inches ↔ centimeters (common for medical and sports records). Distance: miles ↔ kilometers for running and driving. Construction: feet ↔ meters on international projects. Fabric and manufacturing: inches ↔ millimeters.
+
+    ## Tips
+
+    Use the swap button to reverse conversion direction instantly. For height in feet and inches format (5'10"), convert total inches first: (5 × 12) + 10 = 70 inches, then convert to cm.
+
+weight-converter:
+  steps:
+    - "Enter the weight value to convert."
+    - "Choose the source unit (kg, lb, oz, etc.)."
+    - "Choose the target unit."
+    - "View converted weight and kilogram equivalent."
+  examples:
+    - title: "70 kg to pounds"
+      description: "Body weight conversion"
+      result: "154.32 lbs"
+    - title: "1 stone to kg"
+      description: "UK weight unit"
+      result: "6.35 kg"
+  intro: |
+    The **Weight Converter** converts between kilograms, pounds, ounces, grams, milligrams, stones, and metric tons. Whether tracking body weight, shipping packages, cooking, or scientific work, accurate unit conversion prevents costly errors.
+
+    ## Key Conversion Factors
+
+    1 kilogram = 2.20462 pounds. 1 pound = 16 ounces. 1 stone = 14 pounds = 6.35029 kg. 1 metric ton = 1,000 kg. Conversions route through kilograms as the base SI unit for consistency.
+
+    ## Mass vs Weight
+
+    In everyday language we say "weight" when we mean **mass**. Scientifically, weight is force (mass × gravity) measured in newtons. Kitchen scales and bathroom scales measure mass. This converter handles mass units used globally in commerce and daily life.
+
+    ## Common Applications
+
+    Convert body weight between kg and lbs for international health records. Convert recipe ingredients between ounces and grams. Calculate shipping weights for e-commerce. Convert gym plate weights between pound and kilogram denominations.
+
+temperature-converter:
+  steps:
+    - "Enter the temperature value."
+    - "Select source scale (Celsius, Fahrenheit, or Kelvin)."
+    - "Select target scale."
+    - "View converted value in all three scales."
+  examples:
+    - title: "25°C to Fahrenheit"
+      description: "Room temperature conversion"
+      result: "77°F"
+    - title: "98.6°F to Celsius"
+      description: "Body temperature"
+      result: "37°C"
+  intro: |
+    The **Temperature Converter** converts between **Celsius (°C)**, **Fahrenheit (°F)**, and **Kelvin (K)** — the three scales used in science, medicine, cooking, and weather. Instant, accurate conversion without memorizing formulas.
+
+    ## Conversion Formulas
+
+    **Celsius to Fahrenheit:** °F = (°C × 9/5) + 32. **Fahrenheit to Celsius:** °C = (°F − 32) × 5/9. **Celsius to Kelvin:** K = °C + 273.15. Kelvin is an absolute scale starting at absolute zero (−273.15°C), used in physics and chemistry.
+
+    ## Reference Points
+
+    Water freezes at 0°C (32°F) and boils at 100°C (212°F) at sea level. Normal body temperature is approximately 37°C (98.6°F). Room temperature is roughly 20–22°C (68–72°F). Celsius and Fahrenheit intersect at −40°.
+
+    ## Practical Uses
+
+    Convert oven temperatures for international recipes (180°C ≈ 350°F). Interpret weather forecasts when traveling abroad. Convert laboratory measurements. Understand medical thermometers using different scales.
+
+profit-margin-calculator:
+  steps:
+    - "Enter revenue (selling price or total sales)."
+    - "Enter cost price (COGS or production cost)."
+    - "View profit margin %, markup %, and gross profit amount."
+    - "Compare against industry benchmarks in insights."
+  examples:
+    - title: "Sell ₹1,000 · Cost ₹700"
+      description: "Retail product margin"
+      result: "30% margin · 42.9% markup · ₹300 profit"
+  intro: |
+    The **Profit Margin Calculator** helps businesses and entrepreneurs understand profitability by calculating **gross profit margin**, **markup percentage**, and absolute profit from revenue and cost inputs. Essential for pricing strategy, financial reporting, and investor presentations.
+
+    ## Margin vs Markup
+
+    **Profit margin** = (Revenue − Cost) / Revenue × 100. **Markup** = (Revenue − Cost) / Cost × 100. These differ significantly: a 25% margin equals a 33.3% markup. Confusing them leads to underpricing and eroded profits.
+
+    ## Industry Benchmarks
+
+    Retail typically targets 25–35% gross margin. Restaurants operate on thin 3–9% net margins. SaaS companies often achieve 70–80% gross margins. Manufacturing varies widely by sector. Compare your margins to industry standards, not arbitrary targets.
+
+    ## Improving Margins
+
+    Reduce cost of goods through supplier negotiation or efficiency gains. Increase prices strategically where demand is inelastic. Eliminate low-margin products. Improve operational efficiency to reduce overhead. Even a 2% margin improvement can significantly impact annual profit at scale.

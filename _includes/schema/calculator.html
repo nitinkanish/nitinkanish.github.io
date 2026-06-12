@@ -1,20 +1,74 @@
+{% assign calc_data = nil %}
+{% for c in site.data.calculators %}
+  {% if c.slug == page.slug or c.slug == page.name %}
+    {% assign calc_data = c %}
+  {% endif %}
+{% endfor %}
+{% assign content_data = site.data.calc_content[page.slug] %}
+{% assign seo_entry = site.data.seo.calculators[page.slug] %}
+{% assign app_category = "WebApplication" %}
+{% case page.category %}
+  {% when 'finance' %}{% assign app_category = "FinanceApplication" %}
+  {% when 'health' %}{% assign app_category = "HealthApplication" %}
+  {% when 'math' %}{% assign app_category = "EducationalApplication" %}
+  {% when 'converters' %}{% assign app_category = "UtilityApplication" %}
+  {% when 'business' %}{% assign app_category = "BusinessApplication" %}
+{% endcase %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": {{ page.title | jsonify }},
-  "description": {{ page.description | default: site.description | jsonify }},
+  "@id": {{ page.url | absolute_url | append: '#software' | jsonify }},
+  "name": {{ seo_entry.seo_title | default: page.title | jsonify }},
+  "alternateName": {{ page.title | jsonify }},
+  "description": {{ page.description | default: calc_data.description | default: site.description | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
-  "applicationCategory": "CalculatorApplication",
-  "operatingSystem": "Any",
+  "applicationCategory": {{ app_category | jsonify }},
+  "applicationSubCategory": "CalculatorApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript. Works on Chrome, Firefox, Safari, Edge.",
+  "softwareVersion": "1.0",
+  "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+  "isAccessibleForFree": true,
+  "datePublished": {{ calc_data.date_added | default: seo_entry.last_modified_at | jsonify }},
+  "dateModified": {{ seo_entry.last_modified_at | default: page.last_modified_at | default: calc_data.date_added | jsonify }},
+  {% if calc_data.keywords %}
+  "keywords": {{ calc_data.keywords | join: ', ' | jsonify }},
+  {% endif %}
+  {% if content_data.steps %}
+  "featureList": [
+    {% for step in content_data.steps %}
+    {{ step | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% elsif calc_data.keywords %}
+  "featureList": [
+    {% for kw in calc_data.keywords %}
+    {{ kw | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "screenshot": {{ '/assets/images/og-default.png' | absolute_url | jsonify }},
+  "image": {{ '/assets/images/og-default.png' | absolute_url | jsonify }},
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
   },
   "author": {
     "@type": "Organization",
-    "name": {{ site.author.name | jsonify }}
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ '/assets/images/logo.png' | absolute_url | jsonify }}
+    }
   }
 }
 </script>

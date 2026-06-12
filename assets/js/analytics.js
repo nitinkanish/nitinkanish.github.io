@@ -233,20 +233,40 @@ window.OCAnalytics = (function () {
     event('calculator_view', ctx);
   }
 
-  function init() {
-    if (!gtagReady()) return;
+  let delegationBound = false;
+  let trackingBound = false;
+
+  function initDelegationOnce() {
+    if (delegationBound) return;
+    delegationBound = true;
     initDelegation();
+  }
+
+  function initTracking() {
+    if (!gtagReady() || trackingBound) return;
+    trackingBound = true;
     initScrollDepth();
     initPageContext();
   }
 
+  function init() {
+    initDelegationOnce();
+    initTracking();
+  }
+
+  function boot() {
+    initDelegationOnce();
+    initTracking();
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    init();
+    boot();
   }
 
   return {
+    init,
     event,
     trackCalculatorUse,
     trackSearch,

@@ -1,11 +1,36 @@
-{% assign page_title = page.title | default: site.title %}
+{% assign seo_slug = page.slug | default: page.name %}
+{% assign seo_meta = nil %}
+
+{% if page.url == '/' or page.url == '/index.html' %}
+  {% assign seo_meta = site.data.seo.pages.home %}
+{% elsif page.url contains '/categories/' %}
+  {% assign seo_meta = site.data.seo.pages.categories %}
+{% elsif page.url contains '/about/' %}
+  {% assign seo_meta = site.data.seo.pages.about %}
+{% elsif page.url contains '/blog/' and page.layout != 'post' %}
+  {% assign seo_meta = site.data.seo.pages.blog %}
+{% elsif page.url contains '/privacy-policy/' %}
+  {% assign seo_meta = site.data.seo.pages.privacy-policy %}
+{% elsif page.url contains '/terms-of-service/' %}
+  {% assign seo_meta = site.data.seo.pages.terms-of-service %}
+{% elsif page.url contains '/cookie-policy/' %}
+  {% assign seo_meta = site.data.seo.pages.cookie-policy %}
+{% elsif seo_slug and site.data.seo.calculators[seo_slug] %}
+  {% assign seo_meta = site.data.seo.calculators[seo_slug] %}
+{% elsif page.category and site.data.seo.categories[page.category] %}
+  {% assign seo_meta = site.data.seo.categories[page.category] %}
+{% elsif page.slug and site.data.seo.categories[page.slug] %}
+  {% assign seo_meta = site.data.seo.categories[page.slug] %}
+{% endif %}
+
+{% assign page_title = seo_meta.seo_title | default: page.seo_title | default: page.title | default: site.title %}
 {% assign page_description = page.description | default: site.description %}
 {% assign canonical_url = page.url | absolute_url %}
 {% if page.canonical %}
   {% assign canonical_url = page.canonical | absolute_url %}
 {% endif %}
 
-<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<title>{% if seo_meta.seo_title or page.seo_title %}{{ page_title }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
 <meta name="description" content="{{ page_description | strip_html | truncate: 160 }}">
 {% if page.keywords or page.calculator.keywords %}
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% elsif page.calculator.keywords %}{{ page.calculator.keywords | join: ', ' }}{% endif %}">
@@ -13,6 +38,9 @@
 <link rel="canonical" href="{{ canonical_url }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="{{ page.author | default: site.author.name }}">
+{% if seo_meta.last_modified_at or page.last_modified_at %}
+<meta property="article:modified_time" content="{{ seo_meta.last_modified_at | default: page.last_modified_at }}">
+{% endif %}
 
 <!-- Open Graph -->
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -22,14 +50,11 @@
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:image" content="{{ '/assets/images/og-default.png' | absolute_url }}">
+<meta property="og:image:alt" content="{{ site.title }} — free online calculators for finance, health, and math">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page_title }}">
 <meta name="twitter:description" content="{{ page_description | strip_html | truncate: 200 }}">
 <meta name="twitter:image" content="{{ '/assets/images/og-default.png' | absolute_url }}">
-{% if site.social.twitter %}
-<meta name="twitter:site" content="@{{ site.social.twitter }}">
-{% endif %}
-
-<!-- LinkedIn uses Open Graph tags above -->
+<meta name="twitter:image:alt" content="{{ site.title }} — free online calculators">

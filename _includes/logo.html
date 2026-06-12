@@ -1,11 +1,11 @@
 {% assign logo_size = include.size | default: 32 %}
+{% assign logo_alt = include.alt | default: site.title | append: ' logo — free online calculators' %}
 <img
   src="{{ '/assets/images/logo.png' | relative_url }}"
-  alt=""
+  alt="{{ logo_alt }}"
   class="logo-img"
   width="{{ logo_size }}"
   height="{{ logo_size }}"
-  aria-hidden="true"
-  loading="eager"
   decoding="async"
+  fetchpriority="{% if include.priority %}high{% else %}auto{% endif %}"
 >

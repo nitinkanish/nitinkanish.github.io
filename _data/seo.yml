@@ -1,0 +1,87 @@
+# SEO titles (long-tail) and lastmod dates for sitemap freshness
+pages:
+  home:
+    seo_title: "Free Online Calculators for Finance, Health, Math & Business"
+    last_modified_at: "2025-06-11"
+  categories:
+    seo_title: "All Free Calculator Categories — Finance, Health, Math & More"
+    last_modified_at: "2025-06-11"
+  about:
+    seo_title: "About Online Calculators — Free Tools for Everyone"
+    last_modified_at: "2025-06-11"
+  blog:
+    seo_title: "Calculator Guides & Financial Tips Blog"
+    last_modified_at: "2025-06-11"
+  privacy-policy:
+    seo_title: "Privacy Policy"
+    last_modified_at: "2025-06-11"
+  terms-of-service:
+    seo_title: "Terms of Service"
+    last_modified_at: "2025-06-11"
+  cookie-policy:
+    seo_title: "Cookie Policy"
+    last_modified_at: "2025-06-11"
+
+categories:
+  finance:
+    seo_title: "Free Finance Calculators — EMI, SIP, FD & Loan Tools"
+    last_modified_at: "2025-06-11"
+  health:
+    seo_title: "Free Health Calculators — BMI, BMR & Calorie Tools"
+    last_modified_at: "2025-06-11"
+  math:
+    seo_title: "Free Math Calculators — Percentage, Age & Scientific"
+    last_modified_at: "2025-06-11"
+  converters:
+    seo_title: "Free Unit Converters — Length, Weight & Temperature"
+    last_modified_at: "2025-06-11"
+  business:
+    seo_title: "Free Business Calculators — GST & Profit Margin Tools"
+    last_modified_at: "2025-06-11"
+
+calculators:
+  emi-calculator:
+    seo_title: "Free EMI Calculator for Home & Car Loans"
+    last_modified_at: "2025-06-11"
+  sip-calculator:
+    seo_title: "Free SIP Calculator — Mutual Fund Returns & Wealth Projection"
+    last_modified_at: "2025-06-11"
+  fd-calculator:
+    seo_title: "Free FD Calculator — Fixed Deposit Maturity & Interest"
+    last_modified_at: "2025-06-11"
+  compound-interest-calculator:
+    seo_title: "Free Compound Interest Calculator with Monthly Contributions"
+    last_modified_at: "2025-06-11"
+  bmi-calculator:
+    seo_title: "Free BMI Calculator — Body Mass Index & Health Category"
+    last_modified_at: "2025-06-11"
+  bmr-calculator:
+    seo_title: "Free BMR Calculator — Basal Metabolic Rate & TDEE"
+    last_modified_at: "2025-06-11"
+  calorie-calculator:
+    seo_title: "Free Daily Calorie Calculator for Weight Loss & Gain"
+    last_modified_at: "2025-06-11"
+  percentage-calculator:
+    seo_title: "Free Percentage Calculator — Increase, Decrease & Change"
+    last_modified_at: "2025-06-11"
+  age-calculator:
+    seo_title: "Free Age Calculator — Exact Age in Years, Months & Days"
+    last_modified_at: "2025-06-11"
+  scientific-calculator:
+    seo_title: "Free Online Scientific Calculator with Trigonometry"
+    last_modified_at: "2025-06-11"
+  length-converter:
+    seo_title: "Free Length Converter — Feet to Meters, Inches to CM"
+    last_modified_at: "2025-06-11"
+  weight-converter:
+    seo_title: "Free Weight Converter — KG to LBS & Pounds to Kilograms"
+    last_modified_at: "2025-06-11"
+  temperature-converter:
+    seo_title: "Free Temperature Converter — Celsius to Fahrenheit & Kelvin"
+    last_modified_at: "2025-06-11"
+  profit-margin-calculator:
+    seo_title: "Free Profit Margin Calculator — Markup & Revenue Analysis"
+    last_modified_at: "2025-06-11"
+  gst-calculator:
+    seo_title: "Free GST Calculator India — 5%, 12%, 18% & 28% Tax"
+    last_modified_at: "2025-06-11"

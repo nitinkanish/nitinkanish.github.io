@@ -21,10 +21,10 @@
   "@type": "Organization",
   "name": {{ site.title | jsonify }},
   "url": {{ site.url | jsonify }},
-  "logo": {{ '/assets/images/icon-192.png' | absolute_url | jsonify }},
+  "logo": {{ '/assets/images/logo.png' | absolute_url | jsonify }},
   "sameAs": [
-    {% if site.social.github %}"https://github.com/{{ site.social.github }}"{% endif %}
-    {% if site.social.twitter %}{% if site.social.github %},{% endif %}"https://twitter.com/{{ site.social.twitter }}"{% endif %}
+    {% if site.social.github %}{{ site.social.github | jsonify }}{% endif %}
+    {% if site.social.linkedin %}{% if site.social.github %},{% endif %}{{ site.social.linkedin | jsonify }}{% endif %}
   ]
 }
 </script>

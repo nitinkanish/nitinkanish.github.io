@@ -1,0 +1,113 @@
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &[hidden] {
+    display: none !important;
+  }
+}
+
+.cookie-consent-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.cookie-consent-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-xs);
+}
+
+.cookie-consent-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 52rem;
+  line-height: 1.5;
+
+  a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.cookie-consent-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-sm);
+}
+
+.legal-prose {
+  padding-bottom: var(--space-3xl);
+
+  h2 { margin-top: var(--space-2xl); }
+  h3 { margin-top: var(--space-xl); font-size: 1.0625rem; }
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: var(--space-md) 0;
+
+  th, td {
+    border: 1px solid var(--color-border);
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--color-surface-alt);
+    font-weight: 600;
+  }
+
+  code {
+    font-size: 0.8125rem;
+  }
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  margin-top: var(--space-sm);
+
+  a {
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+    &:hover { color: var(--color-primary); }
+  }
+}
+
+@media (max-width: 640px) {
+  .cookie-consent-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-consent-actions {
+    justify-content: stretch;
+
+    .btn { flex: 1; }
+  }
+}

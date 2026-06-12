@@ -15,14 +15,20 @@ locale: en_US
 google_analytics: G-BJLB2TWL8B
 
 author:
-  name: Online Calculators Team
-  email: contact@online-calculators.com
+  name: Nitin Kumar
+  email: onlinecalculatorsinfo@gmail.com
   url: /about/
 
+legal:
+  operator: Nitin Kumar
+  email: onlinecalculatorsinfo@gmail.com
+  address: PMB 2010, Bel Air, CA 90049
+  country: United States
+  website: https://online-calculators.com
+
 social:
-  twitter: onlinecalculators
-  github: online-calculators
-  linkedin: online-calculators
+  github: https://github.com/nitinkanish/nitinkanish.github.io
+  linkedin: https://www.linkedin.com/company/onlinecalculators/
 
 # GitHub Pages supported plugins
 plugins:
