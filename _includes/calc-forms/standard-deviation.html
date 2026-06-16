@@ -1,0 +1,16 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="dataset">Enter Numbers</label>
+    <textarea id="dataset" name="dataset" class="form-input" rows="4" placeholder="e.g. 12, 15, 18, 22, 25, 30" data-validate="required">12, 15, 18, 22, 25, 30, 28, 20</textarea>
+    <p class="form-hint">Separate values with commas, spaces, or new lines</p>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="mode">Calculation Type</label>
+    <select id="mode" name="mode" class="form-select">
+      <option value="sample" selected>Sample (n − 1)</option>
+      <option value="population">Population (N)</option>
+    </select>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

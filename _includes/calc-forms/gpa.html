@@ -1,0 +1,86 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="gpa-courses">
+    <div class="form-row gpa-row">
+      <div class="form-group">
+        <label class="form-label" for="grade1">Course 1 Grade</label>
+        <select id="grade1" name="grade1" class="form-select">
+          <option value="4">A (4.0)</option>
+          <option value="3.7">A- (3.7)</option>
+          <option value="3.3">B+ (3.3)</option>
+          <option value="3" selected>B (3.0)</option>
+          <option value="2.7">B- (2.7)</option>
+          <option value="2.3">C+ (2.3)</option>
+          <option value="2">C (2.0)</option>
+          <option value="1">D (1.0)</option>
+          <option value="0">F (0.0)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="credits1">Credits</label>
+        <input type="number" id="credits1" name="credits1" class="form-input" value="3" min="0" max="12" step="0.5" inputmode="decimal">
+      </div>
+    </div>
+    <div class="form-row gpa-row">
+      <div class="form-group">
+        <label class="form-label" for="grade2">Course 2 Grade</label>
+        <select id="grade2" name="grade2" class="form-select">
+          <option value="4" selected>A (4.0)</option>
+          <option value="3.7">A- (3.7)</option>
+          <option value="3.3">B+ (3.3)</option>
+          <option value="3">B (3.0)</option>
+          <option value="2.7">B- (2.7)</option>
+          <option value="2.3">C+ (2.3)</option>
+          <option value="2">C (2.0)</option>
+          <option value="1">D (1.0)</option>
+          <option value="0">F (0.0)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="credits2">Credits</label>
+        <input type="number" id="credits2" name="credits2" class="form-input" value="4" min="0" max="12" step="0.5" inputmode="decimal">
+      </div>
+    </div>
+    <div class="form-row gpa-row">
+      <div class="form-group">
+        <label class="form-label" for="grade3">Course 3 Grade</label>
+        <select id="grade3" name="grade3" class="form-select">
+          <option value="4">A (4.0)</option>
+          <option value="3.7">A- (3.7)</option>
+          <option value="3.3" selected>B+ (3.3)</option>
+          <option value="3">B (3.0)</option>
+          <option value="2.7">B- (2.7)</option>
+          <option value="2.3">C+ (2.3)</option>
+          <option value="2">C (2.0)</option>
+          <option value="1">D (1.0)</option>
+          <option value="0">F (0.0)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="credits3">Credits</label>
+        <input type="number" id="credits3" name="credits3" class="form-input" value="3" min="0" max="12" step="0.5" inputmode="decimal">
+      </div>
+    </div>
+    <div class="form-row gpa-row">
+      <div class="form-group">
+        <label class="form-label" for="grade4">Course 4 Grade</label>
+        <select id="grade4" name="grade4" class="form-select">
+          <option value="4">A (4.0)</option>
+          <option value="3.7" selected>A- (3.7)</option>
+          <option value="3.3">B+ (3.3)</option>
+          <option value="3">B (3.0)</option>
+          <option value="2.7">B- (2.7)</option>
+          <option value="2.3">C+ (2.3)</option>
+          <option value="2">C (2.0)</option>
+          <option value="1">D (1.0)</option>
+          <option value="0">F (0.0)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="credits4">Credits</label>
+        <input type="number" id="credits4" name="credits4" class="form-input" value="3" min="0" max="12" step="0.5" inputmode="decimal">
+      </div>
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

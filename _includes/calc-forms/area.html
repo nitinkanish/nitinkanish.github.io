@@ -1,0 +1,49 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="shape">Shape</label>
+    <select id="shape" name="shape" class="form-select">
+      <option value="rectangle" selected>Rectangle / Room</option>
+      <option value="circle">Circle</option>
+      <option value="triangle">Triangle</option>
+    </select>
+  </div>
+  <div id="rect-fields">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="length">Length</label>
+        <input type="number" id="length" name="length" class="form-input" value="12" min="0.1" step="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="width">Width</label>
+        <input type="number" id="width" name="width" class="form-input" value="10" min="0.1" step="0.1" data-validate="required|number|min:0.1" inputmode="decimal">
+      </div>
+    </div>
+  </div>
+  <div id="circle-fields" hidden>
+    <div class="form-group">
+      <label class="form-label" for="radius">Radius</label>
+      <input type="number" id="radius" name="radius" class="form-input" value="5" min="0.1" step="0.1" inputmode="decimal">
+    </div>
+  </div>
+  <div id="triangle-fields" hidden>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="base">Base</label>
+        <input type="number" id="base" name="base" class="form-input" value="10" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="height">Height</label>
+        <input type="number" id="height" name="height" class="form-input" value="8" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="unit">Unit</label>
+    <select id="unit" name="unit" class="form-select">
+      <option value="ft" selected>Feet (sq ft)</option>
+      <option value="m">Meters (sq m)</option>
+    </select>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

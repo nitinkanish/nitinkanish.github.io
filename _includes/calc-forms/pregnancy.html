@@ -1,0 +1,31 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="method">Calculation Method</label>
+    <select id="method" name="method" class="form-select">
+      <option value="lmp" selected>Last Menstrual Period (LMP)</option>
+      <option value="conception">Conception Date</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <div class="form-group" id="lmp-group">
+      <label class="form-label" for="lmp_date">First Day of Last Period</label>
+      <input type="date" id="lmp_date" name="lmp_date" class="form-input" data-validate="required|date">
+    </div>
+    <div class="form-group" id="conception-group" hidden>
+      <label class="form-label" for="conception_date">Conception Date</label>
+      <input type="date" id="conception_date" name="conception_date" class="form-input" data-validate="date">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="cycle_length">Average Cycle Length (days)</label>
+      <input type="number" id="cycle_length" name="cycle_length" class="form-input" value="28" min="21" max="45" data-validate="number|min:21|max:45" inputmode="numeric">
+      <p class="form-hint">Used with LMP method (default 28 days)</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="reference_date">Today's Date (optional)</label>
+    <input type="date" id="reference_date" name="reference_date" class="form-input" data-validate="date">
+    <p class="form-hint">Leave blank to use today's date for gestational age</p>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

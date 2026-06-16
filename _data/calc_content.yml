@@ -431,3 +431,193 @@ profit-margin-calculator:
     ## Improving Margins
 
     Reduce cost of goods through supplier negotiation or efficiency gains. Increase prices strategically where demand is inelastic. Eliminate low-margin products. Improve operational efficiency to reduce overhead. Even a 2% margin improvement can significantly impact annual profit at scale.
+
+pregnancy-calculator:
+  steps:
+    - "Choose calculation method — Last Menstrual Period (LMP) or conception date."
+    - "Enter the first day of your last period or conception date."
+    - "Adjust cycle length if different from 28 days (LMP method only)."
+    - "View due date, gestational age in weeks and days, trimester, and days remaining."
+  examples:
+    - title: "12 Weeks Pregnant"
+      description: "LMP approximately 12 weeks ago"
+      result: "Gestational age ≈ 12 weeks, 0 days · Second trimester approaching"
+    - title: "Conception Date Known"
+      description: "Conception date entered directly"
+      result: "Due date = conception + 266 days"
+  intro: |
+    The **Pregnancy Due Date Calculator** estimates your expected delivery date and current gestational age using standard obstetric formulas. Whether you know your last menstrual period (LMP) or conception date, this tool provides an instant timeline for planning prenatal care and tracking milestones.
+
+    ## How Due Dates Are Calculated
+
+    The most common method is **Naegele's rule**: add 280 days (40 weeks) to the first day of your last menstrual period. If your menstrual cycle is longer or shorter than 28 days, we adjust accordingly. When using **conception date**, we add 266 days (38 weeks) since gestational age is counted from LMP, approximately two weeks before conception.
+
+    ## Understanding Gestational Age
+
+    Gestational age is expressed in **weeks and days** — for example, "12 weeks, 3 days" means you are in your 13th week of pregnancy. The first trimester spans weeks 1–12, the second trimester weeks 13–27, and the third trimester weeks 28 until delivery.
+
+    ## Important Medical Disclaimer
+
+    Only about 5% of babies are born on the exact due date. Early ultrasound dating (dating scan at 8–12 weeks) is more accurate than LMP alone. This calculator is for informational purposes — always follow guidance from your obstetrician, midwife, or healthcare provider for prenatal care and delivery planning.
+
+mortgage-calculator:
+  steps:
+    - "Enter your home loan amount in US dollars."
+    - "Set the annual interest rate (APR)."
+    - "Choose loan term in months (e.g., 360 for 30 years)."
+    - "View monthly payment, total interest, and amortization insights."
+  examples:
+    - title: "$350,000 at 6.5% for 30 years"
+      description: "Typical US home purchase"
+      result: "Monthly payment ≈ $2,212 · Total interest ≈ $446,000"
+    - title: "$250,000 at 5.5% for 15 years"
+      description: "Shorter term refinance"
+      result: "Higher monthly payment but significantly less total interest"
+  intro: |
+    The **Mortgage Calculator** helps US homebuyers estimate monthly principal-and-interest payments, total interest over the loan life, and equity buildup over time. Whether you're buying your first home, refinancing, or comparing 15-year vs 30-year terms, accurate payment projections are essential for budgeting.
+
+    ## How Mortgage Payments Work
+
+    Monthly payments use the standard **amortization formula**: M = P × r(1+r)^n / ((1+r)^n − 1), where P is loan principal, r is monthly interest rate, and n is total months. Early payments are mostly interest; later payments apply more to principal.
+
+    ## 15-Year vs 30-Year Mortgages
+
+    A **30-year mortgage** offers lower monthly payments but significantly more total interest. A **15-year mortgage** costs more monthly but builds equity faster and saves tens or hundreds of thousands in interest. Use this calculator to compare scenarios before committing.
+
+    ## What's Not Included
+
+    This calculator covers principal and interest only. Your actual housing payment may include property taxes, homeowner's insurance, HOA fees, and PMI (private mortgage insurance) if your down payment is below 20%. Budget for these additional costs when planning your purchase.
+
+date-difference-calculator:
+  steps:
+    - "Enter the start date of your range."
+    - "Enter the end date (or leave blank for today)."
+    - "Optionally include the end date in the count."
+    - "View total days, weeks, and years/months/days breakdown."
+  examples:
+    - title: "Q1 2025"
+      description: "January 1 to March 31, 2025"
+      result: "89 days (90 inclusive)"
+    - title: "Project Sprint"
+      description: "90-day development cycle"
+      result: "12 weeks and 6 days"
+  intro: |
+    The **Date Difference Calculator** computes the exact time span between any two calendar dates — in days, weeks, months, and years. Perfect for contract deadlines, rental periods, project planning, event countdowns, and legal date calculations.
+
+    ## How Date Math Works
+
+    We calculate the difference using calendar dates, correctly handling varying month lengths and leap years. The breakdown shows whole years, months, and remaining days for an intuitive reading alongside the total day count.
+
+    ## Inclusive vs Exclusive Counting
+
+    By default, we count the span between dates (exclusive of the end date in the day count sense). Enable **include end date** to add one day — useful when both the start and end dates should count (e.g., a 7-day rental from Monday to Sunday inclusive).
+
+    ## Common Use Cases
+
+    Calculate days until a deadline, determine employment tenure, measure project duration, count days in a billing period, verify age eligibility between dates, and plan event timelines. For birth-date age calculation, see our dedicated Age Calculator.
+
+macro-calculator:
+  steps:
+    - "Enter your body weight in kilograms."
+    - "Set your daily calorie target (from TDEE or diet plan)."
+    - "Choose your goal — fat loss, maintain, or muscle gain."
+    - "View daily protein, carbohydrate, and fat gram targets."
+  examples:
+    - title: "Cutting Phase"
+      description: "75 kg · 2,000 calories · fat loss goal"
+      result: "High protein split with moderate fat"
+    - title: "Muscle Building"
+      description: "80 kg · 2,800 calories · gain goal"
+      result: "Higher carbs for training fuel"
+  intro: |
+    The **Macro Calculator** distributes your daily calories across **protein**, **carbohydrates**, and **fat** based on your body weight and fitness goal. Macronutrient tracking (IIFYM — If It Fits Your Macros) is a flexible approach to nutrition that prioritizes hitting gram targets within your calorie budget.
+
+    ## How Macros Are Calculated
+
+    Protein is set based on body weight (default 1.8 g per kg — adjustable). Fat percentage varies by goal: 25% for fat loss, 30% for maintenance, 20% for muscle gain. Remaining calories go to carbohydrates. Protein and carbs provide 4 calories per gram; fat provides 9 calories per gram.
+
+    ## Why Macros Matter
+
+    Total calories determine weight change, but macro balance affects **muscle retention**, energy levels, satiety, and athletic performance. Adequate protein during a deficit helps preserve lean mass. Sufficient carbs support intense training. Healthy fats support hormones and nutrient absorption.
+
+    ## Getting Started
+
+    Use our BMR or Calorie Calculator first to estimate your TDEE, then plug that number here. Track macros with a food scale and nutrition app. Adjust after 2–4 weeks based on scale weight, energy, and gym performance.
+
+gpa-calculator:
+  steps:
+    - "Enter the letter grade for each course (A through F)."
+    - "Enter credit hours for each course."
+    - "Leave credits at 0 for courses not taken this term."
+    - "View your weighted GPA on the 4.0 scale."
+  examples:
+    - title: "Typical Semester"
+      description: "4 courses with mixed grades"
+      result: "GPA ≈ 3.45 on 13 credit hours"
+  intro: |
+    The **GPA Calculator** computes your **Grade Point Average** on the standard US 4.0 scale by weighting each course grade by its credit hours. Essential for students tracking academic progress, applying to graduate programs, or maintaining scholarship requirements.
+
+    ## GPA Formula
+
+    GPA = Σ(Grade Points × Credit Hours) ÷ Σ(Credit Hours). An A (4.0) in a 4-credit course contributes 16.0 points. A B (3.0) in a 3-credit course contributes 9.0 points. The sum is divided by total credits attempted.
+
+    ## Standard Grade Scale
+
+    A = 4.0, A− = 3.7, B+ = 3.3, B = 3.0, B− = 2.7, C+ = 2.3, C = 2.0, D = 1.0, F = 0.0. Some schools use plus/minus grading; others use whole letters only. This calculator supports the common plus/minus scale.
+
+    ## Tips for Raising GPA
+
+    Strong grades in **high-credit courses** have the biggest impact. Replacing a C in a 4-credit class with a B moves GPA more than improving a 1-credit lab. Model scenarios by changing grades above to see what you need for your target GPA.
+
+area-calculator:
+  steps:
+    - "Select shape — rectangle, circle, or triangle."
+    - "Enter dimensions in feet or meters."
+    - "View area in square feet and square meters."
+    - "Use the waste factor tip for material ordering."
+  examples:
+    - title: "Living Room"
+      description: "12 ft × 15 ft rectangle"
+      result: "180 sq ft (16.72 sq m)"
+    - title: "Circular Patio"
+      description: "Radius 6 ft"
+      result: "≈ 113.1 sq ft"
+  intro: |
+    The **Area Calculator** computes surface area for **rectangles**, **circles**, and **triangles** — the most common shapes in construction, flooring, landscaping, and interior design. Enter dimensions in feet or meters and get instant results in both square feet and square meters.
+
+    ## Area Formulas
+
+    **Rectangle:** Area = length × width. **Circle:** Area = π × radius². **Triangle:** Area = ½ × base × height. For irregular rooms, divide the space into rectangles and sum the areas.
+
+    ## Material Estimation Tips
+
+    When ordering flooring, tile, carpet, or paint, add a **5–10% waste factor** for cuts, pattern matching, and mistakes. Complex layouts with many angles may need 15% extra. Always verify measurements on-site before purchasing materials.
+
+    ## Unit Conversions
+
+    1 square foot = 0.0929 square meters. 1 square meter = 10.7639 square feet. Our calculator shows both automatically regardless of which unit you enter dimensions in.
+
+standard-deviation-calculator:
+  steps:
+    - "Enter your data values separated by commas, spaces, or new lines."
+    - "Choose sample (n−1) or population (N) calculation."
+    - "View mean, variance, standard deviation, and range."
+    - "Use insights for data interpretation."
+  examples:
+    - title: "Test Scores"
+      description: "8 student exam scores"
+      result: "Mean ≈ 21.25 · SD ≈ 5.8 (sample)"
+  intro: |
+    The **Standard Deviation Calculator** measures how spread out your data is from the mean — a fundamental statistic in science, finance, quality control, and education. Enter any dataset and instantly compute mean, variance, and standard deviation.
+
+    ## Sample vs Population
+
+    Use **sample** standard deviation (dividing by n−1) when your data is a subset of a larger population — common in surveys and experiments. Use **population** standard deviation (dividing by N) when you have complete data for the entire group.
+
+    ## Interpreting Results
+
+    A low standard deviation means data points cluster close to the mean. A high standard deviation indicates wide spread. In a normal distribution, roughly 68% of values fall within one SD of the mean, 95% within two SDs, and 99.7% within three SDs.
+
+    ## Practical Applications
+
+    Analyze test score distributions, measure investment volatility, monitor manufacturing quality control, evaluate experimental results, and complete statistics homework. Pair with our other math tools for comprehensive data analysis.

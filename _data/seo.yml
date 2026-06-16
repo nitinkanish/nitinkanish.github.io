@@ -27,8 +27,8 @@ categories:
     seo_title: "Free Finance Calculators — EMI, SIP, FD & Loan Tools"
     last_modified_at: "2025-06-11"
   health:
-    seo_title: "Free Health Calculators — BMI, BMR & Calorie Tools"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Health Calculators — BMI, BMR, Calorie & Pregnancy Tools"
+    last_modified_at: "2025-06-12"
   math:
     seo_title: "Free Math Calculators — Percentage, Age & Scientific"
     last_modified_at: "2025-06-11"
@@ -38,6 +38,27 @@ categories:
   business:
     seo_title: "Free Business Calculators — GST & Profit Margin Tools"
     last_modified_at: "2025-06-11"
+  mortgage:
+    seo_title: "Free Mortgage Calculators — Home Loan Payment & Amortization"
+    last_modified_at: "2025-06-12"
+  date-time:
+    seo_title: "Free Date Calculators — Days Between Dates & Time Intervals"
+    last_modified_at: "2025-06-12"
+  fitness:
+    seo_title: "Free Fitness Calculators — Macro & Nutrition Tools"
+    last_modified_at: "2025-06-12"
+  education:
+    seo_title: "Free Education Calculators — GPA & Grade Tools"
+    last_modified_at: "2025-06-12"
+  construction:
+    seo_title: "Free Construction Calculators — Area & Square Footage Tools"
+    last_modified_at: "2025-06-12"
+  statistics:
+    seo_title: "Free Statistics Calculators — Standard Deviation & Data Analysis"
+    last_modified_at: "2025-06-12"
+  scientific:
+    seo_title: "Free Scientific Calculators — Advanced Math & Engineering Tools"
+    last_modified_at: "2025-06-12"
 
 calculators:
   emi-calculator:
@@ -85,3 +106,24 @@ calculators:
   gst-calculator:
     seo_title: "Free GST Calculator India — 5%, 12%, 18% & 28% Tax"
     last_modified_at: "2025-06-11"
+  pregnancy-calculator:
+    seo_title: "Free Pregnancy Calculator — Due Date & Gestational Age"
+    last_modified_at: "2025-06-12"
+  mortgage-calculator:
+    seo_title: "Free Mortgage Calculator — Monthly Home Loan Payment"
+    last_modified_at: "2025-06-12"
+  date-difference-calculator:
+    seo_title: "Free Date Difference Calculator — Days Between Two Dates"
+    last_modified_at: "2025-06-12"
+  macro-calculator:
+    seo_title: "Free Macro Calculator — Protein, Carbs & Fat Targets"
+    last_modified_at: "2025-06-12"
+  gpa-calculator:
+    seo_title: "Free GPA Calculator — Weighted 4.0 Scale Grade Point Average"
+    last_modified_at: "2025-06-12"
+  area-calculator:
+    seo_title: "Free Area Calculator — Square Footage & Room Dimensions"
+    last_modified_at: "2025-06-12"
+  standard-deviation-calculator:
+    seo_title: "Free Standard Deviation Calculator — Mean & Variance"
+    last_modified_at: "2025-06-12"

@@ -415,3 +415,168 @@ gst-calculator:
   newsletter: { title: "GST & Tax Updates", text: "Indian tax compliance tips weekly." }
   formula_vars: ["GST = Base × Rate / 100", "Inclusive: Base = Total / (1 + Rate/100)"]
   sticky_label: "Total Amount"
+
+pregnancy-calculator:
+  trust_badge: "Trusted by expecting parents worldwide"
+  usage_stat: "40K+ due date calculations this month"
+  hero_badge: "PREGNANCY"
+  hero_image: /assets/images/calculators/health/pregnancy-due-date-calculator.png
+  hero_image_alt: "Pregnancy due date calculation infographic showing LMP, conception date, and ultrasound methods with a doctor and expecting mother"
+  widget:
+    input_title: "Pregnancy Details"
+    input_subtitle: "Enter LMP or conception date for due date & gestational age"
+    results_title: "Your Pregnancy Timeline"
+    primary_label: "Gestational Age"
+    metric_1_label: "Due Date"
+    metric_2_label: "Trimester"
+    metric_3_label: "Days Remaining"
+  timeline: { title: "Pregnancy Milestones", lead: "Key weeks in your pregnancy journey." }
+  compare:
+    title: "Trimester Guide"
+    lead: "Where you are in your pregnancy."
+    cards:
+      - { label: "First Trimester", value: "Weeks 1–12", sub: "Early development" }
+      - { label: "Your Stage", value_id: "compare-you", sub: "Current gestational age", highlight: true }
+      - { label: "Third Trimester", value: "Weeks 28–40", sub: "Final stretch" }
+  share: { title: "Share Pregnancy Update", card_heading: "My Pregnancy Timeline" }
+  examples:
+    - { label: "12 Weeks", desc: "LMP ~12 weeks ago", data: { method: "lmp", lmp_date: "2025-03-15" } }
+    - { label: "Second Trimester", desc: "20 weeks pregnant", data: { method: "lmp", lmp_date: "2025-01-20" } }
+  community:
+    - { story: "Tracked weekly milestones with this calculator.", result: "Stayed informed through all three trimesters", likes: 412, comments: 56 }
+  newsletter: { title: "Pregnancy & Wellness", text: "Weekly tips for expecting parents." }
+  formula_vars: ["Due Date = LMP + 280 days", "Conception: Due = Date + 266 days"]
+  sticky_label: "Gestational Age"
+
+mortgage-calculator:
+  trust_badge: "Used by 50,000+ homebuyers"
+  usage_stat: "30K+ mortgage calculations this month"
+  hero_badge: "MORTGAGE"
+  widget:
+    input_title: "Mortgage Details"
+    input_subtitle: "Enter loan amount, rate, and term"
+    results_title: "Monthly Payment"
+    primary_label: "Monthly Payment"
+    metric_1_label: "Loan Amount"
+    metric_2_label: "Total Interest"
+    metric_3_label: "Total Cost"
+  compare:
+    title: "Rate Comparison"
+    lead: "How rate changes affect your payment."
+    cards:
+      - { label: "15-Year Fixed", value: "Lower total interest", sub: "Higher monthly payment" }
+      - { label: "Your Payment", value_id: "compare-you", sub: "Current inputs", highlight: true }
+      - { label: "30-Year Fixed", value: "Lower monthly payment", sub: "More total interest" }
+  share: { title: "Share Mortgage Plan", card_heading: "My Mortgage Payment" }
+  examples:
+    - { label: "First Home", desc: "$350K · 6.5% · 30 yr", data: { principal: 350000, rate: 6.5, tenure: 360 } }
+    - { label: "Refinance", desc: "$250K · 5.5% · 15 yr", data: { principal: 250000, rate: 5.5, tenure: 180 } }
+  community:
+    - { story: "Compared 15 vs 30 year before buying.", result: "Saved $120K in interest with 15-year", likes: 287, comments: 41 }
+  newsletter: { title: "Home Buying Tips", text: "Mortgage and real estate insights weekly." }
+  formula_vars: ["M = P × r(1+r)^n / ((1+r)^n − 1)"]
+  sticky_label: "Monthly Payment"
+
+date-difference-calculator:
+  trust_badge: "Instant date math"
+  usage_stat: "25K+ date calculations this month"
+  hero_badge: "DATES"
+  widget:
+    input_title: "Date Range"
+    input_subtitle: "Pick start and end dates"
+    results_title: "Time Between Dates"
+    primary_label: "Total Days"
+    metric_1_label: "Years/Months/Days"
+    metric_2_label: "Weeks"
+    metric_3_label: "Approx. Months"
+  share: { title: "Share Date Calculation", card_heading: "Days Between Dates" }
+  examples:
+    - { label: "Quarter", desc: "Jan 1 to Mar 31", data: { start_date: "2025-01-01", end_date: "2025-03-31" } }
+    - { label: "Project", desc: "90-day sprint", data: { start_date: "2025-06-01", end_date: "2025-08-30" } }
+  newsletter: { title: "Productivity Tips", text: "Planning and deadline tools." }
+  sticky_label: "Total Days"
+
+macro-calculator:
+  trust_badge: "Used by 35,000+ fitness enthusiasts"
+  usage_stat: "18K+ macro plans this month"
+  hero_badge: "MACROS"
+  widget:
+    input_title: "Your Stats"
+    input_subtitle: "Weight, calories, and fitness goal"
+    results_title: "Daily Macro Targets"
+    primary_label: "Protein"
+    metric_1_label: "Carbs"
+    metric_2_label: "Fat"
+    metric_3_label: "Calories"
+  compare:
+    title: "Macro Splits by Goal"
+    lead: "Common approaches for different goals."
+    cards:
+      - { label: "Fat Loss", value: "High protein", sub: "25% fat split" }
+      - { label: "Your Plan", value_id: "compare-you", sub: "Current macros", highlight: true }
+      - { label: "Muscle Gain", value: "Higher carbs", sub: "20% fat split" }
+  share: { title: "Share Macro Plan", card_heading: "My Daily Macros" }
+  examples:
+    - { label: "Cutting", desc: "75 kg · 2000 cal", data: { weight: 75, calories: 2000, goal: "lose" } }
+    - { label: "Bulking", desc: "80 kg · 2800 cal", data: { weight: 80, calories: 2800, goal: "gain" } }
+  newsletter: { title: "Fitness Nutrition", text: "Macro and meal planning tips." }
+  formula_vars: ["Protein×4 + Carbs×4 + Fat×9 = Calories"]
+  sticky_label: "Protein"
+
+gpa-calculator:
+  trust_badge: "Trusted by students worldwide"
+  usage_stat: "22K+ GPA calculations this month"
+  hero_badge: "GPA"
+  widget:
+    input_title: "Your Courses"
+    input_subtitle: "Enter grades and credit hours"
+    results_title: "GPA Result"
+    primary_label: "GPA"
+    metric_1_label: "Letter Grade"
+    metric_2_label: "Total Credits"
+    metric_3_label: "Courses"
+  share: { title: "Share GPA", card_heading: "My GPA" }
+  examples:
+    - { label: "Semester", desc: "4 courses · mixed grades", data: { grade1: 3, credits1: 3, grade2: 4, credits2: 4, grade3: 3.3, credits3: 3, grade4: 3.7, credits4: 3 } }
+  newsletter: { title: "Student Success", text: "Academic planning tips." }
+  formula_vars: ["GPA = Σ(Grade × Credits) / Σ(Credits)"]
+  sticky_label: "GPA"
+
+area-calculator:
+  trust_badge: "Used by contractors & DIYers"
+  usage_stat: "15K+ area calculations this month"
+  hero_badge: "AREA"
+  widget:
+    input_title: "Dimensions"
+    input_subtitle: "Rectangle, circle, or triangle"
+    results_title: "Calculated Area"
+    primary_label: "Area"
+    metric_1_label: "Sq Feet"
+    metric_2_label: "Sq Meters"
+    metric_3_label: "Shape"
+  share: { title: "Share Area Result", card_heading: "Calculated Area" }
+  examples:
+    - { label: "Living Room", desc: "12 × 15 ft", data: { shape: "rectangle", length: 12, width: 15 } }
+    - { label: "Patio", desc: "Circle r=6 ft", data: { shape: "circle", radius: 6 } }
+  newsletter: { title: "Construction Tips", text: "Material estimates and project planning." }
+  formula_vars: ["Rectangle: l×w", "Circle: πr²", "Triangle: ½bh"]
+  sticky_label: "Area"
+
+standard-deviation-calculator:
+  trust_badge: "Accurate statistical analysis"
+  usage_stat: "10K+ SD calculations this month"
+  hero_badge: "STATS"
+  widget:
+    input_title: "Your Dataset"
+    input_subtitle: "Enter numbers separated by commas"
+    results_title: "Statistical Summary"
+    primary_label: "Std. Deviation"
+    metric_1_label: "Mean"
+    metric_2_label: "Variance"
+    metric_3_label: "Count"
+  share: { title: "Share Statistics", card_heading: "Standard Deviation" }
+  examples:
+    - { label: "Sample Set", desc: "8 test scores", data: { dataset: "12, 15, 18, 22, 25, 30, 28, 20" } }
+  newsletter: { title: "Data Insights", text: "Statistics for students and analysts." }
+  formula_vars: ["σ = √(Σ(x−μ)² / n)"]
+  sticky_label: "Std. Deviation"

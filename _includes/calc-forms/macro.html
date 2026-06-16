@@ -1,0 +1,28 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="weight">Body Weight (kg)</label>
+      <input type="number" id="weight" name="weight" class="form-input" value="75" min="30" data-validate="required|number|min:30" inputmode="decimal">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="calories">Daily Calories</label>
+      <input type="number" id="calories" name="calories" class="form-input" value="2200" min="1000" data-validate="required|number|min:1000" inputmode="numeric">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="goal">Goal</label>
+      <select id="goal" name="goal" class="form-select">
+        <option value="lose">Fat Loss (higher protein)</option>
+        <option value="maintain" selected>Maintain</option>
+        <option value="gain">Muscle Gain (higher carbs)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="protein_per_kg">Protein (g per kg)</label>
+      <input type="number" id="protein_per_kg" name="protein_per_kg" class="form-input" value="1.8" min="1" max="3" step="0.1" data-validate="number|min:1|max:3" inputmode="decimal">
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

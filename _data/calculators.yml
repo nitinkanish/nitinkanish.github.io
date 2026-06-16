@@ -541,3 +541,263 @@
       answer: To extract GST from inclusive price — divide by (1 + rate/100). Example — ₹118 inclusive at 18% = ₹118/1.18 = ₹100 base.
     - question: What items are GST exempt?
       answer: Fresh fruits, vegetables, milk, bread, educational services, and healthcare are among exempt categories.
+
+- title: Pregnancy Due Date Calculator
+  slug: pregnancy-calculator
+  category: health
+  icon: pregnancy
+  description: Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date.
+  keywords:
+    - pregnancy calculator
+    - due date calculator
+    - pregnancy week calculator
+    - gestational age calculator
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-06-12
+  calculator_type: pregnancy
+  formula: "Due Date = LMP + 280 days (Naegele's Rule)"
+  faqs:
+    - question: How is my due date calculated?
+      answer: From your last menstrual period (LMP), due date is typically LMP + 280 days (40 weeks). From conception, due date is conception + 266 days.
+    - question: What is Naegele's rule?
+      answer: Add 1 year, subtract 3 months, and add 7 days to the first day of your LMP. This equals approximately 280 days from LMP.
+    - question: How accurate is a due date calculator?
+      answer: Only about 5% of babies are born on the exact due date. Most arrive within two weeks before or after. Ultrasound dating is more precise in early pregnancy.
+    - question: What trimester am I in?
+      answer: First trimester is weeks 1–12, second is weeks 13–27, and third is weeks 28 until delivery.
+    - question: Can I use conception date instead of LMP?
+      answer: Yes. Select conception date mode — we add 266 days (38 weeks) to estimate your due date.
+    - question: Does cycle length affect due date?
+      answer: Yes. If your cycle is longer or shorter than 28 days, we adjust the due date accordingly.
+    - question: When should I see a doctor?
+      answer: Schedule a prenatal visit as soon as you know you're pregnant. This calculator is informational only — not medical advice.
+    - question: What if I had IVF?
+      answer: IVF due dates are set by your clinic based on embryo transfer date. Use conception/transfer date mode with guidance from your provider.
+    - question: How many weeks pregnant am I?
+      answer: Gestational age is counted from the first day of your LMP — the same start point used for due date calculation.
+    - question: Is this calculator a substitute for ultrasound?
+      answer: No. Early ultrasound (dating scan) is the most accurate method. Always follow your healthcare provider's assessment.
+
+- title: Mortgage Calculator
+  slug: mortgage-calculator
+  category: mortgage
+  icon: mortgage
+  description: Calculate monthly mortgage payments, total interest, and amortization for US home loans.
+  keywords:
+    - mortgage calculator
+    - home loan calculator
+    - monthly mortgage payment
+    - mortgage payment calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: mortgage
+  formula: "M = P × r × (1+r)^n / ((1+r)^n - 1)"
+  faqs:
+    - question: How is a mortgage payment calculated?
+      answer: Monthly payment uses the standard amortization formula with principal, annual interest rate, and loan term in months.
+    - question: What is included in PITI?
+      answer: PITI stands for Principal, Interest, Taxes, and Insurance. This calculator covers principal and interest only.
+    - question: How does down payment affect my mortgage?
+      answer: A larger down payment reduces principal, lowering monthly payments and total interest paid.
+    - question: What is PMI?
+      answer: Private Mortgage Insurance is required on many loans with less than 20% down. It is not included in this basic calculator.
+    - question: Should I choose a 15 or 30 year mortgage?
+      answer: 15-year loans have higher monthly payments but much less total interest. 30-year loans offer lower monthly payments.
+    - question: How do interest rates affect payments?
+      answer: Even a 0.25% rate difference can change your monthly payment by tens or hundreds of dollars on large loans.
+    - question: Can I pay off my mortgage early?
+      answer: Yes. Extra principal payments reduce total interest. Check your lender for prepayment terms.
+    - question: What is an amortization schedule?
+      answer: A breakdown of each payment showing how much goes to principal vs interest over the loan life.
+    - question: Are property taxes included?
+      answer: No. Add property taxes and insurance separately for a complete housing cost estimate.
+    - question: Is this calculator for US mortgages?
+      answer: Yes. It uses standard US mortgage amortization. For other countries, see our EMI calculator for similar loan math.
+
+- title: Date Difference Calculator
+  slug: date-difference-calculator
+  category: date-time
+  icon: date-time
+  description: Calculate exact days, weeks, months, and years between any two dates instantly.
+  keywords:
+    - date difference calculator
+    - days between dates
+    - date calculator
+    - time between dates
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: date-difference
+  formula: "Difference = End Date − Start Date"
+  faqs:
+    - question: How do I calculate days between two dates?
+      answer: Enter a start date and end date. We compute the exact calendar difference including leap years.
+    - question: Does the calculator include the end date?
+      answer: Results show the span between dates. Toggle inclusive counting in the form if you need to count both endpoints.
+    - question: Can I calculate business days only?
+      answer: This version counts all calendar days. Business-day mode may be added in a future update.
+    - question: How are months calculated?
+      answer: We show whole months/years plus remaining days for an intuitive breakdown.
+    - question: Does it handle leap years?
+      answer: Yes. February 29 and varying month lengths are handled correctly.
+    - question: Can I use this for project deadlines?
+      answer: Absolutely. Great for contracts, rentals, events, and project planning.
+    - question: What timezone is used?
+      answer: Calculations use your browser's local timezone at midnight for each date.
+    - question: Can start date be after end date?
+      answer: Yes. We show the absolute difference and indicate direction.
+    - question: How is this different from the age calculator?
+      answer: Age calculator is optimized for birth dates. This tool works for any two dates.
+    - question: Is historical date math supported?
+      answer: Yes, for dates supported by the JavaScript Date object (roughly year 100–275760).
+
+- title: Macro Calculator
+  slug: macro-calculator
+  category: fitness
+  icon: fitness
+  description: Calculate daily protein, carbs, and fat targets based on your calories and fitness goals.
+  keywords:
+    - macro calculator
+    - macronutrient calculator
+    - protein calculator
+    - iifym calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: macro
+  formula: "Protein g × 4 + Carbs g × 4 + Fat g × 9 = Calories"
+  faqs:
+    - question: What are macronutrients?
+      answer: Protein, carbohydrates, and fat — the three nutrients that provide calories and support body function.
+    - question: How much protein do I need?
+      answer: Active adults often target 1.6–2.2 g per kg body weight. This calculator uses your selected protein level.
+    - question: What is IIFYM?
+      answer: If It Fits Your Macros — a flexible dieting approach focusing on hitting macro targets within total calories.
+    - question: How are macros split?
+      answer: Protein is set by body weight. Remaining calories split between carbs and fat based on your goal preset.
+    - question: Do macros matter for weight loss?
+      answer: Total calories determine weight change. Macros affect satiety, muscle retention, and performance.
+    - question: Should I track macros or calories?
+      answer: Calories are primary for weight goals. Macros help optimize body composition and energy.
+    - question: What macro split is best for muscle gain?
+      answer: Higher protein and carbs with moderate fat supports training recovery and growth.
+    - question: Can vegetarians use this calculator?
+      answer: Yes. Macro targets are the same — adjust food sources to meet protein needs.
+    - question: How often should I recalculate?
+      answer: Recalculate when weight changes by 5+ kg or when goals shift.
+    - question: Is this medical nutrition advice?
+      answer: No. For medical conditions, consult a registered dietitian or doctor.
+
+- title: GPA Calculator
+  slug: gpa-calculator
+  category: education
+  icon: education
+  description: Calculate weighted GPA on a 4.0 scale from course grades and credit hours.
+  keywords:
+    - gpa calculator
+    - grade point average calculator
+    - college gpa calculator
+    - weighted gpa calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: gpa
+  formula: "GPA = Σ(Grade Points × Credits) / Σ(Credits)"
+  faqs:
+    - question: How is GPA calculated?
+      answer: Multiply each course grade point by credit hours, sum them, and divide by total credit hours.
+    - question: What is a 4.0 GPA scale?
+      answer: A=4.0, A-=3.7, B+=3.3, B=3.0, B-=2.7, C+=2.3, C=2.0, D=1.0, F=0.0 on the standard US scale.
+    - question: What is weighted vs unweighted GPA?
+      answer: Unweighted treats all courses equally. Weighted gives extra points for honors/AP courses — this tool uses standard points.
+    - question: What is a good college GPA?
+      answer: 3.5+ is strong for many programs. Requirements vary by school and major.
+    - question: Can I add more than four courses?
+      answer: Use the course rows provided. Add grades and credits for each class you're taking.
+    - question: Do pass/fail courses count?
+      answer: Pass/fail courses are typically excluded from GPA. Only enter letter-graded courses.
+    - question: How do I raise my GPA?
+      answer: Strong grades in high-credit courses have the biggest impact. Use this tool to model scenarios.
+    - question: Is cumulative GPA different from semester GPA?
+      answer: Semester GPA is one term. Cumulative includes all terms — enter all relevant courses for cumulative.
+    - question: What about plus/minus grades?
+      answer: Our calculator supports plus and minus letter grades on the standard 4.0 scale.
+    - question: Can high school students use this?
+      answer: Yes. The same formula applies to high school and college GPA calculations.
+
+- title: Area Calculator
+  slug: area-calculator
+  category: construction
+  icon: construction
+  description: Calculate area of rectangle, circle, triangle, and room layouts for construction and renovation.
+  keywords:
+    - area calculator
+    - square footage calculator
+    - room area calculator
+    - construction area calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: area
+  formula: "Rectangle: l×w | Circle: πr² | Triangle: ½bh"
+  faqs:
+    - question: How do I calculate square footage?
+      answer: For a rectangle, multiply length × width. For irregular rooms, break into rectangles and sum.
+    - question: How do I find the area of a circle?
+      answer: Area = π × radius². Enter radius or diameter in the calculator.
+    - question: What units are supported?
+      answer: Enter dimensions in feet, meters, or any unit — results use the same unit squared.
+    - question: How do I calculate triangle area?
+      answer: Area = ½ × base × height for a standard triangle.
+    - question: Can I estimate flooring materials?
+      answer: Use the area result and add 5–10% waste factor for cuts and pattern matching.
+    - question: How do I convert sq ft to sq m?
+      answer: Multiply square feet by 0.0929 to get square meters.
+    - question: Does this include wall area?
+      answer: This calculates floor/flat surface area. For paint on walls, calculate each wall separately.
+    - question: What about pitched roofs?
+      answer: Use the footprint area and adjust with roof pitch factor separately.
+    - question: Is land area supported?
+      answer: Yes. Enter plot length and width or radius for circular sections.
+    - question: How accurate are construction estimates?
+      answer: Always verify on-site measurements. This tool provides mathematical area from your inputs.
+
+- title: Standard Deviation Calculator
+  slug: standard-deviation-calculator
+  category: statistics
+  icon: statistics
+  description: Calculate mean, variance, and standard deviation for any dataset — sample or population.
+  keywords:
+    - standard deviation calculator
+    - statistics calculator
+    - variance calculator
+    - mean calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-12
+  calculator_type: standard-deviation
+  formula: "σ = √(Σ(x−μ)² / N)"
+  faqs:
+    - question: What is standard deviation?
+      answer: A measure of how spread out numbers are from the mean. Low SD means data clusters near the average.
+    - question: Sample vs population standard deviation?
+      answer: Population (N) divides by N. Sample (n-1) divides by n-1 for unbiased estimation — select the appropriate mode.
+    - question: How do I enter data?
+      answer: Enter numbers separated by commas, spaces, or new lines.
+    - question: What is variance?
+      answer: Variance is the square of standard deviation — average squared distance from the mean.
+    - question: When is standard deviation used?
+      answer: In finance (volatility), quality control, scientific research, and any field analyzing data spread.
+    - question: What is a normal distribution?
+      answer: In a bell curve, about 68% of data falls within 1 SD of the mean, 95% within 2 SD.
+    - question: Can I use decimals?
+      answer: Yes. Enter any valid decimal numbers.
+    - question: What is the mean?
+      answer: The arithmetic average — sum of all values divided by count.
+    - question: Minimum data points needed?
+      answer: At least 2 values for sample SD. More data gives more reliable statistics.
+    - question: Is this for students?
+      answer: Yes. Ideal for homework, research, and quick data analysis.

@@ -54,12 +54,25 @@ layout: default
           <button type="button" class="dash-share-btn" data-share="copy">Copy</button>
         </div>
       </div>
-      <div class="dash-hero-visual" aria-hidden="true">
+      <div class="dash-hero-visual"{% unless dash.hero_image or page.hero_image %} aria-hidden="true"{% endunless %}>
+        {% if dash.hero_image or page.hero_image %}
+        <figure class="dash-hero-figure">
+          <img
+            class="dash-hero-image"
+            src="{{ dash.hero_image | default: page.hero_image | relative_url }}"
+            alt="{{ dash.hero_image_alt | default: page.hero_image_alt | default: page.title }}"
+            width="1200"
+            height="900"
+            loading="eager"
+            decoding="async">
+        </figure>
+        {% else %}
         <div class="dash-illus dash-illus--{{ page.category }}">
           <div class="dash-illus-chart"></div>
           <div class="dash-illus-coins"><span></span><span></span><span></span></div>
           <div class="dash-illus-badge">{{ dash.hero_badge }}</div>
         </div>
+        {% endif %}
       </div>
     </div>
   </section>
