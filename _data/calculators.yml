@@ -294,7 +294,7 @@
 
 - title: Age Calculator
   slug: age-calculator
-  category: math
+  category: date-time
   icon: age
   description: Calculate exact age in years, months, days, hours, and minutes from date of birth.
   keywords:
@@ -329,7 +329,7 @@
 
 - title: Scientific Calculator
   slug: scientific-calculator
-  category: math
+  category: scientific
   icon: scientific
   description: Full-featured scientific calculator with trigonometry, logarithms, and advanced functions.
   keywords:
@@ -801,3 +801,235 @@
       answer: At least 2 values for sample SD. More data gives more reliable statistics.
     - question: Is this for students?
       answer: Yes. Ideal for homework, research, and quick data analysis.
+
+- title: Loan Payoff Calculator
+  slug: loan-payoff-calculator
+  category: finance
+  icon: emi
+  description: Calculate how extra EMI payments reduce loan tenure and total interest on home, car, and personal loans.
+  keywords:
+    - loan payoff calculator
+    - extra emi calculator
+    - loan prepayment calculator
+    - interest savings calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: loan-payoff
+  formula: "Interest saved = Original total interest − New total with extra payments"
+  faqs:
+    - question: How do extra loan payments save money?
+      answer: Extra payments reduce principal faster, which lowers interest charged on remaining balance. Even one extra EMI per year can save significant interest.
+    - question: Should I reduce EMI or tenure when prepaying?
+      answer: Most lenders let you choose. Reducing tenure saves more total interest; reducing EMI lowers monthly burden. This calculator shows tenure reduction.
+    - question: Does prepayment always make sense?
+      answer: Compare loan interest rate to potential investment returns. If investments earn more than your loan rate after tax, investing may be better.
+    - question: Are there prepayment penalties?
+      answer: Some loans charge fees for early payoff. Check your loan agreement before making large prepayments.
+    - question: How much can I save with ₹5,000 extra per month?
+      answer: Use this calculator with your loan amount, rate, tenure, and extra payment to see exact months and interest saved.
+    - question: Works for Indian loans?
+      answer: Yes. Enter amounts in rupees with standard EMI amortization math used by Indian banks.
+
+- title: Mortgage Affordability Calculator
+  slug: mortgage-affordability-calculator
+  category: mortgage
+  icon: mortgage
+  description: Calculate how much house you can afford based on income, debts, down payment, and mortgage rate.
+  keywords:
+    - mortgage affordability calculator
+    - how much house can I afford
+    - home affordability calculator
+    - mortgage qualification calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: mortgage-affordability
+  formula: "Max payment ≈ 28% of gross monthly income (housing ratio)"
+  faqs:
+    - question: How much house can I afford?
+      answer: Lenders typically use the 28/36 rule — housing costs up to 28% of gross monthly income and total debt up to 36%.
+    - question: What is the 28/36 rule?
+      answer: No more than 28% of gross income on housing (PITI) and 36% on all debt including car loans and credit cards.
+    - question: Does down payment affect affordability?
+      answer: Yes. A larger down payment reduces the loan amount, lowering monthly payments and potentially increasing what you can afford.
+    - question: Are property taxes included?
+      answer: This calculator estimates principal and interest. Add taxes and insurance for full PITI budgeting.
+    - question: What income should I enter?
+      answer: Use gross (pre-tax) annual household income — the figure lenders use for qualification.
+    - question: Is this for US mortgages?
+      answer: Yes. Uses common US underwriting ratios. For Indian home loans, see our EMI calculator.
+
+- title: Volume Calculator
+  slug: volume-calculator
+  category: construction
+  icon: construction
+  description: Calculate volume of rectangular prisms, cylinders, and spheres for concrete, fill, and tank capacity.
+  keywords:
+    - volume calculator
+    - cubic feet calculator
+    - concrete volume calculator
+    - cylinder volume calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: volume
+  formula: "Box: l×w×h | Cylinder: πr²h | Sphere: ⁴⁄₃πr³"
+  faqs:
+    - question: How do I calculate concrete volume?
+      answer: For a slab, multiply length × width × thickness. For a column, use cylinder volume πr²h.
+    - question: How many cubic yards of concrete do I need?
+      answer: Divide cubic feet by 27 to get cubic yards. Add 5–10% waste for spills and uneven subgrade.
+    - question: What units are supported?
+      answer: Enter dimensions in feet or meters — results show cubic feet and cubic meters.
+    - question: How is cylinder volume calculated?
+      answer: Volume = π × radius² × height. Enter radius (not diameter) unless noted.
+    - question: Can I calculate sphere volume?
+      answer: Yes. Select sphere and enter radius. Useful for tanks and domes.
+    - question: How accurate are estimates?
+      answer: Always verify on-site. This tool provides mathematical volume from your measurements.
+
+- title: Grade Calculator
+  slug: grade-calculator
+  category: education
+  icon: education
+  description: Calculate weighted course grade from assignments, exams, and project scores with custom weights.
+  keywords:
+    - grade calculator
+    - weighted grade calculator
+    - final grade calculator
+    - course grade calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: grade
+  formula: "Grade = Σ(Score × Weight) / Σ(Weight)"
+  faqs:
+    - question: How is a weighted grade calculated?
+      answer: Multiply each assignment score by its weight percentage, sum them, and divide by total weight.
+    - question: What if weights don't add to 100%?
+      answer: The calculator normalizes by total weight entered — weights should ideally sum to 100%.
+    - question: Can I use letter grades?
+      answer: Enter percentage scores (0–100) for each category. Convert letter grades to percentages first.
+    - question: How do I find what I need on the final?
+      answer: Enter current assignments with weights, then model a final exam weight to see required scores.
+    - question: Is this for college or high school?
+      answer: Both. Any course using weighted categories works with this formula.
+    - question: What is a passing grade?
+      answer: Varies by institution — typically 60% or D. Check your syllabus for cutoffs.
+
+- title: Mean Median Mode Calculator
+  slug: mean-median-mode-calculator
+  category: statistics
+  icon: statistics
+  description: Calculate mean, median, mode, range, and count for any dataset instantly.
+  keywords:
+    - mean median mode calculator
+    - average calculator
+    - statistics calculator
+    - central tendency calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: mean-median-mode
+  formula: "Mean = Σx/n | Median = middle value | Mode = most frequent"
+  faqs:
+    - question: What is the difference between mean and median?
+      answer: Mean is the arithmetic average. Median is the middle value when sorted — better for skewed data like income.
+    - question: What is mode?
+      answer: The value that appears most often. A dataset can have multiple modes or no mode if all values are unique.
+    - question: How do I enter data?
+      answer: Separate numbers with commas, spaces, or new lines.
+    - question: When should I use median over mean?
+      answer: Use median when outliers skew the average — home prices, salaries, or test scores with extremes.
+    - question: What is range?
+      answer: Range = maximum − minimum. A simple measure of data spread.
+    - question: Is this for homework?
+      answer: Yes. Ideal for statistics classes and quick data summaries.
+
+- title: Heart Rate Zone Calculator
+  slug: heart-rate-zone-calculator
+  category: fitness
+  icon: fitness
+  description: Calculate max heart rate and training zones for fat burn, cardio, and peak performance.
+  keywords:
+    - heart rate zone calculator
+    - max heart rate calculator
+    - cardio zone calculator
+    - training zones calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: heart-rate
+  formula: "Max HR ≈ 220 − Age | Zones = % of max HR"
+  faqs:
+    - question: How is max heart rate calculated?
+      answer: The common estimate is 220 minus your age. Individual max HR varies — lab tests are most accurate.
+    - question: What are heart rate zones?
+      answer: Training intensity bands — typically 50–60% warmup, 60–70% fat burn, 70–80% cardio, 80–90% anaerobic, 90–100% max.
+    - question: Which zone burns the most fat?
+      answer: Zone 2 (60–70% max HR) is often called the fat-burning zone, but total calorie burn matters more for weight loss.
+    - question: Should I train in one zone only?
+      answer: A balanced program uses multiple zones — easy days in Zone 2, intervals in Zones 4–5.
+    - question: Is the 220 − age formula accurate?
+      answer: It is an estimate. Athletes may have higher max HR. Use a chest strap or sports watch for precision.
+    - question: Can I use resting heart rate?
+      answer: Optional resting HR helps estimate heart rate reserve (Karvonen method) for personalized zones.
+
+- title: Speed Converter
+  slug: speed-converter
+  category: converters
+  icon: converters
+  description: Convert speed between km/h, mph, m/s, knots, and feet per second instantly.
+  keywords:
+    - speed converter
+    - kmh to mph
+    - mph to kmh
+    - knots converter
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: speed-converter
+  formula: "Target = Source × conversion factor"
+  faqs:
+    - question: How do I convert km/h to mph?
+      answer: Multiply km/h by 0.621371. Example — 100 km/h ≈ 62.14 mph.
+    - question: What is a knot?
+      answer: One knot = one nautical mile per hour ≈ 1.852 km/h. Used in aviation and maritime navigation.
+    - question: How do I convert mph to m/s?
+      answer: Multiply mph by 0.44704. Useful for physics and engineering calculations.
+    - question: Which units are supported?
+      answer: km/h, mph, m/s, knots, and ft/s with instant bidirectional conversion.
+    - question: Are conversions exact?
+      answer: We use standard international conversion factors accurate to six decimal places.
+    - question: Can I swap units?
+      answer: Yes. Use the swap button to reverse source and target units.
+
+- title: Markup Calculator
+  slug: markup-calculator
+  category: business
+  icon: profit
+  description: Calculate selling price, profit, and margin from cost price and markup percentage.
+  keywords:
+    - markup calculator
+    - markup percentage calculator
+    - selling price calculator
+    - cost plus pricing calculator
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: markup
+  formula: "Selling Price = Cost × (1 + Markup%/100)"
+  faqs:
+    - question: What is markup?
+      answer: Markup is the percentage added to cost to get selling price. 50% markup on ₹100 cost = ₹150 price.
+    - question: Markup vs margin — what's the difference?
+      answer: Markup is profit divided by cost. Margin is profit divided by selling price. They are not the same number.
+    - question: How do I calculate selling price?
+      answer: Selling Price = Cost × (1 + Markup/100). Or Cost + (Cost × Markup%).
+    - question: What is a good markup percentage?
+      answer: Varies by industry — retail 50–100%, restaurants 200–400% on food, wholesale 10–20%.
+    - question: Can I work backwards from selling price?
+      answer: This calculator adds markup to cost. For margin-based pricing, use our Profit Margin Calculator.
+    - question: Does this include tax?
+      answer: No. Add GST or sales tax separately based on your jurisdiction.

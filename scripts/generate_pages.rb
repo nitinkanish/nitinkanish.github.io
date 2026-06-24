@@ -52,3 +52,7 @@ calculators.each do |calc|
 end
 
 puts "Done. #{calculators.size} calculators processed."
+
+# Keep LLM index in sync when pages are regenerated
+llms_script = File.join(ROOT, 'scripts', 'generate_llms_txt.rb')
+system('ruby', llms_script) if File.exist?(llms_script)

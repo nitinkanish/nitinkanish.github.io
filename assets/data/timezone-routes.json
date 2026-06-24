@@ -1,0 +1,3438 @@
+{
+  "locations": [
+    {
+      "slug": "kenya",
+      "name": "Kenya",
+      "label": "Kenya",
+      "timezone": "Africa/Nairobi",
+      "region": "East Africa",
+      "utc_offset": "+03:00",
+      "dst": false
+    },
+    {
+      "slug": "mexico-city",
+      "name": "Mexico City",
+      "label": "Mexico City",
+      "timezone": "America/Mexico_City",
+      "region": "North America",
+      "utc_offset": "-06:00",
+      "dst": true
+    },
+    {
+      "slug": "india",
+      "name": "India",
+      "label": "India",
+      "timezone": "Asia/Kolkata",
+      "region": "South Asia",
+      "utc_offset": "+05:30",
+      "dst": false
+    },
+    {
+      "slug": "usa-new-york",
+      "name": "New York",
+      "label": "USA (New York)",
+      "timezone": "America/New_York",
+      "region": "North America",
+      "utc_offset": "-05:00",
+      "dst": true
+    },
+    {
+      "slug": "usa-los-angeles",
+      "name": "Los Angeles",
+      "label": "USA (Los Angeles)",
+      "timezone": "America/Los_Angeles",
+      "region": "North America",
+      "utc_offset": "-08:00",
+      "dst": true
+    },
+    {
+      "slug": "uk",
+      "name": "United Kingdom",
+      "label": "United Kingdom",
+      "timezone": "Europe/London",
+      "region": "Europe",
+      "utc_offset": "+00:00",
+      "dst": true
+    },
+    {
+      "slug": "uae",
+      "name": "UAE",
+      "label": "United Arab Emirates",
+      "timezone": "Asia/Dubai",
+      "region": "Middle East",
+      "utc_offset": "+04:00",
+      "dst": false
+    },
+    {
+      "slug": "japan",
+      "name": "Japan",
+      "label": "Japan",
+      "timezone": "Asia/Tokyo",
+      "region": "East Asia",
+      "utc_offset": "+09:00",
+      "dst": false
+    },
+    {
+      "slug": "australia-sydney",
+      "name": "Sydney",
+      "label": "Australia (Sydney)",
+      "timezone": "Australia/Sydney",
+      "region": "Oceania",
+      "utc_offset": "+10:00",
+      "dst": true
+    },
+    {
+      "slug": "germany",
+      "name": "Germany",
+      "label": "Germany",
+      "timezone": "Europe/Berlin",
+      "region": "Europe",
+      "utc_offset": "+01:00",
+      "dst": true
+    },
+    {
+      "slug": "china",
+      "name": "China",
+      "label": "China",
+      "timezone": "Asia/Shanghai",
+      "region": "East Asia",
+      "utc_offset": "+08:00",
+      "dst": false
+    },
+    {
+      "slug": "brazil",
+      "name": "Brazil",
+      "label": "Brazil (São Paulo)",
+      "timezone": "America/Sao_Paulo",
+      "region": "South America",
+      "utc_offset": "-03:00",
+      "dst": false
+    },
+    {
+      "slug": "south-africa",
+      "name": "South Africa",
+      "label": "South Africa",
+      "timezone": "Africa/Johannesburg",
+      "region": "Southern Africa",
+      "utc_offset": "+02:00",
+      "dst": false
+    },
+    {
+      "slug": "nigeria",
+      "name": "Nigeria",
+      "label": "Nigeria",
+      "timezone": "Africa/Lagos",
+      "region": "West Africa",
+      "utc_offset": "+01:00",
+      "dst": false
+    },
+    {
+      "slug": "canada-toronto",
+      "name": "Toronto",
+      "label": "Canada (Toronto)",
+      "timezone": "America/Toronto",
+      "region": "North America",
+      "utc_offset": "-05:00",
+      "dst": true
+    },
+    {
+      "slug": "singapore",
+      "name": "Singapore",
+      "label": "Singapore",
+      "timezone": "Asia/Singapore",
+      "region": "Southeast Asia",
+      "utc_offset": "+08:00",
+      "dst": false
+    },
+    {
+      "slug": "philippines",
+      "name": "Philippines",
+      "label": "Philippines",
+      "timezone": "Asia/Manila",
+      "region": "Southeast Asia",
+      "utc_offset": "+08:00",
+      "dst": false
+    },
+    {
+      "slug": "pakistan",
+      "name": "Pakistan",
+      "label": "Pakistan",
+      "timezone": "Asia/Karachi",
+      "region": "South Asia",
+      "utc_offset": "+05:00",
+      "dst": false
+    },
+    {
+      "slug": "south-korea",
+      "name": "South Korea",
+      "label": "South Korea",
+      "timezone": "Asia/Seoul",
+      "region": "East Asia",
+      "utc_offset": "+09:00",
+      "dst": false
+    },
+    {
+      "slug": "france",
+      "name": "France",
+      "label": "France",
+      "timezone": "Europe/Paris",
+      "region": "Europe",
+      "utc_offset": "+01:00",
+      "dst": true
+    },
+    {
+      "slug": "saudi-arabia",
+      "name": "Saudi Arabia",
+      "label": "Saudi Arabia",
+      "timezone": "Asia/Riyadh",
+      "region": "Middle East",
+      "utc_offset": "+03:00",
+      "dst": false
+    },
+    {
+      "slug": "egypt",
+      "name": "Egypt",
+      "label": "Egypt",
+      "timezone": "Africa/Cairo",
+      "region": "North Africa",
+      "utc_offset": "+02:00",
+      "dst": false
+    }
+  ],
+  "routes": [
+    {
+      "slug": "kenya-to-mexico-city",
+      "url": "/time/kenya-to-mexico-city/",
+      "title": "Kenya Time to Mexico City Time Converter",
+      "from": "kenya",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "kenya-to-india",
+      "url": "/time/kenya-to-india/",
+      "title": "Kenya Time to India Time Converter",
+      "from": "kenya",
+      "to": "india"
+    },
+    {
+      "slug": "kenya-to-usa-new-york",
+      "url": "/time/kenya-to-usa-new-york/",
+      "title": "Kenya Time to New York Time Converter",
+      "from": "kenya",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "kenya-to-usa-los-angeles",
+      "url": "/time/kenya-to-usa-los-angeles/",
+      "title": "Kenya Time to Los Angeles Time Converter",
+      "from": "kenya",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "kenya-to-uk",
+      "url": "/time/kenya-to-uk/",
+      "title": "Kenya Time to United Kingdom Time Converter",
+      "from": "kenya",
+      "to": "uk"
+    },
+    {
+      "slug": "kenya-to-uae",
+      "url": "/time/kenya-to-uae/",
+      "title": "Kenya Time to UAE Time Converter",
+      "from": "kenya",
+      "to": "uae"
+    },
+    {
+      "slug": "kenya-to-japan",
+      "url": "/time/kenya-to-japan/",
+      "title": "Kenya Time to Japan Time Converter",
+      "from": "kenya",
+      "to": "japan"
+    },
+    {
+      "slug": "kenya-to-australia-sydney",
+      "url": "/time/kenya-to-australia-sydney/",
+      "title": "Kenya Time to Sydney Time Converter",
+      "from": "kenya",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "kenya-to-germany",
+      "url": "/time/kenya-to-germany/",
+      "title": "Kenya Time to Germany Time Converter",
+      "from": "kenya",
+      "to": "germany"
+    },
+    {
+      "slug": "kenya-to-china",
+      "url": "/time/kenya-to-china/",
+      "title": "Kenya Time to China Time Converter",
+      "from": "kenya",
+      "to": "china"
+    },
+    {
+      "slug": "kenya-to-brazil",
+      "url": "/time/kenya-to-brazil/",
+      "title": "Kenya Time to Brazil Time Converter",
+      "from": "kenya",
+      "to": "brazil"
+    },
+    {
+      "slug": "kenya-to-south-africa",
+      "url": "/time/kenya-to-south-africa/",
+      "title": "Kenya Time to South Africa Time Converter",
+      "from": "kenya",
+      "to": "south-africa"
+    },
+    {
+      "slug": "kenya-to-nigeria",
+      "url": "/time/kenya-to-nigeria/",
+      "title": "Kenya Time to Nigeria Time Converter",
+      "from": "kenya",
+      "to": "nigeria"
+    },
+    {
+      "slug": "kenya-to-canada-toronto",
+      "url": "/time/kenya-to-canada-toronto/",
+      "title": "Kenya Time to Toronto Time Converter",
+      "from": "kenya",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "kenya-to-singapore",
+      "url": "/time/kenya-to-singapore/",
+      "title": "Kenya Time to Singapore Time Converter",
+      "from": "kenya",
+      "to": "singapore"
+    },
+    {
+      "slug": "kenya-to-philippines",
+      "url": "/time/kenya-to-philippines/",
+      "title": "Kenya Time to Philippines Time Converter",
+      "from": "kenya",
+      "to": "philippines"
+    },
+    {
+      "slug": "kenya-to-pakistan",
+      "url": "/time/kenya-to-pakistan/",
+      "title": "Kenya Time to Pakistan Time Converter",
+      "from": "kenya",
+      "to": "pakistan"
+    },
+    {
+      "slug": "kenya-to-south-korea",
+      "url": "/time/kenya-to-south-korea/",
+      "title": "Kenya Time to South Korea Time Converter",
+      "from": "kenya",
+      "to": "south-korea"
+    },
+    {
+      "slug": "kenya-to-france",
+      "url": "/time/kenya-to-france/",
+      "title": "Kenya Time to France Time Converter",
+      "from": "kenya",
+      "to": "france"
+    },
+    {
+      "slug": "kenya-to-saudi-arabia",
+      "url": "/time/kenya-to-saudi-arabia/",
+      "title": "Kenya Time to Saudi Arabia Time Converter",
+      "from": "kenya",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "kenya-to-egypt",
+      "url": "/time/kenya-to-egypt/",
+      "title": "Kenya Time to Egypt Time Converter",
+      "from": "kenya",
+      "to": "egypt"
+    },
+    {
+      "slug": "mexico-city-to-kenya",
+      "url": "/time/mexico-city-to-kenya/",
+      "title": "Mexico City Time to Kenya Time Converter",
+      "from": "mexico-city",
+      "to": "kenya"
+    },
+    {
+      "slug": "mexico-city-to-india",
+      "url": "/time/mexico-city-to-india/",
+      "title": "Mexico City Time to India Time Converter",
+      "from": "mexico-city",
+      "to": "india"
+    },
+    {
+      "slug": "mexico-city-to-usa-new-york",
+      "url": "/time/mexico-city-to-usa-new-york/",
+      "title": "Mexico City Time to New York Time Converter",
+      "from": "mexico-city",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "mexico-city-to-usa-los-angeles",
+      "url": "/time/mexico-city-to-usa-los-angeles/",
+      "title": "Mexico City Time to Los Angeles Time Converter",
+      "from": "mexico-city",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "mexico-city-to-uk",
+      "url": "/time/mexico-city-to-uk/",
+      "title": "Mexico City Time to United Kingdom Time Converter",
+      "from": "mexico-city",
+      "to": "uk"
+    },
+    {
+      "slug": "mexico-city-to-uae",
+      "url": "/time/mexico-city-to-uae/",
+      "title": "Mexico City Time to UAE Time Converter",
+      "from": "mexico-city",
+      "to": "uae"
+    },
+    {
+      "slug": "mexico-city-to-japan",
+      "url": "/time/mexico-city-to-japan/",
+      "title": "Mexico City Time to Japan Time Converter",
+      "from": "mexico-city",
+      "to": "japan"
+    },
+    {
+      "slug": "mexico-city-to-australia-sydney",
+      "url": "/time/mexico-city-to-australia-sydney/",
+      "title": "Mexico City Time to Sydney Time Converter",
+      "from": "mexico-city",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "mexico-city-to-germany",
+      "url": "/time/mexico-city-to-germany/",
+      "title": "Mexico City Time to Germany Time Converter",
+      "from": "mexico-city",
+      "to": "germany"
+    },
+    {
+      "slug": "mexico-city-to-china",
+      "url": "/time/mexico-city-to-china/",
+      "title": "Mexico City Time to China Time Converter",
+      "from": "mexico-city",
+      "to": "china"
+    },
+    {
+      "slug": "mexico-city-to-brazil",
+      "url": "/time/mexico-city-to-brazil/",
+      "title": "Mexico City Time to Brazil Time Converter",
+      "from": "mexico-city",
+      "to": "brazil"
+    },
+    {
+      "slug": "mexico-city-to-south-africa",
+      "url": "/time/mexico-city-to-south-africa/",
+      "title": "Mexico City Time to South Africa Time Converter",
+      "from": "mexico-city",
+      "to": "south-africa"
+    },
+    {
+      "slug": "mexico-city-to-nigeria",
+      "url": "/time/mexico-city-to-nigeria/",
+      "title": "Mexico City Time to Nigeria Time Converter",
+      "from": "mexico-city",
+      "to": "nigeria"
+    },
+    {
+      "slug": "mexico-city-to-canada-toronto",
+      "url": "/time/mexico-city-to-canada-toronto/",
+      "title": "Mexico City Time to Toronto Time Converter",
+      "from": "mexico-city",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "mexico-city-to-singapore",
+      "url": "/time/mexico-city-to-singapore/",
+      "title": "Mexico City Time to Singapore Time Converter",
+      "from": "mexico-city",
+      "to": "singapore"
+    },
+    {
+      "slug": "mexico-city-to-philippines",
+      "url": "/time/mexico-city-to-philippines/",
+      "title": "Mexico City Time to Philippines Time Converter",
+      "from": "mexico-city",
+      "to": "philippines"
+    },
+    {
+      "slug": "mexico-city-to-pakistan",
+      "url": "/time/mexico-city-to-pakistan/",
+      "title": "Mexico City Time to Pakistan Time Converter",
+      "from": "mexico-city",
+      "to": "pakistan"
+    },
+    {
+      "slug": "mexico-city-to-south-korea",
+      "url": "/time/mexico-city-to-south-korea/",
+      "title": "Mexico City Time to South Korea Time Converter",
+      "from": "mexico-city",
+      "to": "south-korea"
+    },
+    {
+      "slug": "mexico-city-to-france",
+      "url": "/time/mexico-city-to-france/",
+      "title": "Mexico City Time to France Time Converter",
+      "from": "mexico-city",
+      "to": "france"
+    },
+    {
+      "slug": "mexico-city-to-saudi-arabia",
+      "url": "/time/mexico-city-to-saudi-arabia/",
+      "title": "Mexico City Time to Saudi Arabia Time Converter",
+      "from": "mexico-city",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "mexico-city-to-egypt",
+      "url": "/time/mexico-city-to-egypt/",
+      "title": "Mexico City Time to Egypt Time Converter",
+      "from": "mexico-city",
+      "to": "egypt"
+    },
+    {
+      "slug": "india-to-kenya",
+      "url": "/time/india-to-kenya/",
+      "title": "India Time to Kenya Time Converter",
+      "from": "india",
+      "to": "kenya"
+    },
+    {
+      "slug": "india-to-mexico-city",
+      "url": "/time/india-to-mexico-city/",
+      "title": "India Time to Mexico City Time Converter",
+      "from": "india",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "india-to-usa-new-york",
+      "url": "/time/india-to-usa-new-york/",
+      "title": "India Time to New York Time Converter",
+      "from": "india",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "india-to-usa-los-angeles",
+      "url": "/time/india-to-usa-los-angeles/",
+      "title": "India Time to Los Angeles Time Converter",
+      "from": "india",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "india-to-uk",
+      "url": "/time/india-to-uk/",
+      "title": "India Time to United Kingdom Time Converter",
+      "from": "india",
+      "to": "uk"
+    },
+    {
+      "slug": "india-to-uae",
+      "url": "/time/india-to-uae/",
+      "title": "India Time to UAE Time Converter",
+      "from": "india",
+      "to": "uae"
+    },
+    {
+      "slug": "india-to-japan",
+      "url": "/time/india-to-japan/",
+      "title": "India Time to Japan Time Converter",
+      "from": "india",
+      "to": "japan"
+    },
+    {
+      "slug": "india-to-australia-sydney",
+      "url": "/time/india-to-australia-sydney/",
+      "title": "India Time to Sydney Time Converter",
+      "from": "india",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "india-to-germany",
+      "url": "/time/india-to-germany/",
+      "title": "India Time to Germany Time Converter",
+      "from": "india",
+      "to": "germany"
+    },
+    {
+      "slug": "india-to-china",
+      "url": "/time/india-to-china/",
+      "title": "India Time to China Time Converter",
+      "from": "india",
+      "to": "china"
+    },
+    {
+      "slug": "india-to-brazil",
+      "url": "/time/india-to-brazil/",
+      "title": "India Time to Brazil Time Converter",
+      "from": "india",
+      "to": "brazil"
+    },
+    {
+      "slug": "india-to-south-africa",
+      "url": "/time/india-to-south-africa/",
+      "title": "India Time to South Africa Time Converter",
+      "from": "india",
+      "to": "south-africa"
+    },
+    {
+      "slug": "india-to-nigeria",
+      "url": "/time/india-to-nigeria/",
+      "title": "India Time to Nigeria Time Converter",
+      "from": "india",
+      "to": "nigeria"
+    },
+    {
+      "slug": "india-to-canada-toronto",
+      "url": "/time/india-to-canada-toronto/",
+      "title": "India Time to Toronto Time Converter",
+      "from": "india",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "india-to-singapore",
+      "url": "/time/india-to-singapore/",
+      "title": "India Time to Singapore Time Converter",
+      "from": "india",
+      "to": "singapore"
+    },
+    {
+      "slug": "india-to-philippines",
+      "url": "/time/india-to-philippines/",
+      "title": "India Time to Philippines Time Converter",
+      "from": "india",
+      "to": "philippines"
+    },
+    {
+      "slug": "india-to-pakistan",
+      "url": "/time/india-to-pakistan/",
+      "title": "India Time to Pakistan Time Converter",
+      "from": "india",
+      "to": "pakistan"
+    },
+    {
+      "slug": "india-to-south-korea",
+      "url": "/time/india-to-south-korea/",
+      "title": "India Time to South Korea Time Converter",
+      "from": "india",
+      "to": "south-korea"
+    },
+    {
+      "slug": "india-to-france",
+      "url": "/time/india-to-france/",
+      "title": "India Time to France Time Converter",
+      "from": "india",
+      "to": "france"
+    },
+    {
+      "slug": "india-to-saudi-arabia",
+      "url": "/time/india-to-saudi-arabia/",
+      "title": "India Time to Saudi Arabia Time Converter",
+      "from": "india",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "india-to-egypt",
+      "url": "/time/india-to-egypt/",
+      "title": "India Time to Egypt Time Converter",
+      "from": "india",
+      "to": "egypt"
+    },
+    {
+      "slug": "usa-new-york-to-kenya",
+      "url": "/time/usa-new-york-to-kenya/",
+      "title": "New York Time to Kenya Time Converter",
+      "from": "usa-new-york",
+      "to": "kenya"
+    },
+    {
+      "slug": "usa-new-york-to-mexico-city",
+      "url": "/time/usa-new-york-to-mexico-city/",
+      "title": "New York Time to Mexico City Time Converter",
+      "from": "usa-new-york",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "usa-new-york-to-india",
+      "url": "/time/usa-new-york-to-india/",
+      "title": "New York Time to India Time Converter",
+      "from": "usa-new-york",
+      "to": "india"
+    },
+    {
+      "slug": "usa-new-york-to-usa-los-angeles",
+      "url": "/time/usa-new-york-to-usa-los-angeles/",
+      "title": "New York Time to Los Angeles Time Converter",
+      "from": "usa-new-york",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "usa-new-york-to-uk",
+      "url": "/time/usa-new-york-to-uk/",
+      "title": "New York Time to United Kingdom Time Converter",
+      "from": "usa-new-york",
+      "to": "uk"
+    },
+    {
+      "slug": "usa-new-york-to-uae",
+      "url": "/time/usa-new-york-to-uae/",
+      "title": "New York Time to UAE Time Converter",
+      "from": "usa-new-york",
+      "to": "uae"
+    },
+    {
+      "slug": "usa-new-york-to-japan",
+      "url": "/time/usa-new-york-to-japan/",
+      "title": "New York Time to Japan Time Converter",
+      "from": "usa-new-york",
+      "to": "japan"
+    },
+    {
+      "slug": "usa-new-york-to-australia-sydney",
+      "url": "/time/usa-new-york-to-australia-sydney/",
+      "title": "New York Time to Sydney Time Converter",
+      "from": "usa-new-york",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "usa-new-york-to-germany",
+      "url": "/time/usa-new-york-to-germany/",
+      "title": "New York Time to Germany Time Converter",
+      "from": "usa-new-york",
+      "to": "germany"
+    },
+    {
+      "slug": "usa-new-york-to-china",
+      "url": "/time/usa-new-york-to-china/",
+      "title": "New York Time to China Time Converter",
+      "from": "usa-new-york",
+      "to": "china"
+    },
+    {
+      "slug": "usa-new-york-to-brazil",
+      "url": "/time/usa-new-york-to-brazil/",
+      "title": "New York Time to Brazil Time Converter",
+      "from": "usa-new-york",
+      "to": "brazil"
+    },
+    {
+      "slug": "usa-new-york-to-south-africa",
+      "url": "/time/usa-new-york-to-south-africa/",
+      "title": "New York Time to South Africa Time Converter",
+      "from": "usa-new-york",
+      "to": "south-africa"
+    },
+    {
+      "slug": "usa-new-york-to-nigeria",
+      "url": "/time/usa-new-york-to-nigeria/",
+      "title": "New York Time to Nigeria Time Converter",
+      "from": "usa-new-york",
+      "to": "nigeria"
+    },
+    {
+      "slug": "usa-new-york-to-canada-toronto",
+      "url": "/time/usa-new-york-to-canada-toronto/",
+      "title": "New York Time to Toronto Time Converter",
+      "from": "usa-new-york",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "usa-new-york-to-singapore",
+      "url": "/time/usa-new-york-to-singapore/",
+      "title": "New York Time to Singapore Time Converter",
+      "from": "usa-new-york",
+      "to": "singapore"
+    },
+    {
+      "slug": "usa-new-york-to-philippines",
+      "url": "/time/usa-new-york-to-philippines/",
+      "title": "New York Time to Philippines Time Converter",
+      "from": "usa-new-york",
+      "to": "philippines"
+    },
+    {
+      "slug": "usa-new-york-to-pakistan",
+      "url": "/time/usa-new-york-to-pakistan/",
+      "title": "New York Time to Pakistan Time Converter",
+      "from": "usa-new-york",
+      "to": "pakistan"
+    },
+    {
+      "slug": "usa-new-york-to-south-korea",
+      "url": "/time/usa-new-york-to-south-korea/",
+      "title": "New York Time to South Korea Time Converter",
+      "from": "usa-new-york",
+      "to": "south-korea"
+    },
+    {
+      "slug": "usa-new-york-to-france",
+      "url": "/time/usa-new-york-to-france/",
+      "title": "New York Time to France Time Converter",
+      "from": "usa-new-york",
+      "to": "france"
+    },
+    {
+      "slug": "usa-new-york-to-saudi-arabia",
+      "url": "/time/usa-new-york-to-saudi-arabia/",
+      "title": "New York Time to Saudi Arabia Time Converter",
+      "from": "usa-new-york",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "usa-new-york-to-egypt",
+      "url": "/time/usa-new-york-to-egypt/",
+      "title": "New York Time to Egypt Time Converter",
+      "from": "usa-new-york",
+      "to": "egypt"
+    },
+    {
+      "slug": "usa-los-angeles-to-kenya",
+      "url": "/time/usa-los-angeles-to-kenya/",
+      "title": "Los Angeles Time to Kenya Time Converter",
+      "from": "usa-los-angeles",
+      "to": "kenya"
+    },
+    {
+      "slug": "usa-los-angeles-to-mexico-city",
+      "url": "/time/usa-los-angeles-to-mexico-city/",
+      "title": "Los Angeles Time to Mexico City Time Converter",
+      "from": "usa-los-angeles",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "usa-los-angeles-to-india",
+      "url": "/time/usa-los-angeles-to-india/",
+      "title": "Los Angeles Time to India Time Converter",
+      "from": "usa-los-angeles",
+      "to": "india"
+    },
+    {
+      "slug": "usa-los-angeles-to-usa-new-york",
+      "url": "/time/usa-los-angeles-to-usa-new-york/",
+      "title": "Los Angeles Time to New York Time Converter",
+      "from": "usa-los-angeles",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "usa-los-angeles-to-uk",
+      "url": "/time/usa-los-angeles-to-uk/",
+      "title": "Los Angeles Time to United Kingdom Time Converter",
+      "from": "usa-los-angeles",
+      "to": "uk"
+    },
+    {
+      "slug": "usa-los-angeles-to-uae",
+      "url": "/time/usa-los-angeles-to-uae/",
+      "title": "Los Angeles Time to UAE Time Converter",
+      "from": "usa-los-angeles",
+      "to": "uae"
+    },
+    {
+      "slug": "usa-los-angeles-to-japan",
+      "url": "/time/usa-los-angeles-to-japan/",
+      "title": "Los Angeles Time to Japan Time Converter",
+      "from": "usa-los-angeles",
+      "to": "japan"
+    },
+    {
+      "slug": "usa-los-angeles-to-australia-sydney",
+      "url": "/time/usa-los-angeles-to-australia-sydney/",
+      "title": "Los Angeles Time to Sydney Time Converter",
+      "from": "usa-los-angeles",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "usa-los-angeles-to-germany",
+      "url": "/time/usa-los-angeles-to-germany/",
+      "title": "Los Angeles Time to Germany Time Converter",
+      "from": "usa-los-angeles",
+      "to": "germany"
+    },
+    {
+      "slug": "usa-los-angeles-to-china",
+      "url": "/time/usa-los-angeles-to-china/",
+      "title": "Los Angeles Time to China Time Converter",
+      "from": "usa-los-angeles",
+      "to": "china"
+    },
+    {
+      "slug": "usa-los-angeles-to-brazil",
+      "url": "/time/usa-los-angeles-to-brazil/",
+      "title": "Los Angeles Time to Brazil Time Converter",
+      "from": "usa-los-angeles",
+      "to": "brazil"
+    },
+    {
+      "slug": "usa-los-angeles-to-south-africa",
+      "url": "/time/usa-los-angeles-to-south-africa/",
+      "title": "Los Angeles Time to South Africa Time Converter",
+      "from": "usa-los-angeles",
+      "to": "south-africa"
+    },
+    {
+      "slug": "usa-los-angeles-to-nigeria",
+      "url": "/time/usa-los-angeles-to-nigeria/",
+      "title": "Los Angeles Time to Nigeria Time Converter",
+      "from": "usa-los-angeles",
+      "to": "nigeria"
+    },
+    {
+      "slug": "usa-los-angeles-to-canada-toronto",
+      "url": "/time/usa-los-angeles-to-canada-toronto/",
+      "title": "Los Angeles Time to Toronto Time Converter",
+      "from": "usa-los-angeles",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "usa-los-angeles-to-singapore",
+      "url": "/time/usa-los-angeles-to-singapore/",
+      "title": "Los Angeles Time to Singapore Time Converter",
+      "from": "usa-los-angeles",
+      "to": "singapore"
+    },
+    {
+      "slug": "usa-los-angeles-to-philippines",
+      "url": "/time/usa-los-angeles-to-philippines/",
+      "title": "Los Angeles Time to Philippines Time Converter",
+      "from": "usa-los-angeles",
+      "to": "philippines"
+    },
+    {
+      "slug": "usa-los-angeles-to-pakistan",
+      "url": "/time/usa-los-angeles-to-pakistan/",
+      "title": "Los Angeles Time to Pakistan Time Converter",
+      "from": "usa-los-angeles",
+      "to": "pakistan"
+    },
+    {
+      "slug": "usa-los-angeles-to-south-korea",
+      "url": "/time/usa-los-angeles-to-south-korea/",
+      "title": "Los Angeles Time to South Korea Time Converter",
+      "from": "usa-los-angeles",
+      "to": "south-korea"
+    },
+    {
+      "slug": "usa-los-angeles-to-france",
+      "url": "/time/usa-los-angeles-to-france/",
+      "title": "Los Angeles Time to France Time Converter",
+      "from": "usa-los-angeles",
+      "to": "france"
+    },
+    {
+      "slug": "usa-los-angeles-to-saudi-arabia",
+      "url": "/time/usa-los-angeles-to-saudi-arabia/",
+      "title": "Los Angeles Time to Saudi Arabia Time Converter",
+      "from": "usa-los-angeles",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "usa-los-angeles-to-egypt",
+      "url": "/time/usa-los-angeles-to-egypt/",
+      "title": "Los Angeles Time to Egypt Time Converter",
+      "from": "usa-los-angeles",
+      "to": "egypt"
+    },
+    {
+      "slug": "uk-to-kenya",
+      "url": "/time/uk-to-kenya/",
+      "title": "United Kingdom Time to Kenya Time Converter",
+      "from": "uk",
+      "to": "kenya"
+    },
+    {
+      "slug": "uk-to-mexico-city",
+      "url": "/time/uk-to-mexico-city/",
+      "title": "United Kingdom Time to Mexico City Time Converter",
+      "from": "uk",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "uk-to-india",
+      "url": "/time/uk-to-india/",
+      "title": "United Kingdom Time to India Time Converter",
+      "from": "uk",
+      "to": "india"
+    },
+    {
+      "slug": "uk-to-usa-new-york",
+      "url": "/time/uk-to-usa-new-york/",
+      "title": "United Kingdom Time to New York Time Converter",
+      "from": "uk",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "uk-to-usa-los-angeles",
+      "url": "/time/uk-to-usa-los-angeles/",
+      "title": "United Kingdom Time to Los Angeles Time Converter",
+      "from": "uk",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "uk-to-uae",
+      "url": "/time/uk-to-uae/",
+      "title": "United Kingdom Time to UAE Time Converter",
+      "from": "uk",
+      "to": "uae"
+    },
+    {
+      "slug": "uk-to-japan",
+      "url": "/time/uk-to-japan/",
+      "title": "United Kingdom Time to Japan Time Converter",
+      "from": "uk",
+      "to": "japan"
+    },
+    {
+      "slug": "uk-to-australia-sydney",
+      "url": "/time/uk-to-australia-sydney/",
+      "title": "United Kingdom Time to Sydney Time Converter",
+      "from": "uk",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "uk-to-germany",
+      "url": "/time/uk-to-germany/",
+      "title": "United Kingdom Time to Germany Time Converter",
+      "from": "uk",
+      "to": "germany"
+    },
+    {
+      "slug": "uk-to-china",
+      "url": "/time/uk-to-china/",
+      "title": "United Kingdom Time to China Time Converter",
+      "from": "uk",
+      "to": "china"
+    },
+    {
+      "slug": "uk-to-brazil",
+      "url": "/time/uk-to-brazil/",
+      "title": "United Kingdom Time to Brazil Time Converter",
+      "from": "uk",
+      "to": "brazil"
+    },
+    {
+      "slug": "uk-to-south-africa",
+      "url": "/time/uk-to-south-africa/",
+      "title": "United Kingdom Time to South Africa Time Converter",
+      "from": "uk",
+      "to": "south-africa"
+    },
+    {
+      "slug": "uk-to-nigeria",
+      "url": "/time/uk-to-nigeria/",
+      "title": "United Kingdom Time to Nigeria Time Converter",
+      "from": "uk",
+      "to": "nigeria"
+    },
+    {
+      "slug": "uk-to-canada-toronto",
+      "url": "/time/uk-to-canada-toronto/",
+      "title": "United Kingdom Time to Toronto Time Converter",
+      "from": "uk",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "uk-to-singapore",
+      "url": "/time/uk-to-singapore/",
+      "title": "United Kingdom Time to Singapore Time Converter",
+      "from": "uk",
+      "to": "singapore"
+    },
+    {
+      "slug": "uk-to-philippines",
+      "url": "/time/uk-to-philippines/",
+      "title": "United Kingdom Time to Philippines Time Converter",
+      "from": "uk",
+      "to": "philippines"
+    },
+    {
+      "slug": "uk-to-pakistan",
+      "url": "/time/uk-to-pakistan/",
+      "title": "United Kingdom Time to Pakistan Time Converter",
+      "from": "uk",
+      "to": "pakistan"
+    },
+    {
+      "slug": "uk-to-south-korea",
+      "url": "/time/uk-to-south-korea/",
+      "title": "United Kingdom Time to South Korea Time Converter",
+      "from": "uk",
+      "to": "south-korea"
+    },
+    {
+      "slug": "uk-to-france",
+      "url": "/time/uk-to-france/",
+      "title": "United Kingdom Time to France Time Converter",
+      "from": "uk",
+      "to": "france"
+    },
+    {
+      "slug": "uk-to-saudi-arabia",
+      "url": "/time/uk-to-saudi-arabia/",
+      "title": "United Kingdom Time to Saudi Arabia Time Converter",
+      "from": "uk",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "uk-to-egypt",
+      "url": "/time/uk-to-egypt/",
+      "title": "United Kingdom Time to Egypt Time Converter",
+      "from": "uk",
+      "to": "egypt"
+    },
+    {
+      "slug": "uae-to-kenya",
+      "url": "/time/uae-to-kenya/",
+      "title": "UAE Time to Kenya Time Converter",
+      "from": "uae",
+      "to": "kenya"
+    },
+    {
+      "slug": "uae-to-mexico-city",
+      "url": "/time/uae-to-mexico-city/",
+      "title": "UAE Time to Mexico City Time Converter",
+      "from": "uae",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "uae-to-india",
+      "url": "/time/uae-to-india/",
+      "title": "UAE Time to India Time Converter",
+      "from": "uae",
+      "to": "india"
+    },
+    {
+      "slug": "uae-to-usa-new-york",
+      "url": "/time/uae-to-usa-new-york/",
+      "title": "UAE Time to New York Time Converter",
+      "from": "uae",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "uae-to-usa-los-angeles",
+      "url": "/time/uae-to-usa-los-angeles/",
+      "title": "UAE Time to Los Angeles Time Converter",
+      "from": "uae",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "uae-to-uk",
+      "url": "/time/uae-to-uk/",
+      "title": "UAE Time to United Kingdom Time Converter",
+      "from": "uae",
+      "to": "uk"
+    },
+    {
+      "slug": "uae-to-japan",
+      "url": "/time/uae-to-japan/",
+      "title": "UAE Time to Japan Time Converter",
+      "from": "uae",
+      "to": "japan"
+    },
+    {
+      "slug": "uae-to-australia-sydney",
+      "url": "/time/uae-to-australia-sydney/",
+      "title": "UAE Time to Sydney Time Converter",
+      "from": "uae",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "uae-to-germany",
+      "url": "/time/uae-to-germany/",
+      "title": "UAE Time to Germany Time Converter",
+      "from": "uae",
+      "to": "germany"
+    },
+    {
+      "slug": "uae-to-china",
+      "url": "/time/uae-to-china/",
+      "title": "UAE Time to China Time Converter",
+      "from": "uae",
+      "to": "china"
+    },
+    {
+      "slug": "uae-to-brazil",
+      "url": "/time/uae-to-brazil/",
+      "title": "UAE Time to Brazil Time Converter",
+      "from": "uae",
+      "to": "brazil"
+    },
+    {
+      "slug": "uae-to-south-africa",
+      "url": "/time/uae-to-south-africa/",
+      "title": "UAE Time to South Africa Time Converter",
+      "from": "uae",
+      "to": "south-africa"
+    },
+    {
+      "slug": "uae-to-nigeria",
+      "url": "/time/uae-to-nigeria/",
+      "title": "UAE Time to Nigeria Time Converter",
+      "from": "uae",
+      "to": "nigeria"
+    },
+    {
+      "slug": "uae-to-canada-toronto",
+      "url": "/time/uae-to-canada-toronto/",
+      "title": "UAE Time to Toronto Time Converter",
+      "from": "uae",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "uae-to-singapore",
+      "url": "/time/uae-to-singapore/",
+      "title": "UAE Time to Singapore Time Converter",
+      "from": "uae",
+      "to": "singapore"
+    },
+    {
+      "slug": "uae-to-philippines",
+      "url": "/time/uae-to-philippines/",
+      "title": "UAE Time to Philippines Time Converter",
+      "from": "uae",
+      "to": "philippines"
+    },
+    {
+      "slug": "uae-to-pakistan",
+      "url": "/time/uae-to-pakistan/",
+      "title": "UAE Time to Pakistan Time Converter",
+      "from": "uae",
+      "to": "pakistan"
+    },
+    {
+      "slug": "uae-to-south-korea",
+      "url": "/time/uae-to-south-korea/",
+      "title": "UAE Time to South Korea Time Converter",
+      "from": "uae",
+      "to": "south-korea"
+    },
+    {
+      "slug": "uae-to-france",
+      "url": "/time/uae-to-france/",
+      "title": "UAE Time to France Time Converter",
+      "from": "uae",
+      "to": "france"
+    },
+    {
+      "slug": "uae-to-saudi-arabia",
+      "url": "/time/uae-to-saudi-arabia/",
+      "title": "UAE Time to Saudi Arabia Time Converter",
+      "from": "uae",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "uae-to-egypt",
+      "url": "/time/uae-to-egypt/",
+      "title": "UAE Time to Egypt Time Converter",
+      "from": "uae",
+      "to": "egypt"
+    },
+    {
+      "slug": "japan-to-kenya",
+      "url": "/time/japan-to-kenya/",
+      "title": "Japan Time to Kenya Time Converter",
+      "from": "japan",
+      "to": "kenya"
+    },
+    {
+      "slug": "japan-to-mexico-city",
+      "url": "/time/japan-to-mexico-city/",
+      "title": "Japan Time to Mexico City Time Converter",
+      "from": "japan",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "japan-to-india",
+      "url": "/time/japan-to-india/",
+      "title": "Japan Time to India Time Converter",
+      "from": "japan",
+      "to": "india"
+    },
+    {
+      "slug": "japan-to-usa-new-york",
+      "url": "/time/japan-to-usa-new-york/",
+      "title": "Japan Time to New York Time Converter",
+      "from": "japan",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "japan-to-usa-los-angeles",
+      "url": "/time/japan-to-usa-los-angeles/",
+      "title": "Japan Time to Los Angeles Time Converter",
+      "from": "japan",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "japan-to-uk",
+      "url": "/time/japan-to-uk/",
+      "title": "Japan Time to United Kingdom Time Converter",
+      "from": "japan",
+      "to": "uk"
+    },
+    {
+      "slug": "japan-to-uae",
+      "url": "/time/japan-to-uae/",
+      "title": "Japan Time to UAE Time Converter",
+      "from": "japan",
+      "to": "uae"
+    },
+    {
+      "slug": "japan-to-australia-sydney",
+      "url": "/time/japan-to-australia-sydney/",
+      "title": "Japan Time to Sydney Time Converter",
+      "from": "japan",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "japan-to-germany",
+      "url": "/time/japan-to-germany/",
+      "title": "Japan Time to Germany Time Converter",
+      "from": "japan",
+      "to": "germany"
+    },
+    {
+      "slug": "japan-to-china",
+      "url": "/time/japan-to-china/",
+      "title": "Japan Time to China Time Converter",
+      "from": "japan",
+      "to": "china"
+    },
+    {
+      "slug": "japan-to-brazil",
+      "url": "/time/japan-to-brazil/",
+      "title": "Japan Time to Brazil Time Converter",
+      "from": "japan",
+      "to": "brazil"
+    },
+    {
+      "slug": "japan-to-south-africa",
+      "url": "/time/japan-to-south-africa/",
+      "title": "Japan Time to South Africa Time Converter",
+      "from": "japan",
+      "to": "south-africa"
+    },
+    {
+      "slug": "japan-to-nigeria",
+      "url": "/time/japan-to-nigeria/",
+      "title": "Japan Time to Nigeria Time Converter",
+      "from": "japan",
+      "to": "nigeria"
+    },
+    {
+      "slug": "japan-to-canada-toronto",
+      "url": "/time/japan-to-canada-toronto/",
+      "title": "Japan Time to Toronto Time Converter",
+      "from": "japan",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "japan-to-singapore",
+      "url": "/time/japan-to-singapore/",
+      "title": "Japan Time to Singapore Time Converter",
+      "from": "japan",
+      "to": "singapore"
+    },
+    {
+      "slug": "japan-to-philippines",
+      "url": "/time/japan-to-philippines/",
+      "title": "Japan Time to Philippines Time Converter",
+      "from": "japan",
+      "to": "philippines"
+    },
+    {
+      "slug": "japan-to-pakistan",
+      "url": "/time/japan-to-pakistan/",
+      "title": "Japan Time to Pakistan Time Converter",
+      "from": "japan",
+      "to": "pakistan"
+    },
+    {
+      "slug": "japan-to-south-korea",
+      "url": "/time/japan-to-south-korea/",
+      "title": "Japan Time to South Korea Time Converter",
+      "from": "japan",
+      "to": "south-korea"
+    },
+    {
+      "slug": "japan-to-france",
+      "url": "/time/japan-to-france/",
+      "title": "Japan Time to France Time Converter",
+      "from": "japan",
+      "to": "france"
+    },
+    {
+      "slug": "japan-to-saudi-arabia",
+      "url": "/time/japan-to-saudi-arabia/",
+      "title": "Japan Time to Saudi Arabia Time Converter",
+      "from": "japan",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "japan-to-egypt",
+      "url": "/time/japan-to-egypt/",
+      "title": "Japan Time to Egypt Time Converter",
+      "from": "japan",
+      "to": "egypt"
+    },
+    {
+      "slug": "australia-sydney-to-kenya",
+      "url": "/time/australia-sydney-to-kenya/",
+      "title": "Sydney Time to Kenya Time Converter",
+      "from": "australia-sydney",
+      "to": "kenya"
+    },
+    {
+      "slug": "australia-sydney-to-mexico-city",
+      "url": "/time/australia-sydney-to-mexico-city/",
+      "title": "Sydney Time to Mexico City Time Converter",
+      "from": "australia-sydney",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "australia-sydney-to-india",
+      "url": "/time/australia-sydney-to-india/",
+      "title": "Sydney Time to India Time Converter",
+      "from": "australia-sydney",
+      "to": "india"
+    },
+    {
+      "slug": "australia-sydney-to-usa-new-york",
+      "url": "/time/australia-sydney-to-usa-new-york/",
+      "title": "Sydney Time to New York Time Converter",
+      "from": "australia-sydney",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "australia-sydney-to-usa-los-angeles",
+      "url": "/time/australia-sydney-to-usa-los-angeles/",
+      "title": "Sydney Time to Los Angeles Time Converter",
+      "from": "australia-sydney",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "australia-sydney-to-uk",
+      "url": "/time/australia-sydney-to-uk/",
+      "title": "Sydney Time to United Kingdom Time Converter",
+      "from": "australia-sydney",
+      "to": "uk"
+    },
+    {
+      "slug": "australia-sydney-to-uae",
+      "url": "/time/australia-sydney-to-uae/",
+      "title": "Sydney Time to UAE Time Converter",
+      "from": "australia-sydney",
+      "to": "uae"
+    },
+    {
+      "slug": "australia-sydney-to-japan",
+      "url": "/time/australia-sydney-to-japan/",
+      "title": "Sydney Time to Japan Time Converter",
+      "from": "australia-sydney",
+      "to": "japan"
+    },
+    {
+      "slug": "australia-sydney-to-germany",
+      "url": "/time/australia-sydney-to-germany/",
+      "title": "Sydney Time to Germany Time Converter",
+      "from": "australia-sydney",
+      "to": "germany"
+    },
+    {
+      "slug": "australia-sydney-to-china",
+      "url": "/time/australia-sydney-to-china/",
+      "title": "Sydney Time to China Time Converter",
+      "from": "australia-sydney",
+      "to": "china"
+    },
+    {
+      "slug": "australia-sydney-to-brazil",
+      "url": "/time/australia-sydney-to-brazil/",
+      "title": "Sydney Time to Brazil Time Converter",
+      "from": "australia-sydney",
+      "to": "brazil"
+    },
+    {
+      "slug": "australia-sydney-to-south-africa",
+      "url": "/time/australia-sydney-to-south-africa/",
+      "title": "Sydney Time to South Africa Time Converter",
+      "from": "australia-sydney",
+      "to": "south-africa"
+    },
+    {
+      "slug": "australia-sydney-to-nigeria",
+      "url": "/time/australia-sydney-to-nigeria/",
+      "title": "Sydney Time to Nigeria Time Converter",
+      "from": "australia-sydney",
+      "to": "nigeria"
+    },
+    {
+      "slug": "australia-sydney-to-canada-toronto",
+      "url": "/time/australia-sydney-to-canada-toronto/",
+      "title": "Sydney Time to Toronto Time Converter",
+      "from": "australia-sydney",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "australia-sydney-to-singapore",
+      "url": "/time/australia-sydney-to-singapore/",
+      "title": "Sydney Time to Singapore Time Converter",
+      "from": "australia-sydney",
+      "to": "singapore"
+    },
+    {
+      "slug": "australia-sydney-to-philippines",
+      "url": "/time/australia-sydney-to-philippines/",
+      "title": "Sydney Time to Philippines Time Converter",
+      "from": "australia-sydney",
+      "to": "philippines"
+    },
+    {
+      "slug": "australia-sydney-to-pakistan",
+      "url": "/time/australia-sydney-to-pakistan/",
+      "title": "Sydney Time to Pakistan Time Converter",
+      "from": "australia-sydney",
+      "to": "pakistan"
+    },
+    {
+      "slug": "australia-sydney-to-south-korea",
+      "url": "/time/australia-sydney-to-south-korea/",
+      "title": "Sydney Time to South Korea Time Converter",
+      "from": "australia-sydney",
+      "to": "south-korea"
+    },
+    {
+      "slug": "australia-sydney-to-france",
+      "url": "/time/australia-sydney-to-france/",
+      "title": "Sydney Time to France Time Converter",
+      "from": "australia-sydney",
+      "to": "france"
+    },
+    {
+      "slug": "australia-sydney-to-saudi-arabia",
+      "url": "/time/australia-sydney-to-saudi-arabia/",
+      "title": "Sydney Time to Saudi Arabia Time Converter",
+      "from": "australia-sydney",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "australia-sydney-to-egypt",
+      "url": "/time/australia-sydney-to-egypt/",
+      "title": "Sydney Time to Egypt Time Converter",
+      "from": "australia-sydney",
+      "to": "egypt"
+    },
+    {
+      "slug": "germany-to-kenya",
+      "url": "/time/germany-to-kenya/",
+      "title": "Germany Time to Kenya Time Converter",
+      "from": "germany",
+      "to": "kenya"
+    },
+    {
+      "slug": "germany-to-mexico-city",
+      "url": "/time/germany-to-mexico-city/",
+      "title": "Germany Time to Mexico City Time Converter",
+      "from": "germany",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "germany-to-india",
+      "url": "/time/germany-to-india/",
+      "title": "Germany Time to India Time Converter",
+      "from": "germany",
+      "to": "india"
+    },
+    {
+      "slug": "germany-to-usa-new-york",
+      "url": "/time/germany-to-usa-new-york/",
+      "title": "Germany Time to New York Time Converter",
+      "from": "germany",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "germany-to-usa-los-angeles",
+      "url": "/time/germany-to-usa-los-angeles/",
+      "title": "Germany Time to Los Angeles Time Converter",
+      "from": "germany",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "germany-to-uk",
+      "url": "/time/germany-to-uk/",
+      "title": "Germany Time to United Kingdom Time Converter",
+      "from": "germany",
+      "to": "uk"
+    },
+    {
+      "slug": "germany-to-uae",
+      "url": "/time/germany-to-uae/",
+      "title": "Germany Time to UAE Time Converter",
+      "from": "germany",
+      "to": "uae"
+    },
+    {
+      "slug": "germany-to-japan",
+      "url": "/time/germany-to-japan/",
+      "title": "Germany Time to Japan Time Converter",
+      "from": "germany",
+      "to": "japan"
+    },
+    {
+      "slug": "germany-to-australia-sydney",
+      "url": "/time/germany-to-australia-sydney/",
+      "title": "Germany Time to Sydney Time Converter",
+      "from": "germany",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "germany-to-china",
+      "url": "/time/germany-to-china/",
+      "title": "Germany Time to China Time Converter",
+      "from": "germany",
+      "to": "china"
+    },
+    {
+      "slug": "germany-to-brazil",
+      "url": "/time/germany-to-brazil/",
+      "title": "Germany Time to Brazil Time Converter",
+      "from": "germany",
+      "to": "brazil"
+    },
+    {
+      "slug": "germany-to-south-africa",
+      "url": "/time/germany-to-south-africa/",
+      "title": "Germany Time to South Africa Time Converter",
+      "from": "germany",
+      "to": "south-africa"
+    },
+    {
+      "slug": "germany-to-nigeria",
+      "url": "/time/germany-to-nigeria/",
+      "title": "Germany Time to Nigeria Time Converter",
+      "from": "germany",
+      "to": "nigeria"
+    },
+    {
+      "slug": "germany-to-canada-toronto",
+      "url": "/time/germany-to-canada-toronto/",
+      "title": "Germany Time to Toronto Time Converter",
+      "from": "germany",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "germany-to-singapore",
+      "url": "/time/germany-to-singapore/",
+      "title": "Germany Time to Singapore Time Converter",
+      "from": "germany",
+      "to": "singapore"
+    },
+    {
+      "slug": "germany-to-philippines",
+      "url": "/time/germany-to-philippines/",
+      "title": "Germany Time to Philippines Time Converter",
+      "from": "germany",
+      "to": "philippines"
+    },
+    {
+      "slug": "germany-to-pakistan",
+      "url": "/time/germany-to-pakistan/",
+      "title": "Germany Time to Pakistan Time Converter",
+      "from": "germany",
+      "to": "pakistan"
+    },
+    {
+      "slug": "germany-to-south-korea",
+      "url": "/time/germany-to-south-korea/",
+      "title": "Germany Time to South Korea Time Converter",
+      "from": "germany",
+      "to": "south-korea"
+    },
+    {
+      "slug": "germany-to-france",
+      "url": "/time/germany-to-france/",
+      "title": "Germany Time to France Time Converter",
+      "from": "germany",
+      "to": "france"
+    },
+    {
+      "slug": "germany-to-saudi-arabia",
+      "url": "/time/germany-to-saudi-arabia/",
+      "title": "Germany Time to Saudi Arabia Time Converter",
+      "from": "germany",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "germany-to-egypt",
+      "url": "/time/germany-to-egypt/",
+      "title": "Germany Time to Egypt Time Converter",
+      "from": "germany",
+      "to": "egypt"
+    },
+    {
+      "slug": "china-to-kenya",
+      "url": "/time/china-to-kenya/",
+      "title": "China Time to Kenya Time Converter",
+      "from": "china",
+      "to": "kenya"
+    },
+    {
+      "slug": "china-to-mexico-city",
+      "url": "/time/china-to-mexico-city/",
+      "title": "China Time to Mexico City Time Converter",
+      "from": "china",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "china-to-india",
+      "url": "/time/china-to-india/",
+      "title": "China Time to India Time Converter",
+      "from": "china",
+      "to": "india"
+    },
+    {
+      "slug": "china-to-usa-new-york",
+      "url": "/time/china-to-usa-new-york/",
+      "title": "China Time to New York Time Converter",
+      "from": "china",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "china-to-usa-los-angeles",
+      "url": "/time/china-to-usa-los-angeles/",
+      "title": "China Time to Los Angeles Time Converter",
+      "from": "china",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "china-to-uk",
+      "url": "/time/china-to-uk/",
+      "title": "China Time to United Kingdom Time Converter",
+      "from": "china",
+      "to": "uk"
+    },
+    {
+      "slug": "china-to-uae",
+      "url": "/time/china-to-uae/",
+      "title": "China Time to UAE Time Converter",
+      "from": "china",
+      "to": "uae"
+    },
+    {
+      "slug": "china-to-japan",
+      "url": "/time/china-to-japan/",
+      "title": "China Time to Japan Time Converter",
+      "from": "china",
+      "to": "japan"
+    },
+    {
+      "slug": "china-to-australia-sydney",
+      "url": "/time/china-to-australia-sydney/",
+      "title": "China Time to Sydney Time Converter",
+      "from": "china",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "china-to-germany",
+      "url": "/time/china-to-germany/",
+      "title": "China Time to Germany Time Converter",
+      "from": "china",
+      "to": "germany"
+    },
+    {
+      "slug": "china-to-brazil",
+      "url": "/time/china-to-brazil/",
+      "title": "China Time to Brazil Time Converter",
+      "from": "china",
+      "to": "brazil"
+    },
+    {
+      "slug": "china-to-south-africa",
+      "url": "/time/china-to-south-africa/",
+      "title": "China Time to South Africa Time Converter",
+      "from": "china",
+      "to": "south-africa"
+    },
+    {
+      "slug": "china-to-nigeria",
+      "url": "/time/china-to-nigeria/",
+      "title": "China Time to Nigeria Time Converter",
+      "from": "china",
+      "to": "nigeria"
+    },
+    {
+      "slug": "china-to-canada-toronto",
+      "url": "/time/china-to-canada-toronto/",
+      "title": "China Time to Toronto Time Converter",
+      "from": "china",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "china-to-singapore",
+      "url": "/time/china-to-singapore/",
+      "title": "China Time to Singapore Time Converter",
+      "from": "china",
+      "to": "singapore"
+    },
+    {
+      "slug": "china-to-philippines",
+      "url": "/time/china-to-philippines/",
+      "title": "China Time to Philippines Time Converter",
+      "from": "china",
+      "to": "philippines"
+    },
+    {
+      "slug": "china-to-pakistan",
+      "url": "/time/china-to-pakistan/",
+      "title": "China Time to Pakistan Time Converter",
+      "from": "china",
+      "to": "pakistan"
+    },
+    {
+      "slug": "china-to-south-korea",
+      "url": "/time/china-to-south-korea/",
+      "title": "China Time to South Korea Time Converter",
+      "from": "china",
+      "to": "south-korea"
+    },
+    {
+      "slug": "china-to-france",
+      "url": "/time/china-to-france/",
+      "title": "China Time to France Time Converter",
+      "from": "china",
+      "to": "france"
+    },
+    {
+      "slug": "china-to-saudi-arabia",
+      "url": "/time/china-to-saudi-arabia/",
+      "title": "China Time to Saudi Arabia Time Converter",
+      "from": "china",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "china-to-egypt",
+      "url": "/time/china-to-egypt/",
+      "title": "China Time to Egypt Time Converter",
+      "from": "china",
+      "to": "egypt"
+    },
+    {
+      "slug": "brazil-to-kenya",
+      "url": "/time/brazil-to-kenya/",
+      "title": "Brazil Time to Kenya Time Converter",
+      "from": "brazil",
+      "to": "kenya"
+    },
+    {
+      "slug": "brazil-to-mexico-city",
+      "url": "/time/brazil-to-mexico-city/",
+      "title": "Brazil Time to Mexico City Time Converter",
+      "from": "brazil",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "brazil-to-india",
+      "url": "/time/brazil-to-india/",
+      "title": "Brazil Time to India Time Converter",
+      "from": "brazil",
+      "to": "india"
+    },
+    {
+      "slug": "brazil-to-usa-new-york",
+      "url": "/time/brazil-to-usa-new-york/",
+      "title": "Brazil Time to New York Time Converter",
+      "from": "brazil",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "brazil-to-usa-los-angeles",
+      "url": "/time/brazil-to-usa-los-angeles/",
+      "title": "Brazil Time to Los Angeles Time Converter",
+      "from": "brazil",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "brazil-to-uk",
+      "url": "/time/brazil-to-uk/",
+      "title": "Brazil Time to United Kingdom Time Converter",
+      "from": "brazil",
+      "to": "uk"
+    },
+    {
+      "slug": "brazil-to-uae",
+      "url": "/time/brazil-to-uae/",
+      "title": "Brazil Time to UAE Time Converter",
+      "from": "brazil",
+      "to": "uae"
+    },
+    {
+      "slug": "brazil-to-japan",
+      "url": "/time/brazil-to-japan/",
+      "title": "Brazil Time to Japan Time Converter",
+      "from": "brazil",
+      "to": "japan"
+    },
+    {
+      "slug": "brazil-to-australia-sydney",
+      "url": "/time/brazil-to-australia-sydney/",
+      "title": "Brazil Time to Sydney Time Converter",
+      "from": "brazil",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "brazil-to-germany",
+      "url": "/time/brazil-to-germany/",
+      "title": "Brazil Time to Germany Time Converter",
+      "from": "brazil",
+      "to": "germany"
+    },
+    {
+      "slug": "brazil-to-china",
+      "url": "/time/brazil-to-china/",
+      "title": "Brazil Time to China Time Converter",
+      "from": "brazil",
+      "to": "china"
+    },
+    {
+      "slug": "brazil-to-south-africa",
+      "url": "/time/brazil-to-south-africa/",
+      "title": "Brazil Time to South Africa Time Converter",
+      "from": "brazil",
+      "to": "south-africa"
+    },
+    {
+      "slug": "brazil-to-nigeria",
+      "url": "/time/brazil-to-nigeria/",
+      "title": "Brazil Time to Nigeria Time Converter",
+      "from": "brazil",
+      "to": "nigeria"
+    },
+    {
+      "slug": "brazil-to-canada-toronto",
+      "url": "/time/brazil-to-canada-toronto/",
+      "title": "Brazil Time to Toronto Time Converter",
+      "from": "brazil",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "brazil-to-singapore",
+      "url": "/time/brazil-to-singapore/",
+      "title": "Brazil Time to Singapore Time Converter",
+      "from": "brazil",
+      "to": "singapore"
+    },
+    {
+      "slug": "brazil-to-philippines",
+      "url": "/time/brazil-to-philippines/",
+      "title": "Brazil Time to Philippines Time Converter",
+      "from": "brazil",
+      "to": "philippines"
+    },
+    {
+      "slug": "brazil-to-pakistan",
+      "url": "/time/brazil-to-pakistan/",
+      "title": "Brazil Time to Pakistan Time Converter",
+      "from": "brazil",
+      "to": "pakistan"
+    },
+    {
+      "slug": "brazil-to-south-korea",
+      "url": "/time/brazil-to-south-korea/",
+      "title": "Brazil Time to South Korea Time Converter",
+      "from": "brazil",
+      "to": "south-korea"
+    },
+    {
+      "slug": "brazil-to-france",
+      "url": "/time/brazil-to-france/",
+      "title": "Brazil Time to France Time Converter",
+      "from": "brazil",
+      "to": "france"
+    },
+    {
+      "slug": "brazil-to-saudi-arabia",
+      "url": "/time/brazil-to-saudi-arabia/",
+      "title": "Brazil Time to Saudi Arabia Time Converter",
+      "from": "brazil",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "brazil-to-egypt",
+      "url": "/time/brazil-to-egypt/",
+      "title": "Brazil Time to Egypt Time Converter",
+      "from": "brazil",
+      "to": "egypt"
+    },
+    {
+      "slug": "south-africa-to-kenya",
+      "url": "/time/south-africa-to-kenya/",
+      "title": "South Africa Time to Kenya Time Converter",
+      "from": "south-africa",
+      "to": "kenya"
+    },
+    {
+      "slug": "south-africa-to-mexico-city",
+      "url": "/time/south-africa-to-mexico-city/",
+      "title": "South Africa Time to Mexico City Time Converter",
+      "from": "south-africa",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "south-africa-to-india",
+      "url": "/time/south-africa-to-india/",
+      "title": "South Africa Time to India Time Converter",
+      "from": "south-africa",
+      "to": "india"
+    },
+    {
+      "slug": "south-africa-to-usa-new-york",
+      "url": "/time/south-africa-to-usa-new-york/",
+      "title": "South Africa Time to New York Time Converter",
+      "from": "south-africa",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "south-africa-to-usa-los-angeles",
+      "url": "/time/south-africa-to-usa-los-angeles/",
+      "title": "South Africa Time to Los Angeles Time Converter",
+      "from": "south-africa",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "south-africa-to-uk",
+      "url": "/time/south-africa-to-uk/",
+      "title": "South Africa Time to United Kingdom Time Converter",
+      "from": "south-africa",
+      "to": "uk"
+    },
+    {
+      "slug": "south-africa-to-uae",
+      "url": "/time/south-africa-to-uae/",
+      "title": "South Africa Time to UAE Time Converter",
+      "from": "south-africa",
+      "to": "uae"
+    },
+    {
+      "slug": "south-africa-to-japan",
+      "url": "/time/south-africa-to-japan/",
+      "title": "South Africa Time to Japan Time Converter",
+      "from": "south-africa",
+      "to": "japan"
+    },
+    {
+      "slug": "south-africa-to-australia-sydney",
+      "url": "/time/south-africa-to-australia-sydney/",
+      "title": "South Africa Time to Sydney Time Converter",
+      "from": "south-africa",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "south-africa-to-germany",
+      "url": "/time/south-africa-to-germany/",
+      "title": "South Africa Time to Germany Time Converter",
+      "from": "south-africa",
+      "to": "germany"
+    },
+    {
+      "slug": "south-africa-to-china",
+      "url": "/time/south-africa-to-china/",
+      "title": "South Africa Time to China Time Converter",
+      "from": "south-africa",
+      "to": "china"
+    },
+    {
+      "slug": "south-africa-to-brazil",
+      "url": "/time/south-africa-to-brazil/",
+      "title": "South Africa Time to Brazil Time Converter",
+      "from": "south-africa",
+      "to": "brazil"
+    },
+    {
+      "slug": "south-africa-to-nigeria",
+      "url": "/time/south-africa-to-nigeria/",
+      "title": "South Africa Time to Nigeria Time Converter",
+      "from": "south-africa",
+      "to": "nigeria"
+    },
+    {
+      "slug": "south-africa-to-canada-toronto",
+      "url": "/time/south-africa-to-canada-toronto/",
+      "title": "South Africa Time to Toronto Time Converter",
+      "from": "south-africa",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "south-africa-to-singapore",
+      "url": "/time/south-africa-to-singapore/",
+      "title": "South Africa Time to Singapore Time Converter",
+      "from": "south-africa",
+      "to": "singapore"
+    },
+    {
+      "slug": "south-africa-to-philippines",
+      "url": "/time/south-africa-to-philippines/",
+      "title": "South Africa Time to Philippines Time Converter",
+      "from": "south-africa",
+      "to": "philippines"
+    },
+    {
+      "slug": "south-africa-to-pakistan",
+      "url": "/time/south-africa-to-pakistan/",
+      "title": "South Africa Time to Pakistan Time Converter",
+      "from": "south-africa",
+      "to": "pakistan"
+    },
+    {
+      "slug": "south-africa-to-south-korea",
+      "url": "/time/south-africa-to-south-korea/",
+      "title": "South Africa Time to South Korea Time Converter",
+      "from": "south-africa",
+      "to": "south-korea"
+    },
+    {
+      "slug": "south-africa-to-france",
+      "url": "/time/south-africa-to-france/",
+      "title": "South Africa Time to France Time Converter",
+      "from": "south-africa",
+      "to": "france"
+    },
+    {
+      "slug": "south-africa-to-saudi-arabia",
+      "url": "/time/south-africa-to-saudi-arabia/",
+      "title": "South Africa Time to Saudi Arabia Time Converter",
+      "from": "south-africa",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "south-africa-to-egypt",
+      "url": "/time/south-africa-to-egypt/",
+      "title": "South Africa Time to Egypt Time Converter",
+      "from": "south-africa",
+      "to": "egypt"
+    },
+    {
+      "slug": "nigeria-to-kenya",
+      "url": "/time/nigeria-to-kenya/",
+      "title": "Nigeria Time to Kenya Time Converter",
+      "from": "nigeria",
+      "to": "kenya"
+    },
+    {
+      "slug": "nigeria-to-mexico-city",
+      "url": "/time/nigeria-to-mexico-city/",
+      "title": "Nigeria Time to Mexico City Time Converter",
+      "from": "nigeria",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "nigeria-to-india",
+      "url": "/time/nigeria-to-india/",
+      "title": "Nigeria Time to India Time Converter",
+      "from": "nigeria",
+      "to": "india"
+    },
+    {
+      "slug": "nigeria-to-usa-new-york",
+      "url": "/time/nigeria-to-usa-new-york/",
+      "title": "Nigeria Time to New York Time Converter",
+      "from": "nigeria",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "nigeria-to-usa-los-angeles",
+      "url": "/time/nigeria-to-usa-los-angeles/",
+      "title": "Nigeria Time to Los Angeles Time Converter",
+      "from": "nigeria",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "nigeria-to-uk",
+      "url": "/time/nigeria-to-uk/",
+      "title": "Nigeria Time to United Kingdom Time Converter",
+      "from": "nigeria",
+      "to": "uk"
+    },
+    {
+      "slug": "nigeria-to-uae",
+      "url": "/time/nigeria-to-uae/",
+      "title": "Nigeria Time to UAE Time Converter",
+      "from": "nigeria",
+      "to": "uae"
+    },
+    {
+      "slug": "nigeria-to-japan",
+      "url": "/time/nigeria-to-japan/",
+      "title": "Nigeria Time to Japan Time Converter",
+      "from": "nigeria",
+      "to": "japan"
+    },
+    {
+      "slug": "nigeria-to-australia-sydney",
+      "url": "/time/nigeria-to-australia-sydney/",
+      "title": "Nigeria Time to Sydney Time Converter",
+      "from": "nigeria",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "nigeria-to-germany",
+      "url": "/time/nigeria-to-germany/",
+      "title": "Nigeria Time to Germany Time Converter",
+      "from": "nigeria",
+      "to": "germany"
+    },
+    {
+      "slug": "nigeria-to-china",
+      "url": "/time/nigeria-to-china/",
+      "title": "Nigeria Time to China Time Converter",
+      "from": "nigeria",
+      "to": "china"
+    },
+    {
+      "slug": "nigeria-to-brazil",
+      "url": "/time/nigeria-to-brazil/",
+      "title": "Nigeria Time to Brazil Time Converter",
+      "from": "nigeria",
+      "to": "brazil"
+    },
+    {
+      "slug": "nigeria-to-south-africa",
+      "url": "/time/nigeria-to-south-africa/",
+      "title": "Nigeria Time to South Africa Time Converter",
+      "from": "nigeria",
+      "to": "south-africa"
+    },
+    {
+      "slug": "nigeria-to-canada-toronto",
+      "url": "/time/nigeria-to-canada-toronto/",
+      "title": "Nigeria Time to Toronto Time Converter",
+      "from": "nigeria",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "nigeria-to-singapore",
+      "url": "/time/nigeria-to-singapore/",
+      "title": "Nigeria Time to Singapore Time Converter",
+      "from": "nigeria",
+      "to": "singapore"
+    },
+    {
+      "slug": "nigeria-to-philippines",
+      "url": "/time/nigeria-to-philippines/",
+      "title": "Nigeria Time to Philippines Time Converter",
+      "from": "nigeria",
+      "to": "philippines"
+    },
+    {
+      "slug": "nigeria-to-pakistan",
+      "url": "/time/nigeria-to-pakistan/",
+      "title": "Nigeria Time to Pakistan Time Converter",
+      "from": "nigeria",
+      "to": "pakistan"
+    },
+    {
+      "slug": "nigeria-to-south-korea",
+      "url": "/time/nigeria-to-south-korea/",
+      "title": "Nigeria Time to South Korea Time Converter",
+      "from": "nigeria",
+      "to": "south-korea"
+    },
+    {
+      "slug": "nigeria-to-france",
+      "url": "/time/nigeria-to-france/",
+      "title": "Nigeria Time to France Time Converter",
+      "from": "nigeria",
+      "to": "france"
+    },
+    {
+      "slug": "nigeria-to-saudi-arabia",
+      "url": "/time/nigeria-to-saudi-arabia/",
+      "title": "Nigeria Time to Saudi Arabia Time Converter",
+      "from": "nigeria",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "nigeria-to-egypt",
+      "url": "/time/nigeria-to-egypt/",
+      "title": "Nigeria Time to Egypt Time Converter",
+      "from": "nigeria",
+      "to": "egypt"
+    },
+    {
+      "slug": "canada-toronto-to-kenya",
+      "url": "/time/canada-toronto-to-kenya/",
+      "title": "Toronto Time to Kenya Time Converter",
+      "from": "canada-toronto",
+      "to": "kenya"
+    },
+    {
+      "slug": "canada-toronto-to-mexico-city",
+      "url": "/time/canada-toronto-to-mexico-city/",
+      "title": "Toronto Time to Mexico City Time Converter",
+      "from": "canada-toronto",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "canada-toronto-to-india",
+      "url": "/time/canada-toronto-to-india/",
+      "title": "Toronto Time to India Time Converter",
+      "from": "canada-toronto",
+      "to": "india"
+    },
+    {
+      "slug": "canada-toronto-to-usa-new-york",
+      "url": "/time/canada-toronto-to-usa-new-york/",
+      "title": "Toronto Time to New York Time Converter",
+      "from": "canada-toronto",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "canada-toronto-to-usa-los-angeles",
+      "url": "/time/canada-toronto-to-usa-los-angeles/",
+      "title": "Toronto Time to Los Angeles Time Converter",
+      "from": "canada-toronto",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "canada-toronto-to-uk",
+      "url": "/time/canada-toronto-to-uk/",
+      "title": "Toronto Time to United Kingdom Time Converter",
+      "from": "canada-toronto",
+      "to": "uk"
+    },
+    {
+      "slug": "canada-toronto-to-uae",
+      "url": "/time/canada-toronto-to-uae/",
+      "title": "Toronto Time to UAE Time Converter",
+      "from": "canada-toronto",
+      "to": "uae"
+    },
+    {
+      "slug": "canada-toronto-to-japan",
+      "url": "/time/canada-toronto-to-japan/",
+      "title": "Toronto Time to Japan Time Converter",
+      "from": "canada-toronto",
+      "to": "japan"
+    },
+    {
+      "slug": "canada-toronto-to-australia-sydney",
+      "url": "/time/canada-toronto-to-australia-sydney/",
+      "title": "Toronto Time to Sydney Time Converter",
+      "from": "canada-toronto",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "canada-toronto-to-germany",
+      "url": "/time/canada-toronto-to-germany/",
+      "title": "Toronto Time to Germany Time Converter",
+      "from": "canada-toronto",
+      "to": "germany"
+    },
+    {
+      "slug": "canada-toronto-to-china",
+      "url": "/time/canada-toronto-to-china/",
+      "title": "Toronto Time to China Time Converter",
+      "from": "canada-toronto",
+      "to": "china"
+    },
+    {
+      "slug": "canada-toronto-to-brazil",
+      "url": "/time/canada-toronto-to-brazil/",
+      "title": "Toronto Time to Brazil Time Converter",
+      "from": "canada-toronto",
+      "to": "brazil"
+    },
+    {
+      "slug": "canada-toronto-to-south-africa",
+      "url": "/time/canada-toronto-to-south-africa/",
+      "title": "Toronto Time to South Africa Time Converter",
+      "from": "canada-toronto",
+      "to": "south-africa"
+    },
+    {
+      "slug": "canada-toronto-to-nigeria",
+      "url": "/time/canada-toronto-to-nigeria/",
+      "title": "Toronto Time to Nigeria Time Converter",
+      "from": "canada-toronto",
+      "to": "nigeria"
+    },
+    {
+      "slug": "canada-toronto-to-singapore",
+      "url": "/time/canada-toronto-to-singapore/",
+      "title": "Toronto Time to Singapore Time Converter",
+      "from": "canada-toronto",
+      "to": "singapore"
+    },
+    {
+      "slug": "canada-toronto-to-philippines",
+      "url": "/time/canada-toronto-to-philippines/",
+      "title": "Toronto Time to Philippines Time Converter",
+      "from": "canada-toronto",
+      "to": "philippines"
+    },
+    {
+      "slug": "canada-toronto-to-pakistan",
+      "url": "/time/canada-toronto-to-pakistan/",
+      "title": "Toronto Time to Pakistan Time Converter",
+      "from": "canada-toronto",
+      "to": "pakistan"
+    },
+    {
+      "slug": "canada-toronto-to-south-korea",
+      "url": "/time/canada-toronto-to-south-korea/",
+      "title": "Toronto Time to South Korea Time Converter",
+      "from": "canada-toronto",
+      "to": "south-korea"
+    },
+    {
+      "slug": "canada-toronto-to-france",
+      "url": "/time/canada-toronto-to-france/",
+      "title": "Toronto Time to France Time Converter",
+      "from": "canada-toronto",
+      "to": "france"
+    },
+    {
+      "slug": "canada-toronto-to-saudi-arabia",
+      "url": "/time/canada-toronto-to-saudi-arabia/",
+      "title": "Toronto Time to Saudi Arabia Time Converter",
+      "from": "canada-toronto",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "canada-toronto-to-egypt",
+      "url": "/time/canada-toronto-to-egypt/",
+      "title": "Toronto Time to Egypt Time Converter",
+      "from": "canada-toronto",
+      "to": "egypt"
+    },
+    {
+      "slug": "singapore-to-kenya",
+      "url": "/time/singapore-to-kenya/",
+      "title": "Singapore Time to Kenya Time Converter",
+      "from": "singapore",
+      "to": "kenya"
+    },
+    {
+      "slug": "singapore-to-mexico-city",
+      "url": "/time/singapore-to-mexico-city/",
+      "title": "Singapore Time to Mexico City Time Converter",
+      "from": "singapore",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "singapore-to-india",
+      "url": "/time/singapore-to-india/",
+      "title": "Singapore Time to India Time Converter",
+      "from": "singapore",
+      "to": "india"
+    },
+    {
+      "slug": "singapore-to-usa-new-york",
+      "url": "/time/singapore-to-usa-new-york/",
+      "title": "Singapore Time to New York Time Converter",
+      "from": "singapore",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "singapore-to-usa-los-angeles",
+      "url": "/time/singapore-to-usa-los-angeles/",
+      "title": "Singapore Time to Los Angeles Time Converter",
+      "from": "singapore",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "singapore-to-uk",
+      "url": "/time/singapore-to-uk/",
+      "title": "Singapore Time to United Kingdom Time Converter",
+      "from": "singapore",
+      "to": "uk"
+    },
+    {
+      "slug": "singapore-to-uae",
+      "url": "/time/singapore-to-uae/",
+      "title": "Singapore Time to UAE Time Converter",
+      "from": "singapore",
+      "to": "uae"
+    },
+    {
+      "slug": "singapore-to-japan",
+      "url": "/time/singapore-to-japan/",
+      "title": "Singapore Time to Japan Time Converter",
+      "from": "singapore",
+      "to": "japan"
+    },
+    {
+      "slug": "singapore-to-australia-sydney",
+      "url": "/time/singapore-to-australia-sydney/",
+      "title": "Singapore Time to Sydney Time Converter",
+      "from": "singapore",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "singapore-to-germany",
+      "url": "/time/singapore-to-germany/",
+      "title": "Singapore Time to Germany Time Converter",
+      "from": "singapore",
+      "to": "germany"
+    },
+    {
+      "slug": "singapore-to-china",
+      "url": "/time/singapore-to-china/",
+      "title": "Singapore Time to China Time Converter",
+      "from": "singapore",
+      "to": "china"
+    },
+    {
+      "slug": "singapore-to-brazil",
+      "url": "/time/singapore-to-brazil/",
+      "title": "Singapore Time to Brazil Time Converter",
+      "from": "singapore",
+      "to": "brazil"
+    },
+    {
+      "slug": "singapore-to-south-africa",
+      "url": "/time/singapore-to-south-africa/",
+      "title": "Singapore Time to South Africa Time Converter",
+      "from": "singapore",
+      "to": "south-africa"
+    },
+    {
+      "slug": "singapore-to-nigeria",
+      "url": "/time/singapore-to-nigeria/",
+      "title": "Singapore Time to Nigeria Time Converter",
+      "from": "singapore",
+      "to": "nigeria"
+    },
+    {
+      "slug": "singapore-to-canada-toronto",
+      "url": "/time/singapore-to-canada-toronto/",
+      "title": "Singapore Time to Toronto Time Converter",
+      "from": "singapore",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "singapore-to-philippines",
+      "url": "/time/singapore-to-philippines/",
+      "title": "Singapore Time to Philippines Time Converter",
+      "from": "singapore",
+      "to": "philippines"
+    },
+    {
+      "slug": "singapore-to-pakistan",
+      "url": "/time/singapore-to-pakistan/",
+      "title": "Singapore Time to Pakistan Time Converter",
+      "from": "singapore",
+      "to": "pakistan"
+    },
+    {
+      "slug": "singapore-to-south-korea",
+      "url": "/time/singapore-to-south-korea/",
+      "title": "Singapore Time to South Korea Time Converter",
+      "from": "singapore",
+      "to": "south-korea"
+    },
+    {
+      "slug": "singapore-to-france",
+      "url": "/time/singapore-to-france/",
+      "title": "Singapore Time to France Time Converter",
+      "from": "singapore",
+      "to": "france"
+    },
+    {
+      "slug": "singapore-to-saudi-arabia",
+      "url": "/time/singapore-to-saudi-arabia/",
+      "title": "Singapore Time to Saudi Arabia Time Converter",
+      "from": "singapore",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "singapore-to-egypt",
+      "url": "/time/singapore-to-egypt/",
+      "title": "Singapore Time to Egypt Time Converter",
+      "from": "singapore",
+      "to": "egypt"
+    },
+    {
+      "slug": "philippines-to-kenya",
+      "url": "/time/philippines-to-kenya/",
+      "title": "Philippines Time to Kenya Time Converter",
+      "from": "philippines",
+      "to": "kenya"
+    },
+    {
+      "slug": "philippines-to-mexico-city",
+      "url": "/time/philippines-to-mexico-city/",
+      "title": "Philippines Time to Mexico City Time Converter",
+      "from": "philippines",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "philippines-to-india",
+      "url": "/time/philippines-to-india/",
+      "title": "Philippines Time to India Time Converter",
+      "from": "philippines",
+      "to": "india"
+    },
+    {
+      "slug": "philippines-to-usa-new-york",
+      "url": "/time/philippines-to-usa-new-york/",
+      "title": "Philippines Time to New York Time Converter",
+      "from": "philippines",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "philippines-to-usa-los-angeles",
+      "url": "/time/philippines-to-usa-los-angeles/",
+      "title": "Philippines Time to Los Angeles Time Converter",
+      "from": "philippines",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "philippines-to-uk",
+      "url": "/time/philippines-to-uk/",
+      "title": "Philippines Time to United Kingdom Time Converter",
+      "from": "philippines",
+      "to": "uk"
+    },
+    {
+      "slug": "philippines-to-uae",
+      "url": "/time/philippines-to-uae/",
+      "title": "Philippines Time to UAE Time Converter",
+      "from": "philippines",
+      "to": "uae"
+    },
+    {
+      "slug": "philippines-to-japan",
+      "url": "/time/philippines-to-japan/",
+      "title": "Philippines Time to Japan Time Converter",
+      "from": "philippines",
+      "to": "japan"
+    },
+    {
+      "slug": "philippines-to-australia-sydney",
+      "url": "/time/philippines-to-australia-sydney/",
+      "title": "Philippines Time to Sydney Time Converter",
+      "from": "philippines",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "philippines-to-germany",
+      "url": "/time/philippines-to-germany/",
+      "title": "Philippines Time to Germany Time Converter",
+      "from": "philippines",
+      "to": "germany"
+    },
+    {
+      "slug": "philippines-to-china",
+      "url": "/time/philippines-to-china/",
+      "title": "Philippines Time to China Time Converter",
+      "from": "philippines",
+      "to": "china"
+    },
+    {
+      "slug": "philippines-to-brazil",
+      "url": "/time/philippines-to-brazil/",
+      "title": "Philippines Time to Brazil Time Converter",
+      "from": "philippines",
+      "to": "brazil"
+    },
+    {
+      "slug": "philippines-to-south-africa",
+      "url": "/time/philippines-to-south-africa/",
+      "title": "Philippines Time to South Africa Time Converter",
+      "from": "philippines",
+      "to": "south-africa"
+    },
+    {
+      "slug": "philippines-to-nigeria",
+      "url": "/time/philippines-to-nigeria/",
+      "title": "Philippines Time to Nigeria Time Converter",
+      "from": "philippines",
+      "to": "nigeria"
+    },
+    {
+      "slug": "philippines-to-canada-toronto",
+      "url": "/time/philippines-to-canada-toronto/",
+      "title": "Philippines Time to Toronto Time Converter",
+      "from": "philippines",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "philippines-to-singapore",
+      "url": "/time/philippines-to-singapore/",
+      "title": "Philippines Time to Singapore Time Converter",
+      "from": "philippines",
+      "to": "singapore"
+    },
+    {
+      "slug": "philippines-to-pakistan",
+      "url": "/time/philippines-to-pakistan/",
+      "title": "Philippines Time to Pakistan Time Converter",
+      "from": "philippines",
+      "to": "pakistan"
+    },
+    {
+      "slug": "philippines-to-south-korea",
+      "url": "/time/philippines-to-south-korea/",
+      "title": "Philippines Time to South Korea Time Converter",
+      "from": "philippines",
+      "to": "south-korea"
+    },
+    {
+      "slug": "philippines-to-france",
+      "url": "/time/philippines-to-france/",
+      "title": "Philippines Time to France Time Converter",
+      "from": "philippines",
+      "to": "france"
+    },
+    {
+      "slug": "philippines-to-saudi-arabia",
+      "url": "/time/philippines-to-saudi-arabia/",
+      "title": "Philippines Time to Saudi Arabia Time Converter",
+      "from": "philippines",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "philippines-to-egypt",
+      "url": "/time/philippines-to-egypt/",
+      "title": "Philippines Time to Egypt Time Converter",
+      "from": "philippines",
+      "to": "egypt"
+    },
+    {
+      "slug": "pakistan-to-kenya",
+      "url": "/time/pakistan-to-kenya/",
+      "title": "Pakistan Time to Kenya Time Converter",
+      "from": "pakistan",
+      "to": "kenya"
+    },
+    {
+      "slug": "pakistan-to-mexico-city",
+      "url": "/time/pakistan-to-mexico-city/",
+      "title": "Pakistan Time to Mexico City Time Converter",
+      "from": "pakistan",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "pakistan-to-india",
+      "url": "/time/pakistan-to-india/",
+      "title": "Pakistan Time to India Time Converter",
+      "from": "pakistan",
+      "to": "india"
+    },
+    {
+      "slug": "pakistan-to-usa-new-york",
+      "url": "/time/pakistan-to-usa-new-york/",
+      "title": "Pakistan Time to New York Time Converter",
+      "from": "pakistan",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "pakistan-to-usa-los-angeles",
+      "url": "/time/pakistan-to-usa-los-angeles/",
+      "title": "Pakistan Time to Los Angeles Time Converter",
+      "from": "pakistan",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "pakistan-to-uk",
+      "url": "/time/pakistan-to-uk/",
+      "title": "Pakistan Time to United Kingdom Time Converter",
+      "from": "pakistan",
+      "to": "uk"
+    },
+    {
+      "slug": "pakistan-to-uae",
+      "url": "/time/pakistan-to-uae/",
+      "title": "Pakistan Time to UAE Time Converter",
+      "from": "pakistan",
+      "to": "uae"
+    },
+    {
+      "slug": "pakistan-to-japan",
+      "url": "/time/pakistan-to-japan/",
+      "title": "Pakistan Time to Japan Time Converter",
+      "from": "pakistan",
+      "to": "japan"
+    },
+    {
+      "slug": "pakistan-to-australia-sydney",
+      "url": "/time/pakistan-to-australia-sydney/",
+      "title": "Pakistan Time to Sydney Time Converter",
+      "from": "pakistan",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "pakistan-to-germany",
+      "url": "/time/pakistan-to-germany/",
+      "title": "Pakistan Time to Germany Time Converter",
+      "from": "pakistan",
+      "to": "germany"
+    },
+    {
+      "slug": "pakistan-to-china",
+      "url": "/time/pakistan-to-china/",
+      "title": "Pakistan Time to China Time Converter",
+      "from": "pakistan",
+      "to": "china"
+    },
+    {
+      "slug": "pakistan-to-brazil",
+      "url": "/time/pakistan-to-brazil/",
+      "title": "Pakistan Time to Brazil Time Converter",
+      "from": "pakistan",
+      "to": "brazil"
+    },
+    {
+      "slug": "pakistan-to-south-africa",
+      "url": "/time/pakistan-to-south-africa/",
+      "title": "Pakistan Time to South Africa Time Converter",
+      "from": "pakistan",
+      "to": "south-africa"
+    },
+    {
+      "slug": "pakistan-to-nigeria",
+      "url": "/time/pakistan-to-nigeria/",
+      "title": "Pakistan Time to Nigeria Time Converter",
+      "from": "pakistan",
+      "to": "nigeria"
+    },
+    {
+      "slug": "pakistan-to-canada-toronto",
+      "url": "/time/pakistan-to-canada-toronto/",
+      "title": "Pakistan Time to Toronto Time Converter",
+      "from": "pakistan",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "pakistan-to-singapore",
+      "url": "/time/pakistan-to-singapore/",
+      "title": "Pakistan Time to Singapore Time Converter",
+      "from": "pakistan",
+      "to": "singapore"
+    },
+    {
+      "slug": "pakistan-to-philippines",
+      "url": "/time/pakistan-to-philippines/",
+      "title": "Pakistan Time to Philippines Time Converter",
+      "from": "pakistan",
+      "to": "philippines"
+    },
+    {
+      "slug": "pakistan-to-south-korea",
+      "url": "/time/pakistan-to-south-korea/",
+      "title": "Pakistan Time to South Korea Time Converter",
+      "from": "pakistan",
+      "to": "south-korea"
+    },
+    {
+      "slug": "pakistan-to-france",
+      "url": "/time/pakistan-to-france/",
+      "title": "Pakistan Time to France Time Converter",
+      "from": "pakistan",
+      "to": "france"
+    },
+    {
+      "slug": "pakistan-to-saudi-arabia",
+      "url": "/time/pakistan-to-saudi-arabia/",
+      "title": "Pakistan Time to Saudi Arabia Time Converter",
+      "from": "pakistan",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "pakistan-to-egypt",
+      "url": "/time/pakistan-to-egypt/",
+      "title": "Pakistan Time to Egypt Time Converter",
+      "from": "pakistan",
+      "to": "egypt"
+    },
+    {
+      "slug": "south-korea-to-kenya",
+      "url": "/time/south-korea-to-kenya/",
+      "title": "South Korea Time to Kenya Time Converter",
+      "from": "south-korea",
+      "to": "kenya"
+    },
+    {
+      "slug": "south-korea-to-mexico-city",
+      "url": "/time/south-korea-to-mexico-city/",
+      "title": "South Korea Time to Mexico City Time Converter",
+      "from": "south-korea",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "south-korea-to-india",
+      "url": "/time/south-korea-to-india/",
+      "title": "South Korea Time to India Time Converter",
+      "from": "south-korea",
+      "to": "india"
+    },
+    {
+      "slug": "south-korea-to-usa-new-york",
+      "url": "/time/south-korea-to-usa-new-york/",
+      "title": "South Korea Time to New York Time Converter",
+      "from": "south-korea",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "south-korea-to-usa-los-angeles",
+      "url": "/time/south-korea-to-usa-los-angeles/",
+      "title": "South Korea Time to Los Angeles Time Converter",
+      "from": "south-korea",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "south-korea-to-uk",
+      "url": "/time/south-korea-to-uk/",
+      "title": "South Korea Time to United Kingdom Time Converter",
+      "from": "south-korea",
+      "to": "uk"
+    },
+    {
+      "slug": "south-korea-to-uae",
+      "url": "/time/south-korea-to-uae/",
+      "title": "South Korea Time to UAE Time Converter",
+      "from": "south-korea",
+      "to": "uae"
+    },
+    {
+      "slug": "south-korea-to-japan",
+      "url": "/time/south-korea-to-japan/",
+      "title": "South Korea Time to Japan Time Converter",
+      "from": "south-korea",
+      "to": "japan"
+    },
+    {
+      "slug": "south-korea-to-australia-sydney",
+      "url": "/time/south-korea-to-australia-sydney/",
+      "title": "South Korea Time to Sydney Time Converter",
+      "from": "south-korea",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "south-korea-to-germany",
+      "url": "/time/south-korea-to-germany/",
+      "title": "South Korea Time to Germany Time Converter",
+      "from": "south-korea",
+      "to": "germany"
+    },
+    {
+      "slug": "south-korea-to-china",
+      "url": "/time/south-korea-to-china/",
+      "title": "South Korea Time to China Time Converter",
+      "from": "south-korea",
+      "to": "china"
+    },
+    {
+      "slug": "south-korea-to-brazil",
+      "url": "/time/south-korea-to-brazil/",
+      "title": "South Korea Time to Brazil Time Converter",
+      "from": "south-korea",
+      "to": "brazil"
+    },
+    {
+      "slug": "south-korea-to-south-africa",
+      "url": "/time/south-korea-to-south-africa/",
+      "title": "South Korea Time to South Africa Time Converter",
+      "from": "south-korea",
+      "to": "south-africa"
+    },
+    {
+      "slug": "south-korea-to-nigeria",
+      "url": "/time/south-korea-to-nigeria/",
+      "title": "South Korea Time to Nigeria Time Converter",
+      "from": "south-korea",
+      "to": "nigeria"
+    },
+    {
+      "slug": "south-korea-to-canada-toronto",
+      "url": "/time/south-korea-to-canada-toronto/",
+      "title": "South Korea Time to Toronto Time Converter",
+      "from": "south-korea",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "south-korea-to-singapore",
+      "url": "/time/south-korea-to-singapore/",
+      "title": "South Korea Time to Singapore Time Converter",
+      "from": "south-korea",
+      "to": "singapore"
+    },
+    {
+      "slug": "south-korea-to-philippines",
+      "url": "/time/south-korea-to-philippines/",
+      "title": "South Korea Time to Philippines Time Converter",
+      "from": "south-korea",
+      "to": "philippines"
+    },
+    {
+      "slug": "south-korea-to-pakistan",
+      "url": "/time/south-korea-to-pakistan/",
+      "title": "South Korea Time to Pakistan Time Converter",
+      "from": "south-korea",
+      "to": "pakistan"
+    },
+    {
+      "slug": "south-korea-to-france",
+      "url": "/time/south-korea-to-france/",
+      "title": "South Korea Time to France Time Converter",
+      "from": "south-korea",
+      "to": "france"
+    },
+    {
+      "slug": "south-korea-to-saudi-arabia",
+      "url": "/time/south-korea-to-saudi-arabia/",
+      "title": "South Korea Time to Saudi Arabia Time Converter",
+      "from": "south-korea",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "south-korea-to-egypt",
+      "url": "/time/south-korea-to-egypt/",
+      "title": "South Korea Time to Egypt Time Converter",
+      "from": "south-korea",
+      "to": "egypt"
+    },
+    {
+      "slug": "france-to-kenya",
+      "url": "/time/france-to-kenya/",
+      "title": "France Time to Kenya Time Converter",
+      "from": "france",
+      "to": "kenya"
+    },
+    {
+      "slug": "france-to-mexico-city",
+      "url": "/time/france-to-mexico-city/",
+      "title": "France Time to Mexico City Time Converter",
+      "from": "france",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "france-to-india",
+      "url": "/time/france-to-india/",
+      "title": "France Time to India Time Converter",
+      "from": "france",
+      "to": "india"
+    },
+    {
+      "slug": "france-to-usa-new-york",
+      "url": "/time/france-to-usa-new-york/",
+      "title": "France Time to New York Time Converter",
+      "from": "france",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "france-to-usa-los-angeles",
+      "url": "/time/france-to-usa-los-angeles/",
+      "title": "France Time to Los Angeles Time Converter",
+      "from": "france",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "france-to-uk",
+      "url": "/time/france-to-uk/",
+      "title": "France Time to United Kingdom Time Converter",
+      "from": "france",
+      "to": "uk"
+    },
+    {
+      "slug": "france-to-uae",
+      "url": "/time/france-to-uae/",
+      "title": "France Time to UAE Time Converter",
+      "from": "france",
+      "to": "uae"
+    },
+    {
+      "slug": "france-to-japan",
+      "url": "/time/france-to-japan/",
+      "title": "France Time to Japan Time Converter",
+      "from": "france",
+      "to": "japan"
+    },
+    {
+      "slug": "france-to-australia-sydney",
+      "url": "/time/france-to-australia-sydney/",
+      "title": "France Time to Sydney Time Converter",
+      "from": "france",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "france-to-germany",
+      "url": "/time/france-to-germany/",
+      "title": "France Time to Germany Time Converter",
+      "from": "france",
+      "to": "germany"
+    },
+    {
+      "slug": "france-to-china",
+      "url": "/time/france-to-china/",
+      "title": "France Time to China Time Converter",
+      "from": "france",
+      "to": "china"
+    },
+    {
+      "slug": "france-to-brazil",
+      "url": "/time/france-to-brazil/",
+      "title": "France Time to Brazil Time Converter",
+      "from": "france",
+      "to": "brazil"
+    },
+    {
+      "slug": "france-to-south-africa",
+      "url": "/time/france-to-south-africa/",
+      "title": "France Time to South Africa Time Converter",
+      "from": "france",
+      "to": "south-africa"
+    },
+    {
+      "slug": "france-to-nigeria",
+      "url": "/time/france-to-nigeria/",
+      "title": "France Time to Nigeria Time Converter",
+      "from": "france",
+      "to": "nigeria"
+    },
+    {
+      "slug": "france-to-canada-toronto",
+      "url": "/time/france-to-canada-toronto/",
+      "title": "France Time to Toronto Time Converter",
+      "from": "france",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "france-to-singapore",
+      "url": "/time/france-to-singapore/",
+      "title": "France Time to Singapore Time Converter",
+      "from": "france",
+      "to": "singapore"
+    },
+    {
+      "slug": "france-to-philippines",
+      "url": "/time/france-to-philippines/",
+      "title": "France Time to Philippines Time Converter",
+      "from": "france",
+      "to": "philippines"
+    },
+    {
+      "slug": "france-to-pakistan",
+      "url": "/time/france-to-pakistan/",
+      "title": "France Time to Pakistan Time Converter",
+      "from": "france",
+      "to": "pakistan"
+    },
+    {
+      "slug": "france-to-south-korea",
+      "url": "/time/france-to-south-korea/",
+      "title": "France Time to South Korea Time Converter",
+      "from": "france",
+      "to": "south-korea"
+    },
+    {
+      "slug": "france-to-saudi-arabia",
+      "url": "/time/france-to-saudi-arabia/",
+      "title": "France Time to Saudi Arabia Time Converter",
+      "from": "france",
+      "to": "saudi-arabia"
+    },
+    {
+      "slug": "france-to-egypt",
+      "url": "/time/france-to-egypt/",
+      "title": "France Time to Egypt Time Converter",
+      "from": "france",
+      "to": "egypt"
+    },
+    {
+      "slug": "saudi-arabia-to-kenya",
+      "url": "/time/saudi-arabia-to-kenya/",
+      "title": "Saudi Arabia Time to Kenya Time Converter",
+      "from": "saudi-arabia",
+      "to": "kenya"
+    },
+    {
+      "slug": "saudi-arabia-to-mexico-city",
+      "url": "/time/saudi-arabia-to-mexico-city/",
+      "title": "Saudi Arabia Time to Mexico City Time Converter",
+      "from": "saudi-arabia",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "saudi-arabia-to-india",
+      "url": "/time/saudi-arabia-to-india/",
+      "title": "Saudi Arabia Time to India Time Converter",
+      "from": "saudi-arabia",
+      "to": "india"
+    },
+    {
+      "slug": "saudi-arabia-to-usa-new-york",
+      "url": "/time/saudi-arabia-to-usa-new-york/",
+      "title": "Saudi Arabia Time to New York Time Converter",
+      "from": "saudi-arabia",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "saudi-arabia-to-usa-los-angeles",
+      "url": "/time/saudi-arabia-to-usa-los-angeles/",
+      "title": "Saudi Arabia Time to Los Angeles Time Converter",
+      "from": "saudi-arabia",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "saudi-arabia-to-uk",
+      "url": "/time/saudi-arabia-to-uk/",
+      "title": "Saudi Arabia Time to United Kingdom Time Converter",
+      "from": "saudi-arabia",
+      "to": "uk"
+    },
+    {
+      "slug": "saudi-arabia-to-uae",
+      "url": "/time/saudi-arabia-to-uae/",
+      "title": "Saudi Arabia Time to UAE Time Converter",
+      "from": "saudi-arabia",
+      "to": "uae"
+    },
+    {
+      "slug": "saudi-arabia-to-japan",
+      "url": "/time/saudi-arabia-to-japan/",
+      "title": "Saudi Arabia Time to Japan Time Converter",
+      "from": "saudi-arabia",
+      "to": "japan"
+    },
+    {
+      "slug": "saudi-arabia-to-australia-sydney",
+      "url": "/time/saudi-arabia-to-australia-sydney/",
+      "title": "Saudi Arabia Time to Sydney Time Converter",
+      "from": "saudi-arabia",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "saudi-arabia-to-germany",
+      "url": "/time/saudi-arabia-to-germany/",
+      "title": "Saudi Arabia Time to Germany Time Converter",
+      "from": "saudi-arabia",
+      "to": "germany"
+    },
+    {
+      "slug": "saudi-arabia-to-china",
+      "url": "/time/saudi-arabia-to-china/",
+      "title": "Saudi Arabia Time to China Time Converter",
+      "from": "saudi-arabia",
+      "to": "china"
+    },
+    {
+      "slug": "saudi-arabia-to-brazil",
+      "url": "/time/saudi-arabia-to-brazil/",
+      "title": "Saudi Arabia Time to Brazil Time Converter",
+      "from": "saudi-arabia",
+      "to": "brazil"
+    },
+    {
+      "slug": "saudi-arabia-to-south-africa",
+      "url": "/time/saudi-arabia-to-south-africa/",
+      "title": "Saudi Arabia Time to South Africa Time Converter",
+      "from": "saudi-arabia",
+      "to": "south-africa"
+    },
+    {
+      "slug": "saudi-arabia-to-nigeria",
+      "url": "/time/saudi-arabia-to-nigeria/",
+      "title": "Saudi Arabia Time to Nigeria Time Converter",
+      "from": "saudi-arabia",
+      "to": "nigeria"
+    },
+    {
+      "slug": "saudi-arabia-to-canada-toronto",
+      "url": "/time/saudi-arabia-to-canada-toronto/",
+      "title": "Saudi Arabia Time to Toronto Time Converter",
+      "from": "saudi-arabia",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "saudi-arabia-to-singapore",
+      "url": "/time/saudi-arabia-to-singapore/",
+      "title": "Saudi Arabia Time to Singapore Time Converter",
+      "from": "saudi-arabia",
+      "to": "singapore"
+    },
+    {
+      "slug": "saudi-arabia-to-philippines",
+      "url": "/time/saudi-arabia-to-philippines/",
+      "title": "Saudi Arabia Time to Philippines Time Converter",
+      "from": "saudi-arabia",
+      "to": "philippines"
+    },
+    {
+      "slug": "saudi-arabia-to-pakistan",
+      "url": "/time/saudi-arabia-to-pakistan/",
+      "title": "Saudi Arabia Time to Pakistan Time Converter",
+      "from": "saudi-arabia",
+      "to": "pakistan"
+    },
+    {
+      "slug": "saudi-arabia-to-south-korea",
+      "url": "/time/saudi-arabia-to-south-korea/",
+      "title": "Saudi Arabia Time to South Korea Time Converter",
+      "from": "saudi-arabia",
+      "to": "south-korea"
+    },
+    {
+      "slug": "saudi-arabia-to-france",
+      "url": "/time/saudi-arabia-to-france/",
+      "title": "Saudi Arabia Time to France Time Converter",
+      "from": "saudi-arabia",
+      "to": "france"
+    },
+    {
+      "slug": "saudi-arabia-to-egypt",
+      "url": "/time/saudi-arabia-to-egypt/",
+      "title": "Saudi Arabia Time to Egypt Time Converter",
+      "from": "saudi-arabia",
+      "to": "egypt"
+    },
+    {
+      "slug": "egypt-to-kenya",
+      "url": "/time/egypt-to-kenya/",
+      "title": "Egypt Time to Kenya Time Converter",
+      "from": "egypt",
+      "to": "kenya"
+    },
+    {
+      "slug": "egypt-to-mexico-city",
+      "url": "/time/egypt-to-mexico-city/",
+      "title": "Egypt Time to Mexico City Time Converter",
+      "from": "egypt",
+      "to": "mexico-city"
+    },
+    {
+      "slug": "egypt-to-india",
+      "url": "/time/egypt-to-india/",
+      "title": "Egypt Time to India Time Converter",
+      "from": "egypt",
+      "to": "india"
+    },
+    {
+      "slug": "egypt-to-usa-new-york",
+      "url": "/time/egypt-to-usa-new-york/",
+      "title": "Egypt Time to New York Time Converter",
+      "from": "egypt",
+      "to": "usa-new-york"
+    },
+    {
+      "slug": "egypt-to-usa-los-angeles",
+      "url": "/time/egypt-to-usa-los-angeles/",
+      "title": "Egypt Time to Los Angeles Time Converter",
+      "from": "egypt",
+      "to": "usa-los-angeles"
+    },
+    {
+      "slug": "egypt-to-uk",
+      "url": "/time/egypt-to-uk/",
+      "title": "Egypt Time to United Kingdom Time Converter",
+      "from": "egypt",
+      "to": "uk"
+    },
+    {
+      "slug": "egypt-to-uae",
+      "url": "/time/egypt-to-uae/",
+      "title": "Egypt Time to UAE Time Converter",
+      "from": "egypt",
+      "to": "uae"
+    },
+    {
+      "slug": "egypt-to-japan",
+      "url": "/time/egypt-to-japan/",
+      "title": "Egypt Time to Japan Time Converter",
+      "from": "egypt",
+      "to": "japan"
+    },
+    {
+      "slug": "egypt-to-australia-sydney",
+      "url": "/time/egypt-to-australia-sydney/",
+      "title": "Egypt Time to Sydney Time Converter",
+      "from": "egypt",
+      "to": "australia-sydney"
+    },
+    {
+      "slug": "egypt-to-germany",
+      "url": "/time/egypt-to-germany/",
+      "title": "Egypt Time to Germany Time Converter",
+      "from": "egypt",
+      "to": "germany"
+    },
+    {
+      "slug": "egypt-to-china",
+      "url": "/time/egypt-to-china/",
+      "title": "Egypt Time to China Time Converter",
+      "from": "egypt",
+      "to": "china"
+    },
+    {
+      "slug": "egypt-to-brazil",
+      "url": "/time/egypt-to-brazil/",
+      "title": "Egypt Time to Brazil Time Converter",
+      "from": "egypt",
+      "to": "brazil"
+    },
+    {
+      "slug": "egypt-to-south-africa",
+      "url": "/time/egypt-to-south-africa/",
+      "title": "Egypt Time to South Africa Time Converter",
+      "from": "egypt",
+      "to": "south-africa"
+    },
+    {
+      "slug": "egypt-to-nigeria",
+      "url": "/time/egypt-to-nigeria/",
+      "title": "Egypt Time to Nigeria Time Converter",
+      "from": "egypt",
+      "to": "nigeria"
+    },
+    {
+      "slug": "egypt-to-canada-toronto",
+      "url": "/time/egypt-to-canada-toronto/",
+      "title": "Egypt Time to Toronto Time Converter",
+      "from": "egypt",
+      "to": "canada-toronto"
+    },
+    {
+      "slug": "egypt-to-singapore",
+      "url": "/time/egypt-to-singapore/",
+      "title": "Egypt Time to Singapore Time Converter",
+      "from": "egypt",
+      "to": "singapore"
+    },
+    {
+      "slug": "egypt-to-philippines",
+      "url": "/time/egypt-to-philippines/",
+      "title": "Egypt Time to Philippines Time Converter",
+      "from": "egypt",
+      "to": "philippines"
+    },
+    {
+      "slug": "egypt-to-pakistan",
+      "url": "/time/egypt-to-pakistan/",
+      "title": "Egypt Time to Pakistan Time Converter",
+      "from": "egypt",
+      "to": "pakistan"
+    },
+    {
+      "slug": "egypt-to-south-korea",
+      "url": "/time/egypt-to-south-korea/",
+      "title": "Egypt Time to South Korea Time Converter",
+      "from": "egypt",
+      "to": "south-korea"
+    },
+    {
+      "slug": "egypt-to-france",
+      "url": "/time/egypt-to-france/",
+      "title": "Egypt Time to France Time Converter",
+      "from": "egypt",
+      "to": "france"
+    },
+    {
+      "slug": "egypt-to-saudi-arabia",
+      "url": "/time/egypt-to-saudi-arabia/",
+      "title": "Egypt Time to Saudi Arabia Time Converter",
+      "from": "egypt",
+      "to": "saudi-arabia"
+    }
+  ]
+}

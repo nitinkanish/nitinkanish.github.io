@@ -1,0 +1,132 @@
+---
+layout: default
+title: World Time Zone Converter
+seo_title: Free World Time Zone Converter — Compare Country & City Times
+description: >-
+  Convert time between countries and cities worldwide. Live clocks, time differences,
+  meeting planners, and 450+ routes like Kenya to Mexico City, India to USA, UK to India.
+permalink: /time/
+last_modified_at: 2025-06-19
+keywords: time zone converter, world clock, country time converter, time difference calculator
+faqs:
+  - question: How do I convert time between two countries?
+    answer: Select your from and to locations on this page, or open a direct route such as /time/kenya-to-mexico-city/. Live clocks show the current time and offset instantly.
+  - question: Does this time zone converter use daylight saving time?
+    answer: Yes. We use official IANA time zone identifiers and your browser's Intl API, so DST changes are applied automatically.
+  - question: Can I find the best time for an international meeting?
+    answer: Each route page highlights overlapping business hours (typically 9 AM to 5 PM local) and includes a 24-hour comparison table.
+  - question: Which countries are supported?
+    answer: We cover major countries and cities including Kenya, India, USA, UK, UAE, Japan, Australia, Germany, Mexico City, and more—with hundreds of pairwise converter pages.
+  - question: Is the time zone converter free?
+    answer: Yes. All tools are free, require no signup, and run in your browser with no data stored on our servers.
+---
+
+<article class="timezone-hub" data-timezone-hub>
+
+  <section class="tz-hub-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li aria-current="page">Time Zone Converter</li>
+        </ol>
+      </nav>
+      <div class="tz-hero-badge-row">
+        <span class="tz-hero-icon icon-tint-date-time">{% include icon.html name=date-time size=22 %}</span>
+        <span class="dash-trust-badge">✓ 450+ country & city time routes</span>
+      </div>
+      <h1>World Time Zone Converter</h1>
+      <p class="tz-hero-lead">
+        Compare local time between countries and major cities. Live clocks, exact time differences,
+        meeting planners, and SEO-friendly routes like <a href="{{ '/time/kenya-to-mexico-city/' | relative_url }}">Kenya to Mexico City</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="tz-section">
+    <div class="container">
+      <div class="tz-hub-picker">
+        <h2 id="tz-hub-heading">Choose locations</h2>
+        <p class="tz-convert-lead">Pick two places to open a dedicated converter page with live clocks and scheduling tools.</p>
+        <div class="tz-hub-form">
+          <div class="form-group">
+            <label class="form-label" for="tz-hub-from">From</label>
+            <select id="tz-hub-from" class="form-select" aria-labelledby="tz-hub-heading"></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tz-hub-to">To</label>
+            <select id="tz-hub-to" class="form-select"></select>
+          </div>
+          <button type="button" id="tz-hub-go" class="btn btn-primary">Open converter</button>
+        </div>
+        <div class="tz-hub-preview" id="tz-hub-preview" aria-live="polite"></div>
+      </div>
+
+      <h2>Popular time zone converters</h2>
+      <div class="tz-route-grid" style="margin-bottom: var(--space-2xl)">
+        <a href="{{ '/time/kenya-to-mexico-city/' | relative_url }}" class="tz-route-link">Kenya → Mexico City</a>
+        <a href="{{ '/time/india-to-usa-new-york/' | relative_url }}" class="tz-route-link">India → New York</a>
+        <a href="{{ '/time/uk-to-india/' | relative_url }}" class="tz-route-link">UK → India</a>
+        <a href="{{ '/time/usa-new-york-to-uk/' | relative_url }}" class="tz-route-link">New York → UK</a>
+        <a href="{{ '/time/uae-to-india/' | relative_url }}" class="tz-route-link">UAE → India</a>
+        <a href="{{ '/time/japan-to-usa-los-angeles/' | relative_url }}" class="tz-route-link">Japan → Los Angeles</a>
+        <a href="{{ '/time/australia-sydney-to-uk/' | relative_url }}" class="tz-route-link">Sydney → UK</a>
+        <a href="{{ '/time/germany-to-usa-new-york/' | relative_url }}" class="tz-route-link">Germany → New York</a>
+        <a href="{{ '/time/kenya-to-uae/' | relative_url }}" class="tz-route-link">Kenya → UAE</a>
+        <a href="{{ '/time/india-to-uae/' | relative_url }}" class="tz-route-link">India → UAE</a>
+        <a href="{{ '/time/singapore-to-india/' | relative_url }}" class="tz-route-link">Singapore → India</a>
+        <a href="{{ '/time/nigeria-to-uk/' | relative_url }}" class="tz-route-link">Nigeria → UK</a>
+        <a href="{{ '/time/south-africa-to-uk/' | relative_url }}" class="tz-route-link">South Africa → UK</a>
+        <a href="{{ '/time/philippines-to-usa-new-york/' | relative_url }}" class="tz-route-link">Philippines → New York</a>
+        <a href="{{ '/time/pakistan-to-uk/' | relative_url }}" class="tz-route-link">Pakistan → UK</a>
+        <a href="{{ '/time/china-to-usa-new-york/' | relative_url }}" class="tz-route-link">China → New York</a>
+        <a href="{{ '/time/brazil-to-usa-new-york/' | relative_url }}" class="tz-route-link">Brazil → New York</a>
+        <a href="{{ '/time/canada-toronto-to-india/' | relative_url }}" class="tz-route-link">Toronto → India</a>
+        <a href="{{ '/time/saudi-arabia-to-uk/' | relative_url }}" class="tz-route-link">Saudi Arabia → UK</a>
+        <a href="{{ '/time/egypt-to-uae/' | relative_url }}" class="tz-route-link">Egypt → UAE</a>
+      </div>
+
+      <h2 style="margin-top: 3rem">All locations</h2>
+      <p class="tz-convert-lead">Every hub location can be paired with any other—open a route above or use the picker.</p>
+      <div class="tz-facts-grid">
+        {% assign hubs = site.data.timezone_locations | where_exp: "l", "l.hub != false" %}
+        {% for loc in hubs %}
+        <div class="tz-fact-card">
+          <h3>{{ loc.name }}</h3>
+          <dl class="tz-fact-list">
+            <div><dt>Zone</dt><dd><code>{{ loc.timezone }}</code></dd></div>
+            <div><dt>Region</dt><dd>{{ loc.region }}</dd></div>
+            <div><dt>UTC</dt><dd>{{ loc.utc_offset }}</dd></div>
+          </dl>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="tz-section tz-section--alt">
+    <div class="container prose">
+      <h2>Why use our world time converter?</h2>
+      <p>Coordinating across time zones is one of the most common frustrations for remote teams, travelers, and families abroad. A one-hour mistake on a Kenya–Mexico City call or an India–US stand-up can mean missed meetings and lost trust. Our converter pages give you <strong>live local time</strong> in both places, the <strong>exact hour difference</strong> (including daylight saving changes), and tools to pick <strong>overlap hours</strong> for calls.</p>
+      <p>Each route uses official <strong>IANA time zone IDs</strong>—the same database trusted by operating systems and airlines. Times refresh every second in your browser. No app install, no account, and no personal data stored.</p>
+      <h3>URL structure</h3>
+      <p>Every converter lives at a clean, shareable URL:</p>
+      <pre><code>https://online-calculators.com/time/{from}-to-{to}/</code></pre>
+      <p>Example: <a href="{{ '/time/kenya-to-mexico-city/' | relative_url }}">/time/kenya-to-mexico-city/</a> compares East Africa Time with Central Time in Mexico.</p>
+    </div>
+  </section>
+
+  {% include faq-accordion.html faqs=page.faqs %}
+</article>
+
+<script type="application/json" id="tz-hub-data">
+{
+  "locations": [
+    {% assign hubs = site.data.timezone_locations | where_exp: "l", "l.hub != false" %}
+    {% for loc in hubs %}
+    {"slug":{{ loc.slug | jsonify }},"name":{{ loc.name | jsonify }},"label":{{ loc.label | jsonify }},"timezone":{{ loc.timezone | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+<script src="{{ '/assets/js/timezone-converter.js' | relative_url }}" defer></script>

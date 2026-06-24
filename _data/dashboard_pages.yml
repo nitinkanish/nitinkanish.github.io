@@ -580,3 +580,149 @@ standard-deviation-calculator:
   newsletter: { title: "Data Insights", text: "Statistics for students and analysts." }
   formula_vars: ["σ = √(Σ(x−μ)² / n)"]
   sticky_label: "Std. Deviation"
+
+loan-payoff-calculator:
+  trust_badge: "Used by 40,000+ borrowers"
+  usage_stat: "20K+ payoff analyses this month"
+  hero_badge: "PAYOFF"
+  widget:
+    input_title: "Loan & Extra Payment"
+    input_subtitle: "See how prepayment saves time and interest"
+    results_title: "Payoff Savings"
+    primary_label: "Months Saved"
+    metric_1_label: "Interest Saved"
+    metric_2_label: "New Payoff"
+    metric_3_label: "Monthly Payment"
+  share: { title: "Share Payoff Plan", card_heading: "My Loan Savings" }
+  examples:
+    - { label: "Home Loan", desc: "₹10L · 8.5% · ₹5K extra", data: { principal: 1000000, rate: 8.5, tenure: 240, extra: 5000 } }
+  newsletter: { title: "Debt Freedom Tips", text: "Loan payoff strategies weekly." }
+  sticky_label: "Months Saved"
+
+mortgage-affordability-calculator:
+  trust_badge: "Trusted by first-time buyers"
+  usage_stat: "15K+ affordability checks this month"
+  hero_badge: "AFFORD"
+  widget:
+    input_title: "Your Finances"
+    input_subtitle: "Income, debts, down payment & rate"
+    results_title: "Affordability Estimate"
+    primary_label: "Max Home Price"
+    metric_1_label: "Loan Amount"
+    metric_2_label: "Monthly P&I"
+    metric_3_label: "Down Payment"
+  share: { title: "Share Affordability", card_heading: "My Home Budget" }
+  examples:
+    - { label: "Median Income", desc: "$120K · 20% down", data: { income: 120000, monthly_debt: 500, down_payment: 20, rate: 6.5, tenure: 30 } }
+  newsletter: { title: "Home Buying Guide", text: "Affordability and mortgage tips." }
+  formula_vars: ["28% housing · 36% total debt"]
+  sticky_label: "Max Home Price"
+
+volume-calculator:
+  trust_badge: "Used by contractors"
+  usage_stat: "12K+ volume calculations this month"
+  hero_badge: "VOLUME"
+  widget:
+    input_title: "Dimensions"
+    input_subtitle: "Box, cylinder, or sphere"
+    results_title: "Calculated Volume"
+    primary_label: "Volume"
+    metric_1_label: "Cu Feet"
+    metric_2_label: "Cu Yards"
+    metric_3_label: "Shape"
+  share: { title: "Share Volume", card_heading: "Calculated Volume" }
+  examples:
+    - { label: "Concrete Slab", desc: "10×10×0.5 ft", data: { shape: "box", length: 10, width: 10, height: 0.5 } }
+  newsletter: { title: "Construction Tips", text: "Material estimates and guides." }
+  sticky_label: "Volume"
+
+grade-calculator:
+  trust_badge: "Trusted by students"
+  usage_stat: "18K+ grade calculations this month"
+  hero_badge: "GRADE"
+  widget:
+    input_title: "Assignments & Weights"
+    input_subtitle: "Enter scores and category weights"
+    results_title: "Course Grade"
+    primary_label: "Weighted Grade"
+    metric_1_label: "Letter"
+    metric_2_label: "Total Weight"
+    metric_3_label: "Status"
+  share: { title: "Share Grade", card_heading: "My Course Grade" }
+  examples:
+    - { label: "Typical Course", desc: "4 weighted categories", data: { score1: 85, weight1: 20, score2: 92, weight2: 25, score3: 78, weight3: 30, score4: 88, weight4: 25 } }
+  newsletter: { title: "Student Success", text: "Study and grade tips." }
+  sticky_label: "Weighted Grade"
+
+mean-median-mode-calculator:
+  trust_badge: "Accurate statistics"
+  usage_stat: "14K+ analyses this month"
+  hero_badge: "STATS"
+  widget:
+    input_title: "Your Dataset"
+    input_subtitle: "Enter numbers separated by commas"
+    results_title: "Central Tendency"
+    primary_label: "Mean"
+    metric_1_label: "Median"
+    metric_2_label: "Mode"
+    metric_3_label: "Count"
+  share: { title: "Share Statistics", card_heading: "Mean Median Mode" }
+  examples:
+    - { label: "Sample Data", desc: "8 values", data: { dataset: "12, 15, 18, 22, 22, 25, 30, 20" } }
+  newsletter: { title: "Data Insights", text: "Statistics for students." }
+  sticky_label: "Mean"
+
+heart-rate-zone-calculator:
+  trust_badge: "Used by 25,000+ athletes"
+  usage_stat: "16K+ zone calculations this month"
+  hero_badge: "HR ZONES"
+  widget:
+    input_title: "Your Profile"
+    input_subtitle: "Age and optional resting heart rate"
+    results_title: "Training Zones"
+    primary_label: "Max Heart Rate"
+    metric_1_label: "Fat Burn Zone"
+    metric_2_label: "Cardio Zone"
+    metric_3_label: "Resting HR"
+  timeline: { title: "Heart Rate Zones", lead: "Training intensity bands based on your max HR." }
+  share: { title: "Share HR Zones", card_heading: "My Training Zones" }
+  examples:
+    - { label: "Adult", desc: "Age 30 · RHR 65", data: { age: 30, resting_hr: 65 } }
+  newsletter: { title: "Fitness Training", text: "Heart rate and cardio tips." }
+  sticky_label: "Max HR"
+
+speed-converter:
+  trust_badge: "Instant speed conversion"
+  usage_stat: "11K+ conversions this month"
+  hero_badge: "SPEED"
+  widget:
+    input_title: "Speed Converter"
+    input_subtitle: "km/h, mph, m/s, knots, ft/s"
+    results_title: "Converted Speed"
+    primary_label: "Result"
+    metric_1_label: "From"
+    metric_2_label: "To Unit"
+    metric_3_label: "m/s"
+  share: { title: "Share Conversion", card_heading: "Speed Conversion" }
+  examples:
+    - { label: "Highway", desc: "100 km/h to mph", data: { from_value: 100, from_unit: "kmh", to_unit: "mph" } }
+  newsletter: { title: "Science Snippets", text: "Unit conversion tips." }
+  sticky_label: "Result"
+
+markup-calculator:
+  trust_badge: "Used by 20,000+ businesses"
+  usage_stat: "10K+ markup calculations this month"
+  hero_badge: "MARKUP"
+  widget:
+    input_title: "Cost & Markup"
+    input_subtitle: "Calculate selling price from cost plus markup"
+    results_title: "Pricing Result"
+    primary_label: "Selling Price"
+    metric_1_label: "Profit"
+    metric_2_label: "Markup %"
+    metric_3_label: "Margin %"
+  share: { title: "Share Pricing", card_heading: "My Markup Calculation" }
+  examples:
+    - { label: "Retail", desc: "₹1000 cost · 50% markup", data: { cost: 1000, markup: 50 } }
+  newsletter: { title: "Business Pricing", text: "Markup and margin strategies." }
+  sticky_label: "Selling Price"

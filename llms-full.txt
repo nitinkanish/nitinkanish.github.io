@@ -1,0 +1,466 @@
+# Online Calculators — Full Catalog
+
+> Machine-readable index of all calculators, categories, and site metadata. Generated 2026-06-24. Canonical site: https://online-calculators.com
+
+## Site Metadata
+
+- name: Online Calculators
+- url: https://online-calculators.com
+- description: Fast, accurate, and free online calculators for finance, health, math, business, and unit conversion. EMI, SIP, BMI, GST, percentage, and 1000+ more calculators.
+- operator: Nitin Kumar
+- contact: onlinecalculatorsinfo@gmail.com
+- github: https://github.com/nitinkanish/nitinkanish.github.io
+- linkedin: https://www.linkedin.com/company/onlinecalculators/
+- stack: Jekyll, GitHub Pages, vanilla JavaScript (client-side calculators), SCSS, PWA
+- analytics: Google Analytics 4 (G-BJLB2TWL8B), loaded only after cookie consent
+
+## Architecture (for contributors)
+
+- Calculator definitions: `_data/calculators.yml`
+- Dashboard copy: `_data/dashboard_pages.yml`
+- SEO titles: `_data/seo.yml`
+- Long-form content: `_data/calc_content.yml`
+- Forms: `_includes/calc-forms/{type}.html`
+- Logic: `assets/js/calculators/{type}.js`
+- Layout: `_layouts/calculator.html` (15-section dashboard)
+- Regenerate pages: `ruby scripts/generate_pages.rb --force`
+- Regenerate llms files: `ruby scripts/generate_llms_txt.rb`
+
+## Categories
+
+### Finance Calculators
+- slug: finance
+- url: https://online-calculators.com/finance/
+- description: Plan your financial future with EMI, SIP, FD, compound interest, and loan calculators. Make informed investment and borrowing decisions with accurate projections.
+- seo_title: Free Finance Calculators — EMI, SIP, FD & Loan Payoff Tools
+
+### Mortgage Calculators
+- slug: mortgage
+- url: https://online-calculators.com/mortgage/
+- description: Calculate monthly mortgage payments, affordability, and amortization schedules for home loans and property financing.
+- seo_title: Free Mortgage Calculators — Payment & Affordability Tools
+
+### Health Calculators
+- slug: health
+- url: https://online-calculators.com/health/
+- description: Track your wellness with BMI, BMR, calorie, pregnancy, and fitness calculators. Understand your body metrics and set achievable health goals.
+- seo_title: Free Health Calculators — BMI, BMR, Calorie & Pregnancy Tools
+
+### Math & Percentage Calculators
+- slug: math
+- url: https://online-calculators.com/math/
+- description: Solve everyday math problems with percentage, age, and scientific calculators. Quick, accurate results for students and professionals.
+- seo_title: Free Math Calculators — Percentage & Math Tools
+
+### Unit Converters
+- slug: converters
+- url: https://online-calculators.com/converters/
+- description: Convert length, weight, temperature, and more between metric and imperial units instantly with precision.
+- seo_title: Free Unit Converters — Length, Weight, Temperature & Speed
+
+### Business Calculators
+- slug: business
+- url: https://online-calculators.com/business/
+- description: Calculate profit margins, GST, markup, and business metrics to optimize pricing and tax compliance for your enterprise.
+- seo_title: Free Business Calculators — GST, Margin & Markup Tools
+
+### Construction Calculators
+- slug: construction
+- url: https://online-calculators.com/construction/
+- description: Estimate materials, areas, volumes, and costs for construction and renovation projects.
+- seo_title: Free Construction Calculators — Area & Volume Tools
+
+### Education Calculators
+- slug: education
+- url: https://online-calculators.com/education/
+- description: GPA, grade, and academic calculators for students and educators.
+- seo_title: Free Education Calculators — GPA & Weighted Grade Tools
+
+### Statistics Calculators
+- slug: statistics
+- url: https://online-calculators.com/statistics/
+- description: Mean, median, standard deviation, and statistical analysis tools for data professionals.
+- seo_title: Free Statistics Calculators — Mean, Median & Standard Deviation
+
+### Scientific Calculators
+- slug: scientific
+- url: https://online-calculators.com/scientific/
+- description: Advanced scientific and engineering calculators for complex mathematical operations.
+- seo_title: Free Scientific Calculators — Advanced Math & Engineering Tools
+
+### Date & Time Calculators
+- slug: date-time
+- url: https://online-calculators.com/date-time/
+- description: Calculate age, date differences, and time intervals with precision.
+- seo_title: Free Date Calculators — Age, Days Between Dates & Time Tools
+
+### Fitness Calculators
+- slug: fitness
+- url: https://online-calculators.com/fitness/
+- description: Track macros, heart rate zones, and workout metrics for optimal fitness performance.
+- seo_title: Free Fitness Calculators — Macro & Heart Rate Zone Tools
+
+## Calculators
+
+### EMI Calculator
+- slug: emi-calculator
+- url: https://online-calculators.com/finance/emi-calculator/
+- category: finance
+- calculator_type: emi
+- description: Calculate monthly EMI for home, car, and personal loans with amortization breakdown.
+- formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1)
+- keywords: emi calculator, loan emi calculator, home loan emi
+- seo_title: Free EMI Calculator for Home & Car Loans
+- featured: true
+- popular: true
+
+### SIP Calculator
+- slug: sip-calculator
+- url: https://online-calculators.com/finance/sip-calculator/
+- category: finance
+- calculator_type: sip
+- description: Estimate mutual fund SIP returns with step-up options and wealth projection charts.
+- formula: FV = P × ((1+r)^n - 1) / r × (1+r)
+- keywords: sip calculator, mutual fund sip calculator, sip return calculator
+- seo_title: Free SIP Calculator — Mutual Fund Returns & Wealth Projection
+- featured: true
+- popular: true
+
+### FD Calculator
+- slug: fd-calculator
+- url: https://online-calculators.com/finance/fd-calculator/
+- category: finance
+- calculator_type: fd
+- description: Calculate fixed deposit maturity amount with quarterly, monthly, and annual compounding.
+- formula: A = P × (1 + r/n)^(n×t)
+- keywords: fd calculator, fixed deposit calculator, fd interest calculator
+- seo_title: Free FD Calculator — Fixed Deposit Maturity & Interest
+- featured: false
+- popular: true
+
+### Compound Interest Calculator
+- slug: compound-interest-calculator
+- url: https://online-calculators.com/finance/compound-interest-calculator/
+- category: finance
+- calculator_type: compound-interest
+- description: Calculate compound interest with regular contributions and visualize wealth growth over time.
+- formula: A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)]
+- keywords: compound interest calculator, interest calculator, compounding calculator
+- seo_title: Free Compound Interest Calculator with Monthly Contributions
+- featured: true
+- popular: true
+
+### BMI Calculator
+- slug: bmi-calculator
+- url: https://online-calculators.com/health/bmi-calculator/
+- category: health
+- calculator_type: bmi
+- description: Calculate Body Mass Index and get personalized health category recommendations.
+- formula: BMI = weight (kg) / height (m)²
+- keywords: bmi calculator, body mass index calculator, bmi chart
+- seo_title: Free BMI Calculator — Body Mass Index & Health Category
+- featured: true
+- popular: true
+
+### BMR Calculator
+- slug: bmr-calculator
+- url: https://online-calculators.com/health/bmr-calculator/
+- category: health
+- calculator_type: bmr
+- description: Calculate Basal Metabolic Rate to understand daily calorie needs at rest.
+- formula: BMR (M) = 10W + 6.25H - 5A + 5; BMR (F) = 10W + 6.25H - 5A - 161
+- keywords: bmr calculator, basal metabolic rate calculator, metabolism calculator
+- seo_title: Free BMR Calculator — Basal Metabolic Rate & TDEE
+- popular: true
+
+### Calorie Calculator
+- slug: calorie-calculator
+- url: https://online-calculators.com/health/calorie-calculator/
+- category: health
+- calculator_type: calorie
+- description: Calculate daily calorie needs for weight loss, maintenance, or muscle gain goals.
+- formula: TDEE = BMR × Activity Factor
+- keywords: calorie calculator, daily calorie calculator, tdee calculator
+- seo_title: Free Daily Calorie Calculator for Weight Loss & Gain
+- featured: false
+- popular: true
+
+### Percentage Calculator
+- slug: percentage-calculator
+- url: https://online-calculators.com/math/percentage-calculator/
+- category: math
+- calculator_type: percentage
+- description: Calculate percentages, percentage change, increase, decrease, and fraction conversions.
+- formula: Percentage = (Part / Whole) × 100
+- keywords: percentage calculator, percent calculator, percentage increase calculator
+- seo_title: Free Percentage Calculator — Increase, Decrease & Change
+- featured: true
+- popular: true
+
+### Age Calculator
+- slug: age-calculator
+- url: https://online-calculators.com/date-time/age-calculator/
+- category: date-time
+- calculator_type: age
+- description: Calculate exact age in years, months, days, hours, and minutes from date of birth.
+- formula: Age = Current Date - Date of Birth
+- keywords: age calculator, date of birth calculator, how old am i
+- seo_title: Free Age Calculator — Exact Age in Years, Months & Days
+- popular: true
+
+### Scientific Calculator
+- slug: scientific-calculator
+- url: https://online-calculators.com/scientific/scientific-calculator/
+- category: scientific
+- calculator_type: scientific
+- description: Full-featured scientific calculator with trigonometry, logarithms, and advanced functions.
+- formula: Varies by operation
+- keywords: scientific calculator, online scientific calculator, math calculator
+- seo_title: Free Online Scientific Calculator with Trigonometry
+- featured: true
+- popular: true
+
+### Length Converter
+- slug: length-converter
+- url: https://online-calculators.com/converters/length-converter/
+- category: converters
+- calculator_type: length-converter
+- description: Convert between meters, feet, inches, miles, kilometers, and more length units.
+- formula: Target = Source × Conversion Factor
+- keywords: length converter, feet to meters, inch to cm converter
+- seo_title: Free Length Converter — Feet to Meters, Inches to CM
+- featured: false
+- popular: true
+
+### Weight Converter
+- slug: weight-converter
+- url: https://online-calculators.com/converters/weight-converter/
+- category: converters
+- calculator_type: weight-converter
+- description: Convert between kilograms, pounds, ounces, grams, stones, and more weight units.
+- formula: Target = Source × Conversion Factor
+- keywords: weight converter, kg to lbs, pounds to kg converter
+- seo_title: Free Weight Converter — KG to LBS & Pounds to Kilograms
+- popular: true
+
+### Temperature Converter
+- slug: temperature-converter
+- url: https://online-calculators.com/converters/temperature-converter/
+- category: converters
+- calculator_type: temperature-converter
+- description: Convert between Celsius, Fahrenheit, and Kelvin temperature scales instantly.
+- formula: °F = (°C × 9/5) + 32; K = °C + 273.15
+- keywords: temperature converter, celsius to fahrenheit, fahrenheit to celsius
+- seo_title: Free Temperature Converter — Celsius to Fahrenheit & Kelvin
+- featured: false
+- popular: true
+
+### Profit Margin Calculator
+- slug: profit-margin-calculator
+- url: https://online-calculators.com/business/profit-margin-calculator/
+- category: business
+- calculator_type: profit-margin
+- description: Calculate gross, operating, and net profit margins for your business pricing strategy.
+- formula: Profit Margin = (Revenue - Cost) / Revenue × 100
+- keywords: profit margin calculator, margin calculator, markup calculator
+- seo_title: Free Profit Margin Calculator — Markup & Revenue Analysis
+- popular: true
+
+### GST Calculator
+- slug: gst-calculator
+- url: https://online-calculators.com/business/gst-calculator/
+- category: business
+- calculator_type: gst
+- description: Calculate GST inclusive and exclusive amounts for Indian tax rates of 5%, 12%, 18%, and 28%.
+- formula: GST Amount = Price × Rate / 100; Inclusive Price = Price × (1 + Rate/100)
+- keywords: gst calculator, gst inclusive calculator, india gst calculator
+- seo_title: Free GST Calculator India — 5%, 12%, 18% & 28% Tax
+- featured: true
+- popular: true
+
+### Pregnancy Due Date Calculator
+- slug: pregnancy-calculator
+- url: https://online-calculators.com/health/pregnancy-calculator/
+- category: health
+- calculator_type: pregnancy
+- description: Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date.
+- formula: Due Date = LMP + 280 days (Naegele's Rule)
+- keywords: pregnancy calculator, due date calculator, pregnancy week calculator, gestational age calculator
+- seo_title: Free Pregnancy Calculator — Due Date & Gestational Age
+- featured: true
+- popular: true
+
+### Mortgage Calculator
+- slug: mortgage-calculator
+- url: https://online-calculators.com/mortgage/mortgage-calculator/
+- category: mortgage
+- calculator_type: mortgage
+- description: Calculate monthly mortgage payments, total interest, and amortization for US home loans.
+- formula: M = P × r × (1+r)^n / ((1+r)^n - 1)
+- keywords: mortgage calculator, home loan calculator, monthly mortgage payment, mortgage payment calculator
+- seo_title: Free Mortgage Calculator — Monthly Home Loan Payment
+- featured: true
+- popular: true
+
+### Date Difference Calculator
+- slug: date-difference-calculator
+- url: https://online-calculators.com/date-time/date-difference-calculator/
+- category: date-time
+- calculator_type: date-difference
+- description: Calculate exact days, weeks, months, and years between any two dates instantly.
+- formula: Difference = End Date − Start Date
+- keywords: date difference calculator, days between dates, date calculator, time between dates
+- seo_title: Free Date Difference Calculator — Days Between Two Dates
+- featured: true
+- popular: true
+
+### Macro Calculator
+- slug: macro-calculator
+- url: https://online-calculators.com/fitness/macro-calculator/
+- category: fitness
+- calculator_type: macro
+- description: Calculate daily protein, carbs, and fat targets based on your calories and fitness goals.
+- formula: Protein g × 4 + Carbs g × 4 + Fat g × 9 = Calories
+- keywords: macro calculator, macronutrient calculator, protein calculator, iifym calculator
+- seo_title: Free Macro Calculator — Protein, Carbs & Fat Targets
+- featured: true
+- popular: true
+
+### GPA Calculator
+- slug: gpa-calculator
+- url: https://online-calculators.com/education/gpa-calculator/
+- category: education
+- calculator_type: gpa
+- description: Calculate weighted GPA on a 4.0 scale from course grades and credit hours.
+- formula: GPA = Σ(Grade Points × Credits) / Σ(Credits)
+- keywords: gpa calculator, grade point average calculator, college gpa calculator, weighted gpa calculator
+- seo_title: Free GPA Calculator — Weighted 4.0 Scale Grade Point Average
+- featured: true
+- popular: true
+
+### Area Calculator
+- slug: area-calculator
+- url: https://online-calculators.com/construction/area-calculator/
+- category: construction
+- calculator_type: area
+- description: Calculate area of rectangle, circle, triangle, and room layouts for construction and renovation.
+- formula: Rectangle: l×w | Circle: πr² | Triangle: ½bh
+- keywords: area calculator, square footage calculator, room area calculator, construction area calculator
+- seo_title: Free Area Calculator — Square Footage & Room Dimensions
+- featured: true
+- popular: true
+
+### Standard Deviation Calculator
+- slug: standard-deviation-calculator
+- url: https://online-calculators.com/statistics/standard-deviation-calculator/
+- category: statistics
+- calculator_type: standard-deviation
+- description: Calculate mean, variance, and standard deviation for any dataset — sample or population.
+- formula: σ = √(Σ(x−μ)² / N)
+- keywords: standard deviation calculator, statistics calculator, variance calculator, mean calculator
+- seo_title: Free Standard Deviation Calculator — Mean & Variance
+- featured: true
+- popular: true
+
+### Loan Payoff Calculator
+- slug: loan-payoff-calculator
+- url: https://online-calculators.com/finance/loan-payoff-calculator/
+- category: finance
+- calculator_type: loan-payoff
+- description: Calculate how extra EMI payments reduce loan tenure and total interest on home, car, and personal loans.
+- formula: Interest saved = Original total interest − New total with extra payments
+- keywords: loan payoff calculator, extra emi calculator, loan prepayment calculator, interest savings calculator
+- seo_title: Free Loan Payoff Calculator — Extra EMI Interest Savings
+- featured: true
+- popular: true
+
+### Mortgage Affordability Calculator
+- slug: mortgage-affordability-calculator
+- url: https://online-calculators.com/mortgage/mortgage-affordability-calculator/
+- category: mortgage
+- calculator_type: mortgage-affordability
+- description: Calculate how much house you can afford based on income, debts, down payment, and mortgage rate.
+- formula: Max payment ≈ 28% of gross monthly income (housing ratio)
+- keywords: mortgage affordability calculator, how much house can I afford, home affordability calculator, mortgage qualification calculator
+- seo_title: Free Mortgage Affordability Calculator — How Much House Can I Afford
+- featured: true
+- popular: true
+
+### Volume Calculator
+- slug: volume-calculator
+- url: https://online-calculators.com/construction/volume-calculator/
+- category: construction
+- calculator_type: volume
+- description: Calculate volume of rectangular prisms, cylinders, and spheres for concrete, fill, and tank capacity.
+- formula: Box: l×w×h | Cylinder: πr²h | Sphere: ⁴⁄₃πr³
+- keywords: volume calculator, cubic feet calculator, concrete volume calculator, cylinder volume calculator
+- seo_title: Free Volume Calculator — Cubic Feet, Yards & Concrete
+- featured: true
+- popular: true
+
+### Grade Calculator
+- slug: grade-calculator
+- url: https://online-calculators.com/education/grade-calculator/
+- category: education
+- calculator_type: grade
+- description: Calculate weighted course grade from assignments, exams, and project scores with custom weights.
+- formula: Grade = Σ(Score × Weight) / Σ(Weight)
+- keywords: grade calculator, weighted grade calculator, final grade calculator, course grade calculator
+- seo_title: Free Grade Calculator — Weighted Course Grade & Letter
+- featured: true
+- popular: true
+
+### Mean Median Mode Calculator
+- slug: mean-median-mode-calculator
+- url: https://online-calculators.com/statistics/mean-median-mode-calculator/
+- category: statistics
+- calculator_type: mean-median-mode
+- description: Calculate mean, median, mode, range, and count for any dataset instantly.
+- formula: Mean = Σx/n | Median = middle value | Mode = most frequent
+- keywords: mean median mode calculator, average calculator, statistics calculator, central tendency calculator
+- seo_title: Free Mean Median Mode Calculator — Statistics Tool
+- featured: true
+- popular: true
+
+### Heart Rate Zone Calculator
+- slug: heart-rate-zone-calculator
+- url: https://online-calculators.com/fitness/heart-rate-zone-calculator/
+- category: fitness
+- calculator_type: heart-rate
+- description: Calculate max heart rate and training zones for fat burn, cardio, and peak performance.
+- formula: Max HR ≈ 220 − Age | Zones = % of max HR
+- keywords: heart rate zone calculator, max heart rate calculator, cardio zone calculator, training zones calculator
+- seo_title: Free Heart Rate Zone Calculator — Max HR & Training Zones
+- featured: true
+- popular: true
+
+### Speed Converter
+- slug: speed-converter
+- url: https://online-calculators.com/converters/speed-converter/
+- category: converters
+- calculator_type: speed-converter
+- description: Convert speed between km/h, mph, m/s, knots, and feet per second instantly.
+- formula: Target = Source × conversion factor
+- keywords: speed converter, kmh to mph, mph to kmh, knots converter
+- seo_title: Free Speed Converter — KM/H to MPH, Knots & M/S
+- featured: true
+- popular: true
+
+### Markup Calculator
+- slug: markup-calculator
+- url: https://online-calculators.com/business/markup-calculator/
+- category: business
+- calculator_type: markup
+- description: Calculate selling price, profit, and margin from cost price and markup percentage.
+- formula: Selling Price = Cost × (1 + Markup%/100)
+- keywords: markup calculator, markup percentage calculator, selling price calculator, cost plus pricing calculator
+- seo_title: Free Markup Calculator — Selling Price from Cost
+- featured: true
+- popular: true
+
+## Disclaimers
+
+- Health calculators (BMI, BMR, calorie, pregnancy) provide estimates only — not medical advice.
+- Finance calculators (EMI, SIP, FD, mortgage) are projections — verify with your bank or advisor.
+- GST calculator targets Indian tax slabs; mortgage calculator uses US-style amortization.
+- No personal data is stored server-side; calculations run in the user browser.

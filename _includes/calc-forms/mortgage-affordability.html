@@ -1,0 +1,30 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="income">Annual Gross Income ($)</label>
+    <input type="number" id="income" name="income" class="form-input" value="120000" min="1" data-validate="required|number|min:1" inputmode="decimal">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="monthly_debt">Monthly Debt Payments ($)</label>
+    <input type="number" id="monthly_debt" name="monthly_debt" class="form-input" value="500" min="0" data-validate="number|min:0" inputmode="decimal">
+    <p class="form-hint">Car loans, student loans, credit cards, etc.</p>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="down_payment">Down Payment (%)</label>
+      <input type="number" id="down_payment" name="down_payment" class="form-input" value="20" min="0" max="100" data-validate="number|min:0|max:100" inputmode="decimal">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="rate">Mortgage Rate (%)</label>
+      <input type="number" id="rate" name="rate" class="form-input" value="6.5" min="0.1" step="0.125" data-validate="required|number" inputmode="decimal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="tenure">Loan Term (years)</label>
+    <select id="tenure" name="tenure" class="form-select">
+      <option value="15">15 years</option>
+      <option value="20">20 years</option>
+      <option value="30" selected>30 years</option>
+    </select>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>

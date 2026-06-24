@@ -3,6 +3,10 @@ Allow: /
 
 Sitemap: https://online-calculators.com/sitemap.xml
 
+# LLM / AI agent index (https://llmstxt.org/)
+# https://online-calculators.com/llms.txt
+# https://online-calculators.com/llms-full.txt
+
 # Block build artifacts
 Disallow: /scripts/
 Disallow: /vendor/

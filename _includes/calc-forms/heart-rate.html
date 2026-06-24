@@ -1,0 +1,15 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="age">Age (years)</label>
+      <input type="number" id="age" name="age" class="form-input" value="30" min="10" max="100" data-validate="required|number|min:10|max:100" inputmode="numeric">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="resting_hr">Resting HR (optional)</label>
+      <input type="number" id="resting_hr" name="resting_hr" class="form-input" value="65" min="40" max="120" inputmode="numeric">
+      <p class="form-hint">For Karvonen zones</p>
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="tz-zones-output" class="hr-zones-panel" hidden></div>

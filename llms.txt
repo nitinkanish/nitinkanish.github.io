@@ -1,0 +1,143 @@
+# Online Calculators
+
+> Fast, accurate, and free online calculators for finance, health, math, business, and unit conversion. EMI, SIP, BMI, GST, percentage, and 1000+ more calculators. Free, instant, no signup. Built as a static Jekyll site on GitHub Pages at https://online-calculators.com.
+
+This file helps AI agents and developers understand Online Calculators: what we offer, where to link users, and which pages contain authoritative calculator logic. All tools run client-side in the browser; results are estimates, not professional advice.
+
+- **Primary audience:** people searching for free EMI, BMI, GST, pregnancy due date, mortgage, and unit conversion tools.
+- **URL pattern:** `/{category}/{calculator-slug}/` (e.g. `/health/pregnancy-calculator/`).
+- **Full catalog:** https://online-calculators.com/llms-full.txt — complete list with formulas, types, and metadata.
+- **Sitemap:** https://online-calculators.com/sitemap.xml
+- **Repository:** https://github.com/nitinkanish/nitinkanish.github.io
+- **Last generated:** 2026-06-24
+
+## Featured Calculators
+
+- [Percentage Calculator](https://online-calculators.com/math/percentage-calculator/): Calculate percentages, percentage change, increase, decrease, and fraction conversions. Formula: Percentage = (Part / Whole) × 100.
+- [GST Calculator](https://online-calculators.com/business/gst-calculator/): Calculate GST inclusive and exclusive amounts for Indian tax rates of 5%, 12%, 18%, and 28%. Formula: GST Amount = Price × Rate / 100; Inclusive Price = Price × (1 + Rate/100).
+- [BMI Calculator](https://online-calculators.com/health/bmi-calculator/): Calculate Body Mass Index and get personalized health category recommendations. Formula: BMI = weight (kg) / height (m)².
+- [EMI Calculator](https://online-calculators.com/finance/emi-calculator/): Calculate monthly EMI for home, car, and personal loans with amortization breakdown. Formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1).
+- [SIP Calculator](https://online-calculators.com/finance/sip-calculator/): Estimate mutual fund SIP returns with step-up options and wealth projection charts. Formula: FV = P × ((1+r)^n - 1) / r × (1+r).
+- [Pregnancy Due Date Calculator](https://online-calculators.com/health/pregnancy-calculator/): Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date. Formula: Due Date = LMP + 280 days (Naegele's Rule).
+- [Compound Interest Calculator](https://online-calculators.com/finance/compound-interest-calculator/): Calculate compound interest with regular contributions and visualize wealth growth over time. Formula: A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)].
+- [Scientific Calculator](https://online-calculators.com/scientific/scientific-calculator/): Full-featured scientific calculator with trigonometry, logarithms, and advanced functions. Formula: Varies by operation.
+
+## Business Calculators
+
+_Calculate profit margins, GST, markup, and business metrics to optimize pricing and tax compliance for your enterprise._
+
+- [Profit Margin Calculator](https://online-calculators.com/business/profit-margin-calculator/): Calculate gross, operating, and net profit margins for your business pricing strategy.
+- [GST Calculator](https://online-calculators.com/business/gst-calculator/): Calculate GST inclusive and exclusive amounts for Indian tax rates of 5%, 12%, 18%, and 28%.
+- [Markup Calculator](https://online-calculators.com/business/markup-calculator/): Calculate selling price, profit, and margin from cost price and markup percentage.
+- [Business Calculators (category hub)](https://online-calculators.com/business/): Browse all business tools.
+
+## Construction Calculators
+
+_Estimate materials, areas, volumes, and costs for construction and renovation projects._
+
+- [Area Calculator](https://online-calculators.com/construction/area-calculator/): Calculate area of rectangle, circle, triangle, and room layouts for construction and renovation.
+- [Volume Calculator](https://online-calculators.com/construction/volume-calculator/): Calculate volume of rectangular prisms, cylinders, and spheres for concrete, fill, and tank capacity.
+- [Construction Calculators (category hub)](https://online-calculators.com/construction/): Browse all construction tools.
+
+## Unit Converters
+
+_Convert length, weight, temperature, and more between metric and imperial units instantly with precision._
+
+- [Length Converter](https://online-calculators.com/converters/length-converter/): Convert between meters, feet, inches, miles, kilometers, and more length units.
+- [Weight Converter](https://online-calculators.com/converters/weight-converter/): Convert between kilograms, pounds, ounces, grams, stones, and more weight units.
+- [Temperature Converter](https://online-calculators.com/converters/temperature-converter/): Convert between Celsius, Fahrenheit, and Kelvin temperature scales instantly.
+- [Speed Converter](https://online-calculators.com/converters/speed-converter/): Convert speed between km/h, mph, m/s, knots, and feet per second instantly.
+- [Unit Converters (category hub)](https://online-calculators.com/converters/): Browse all converters tools.
+
+## Date & Time Calculators
+
+_Calculate age, date differences, and time intervals with precision._
+
+- [Age Calculator](https://online-calculators.com/date-time/age-calculator/): Calculate exact age in years, months, days, hours, and minutes from date of birth.
+- [Date Difference Calculator](https://online-calculators.com/date-time/date-difference-calculator/): Calculate exact days, weeks, months, and years between any two dates instantly.
+- [Date & Time Calculators (category hub)](https://online-calculators.com/date-time/): Browse all date-time tools.
+
+## Education Calculators
+
+_GPA, grade, and academic calculators for students and educators._
+
+- [GPA Calculator](https://online-calculators.com/education/gpa-calculator/): Calculate weighted GPA on a 4.0 scale from course grades and credit hours.
+- [Grade Calculator](https://online-calculators.com/education/grade-calculator/): Calculate weighted course grade from assignments, exams, and project scores with custom weights.
+- [Education Calculators (category hub)](https://online-calculators.com/education/): Browse all education tools.
+
+## Finance Calculators
+
+_Plan your financial future with EMI, SIP, FD, compound interest, and loan calculators. Make informed investment and borrowing decisions with accurate projections._
+
+- [EMI Calculator](https://online-calculators.com/finance/emi-calculator/): Calculate monthly EMI for home, car, and personal loans with amortization breakdown.
+- [SIP Calculator](https://online-calculators.com/finance/sip-calculator/): Estimate mutual fund SIP returns with step-up options and wealth projection charts.
+- [FD Calculator](https://online-calculators.com/finance/fd-calculator/): Calculate fixed deposit maturity amount with quarterly, monthly, and annual compounding.
+- [Compound Interest Calculator](https://online-calculators.com/finance/compound-interest-calculator/): Calculate compound interest with regular contributions and visualize wealth growth over time.
+- [Loan Payoff Calculator](https://online-calculators.com/finance/loan-payoff-calculator/): Calculate how extra EMI payments reduce loan tenure and total interest on home, car, and personal loans.
+- [Finance Calculators (category hub)](https://online-calculators.com/finance/): Browse all finance tools.
+
+## Fitness Calculators
+
+_Track macros, heart rate zones, and workout metrics for optimal fitness performance._
+
+- [Macro Calculator](https://online-calculators.com/fitness/macro-calculator/): Calculate daily protein, carbs, and fat targets based on your calories and fitness goals.
+- [Heart Rate Zone Calculator](https://online-calculators.com/fitness/heart-rate-zone-calculator/): Calculate max heart rate and training zones for fat burn, cardio, and peak performance.
+- [Fitness Calculators (category hub)](https://online-calculators.com/fitness/): Browse all fitness tools.
+
+## Health Calculators
+
+_Track your wellness with BMI, BMR, calorie, pregnancy, and fitness calculators. Understand your body metrics and set achievable health goals._
+
+- [BMI Calculator](https://online-calculators.com/health/bmi-calculator/): Calculate Body Mass Index and get personalized health category recommendations.
+- [BMR Calculator](https://online-calculators.com/health/bmr-calculator/): Calculate Basal Metabolic Rate to understand daily calorie needs at rest.
+- [Calorie Calculator](https://online-calculators.com/health/calorie-calculator/): Calculate daily calorie needs for weight loss, maintenance, or muscle gain goals.
+- [Pregnancy Due Date Calculator](https://online-calculators.com/health/pregnancy-calculator/): Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date.
+- [Health Calculators (category hub)](https://online-calculators.com/health/): Browse all health tools.
+
+## Math & Percentage Calculators
+
+_Solve everyday math problems with percentage, age, and scientific calculators. Quick, accurate results for students and professionals._
+
+- [Percentage Calculator](https://online-calculators.com/math/percentage-calculator/): Calculate percentages, percentage change, increase, decrease, and fraction conversions.
+- [Math & Percentage Calculators (category hub)](https://online-calculators.com/math/): Browse all math tools.
+
+## Mortgage Calculators
+
+_Calculate monthly mortgage payments, affordability, and amortization schedules for home loans and property financing._
+
+- [Mortgage Calculator](https://online-calculators.com/mortgage/mortgage-calculator/): Calculate monthly mortgage payments, total interest, and amortization for US home loans.
+- [Mortgage Affordability Calculator](https://online-calculators.com/mortgage/mortgage-affordability-calculator/): Calculate how much house you can afford based on income, debts, down payment, and mortgage rate.
+- [Mortgage Calculators (category hub)](https://online-calculators.com/mortgage/): Browse all mortgage tools.
+
+## Scientific Calculators
+
+_Advanced scientific and engineering calculators for complex mathematical operations._
+
+- [Scientific Calculator](https://online-calculators.com/scientific/scientific-calculator/): Full-featured scientific calculator with trigonometry, logarithms, and advanced functions.
+- [Scientific Calculators (category hub)](https://online-calculators.com/scientific/): Browse all scientific tools.
+
+## Statistics Calculators
+
+_Mean, median, standard deviation, and statistical analysis tools for data professionals._
+
+- [Standard Deviation Calculator](https://online-calculators.com/statistics/standard-deviation-calculator/): Calculate mean, variance, and standard deviation for any dataset — sample or population.
+- [Mean Median Mode Calculator](https://online-calculators.com/statistics/mean-median-mode-calculator/): Calculate mean, median, mode, range, and count for any dataset instantly.
+- [Statistics Calculators (category hub)](https://online-calculators.com/statistics/): Browse all statistics tools.
+
+## Site Pages
+
+- [Home](https://online-calculators.com/): Search and browse all calculators.
+- [All Categories](https://online-calculators.com/categories/): Category directory.
+- [World Time Zone Converter](https://online-calculators.com/time/): Live clocks and 450+ country/city time routes (e.g. Kenya to Mexico City).
+
+- [About](https://online-calculators.com/about/): Mission and team.
+
+## Optional
+
+Secondary pages — safe to skip when context is limited.
+
+- [Privacy Policy](https://online-calculators.com/privacy-policy/): Data collection, cookies, and GA4 (consent-based).
+- [Terms of Service](https://online-calculators.com/terms-of-service/): Usage terms and disclaimers.
+- [Cookie Policy](https://online-calculators.com/cookie-policy/): Cookie categories and consent.
+- [Sitemap](https://online-calculators.com/sitemap.xml): XML sitemap for crawlers.
+- [Complete LLM catalog](https://online-calculators.com/llms-full.txt): Full machine-readable site index with formulas and calculator types.

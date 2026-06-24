@@ -1,0 +1,52 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="shape">Shape</label>
+    <select id="shape" name="shape" class="form-select">
+      <option value="box" selected>Rectangular Box / Slab</option>
+      <option value="cylinder">Cylinder / Column</option>
+      <option value="sphere">Sphere / Tank</option>
+    </select>
+  </div>
+  <div id="vol-box-fields">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="length">Length</label>
+        <input type="number" id="length" name="length" class="form-input" value="10" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="width">Width</label>
+        <input type="number" id="width" name="width" class="form-input" value="10" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="height">Height / Depth</label>
+        <input type="number" id="height" name="height" class="form-input" value="0.5" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+    </div>
+  </div>
+  <div id="vol-cylinder-fields" hidden>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="radius">Radius</label>
+        <input type="number" id="radius" name="radius" class="form-input" value="3" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="cyl_height">Height</label>
+        <input type="number" id="cyl_height" name="cyl_height" class="form-input" value="10" min="0.1" step="0.1" inputmode="decimal">
+      </div>
+    </div>
+  </div>
+  <div id="vol-sphere-fields" hidden>
+    <div class="form-group">
+      <label class="form-label" for="sphere_radius">Radius</label>
+      <input type="number" id="sphere_radius" name="sphere_radius" class="form-input" value="5" min="0.1" step="0.1" inputmode="decimal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="unit">Unit</label>
+    <select id="unit" name="unit" class="form-select">
+      <option value="ft" selected>Feet (cu ft)</option>
+      <option value="m">Meters (cu m)</option>
+    </select>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>

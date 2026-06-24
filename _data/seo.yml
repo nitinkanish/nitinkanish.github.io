@@ -21,44 +21,47 @@ pages:
   cookie-policy:
     seo_title: "Cookie Policy"
     last_modified_at: "2025-06-11"
+  time-hub:
+    seo_title: "Free World Time Zone Converter — Compare Country & City Times"
+    last_modified_at: "2025-06-19"
 
 categories:
   finance:
-    seo_title: "Free Finance Calculators — EMI, SIP, FD & Loan Tools"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Finance Calculators — EMI, SIP, FD & Loan Payoff Tools"
+    last_modified_at: "2025-06-25"
   health:
     seo_title: "Free Health Calculators — BMI, BMR, Calorie & Pregnancy Tools"
     last_modified_at: "2025-06-12"
   math:
-    seo_title: "Free Math Calculators — Percentage, Age & Scientific"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Math Calculators — Percentage & Math Tools"
+    last_modified_at: "2025-06-25"
   converters:
-    seo_title: "Free Unit Converters — Length, Weight & Temperature"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Unit Converters — Length, Weight, Temperature & Speed"
+    last_modified_at: "2025-06-25"
   business:
-    seo_title: "Free Business Calculators — GST & Profit Margin Tools"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Business Calculators — GST, Margin & Markup Tools"
+    last_modified_at: "2025-06-25"
   mortgage:
-    seo_title: "Free Mortgage Calculators — Home Loan Payment & Amortization"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Mortgage Calculators — Payment & Affordability Tools"
+    last_modified_at: "2025-06-25"
   date-time:
-    seo_title: "Free Date Calculators — Days Between Dates & Time Intervals"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Date Calculators — Age, Days Between Dates & Time Tools"
+    last_modified_at: "2025-06-25"
   fitness:
-    seo_title: "Free Fitness Calculators — Macro & Nutrition Tools"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Fitness Calculators — Macro & Heart Rate Zone Tools"
+    last_modified_at: "2025-06-25"
   education:
-    seo_title: "Free Education Calculators — GPA & Grade Tools"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Education Calculators — GPA & Weighted Grade Tools"
+    last_modified_at: "2025-06-25"
   construction:
-    seo_title: "Free Construction Calculators — Area & Square Footage Tools"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Construction Calculators — Area & Volume Tools"
+    last_modified_at: "2025-06-25"
   statistics:
-    seo_title: "Free Statistics Calculators — Standard Deviation & Data Analysis"
-    last_modified_at: "2025-06-12"
+    seo_title: "Free Statistics Calculators — Mean, Median & Standard Deviation"
+    last_modified_at: "2025-06-25"
   scientific:
     seo_title: "Free Scientific Calculators — Advanced Math & Engineering Tools"
-    last_modified_at: "2025-06-12"
+    last_modified_at: "2025-06-25"
 
 calculators:
   emi-calculator:
@@ -87,10 +90,10 @@ calculators:
     last_modified_at: "2025-06-11"
   age-calculator:
     seo_title: "Free Age Calculator — Exact Age in Years, Months & Days"
-    last_modified_at: "2025-06-11"
+    last_modified_at: "2025-06-25"
   scientific-calculator:
     seo_title: "Free Online Scientific Calculator with Trigonometry"
-    last_modified_at: "2025-06-11"
+    last_modified_at: "2025-06-25"
   length-converter:
     seo_title: "Free Length Converter — Feet to Meters, Inches to CM"
     last_modified_at: "2025-06-11"
@@ -127,3 +130,27 @@ calculators:
   standard-deviation-calculator:
     seo_title: "Free Standard Deviation Calculator — Mean & Variance"
     last_modified_at: "2025-06-12"
+  loan-payoff-calculator:
+    seo_title: "Free Loan Payoff Calculator — Extra EMI Interest Savings"
+    last_modified_at: "2025-06-25"
+  mortgage-affordability-calculator:
+    seo_title: "Free Mortgage Affordability Calculator — How Much House Can I Afford"
+    last_modified_at: "2025-06-25"
+  volume-calculator:
+    seo_title: "Free Volume Calculator — Cubic Feet, Yards & Concrete"
+    last_modified_at: "2025-06-25"
+  grade-calculator:
+    seo_title: "Free Grade Calculator — Weighted Course Grade & Letter"
+    last_modified_at: "2025-06-25"
+  mean-median-mode-calculator:
+    seo_title: "Free Mean Median Mode Calculator — Statistics Tool"
+    last_modified_at: "2025-06-25"
+  heart-rate-zone-calculator:
+    seo_title: "Free Heart Rate Zone Calculator — Max HR & Training Zones"
+    last_modified_at: "2025-06-25"
+  speed-converter:
+    seo_title: "Free Speed Converter — KM/H to MPH, Knots & M/S"
+    last_modified_at: "2025-06-25"
+  markup-calculator:
+    seo_title: "Free Markup Calculator — Selling Price from Cost"
+    last_modified_at: "2025-06-25"

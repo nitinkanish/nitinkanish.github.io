@@ -621,3 +621,106 @@ standard-deviation-calculator:
     ## Practical Applications
 
     Analyze test score distributions, measure investment volatility, monitor manufacturing quality control, evaluate experimental results, and complete statistics homework. Pair with our other math tools for comprehensive data analysis.
+
+loan-payoff-calculator:
+  steps:
+    - "Enter your loan principal, interest rate, and original tenure."
+    - "Add your planned extra monthly payment amount."
+    - "View months saved and total interest saved."
+    - "Compare original vs accelerated payoff timeline."
+  intro: |
+    The **Loan Payoff Calculator** shows how extra EMI or prepayment reduces your loan tenure and total interest. Whether you have a home loan, car loan, or personal loan, even modest extra payments can save lakhs over the loan life.
+
+    ## How Prepayment Works
+
+    Extra payments go directly toward principal, reducing the balance on which interest is calculated. The effect compounds — each month you owe less interest, so more of your regular EMI attacks principal.
+
+    ## Indian Home Loans
+
+    Most Indian banks allow partial prepayment on floating-rate home loans without penalty. Use this tool to model ₹2,000, ₹5,000, or ₹10,000 extra per month and see your new payoff date.
+
+mortgage-affordability-calculator:
+  steps:
+    - "Enter annual gross household income."
+    - "Add monthly debt payments (car, student loans, etc.)."
+    - "Set down payment percentage and mortgage rate."
+    - "View maximum affordable home price and monthly payment."
+  intro: |
+    The **Mortgage Affordability Calculator** estimates how much house you can buy using the industry-standard **28/36 rule** — housing costs up to 28% of gross monthly income and total debt up to 36%.
+
+    ## Understanding the 28/36 Rule
+
+    Lenders use these ratios to qualify borrowers. The 28% covers principal and interest (PITI). The 36% includes all monthly debt obligations. Staying within these limits improves approval odds and financial stability.
+
+    ## Beyond the Calculator
+
+    Remember to budget for property taxes, homeowner's insurance, HOA fees, maintenance, and closing costs. A pre-approval from your lender provides the most accurate affordability figure.
+
+volume-calculator:
+  steps:
+    - "Select shape — box/slab, cylinder, or sphere."
+    - "Enter dimensions in feet or meters."
+    - "View volume in cubic feet, cubic yards, and cubic meters."
+    - "Use the waste factor tip for material orders."
+  intro: |
+    The **Volume Calculator** computes cubic capacity for construction, landscaping, and engineering. Calculate concrete for slabs, fill for trenches, or tank capacity for cylindrical and spherical vessels.
+
+    ## Common Construction Uses
+
+    **Concrete slabs:** length × width × thickness. **Columns:** πr²h. **Excavation:** same as box volume. Convert cubic feet to cubic yards by dividing by 27 for US concrete orders.
+
+grade-calculator:
+  steps:
+    - "Enter score (0–100) and weight for each assignment category."
+    - "Use up to four categories (homework, midterm, final, etc.)."
+    - "View weighted course grade and letter equivalent."
+  intro: |
+    The **Grade Calculator** computes your **weighted course grade** from assignment categories with different weights. Essential for tracking progress mid-semester and calculating what you need on the final exam.
+
+    ## Weighted Grade Formula
+
+    Grade = (Score₁ × Weight₁ + Score₂ × Weight₂ + ...) / Total Weight. Weights should sum to 100% for a complete course breakdown.
+
+mean-median-mode-calculator:
+  steps:
+    - "Enter your dataset separated by commas or spaces."
+    - "View mean, median, mode, range, and count."
+    - "Use insights to detect skewed data."
+  intro: |
+    The **Mean Median Mode Calculator** computes the three measures of **central tendency** plus range and count. Essential for statistics homework, survey analysis, and understanding data distributions.
+
+    ## When to Use Each Measure
+
+    **Mean** for symmetric data. **Median** when outliers exist. **Mode** for categorical or most-common values.
+
+heart-rate-zone-calculator:
+  steps:
+    - "Enter your age."
+    - "Optionally add resting heart rate for Karvonen zones."
+    - "View max HR and five training zones with BPM ranges."
+  intro: |
+    The **Heart Rate Zone Calculator** estimates your **maximum heart rate** and **training zones** for cardio, fat burn, and peak performance. Uses the 220 − age formula with optional Karvonen heart rate reserve method.
+
+    ## Training Zones Explained
+
+    Zone 2 (60–70% max) is popular for fat burning and aerobic base. Zone 3 (70–80%) builds cardiovascular fitness. Zones 4–5 are for high-intensity intervals — use sparingly if you're new to training.
+
+speed-converter:
+  steps:
+    - "Enter the speed value to convert."
+    - "Select source unit (km/h, mph, m/s, knots, ft/s)."
+    - "Select target unit and view result instantly."
+  intro: |
+    The **Speed Converter** converts between **km/h**, **mph**, **m/s**, **knots**, and **ft/s**. Essential for driving abroad, aviation, maritime navigation, physics homework, and sports science.
+
+markup-calculator:
+  steps:
+    - "Enter your product cost price."
+    - "Set markup percentage."
+    - "View selling price, profit amount, and equivalent margin."
+  intro: |
+    The **Markup Calculator** determines **selling price** from cost plus markup percentage. Essential for retail pricing, wholesale, restaurant menu costing, and e-commerce product pricing.
+
+    ## Markup vs Margin
+
+    Markup is profit as a percentage of **cost**. Margin is profit as a percentage of **selling price**. A 50% markup equals a 33.3% margin — use our Profit Margin Calculator for margin-based pricing.

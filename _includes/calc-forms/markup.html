@@ -1,0 +1,21 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="cost">Cost Price (₹)</label>
+    <input type="number" id="cost" name="cost" class="form-input" value="1000" min="0" data-validate="required|number|min:0" inputmode="decimal">
+  </div>
+  <div class="dash-field">
+    <div class="dash-field-header">
+      <label class="form-label" for="markup">Markup (%)</label>
+      <span class="dash-field-value" id="markup-display">50%</span>
+    </div>
+    <input type="range" id="markup-range" class="dash-range" min="0" max="200" step="1" value="50" aria-label="Markup percent">
+    <input type="number" id="markup" name="markup" class="form-input dash-input" value="50" min="0" data-validate="required|number|min:0" inputmode="decimal">
+    <div class="dash-chips" data-target="markup">
+      <button type="button" class="dash-chip" data-value="25">25%</button>
+      <button type="button" class="dash-chip active" data-value="50">50%</button>
+      <button type="button" class="dash-chip" data-value="100">100%</button>
+      <button type="button" class="dash-chip" data-value="150">150%</button>
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>

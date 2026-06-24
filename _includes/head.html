@@ -11,6 +11,8 @@
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<link rel="alternate" type="text/markdown" title="LLMs.txt" href="{{ '/llms.txt' | absolute_url }}">
+<link rel="alternate" type="text/markdown" title="LLMs full catalog" href="{{ '/llms-full.txt' | absolute_url }}">
 <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16.png' | relative_url }}">
@@ -30,6 +32,10 @@
 {% elsif page.layout == 'post' %}
   {% include schema/article.html %}
   {% include schema/breadcrumb.html %}
+{% elsif page.layout == 'timezone' %}
+  {% include schema/breadcrumb.html %}
+  {% include schema/faq.html %}
+  {% include schema/timezone.html %}
 {% endif %}
 
 <script src="{{ '/assets/js/theme-init.js' | relative_url }}"></script>
