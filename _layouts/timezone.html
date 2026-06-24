@@ -19,7 +19,7 @@ layout: default
           </ol>
         </nav>
         <div class="tz-hero-badge-row">
-          <span class="tz-hero-icon icon-tint-date-time">{% include icon.html name=date-time size=22 %}</span>
+          <span class="tz-hero-icon icon-tint-date-time">{% include icon.html name='date-time' size=22 %}</span>
           <span class="dash-trust-badge">✓ Live IANA time zones · Updates every second</span>
         </div>
         <h1>{{ page.title }}</h1>
@@ -156,16 +156,19 @@ layout: default
       <h2 id="tz-related-heading">Related time zone converters</h2>
       <div class="tz-related-grid">
         <a href="{{ '/time/' | append: reverse_slug | append: '/' | relative_url }}" class="tz-related-card">
-          <span class="tz-related-dir">Reverse</span>
-          <strong>{{ page.to_name }} → {{ page.from_name }}</strong>
+          <span class="tz-related-label">Reverse</span>
+          <strong>{{ page.to_name }} &rarr; {{ page.from_name }}</strong>
         </a>
-        {% assign related_from = all_locations | where_exp: "l", "l.slug != page.from_slug and l.slug != page.to_slug" | slice: 0, 4 %}
-        {% for loc in related_from %}
+        {% assign related_count = 0 %}
+        {% for loc in all_locations %}
+        {% if loc.slug != page.from_slug and loc.slug != page.to_slug and related_count < 4 %}
+        {% assign related_count = related_count | plus: 1 %}
         {% assign rel_slug = page.from_slug | append: '-to-' | append: loc.slug %}
         <a href="{{ '/time/' | append: rel_slug | append: '/' | relative_url }}" class="tz-related-card">
-          <span class="tz-related-dir">From {{ page.from_name }}</span>
-          <strong>{{ page.from_name }} → {{ loc.name }}</strong>
+          <span class="tz-related-label">From {{ page.from_name }}</span>
+          <strong>{{ page.from_name }} &rarr; {{ loc.name }}</strong>
         </a>
+        {% endif %}
         {% endfor %}
       </div>
       <p class="tz-hub-link"><a href="{{ '/time/' | relative_url }}">Browse all world time zone converters →</a></p>

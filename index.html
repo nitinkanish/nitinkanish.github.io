@@ -4,7 +4,7 @@ title: Free Online Calculators
 seo_title: Free Online Calculators for Finance, Health, Math & Business
 description: Fast, accurate, and free online calculators for finance, health, math, business, and unit conversion.
 permalink: /
-last_modified_at: 2025-06-11
+last_modified_at: 2025-06-25
 ---
 
 <section class="hero hero--home">
@@ -25,6 +25,10 @@ last_modified_at: 2025-06-11
       </div>
 
       <div class="hero-chips" aria-label="Popular categories">
+        <a href="{{ '/time/' | relative_url }}" class="hero-chip hero-chip--time icon-tint-date-time">
+          {% include icon.html name='date-time' size=16 %}
+          <span>Time Zones</span>
+        </a>
         {% for cat in site.data.categories limit:6 %}
         <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="hero-chip icon-tint-{{ cat.slug }}">
           {% include icon.html name=cat.icon size=16 %}
@@ -49,6 +53,33 @@ last_modified_at: 2025-06-11
         <div class="stat-icon icon-tint-health">{% include icon.html name=zap size=20 %}</div>
         <div class="stat-value">100%</div>
         <div class="stat-label">Free Forever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--time-hub">
+  <div class="container">
+    <div class="time-hub-promo">
+      <div class="time-hub-promo-main">
+        <div class="time-hub-promo-icon icon-tint-date-time" aria-hidden="true">
+          {% include icon.html name='date-time' size=28 %}
+        </div>
+        <div class="time-hub-promo-copy">
+          <h2>World Time Zone Converter</h2>
+          <p>Compare live local time between countries and cities. 450+ routes with meeting planners and instant clocks — e.g. <a href="{{ '/time/kenya-to-mexico-city/' | relative_url }}">Kenya to Mexico City</a>.</p>
+          <a href="{{ '/time/' | relative_url }}" class="btn btn-primary">Open Time Zone Converter</a>
+        </div>
+      </div>
+      <div class="time-hub-promo-routes" aria-label="Popular time zone routes">
+        <span class="time-hub-promo-label">Popular routes</span>
+        <div class="time-hub-route-links">
+          <a href="{{ '/time/kenya-to-mexico-city/' | relative_url }}">Kenya → Mexico City</a>
+          <a href="{{ '/time/india-to-usa-new-york/' | relative_url }}">India → New York</a>
+          <a href="{{ '/time/uk-to-india/' | relative_url }}">UK → India</a>
+          <a href="{{ '/time/uae-to-india/' | relative_url }}">UAE → India</a>
+          <a href="{{ '/time/japan-to-usa-los-angeles/' | relative_url }}">Japan → Los Angeles</a>
+        </div>
       </div>
     </div>
   </div>
@@ -99,7 +130,17 @@ last_modified_at: 2025-06-11
       <a href="{{ '/categories/' | relative_url }}" class="section-link">All categories →</a>
     </div>
     <div class="category-grid">
-      {% for cat in site.data.categories limit:9 %}
+      <a href="{{ '/time/' | relative_url }}" class="category-card category-card--time">
+        <div class="category-icon icon-tint-date-time" aria-hidden="true">
+          {% include icon.html name='date-time' size=22 %}
+        </div>
+        <div class="category-card-body">
+          <h3>World Time Zone Converter</h3>
+          <p>Live clocks and time differences between 22+ countries — 450+ converter routes.</p>
+          <span class="category-count">450+ routes</span>
+        </div>
+      </a>
+      {% for cat in site.data.categories limit:8 %}
         {% include category-card.html category=cat %}
       {% endfor %}
     </div>
