@@ -2,8 +2,7 @@
 # SourceTree OAuth cannot push workflow files without the "workflow" scope.
 #
 # IMPORTANT: Replace the default "jekyll-build-pages" workflow if GitHub created one.
-# That Docker action often fails on large sites (450+ timezone pages). This workflow
-# builds with bundle exec jekyll on ubuntu-latest instead.
+# Use bundle exec jekyll on ubuntu-latest instead of the Docker jekyll-build-pages action.
 
 name: Deploy Jekyll site to Pages
 

@@ -9,7 +9,7 @@ This file helps AI agents and developers understand Online Calculators: what we 
 - **Full catalog:** https://online-calculators.com/llms-full.txt — complete list with formulas, types, and metadata.
 - **Sitemap:** https://online-calculators.com/sitemap.xml
 - **Repository:** https://github.com/nitinkanish/nitinkanish.github.io
-- **Last generated:** 2026-06-24
+- **Last generated:** 2026-06-25
 
 ## Featured Calculators
 
@@ -128,7 +128,6 @@ _Mean, median, standard deviation, and statistical analysis tools for data profe
 
 - [Home](https://online-calculators.com/): Search and browse all calculators.
 - [All Categories](https://online-calculators.com/categories/): Category directory.
-- [World Time Zone Converter](https://online-calculators.com/time/): Live clocks and 450+ country/city time routes (e.g. Kenya to Mexico City).
 
 - [About](https://online-calculators.com/about/): Mission and team.
 

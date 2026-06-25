@@ -20,16 +20,7 @@ payload = {
       'keywords' => calc['keywords'],
       'url' => "/#{calc['category']}/#{calc['slug']}/"
     }
-  end + [
-    {
-      'title' => 'World Time Zone Converter',
-      'slug' => 'time-zone-converter',
-      'category' => 'time',
-      'description' => 'Convert time between countries and cities — live clocks and meeting planner',
-      'keywords' => ['time zone converter', 'world clock', 'kenya mexico time'],
-      'url' => '/time/'
-    }
-  ],
+  end,
   'categories' => categories.map do |cat|
     {
       'title' => cat['title'],

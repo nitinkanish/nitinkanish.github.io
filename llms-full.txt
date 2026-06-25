@@ -1,6 +1,6 @@
 # Online Calculators — Full Catalog
 
-> Machine-readable index of all calculators, categories, and site metadata. Generated 2026-06-24. Canonical site: https://online-calculators.com
+> Machine-readable index of all calculators, categories, and site metadata. Generated 2026-06-25. Canonical site: https://online-calculators.com
 
 ## Site Metadata
 

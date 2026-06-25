@@ -36,7 +36,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# jekyll-feed: only blog posts — not calculators, categories, or time routes
+# jekyll-feed: only blog posts — not calculators or categories
 feed:
   collections:
     posts:
@@ -50,9 +50,6 @@ collections:
   categories:
     output: true
     permalink: /:name/
-  time:
-    output: true
-    permalink: /time/:name/
 
 # Defaults
 defaults:
@@ -66,11 +63,6 @@ defaults:
       type: categories
     values:
       layout: category
-  - scope:
-      path: ""
-      type: time
-    values:
-      layout: timezone
   - scope:
       path: "_posts"
       type: posts

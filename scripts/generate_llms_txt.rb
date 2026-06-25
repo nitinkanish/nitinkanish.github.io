@@ -9,10 +9,10 @@ require 'fileutils'
 require 'time'
 
 ROOT = File.expand_path('..', __dir__)
-CONFIG = YAML.load_file(File.join(ROOT, '_config.yml'))
-CALCULATORS = YAML.load_file(File.join(ROOT, '_data', 'calculators.yml'))
-CATEGORIES = YAML.load_file(File.join(ROOT, '_data', 'categories.yml'))
-SEO = File.exist?(File.join(ROOT, '_data', 'seo.yml')) ? YAML.load_file(File.join(ROOT, '_data', 'seo.yml')) : {}
+CONFIG = YAML.unsafe_load_file(File.join(ROOT, '_config.yml'))
+CALCULATORS = YAML.unsafe_load_file(File.join(ROOT, '_data', 'calculators.yml'))
+CATEGORIES = YAML.unsafe_load_file(File.join(ROOT, '_data', 'categories.yml'))
+SEO = File.exist?(File.join(ROOT, '_data', 'seo.yml')) ? YAML.unsafe_load_file(File.join(ROOT, '_data', 'seo.yml')) : {}
 CALC_SEO = SEO['calculators'] || {}
 CAT_SEO = SEO['categories'] || {}
 
@@ -105,8 +105,7 @@ llms << '## Site Pages'
 llms << ''
 llms << "- [Home](#{abs('/')}): Search and browse all calculators."
 llms << "- [All Categories](#{abs('/categories/')}): Category directory."
-  llms << "- [World Time Zone Converter](#{abs('/time/')}): Live clocks and 450+ country/city time routes (e.g. Kenya to Mexico City)."
-  llms << ''
+llms << ''
 llms << "- [About](#{abs('/about/')}): Mission and team."
 llms << ''
 

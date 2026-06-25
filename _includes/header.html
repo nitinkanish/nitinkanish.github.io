@@ -36,7 +36,6 @@
       </button>
       <ul id="nav-menu" class="nav-menu">
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
-        <li><a href="{{ '/time/' | relative_url }}" {% if page.url contains '/time/' %}aria-current="page"{% endif %}>Time Zones</a></li>
         <li class="has-mega">
           <button class="mega-trigger" aria-expanded="false" aria-haspopup="true">Categories</button>
           <div class="mega-menu" role="menu">
@@ -49,7 +48,6 @@
               {% endfor %}
             </div>
             <a href="{{ '/categories/' | relative_url }}" class="mega-view-all">View all categories →</a>
-            <a href="{{ '/time/' | relative_url }}" class="mega-view-all mega-view-all--time">World Time Zone Converter →</a>
           </div>
         </li>
         <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>

@@ -15,10 +15,6 @@
   {% assign seo_meta = site.data.seo.pages.terms-of-service %}
 {% elsif page.url contains '/cookie-policy/' %}
   {% assign seo_meta = site.data.seo.pages.cookie-policy %}
-{% elsif page.url contains '/time/' and page.layout == 'timezone' %}
-  {% assign seo_meta = nil %}
-{% elsif page.url == '/time/' or page.url == '/time/index.html' %}
-  {% assign seo_meta = site.data.seo.pages.time-hub %}
 {% elsif seo_slug and site.data.seo.calculators[seo_slug] %}
   {% assign seo_meta = site.data.seo.calculators[seo_slug] %}
 {% elsif page.category and site.data.seo.categories[page.category] %}

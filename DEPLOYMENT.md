@@ -6,7 +6,7 @@
 
 ### Recommended: GitHub Actions (this repo)
 
-This site has 450+ timezone route pages. Use GitHub Actions so builds use Ruby 3.3 and `github-pages` v232.
+Use GitHub Actions so builds use Ruby 3.3 and `github-pages` v232.
 
 **Important:** SourceTree (and some OAuth tokens) cannot push files under `.github/workflows/` without the `workflow` scope. Add the workflow on GitHub.com instead:
 
@@ -81,8 +81,6 @@ Requires **Ruby 3.3+** (see `.ruby-version`). On macOS with Homebrew Ruby:
 # Output in _site/
 ```
 
-With 450+ timezone pages, the first full build can take several minutes and needs ~2 GB RAM.
-
 ## Pre-Deploy Checklist
 
 - [x] `url` set to `https://online-calculators.com` in `_config.yml`
@@ -105,7 +103,7 @@ With 450+ timezone pages, the first full build can take several minutes and need
 
 **GitHub Actions build fails (jekyll-build-pages):** Do not use the default `actions/jekyll-build-pages` workflow for this site. Use `scripts/github-pages-workflow.yml` instead (`bundle exec jekyll build` on `ubuntu-latest`). Also ensure `_config.yml` limits `jekyll-feed` to posts only (see below).
 
-**jekyll-feed / Invalid Date in feed.xml:** The `time` collection must be excluded from the RSS feed. `_config.yml` must include:
+**jekyll-feed / Invalid Date in feed.xml:** `_config.yml` must limit the feed to posts only:
 
 ```yaml
 feed:
@@ -117,7 +115,5 @@ feed:
 **Push rejected (workflow scope):** GitHub blocks OAuth apps without `workflow` scope from pushing `.github/workflows/*`. Keep the workflow template in `scripts/github-pages-workflow.yml` and create `.github/workflows/pages.yml` on GitHub.com (see above). Or re-authorize SourceTree / use a PAT with `repo` + `workflow` scopes.
 
 **Bundler / github-pages version mismatch:** Update `Gemfile` to `github-pages ~> 232` and run `bundle update github-pages` on Ruby 3.3+. Deploy via **GitHub Actions** when possible.
-
-**Build killed (exit 137) or very slow:** The timezone collection has 450+ pages. Use GitHub Actions for deployment; locally, close other apps or use `bundle exec jekyll build --incremental` after a successful first build.
 
 **Plugins not working:** Only use GitHub Pages-whitelisted plugins (jekyll-feed, jekyll-sitemap, jekyll-seo-tag)
