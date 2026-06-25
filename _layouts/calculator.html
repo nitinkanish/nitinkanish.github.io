@@ -15,6 +15,7 @@ layout: default
 {% assign dash = site.data.dashboard_pages[page.slug] %}
 {% unless dash %}{% assign dash = site.data.dashboard_pages['emi-calculator'] %}{% endunless %}
 {% assign w = dash.widget %}
+{% assign related_slugs = site.data.calc_relations[current_slug].related %}
 {% assign related_calcs = site.data.calculators | where: "category", page.category %}
 
 <article class="calculator-page calculator-dashboard" data-calculator="{{ calc_type }}" data-slug="{{ page.slug }}">
@@ -285,6 +286,10 @@ layout: default
     </div>
   </section>
 
+  {% if content_data.see_also %}
+    {% include calc-see-also.html links=content_data.see_also %}
+  {% endif %}
+
   <section class="dash-section" aria-labelledby="faq-heading">
     <div class="container">
       <h2 id="faq-heading">Frequently Asked Questions</h2>
@@ -339,11 +344,21 @@ layout: default
         {% endfor %}
       </div>
       <div class="calc-grid calc-grid--related" style="margin-top:2rem">
-        {% for calc in related_calcs limit:4 %}
-          {% unless calc.slug == current_slug %}
-            {% include calculator-card.html calculator=calc %}
-          {% endunless %}
-        {% endfor %}
+        {% if related_slugs %}
+          {% for rel_slug in related_slugs limit:5 %}
+            {% for calc in site.data.calculators %}
+              {% if calc.slug == rel_slug and calc.slug != current_slug %}
+                {% include calculator-card.html calculator=calc %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% else %}
+          {% for calc in related_calcs limit:4 %}
+            {% unless calc.slug == current_slug %}
+              {% include calculator-card.html calculator=calc %}
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
       </div>
     </div>
   </section>

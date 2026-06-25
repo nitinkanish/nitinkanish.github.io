@@ -5,10 +5,16 @@
 require 'yaml'
 require 'json'
 require 'fileutils'
+require 'date'
 
 ROOT = File.expand_path('..', __dir__)
-calculators = YAML.unsafe_load_file(File.join(ROOT, '_data', 'calculators.yml'))
-categories = YAML.unsafe_load_file(File.join(ROOT, '_data', 'categories.yml'))
+
+def load_yaml(path)
+  YAML.load_file(path, permitted_classes: [Date, Time, Symbol], aliases: true)
+end
+
+calculators = load_yaml(File.join(ROOT, '_data', 'calculators.yml'))
+categories = load_yaml(File.join(ROOT, '_data', 'categories.yml'))
 
 payload = {
   'calculators' => calculators.map do |calc|

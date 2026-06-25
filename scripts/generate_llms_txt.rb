@@ -7,12 +7,18 @@
 require 'yaml'
 require 'fileutils'
 require 'time'
+require 'date'
 
 ROOT = File.expand_path('..', __dir__)
-CONFIG = YAML.unsafe_load_file(File.join(ROOT, '_config.yml'))
-CALCULATORS = YAML.unsafe_load_file(File.join(ROOT, '_data', 'calculators.yml'))
-CATEGORIES = YAML.unsafe_load_file(File.join(ROOT, '_data', 'categories.yml'))
-SEO = File.exist?(File.join(ROOT, '_data', 'seo.yml')) ? YAML.unsafe_load_file(File.join(ROOT, '_data', 'seo.yml')) : {}
+
+def load_yaml(path)
+  YAML.load_file(path, permitted_classes: [Date, Time, Symbol], aliases: true)
+end
+
+CONFIG = load_yaml(File.join(ROOT, '_config.yml'))
+CALCULATORS = load_yaml(File.join(ROOT, '_data', 'calculators.yml'))
+CATEGORIES = load_yaml(File.join(ROOT, '_data', 'categories.yml'))
+SEO = File.exist?(File.join(ROOT, '_data', 'seo.yml')) ? load_yaml(File.join(ROOT, '_data', 'seo.yml')) : {}
 CALC_SEO = SEO['calculators'] || {}
 CAT_SEO = SEO['categories'] || {}
 
@@ -95,7 +101,10 @@ grouped_calculators.keys.sort.each do |slug|
   llms << "_#{desc}_" unless desc.empty?
   llms << '' unless desc.empty?
   calcs.each do |calc|
-    llms << "- [#{calc['title']}](#{calc_url(calc)}): #{calc['description'].strip.gsub(/\s+/, ' ')}"
+    seo = CALC_SEO[calc['slug']] || {}
+    note = calc['description'].strip.gsub(/\s+/, ' ')
+    note += " Formula: #{calc['formula']}." if calc['formula']
+    llms << "- [#{calc['title']}](#{calc_url(calc)}): #{note}"
   end
   llms << "- [#{category_title(slug)} (category hub)](#{category_url(slug)}): Browse all #{slug} tools."
   llms << ''
@@ -149,6 +158,7 @@ full << '- Calculator definitions: `_data/calculators.yml`'
 full << '- Dashboard copy: `_data/dashboard_pages.yml`'
 full << '- SEO titles: `_data/seo.yml`'
 full << '- Long-form content: `_data/calc_content.yml`'
+full << '- Related links: `_data/calc_relations.yml`'
 full << '- Forms: `_includes/calc-forms/{type}.html`'
 full << '- Logic: `assets/js/calculators/{type}.js`'
 full << '- Layout: `_layouts/calculator.html` (15-section dashboard)'
@@ -181,6 +191,7 @@ CALCULATORS.each do |calc|
   full << "- formula: #{calc['formula']}" if calc['formula']
   full << "- keywords: #{Array(calc['keywords']).join(', ')}" if calc['keywords']
   full << "- seo_title: #{seo['seo_title']}" if seo['seo_title']
+  full << "- meta_description: #{seo['meta_description']}" if seo['meta_description']
   full << "- featured: #{calc['featured']}" if calc.key?('featured')
   full << "- popular: #{calc['popular']}" if calc.key?('popular')
   full << ''

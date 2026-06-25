@@ -4,15 +4,21 @@
 
 require 'yaml'
 require 'fileutils'
+require 'date'
 
 ROOT = File.expand_path('..', __dir__)
+
+def load_yaml(path)
+  YAML.load_file(path, permitted_classes: [Date, Time, Symbol], aliases: true)
+end
+
 DATA_FILE = File.join(ROOT, '_data', 'calculators.yml')
 SEO_FILE = File.join(ROOT, '_data', 'seo.yml')
 OUTPUT_DIR = File.join(ROOT, '_calculators')
 FORCE = ARGV.include?('--force')
 
-calculators = YAML.load_file(DATA_FILE)
-seo_data = File.exist?(SEO_FILE) ? YAML.load_file(SEO_FILE) : {}
+calculators = load_yaml(DATA_FILE)
+seo_data = File.exist?(SEO_FILE) ? load_yaml(SEO_FILE) : {}
 calc_seo = seo_data['calculators'] || {}
 FileUtils.mkdir_p(OUTPUT_DIR)
 

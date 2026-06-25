@@ -30,7 +30,8 @@ categories:
     seo_title: "Free Health Calculators — BMI, BMR, Calorie & Pregnancy Tools"
     last_modified_at: "2025-06-12"
   math:
-    seo_title: "Free Math Calculators — Fraction, Ratio, Percentage & More"
+    seo_title: "Free Math Calculators — Fraction, Ratio, Percentage, Square Root & More"
+    meta_description: "Free online math calculators for fractions, ratios, percentages, square roots, exponents, and rounding. Instant, accurate results — no signup."
     last_modified_at: "2025-06-25"
   converters:
     seo_title: "Free Unit Converters — Length, Weight, Temperature & Speed"
@@ -83,22 +84,28 @@ calculators:
     seo_title: "Free Daily Calorie Calculator for Weight Loss & Gain"
     last_modified_at: "2025-06-11"
   percentage-calculator:
-    seo_title: "Free Percentage Calculator — Increase, Decrease & Change"
-    last_modified_at: "2025-06-11"
+    seo_title: "Free Percentage Calculator — Increase, Decrease, Change & Reverse %"
+    meta_description: "Calculate percentages instantly — X% of Y, percent change, increase, decrease, and reverse percentage. Free online tool with formulas shown."
+    last_modified_at: "2025-06-25"
   fraction-calculator:
-    seo_title: "Free Fraction Calculator — Add, Subtract, Multiply & Divide"
+    seo_title: "Free Fraction Calculator — Add, Subtract, Multiply, Divide & Simplify"
+    meta_description: "Add, subtract, multiply, and divide fractions online. Auto-simplifies to lowest terms and shows decimal equivalent. Free fraction calculator."
     last_modified_at: "2025-06-25"
   ratio-calculator:
-    seo_title: "Free Ratio Calculator — Simplify & Scale Proportions"
+    seo_title: "Free Ratio Calculator — Simplify Ratios & Solve Proportions"
+    meta_description: "Simplify ratios to lowest terms and find missing values in proportions using cross-multiplication. Free ratio and proportion calculator."
     last_modified_at: "2025-06-25"
   square-root-calculator:
-    seo_title: "Free Square Root Calculator — √n & Perfect Squares"
+    seo_title: "Free Square Root Calculator — √n, Perfect Squares & Decimals"
+    meta_description: "Calculate square roots of any non-negative number. Detects perfect squares and shows exact or decimal results. Free √ calculator online."
     last_modified_at: "2025-06-25"
   exponent-calculator:
-    seo_title: "Free Exponent Calculator — Power & Index Calculator"
+    seo_title: "Free Exponent Calculator — Power, Index & Negative Exponents"
+    meta_description: "Calculate base raised to any exponent — positive, negative, or decimal. Free online power calculator with instant results."
     last_modified_at: "2025-06-25"
   rounding-calculator:
-    seo_title: "Free Rounding Calculator — Round to Decimal Places"
+    seo_title: "Free Rounding Calculator — Round, Floor, Ceil & Truncate Decimals"
+    meta_description: "Round numbers to any decimal place. Choose round, floor, ceil, or truncate mode. Free decimal rounding tool for math and finance."
     last_modified_at: "2025-06-25"
   age-calculator:
     seo_title: "Free Age Calculator — Exact Age in Years, Months & Days"

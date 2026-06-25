@@ -255,6 +255,9 @@ percentage-calculator:
     - title: "20% increase on 500"
       description: "Markup calculation"
       result: "600"
+    - title: "What percent is 25 of 200?"
+      description: "Reverse percentage lookup"
+      result: "12.5%"
   intro: |
     The **Percentage Calculator** solves everyday math problems involving percentages — discounts, markups, tax calculations, grade scores, tip calculations, and financial analysis. No manual formula memorization required.
 
@@ -264,11 +267,24 @@ percentage-calculator:
 
     ## Real-World Uses
 
-    Calculate sale discounts during shopping, determine exam scores, compute year-over-year business growth, figure tip amounts at restaurants, analyze investment returns, and convert between fractions and percentages for homework or professional reports.
+    Calculate sale discounts during shopping, determine exam scores, compute year-over-year business growth, figure tip amounts at restaurants, analyze investment returns, and convert between fractions and percentages for homework or professional reports. For fraction operations, use our [Fraction Calculator](/math/fraction-calculator/). For pricing markups, try the [Markup Calculator](/business/markup-calculator/).
 
     ## Tips for Accuracy
 
     Distinguish between **percentage points** (absolute difference) and **percent change** (relative difference). A rate moving from 10% to 15% is a 5 percentage point increase but a 50% relative increase. Always clarify which measure your context requires.
+  see_also:
+    - slug: fraction-calculator
+      label: Fraction Calculator
+      note: Convert between fractions, decimals, and percentages
+    - slug: ratio-calculator
+      label: Ratio Calculator
+      note: Simplify ratios and solve proportions
+    - slug: rounding-calculator
+      label: Rounding Calculator
+      note: Round percentage results to decimal places
+    - slug: markup-calculator
+      label: Markup Calculator
+      note: Apply percentage markup to cost price
 
 fraction-calculator:
   steps:
@@ -282,6 +298,9 @@ fraction-calculator:
     - title: "2/3 × 3/4"
       description: "Multiplying fractions"
       result: "1/2"
+    - title: "3/4 ÷ 1/2"
+      description: "Dividing by a fraction"
+      result: "3/2"
   intro: |
     The **Fraction Calculator** handles addition, subtraction, multiplication, and division of fractions — automatically finding common denominators and simplifying results to lowest terms. Perfect for homework, recipe scaling, and construction measurements.
 
@@ -291,7 +310,20 @@ fraction-calculator:
 
     ## Simplifying Fractions
 
-    Every result is reduced using the greatest common divisor (GCD). An improper fraction (numerator ≥ denominator) is also shown as a mixed number when helpful.
+    Every result is reduced using the greatest common divisor (GCD). An improper fraction (numerator ≥ denominator) is also shown as a mixed number when helpful. To convert a fraction to a percentage, divide to get a decimal then use our [Percentage Calculator](/math/percentage-calculator/). For area calculations involving fractions of dimensions, see the [Area Calculator](/construction/area-calculator/).
+  see_also:
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Convert fraction results to percentages
+    - slug: ratio-calculator
+      label: Ratio Calculator
+      note: Work with ratios and proportions
+    - slug: rounding-calculator
+      label: Rounding Calculator
+      note: Round decimal equivalents
+    - slug: scientific-calculator
+      label: Scientific Calculator
+      note: Advanced math functions
 
 ratio-calculator:
   steps:
@@ -305,6 +337,9 @@ ratio-calculator:
     - title: "3:5 = 12:?"
       description: "Cross-multiplication"
       result: "20"
+    - title: "Scale 2:3 by 4"
+      description: "Equivalent ratio"
+      result: "8:12"
   intro: |
     The **Ratio Calculator** simplifies ratios to their lowest terms and solves proportion problems using cross-multiplication. Use it for recipe adjustments, map scales, financial ratios, and any situation where proportional relationships matter.
 
@@ -314,7 +349,20 @@ ratio-calculator:
 
     ## Proportions
 
-    If a:b = c:d, then a × d = b × c. Enter three known values to find the fourth. This is essential for scaling recipes, mixing solutions, and solving word problems.
+    If a:b = c:d, then a × d = b × c. Enter three known values to find the fourth. This is essential for scaling recipes, mixing solutions, and solving word problems. Related tools: [Fraction Calculator](/math/fraction-calculator/) for fractional quantities, [Percentage Calculator](/math/percentage-calculator/) for percent-based ratios, and [Markup Calculator](/business/markup-calculator/) for cost-to-price ratios.
+  see_also:
+    - slug: fraction-calculator
+      label: Fraction Calculator
+      note: Convert ratios to fractions
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Express ratios as percentages
+    - slug: exponent-calculator
+      label: Exponent Calculator
+      note: Scale values exponentially
+    - slug: mean-median-mode-calculator
+      label: Mean Median Mode Calculator
+      note: Analyze datasets statistically
 
 square-root-calculator:
   steps:
@@ -328,6 +376,9 @@ square-root-calculator:
     - title: "√2"
       description: "Irrational number"
       result: "1.414214"
+    - title: "√50"
+      description: "Non-perfect square"
+      result: "7.071068"
   intro: |
     The **Square Root Calculator** computes √n for any non-negative number, showing both exact results for perfect squares and high-precision decimal approximations for irrational roots like √2 or √3.
 
@@ -337,7 +388,20 @@ square-root-calculator:
 
     ## Applications
 
-    Square roots appear in geometry (Pythagorean theorem), statistics (standard deviation), physics, engineering, and anywhere area-to-side-length conversions are needed.
+    Square roots appear in geometry (Pythagorean theorem), statistics ([Standard Deviation Calculator](/statistics/standard-deviation-calculator/)), physics, engineering, and anywhere area-to-side-length conversions are needed. For powers and fractional exponents, use the [Exponent Calculator](/math/exponent-calculator/). For full trigonometry and roots, try the [Scientific Calculator](/scientific/scientific-calculator/).
+  see_also:
+    - slug: exponent-calculator
+      label: Exponent Calculator
+      note: "Square roots are exponents of ½"
+    - slug: area-calculator
+      label: Area Calculator
+      note: Find side length from area
+    - slug: standard-deviation-calculator
+      label: Standard Deviation Calculator
+      note: Uses square roots in statistics
+    - slug: scientific-calculator
+      label: Scientific Calculator
+      note: Advanced root and power functions
 
 exponent-calculator:
   steps:
@@ -351,12 +415,32 @@ exponent-calculator:
     - title: "5^(-2)"
       description: "Negative exponent"
       result: "0.04"
+    - title: "9^0.5"
+      description: "Fractional exponent (square root)"
+      result: "3"
   intro: |
     The **Exponent Calculator** computes base raised to any exponent — positive integers, negative powers, and decimal exponents. Essential for scientific notation, compound growth, computer science (binary powers), and algebra.
 
     ## Exponent Rules
 
     **Negative exponents:** b⁻ⁿ = 1/bⁿ. **Zero exponent:** b⁰ = 1 (for b ≠ 0). **Fractional exponents:** b^(1/n) = ⁿ√b. **Product rule:** bᵐ × bⁿ = b^(m+n).
+
+    ## Related Calculators
+
+    For square roots specifically, use the [Square Root Calculator](/math/square-root-calculator/). For compound growth over time, see [Compound Interest Calculator](/finance/compound-interest-calculator/). For percentage-based growth, use the [Percentage Calculator](/math/percentage-calculator/).
+  see_also:
+    - slug: square-root-calculator
+      label: Square Root Calculator
+      note: Dedicated √n calculator
+    - slug: scientific-calculator
+      label: Scientific Calculator
+      note: Full power and log functions
+    - slug: compound-interest-calculator
+      label: Compound Interest Calculator
+      note: Exponential financial growth
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Percent increase and decrease
 
 rounding-calculator:
   steps:
@@ -370,12 +454,32 @@ rounding-calculator:
     - title: "Floor 3.99 to 0 places"
       description: "Always round down"
       result: "3"
+    - title: "Round currency 19.995"
+      description: "2 decimal places for money"
+      result: "20.00"
   intro: |
     The **Rounding Calculator** rounds numbers to any decimal place using four modes: standard round (half up), floor (always down), ceil (always up), and truncate (cut off digits). Ideal for currency, measurements, statistics, and reporting.
 
     ## Rounding Modes
 
     **Round:** Standard rounding — 2.5 rounds to 3. **Floor:** Always rounds down — floor(3.99) = 3. **Ceil:** Always rounds up — ceil(3.01) = 4. **Truncate:** Removes digits without adjustment — truncate(3.99, 1) = 3.9.
+
+    ## Common Uses
+
+    Round currency amounts to 2 decimal places, simplify [Percentage Calculator](/math/percentage-calculator/) results, prepare [GST Calculator](/business/gst-calculator/) outputs, or clean up [Mean Median Mode Calculator](/statistics/mean-median-mode-calculator/) statistics for reports.
+  see_also:
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Round percentage results
+    - slug: gst-calculator
+      label: GST Calculator
+      note: Tax amounts to 2 decimal places
+    - slug: profit-margin-calculator
+      label: Profit Margin Calculator
+      note: Round margin percentages
+    - slug: mean-median-mode-calculator
+      label: Mean Median Mode Calculator
+      note: Round statistical averages
 
 age-calculator:
   steps:

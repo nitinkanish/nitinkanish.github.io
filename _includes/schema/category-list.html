@@ -1,0 +1,39 @@
+{% assign cat_slug = page.slug | default: page.category %}
+{% assign cat_calcs = site.data.calculators | where: "category", cat_slug %}
+{% if cat_calcs.size > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": {{ page.url | absolute_url | append: '#collection' | jsonify }},
+  "name": {{ page.title | default: page.seo_title | jsonify }},
+  "description": {{ page.description | strip_html | truncate: 300 | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ cat_calcs.size }},
+    "itemListElement": [
+      {% for calc in cat_calcs %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "name": {{ calc.title | jsonify }},
+        "url": {{ calc.category | prepend: '/' | append: '/' | append: calc.slug | append: '/' | absolute_url | jsonify }},
+        "description": {{ calc.description | strip_html | truncate: 160 | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".page-lead", "#calcs-heading", ".faq-question"]
+  }
+}
+</script>
+{% endif %}

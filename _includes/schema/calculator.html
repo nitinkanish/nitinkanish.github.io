@@ -70,5 +70,24 @@
       "url": {{ '/assets/images/logo.png' | absolute_url | jsonify }}
     }
   }
+  {% assign relations = site.data.calc_relations[page.slug] %}
+  {% if relations.related %}
+  ,"isPartOf": {
+    "@type": "CollectionPage",
+    "name": {{ page.category | replace: '-', ' ' | capitalize | append: ' Calculators' | jsonify }},
+    "url": {{ page.category | prepend: site.url | append: '/' | jsonify }}
+  }
+  ,"relatedLink": [
+    {% assign first_rel = true %}
+    {% for rel_slug in relations.related limit:5 %}
+      {% for c in site.data.calculators %}
+        {% if c.slug == rel_slug %}
+          {% unless first_rel %},{% endunless %}{{ c.category | prepend: '/' | append: '/' | append: c.slug | append: '/' | absolute_url | jsonify }}
+          {% assign first_rel = false %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  ]
+  {% endif %}
 }
 </script>

@@ -209,6 +209,34 @@
 
 .faq-list { display: flex; flex-direction: column; gap: var(--space-sm); }
 
+.see-also-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-sm);
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+
+    &:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    strong { color: var(--color-primary); font-weight: 600; }
+    span { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.4; }
+  }
+}
+
 .faq-item {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);

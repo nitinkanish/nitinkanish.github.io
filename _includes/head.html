@@ -22,12 +22,15 @@
 
 {% include schema/website.html %}
 {% if page.layout == 'calculator' or page.collection == 'calculators' %}
+  {% include schema/webpage.html %}
   {% include schema/calculator.html %}
   {% include schema/breadcrumb.html %}
   {% include schema/faq.html %}
   {% include schema/howto.html %}
 {% elsif page.layout == 'category' %}
+  {% include schema/webpage.html %}
   {% include schema/breadcrumb.html %}
+  {% include schema/category-list.html %}
   {% include schema/faq.html %}
 {% elsif page.layout == 'post' %}
   {% include schema/article.html %}

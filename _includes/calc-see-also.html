@@ -1,0 +1,28 @@
+{% assign current_slug = include.slug | default: page.slug %}
+{% assign links = include.links %}
+{% if links and links.size > 0 %}
+<section class="dash-section" aria-labelledby="see-also-heading">
+  <div class="container container-narrow">
+    <h2 id="see-also-heading">Related Tools You May Need</h2>
+    <p class="dash-section-lead">Continue your calculation with these free tools on {{ site.title }}.</p>
+    <ul class="see-also-list">
+      {% for link in links %}
+        {% assign calc = nil %}
+        {% for c in site.data.calculators %}
+          {% if c.slug == link.slug %}
+            {% assign calc = c %}
+          {% endif %}
+        {% endfor %}
+        {% if calc %}
+        <li>
+          <a href="{{ calc.category | prepend: '/' | append: '/' | append: calc.slug | append: '/' | relative_url }}">
+            <strong>{{ link.label | default: calc.title }}</strong>
+            <span>{{ link.note | default: calc.description | truncate: 100 }}</span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

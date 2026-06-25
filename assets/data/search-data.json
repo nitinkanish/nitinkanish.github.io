@@ -88,11 +88,14 @@
       "title": "Percentage Calculator",
       "slug": "percentage-calculator",
       "category": "math",
-      "description": "Calculate percentages, percentage change, increase, decrease, and fraction conversions.",
+      "description": "Free percentage calculator for X% of Y, percent change, increase, decrease, and reverse percentage — with formula shown instantly.",
       "keywords": [
         "percentage calculator",
         "percent calculator",
-        "percentage increase calculator"
+        "percentage increase calculator",
+        "percentage change calculator",
+        "reverse percentage calculator",
+        "what percent calculator"
       ],
       "url": "/math/percentage-calculator/"
     },
@@ -100,12 +103,14 @@
       "title": "Fraction Calculator",
       "slug": "fraction-calculator",
       "category": "math",
-      "description": "Add, subtract, multiply, and divide fractions with automatic simplification to lowest terms.",
+      "description": "Free fraction calculator to add, subtract, multiply, and divide fractions — auto-simplifies to lowest terms with decimal result.",
       "keywords": [
         "fraction calculator",
         "add fractions calculator",
         "simplify fraction calculator",
-        "fraction to decimal"
+        "fraction to decimal",
+        "multiply fractions calculator",
+        "divide fractions calculator"
       ],
       "url": "/math/fraction-calculator/"
     },
@@ -113,12 +118,14 @@
       "title": "Ratio Calculator",
       "slug": "ratio-calculator",
       "category": "math",
-      "description": "Simplify ratios, scale proportions, and find missing values in equivalent ratios.",
+      "description": "Free ratio calculator to simplify ratios and solve proportions — find missing values with cross-multiplication instantly.",
       "keywords": [
         "ratio calculator",
         "simplify ratio calculator",
         "proportion calculator",
-        "scale ratio calculator"
+        "scale ratio calculator",
+        "ratio simplifier",
+        "cross multiplication calculator"
       ],
       "url": "/math/ratio-calculator/"
     },
@@ -126,12 +133,13 @@
       "title": "Square Root Calculator",
       "slug": "square-root-calculator",
       "category": "math",
-      "description": "Calculate square roots, check perfect squares, and see exact and decimal results.",
+      "description": "Free square root calculator — find √n for any number, detect perfect squares, and see exact or decimal results.",
       "keywords": [
         "square root calculator",
         "sqrt calculator",
         "perfect square calculator",
-        "root calculator"
+        "root calculator",
+        "square root of"
       ],
       "url": "/math/square-root-calculator/"
     },
@@ -139,12 +147,13 @@
       "title": "Exponent Calculator",
       "slug": "exponent-calculator",
       "category": "math",
-      "description": "Calculate powers and exponents — base raised to any positive, negative, or fractional exponent.",
+      "description": "Free exponent calculator — compute base raised to any power including negative and decimal exponents instantly.",
       "keywords": [
         "exponent calculator",
         "power calculator",
         "raise to power calculator",
-        "index calculator"
+        "index calculator",
+        "negative exponent calculator"
       ],
       "url": "/math/exponent-calculator/"
     },
@@ -152,12 +161,14 @@
       "title": "Rounding Calculator",
       "slug": "rounding-calculator",
       "category": "math",
-      "description": "Round numbers to any decimal place using round, floor, ceil, or truncate modes.",
+      "description": "Free rounding calculator — round, floor, ceil, or truncate any number to 0–10 decimal places instantly.",
       "keywords": [
         "rounding calculator",
         "round to decimal places",
         "round number calculator",
-        "decimal rounding tool"
+        "decimal rounding tool",
+        "floor calculator",
+        "ceil calculator"
       ],
       "url": "/math/rounding-calculator/"
     },

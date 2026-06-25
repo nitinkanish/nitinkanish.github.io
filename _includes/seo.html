@@ -1,5 +1,14 @@
 {% assign seo_slug = page.slug | default: page.name %}
 {% assign seo_meta = nil %}
+{% assign calc_data = nil %}
+
+{% if seo_slug %}
+  {% for c in site.data.calculators %}
+    {% if c.slug == seo_slug %}
+      {% assign calc_data = c %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 {% if page.url == '/' or page.url == '/index.html' %}
   {% assign seo_meta = site.data.seo.pages.home %}
@@ -24,7 +33,7 @@
 {% endif %}
 
 {% assign page_title = seo_meta.seo_title | default: page.seo_title | default: page.title | default: site.title %}
-{% assign page_description = page.description | default: site.description %}
+{% assign page_description = seo_meta.meta_description | default: page.description | default: calc_data.description | default: site.description %}
 {% assign canonical_url = page.url | absolute_url %}
 {% if page.canonical %}
   {% assign canonical_url = page.canonical | absolute_url %}
@@ -32,9 +41,11 @@
 
 <title>{% if seo_meta.seo_title or page.seo_title %}{{ page_title }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
 <meta name="description" content="{{ page_description | strip_html | truncate: 160 }}">
-{% if page.keywords or page.calculator.keywords %}
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% elsif page.calculator.keywords %}{{ page.calculator.keywords | join: ', ' }}{% endif %}">
+{% if calc_data.keywords or page.keywords %}
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% else %}{{ calc_data.keywords | join: ', ' }}{% endif %}">
 {% endif %}
+<meta name="abstract" content="{{ page_description | strip_html | truncate: 300 }}">
+<link rel="alternate" type="text/plain" title="LLMs.txt" href="{{ '/llms.txt' | absolute_url }}">
 <link rel="canonical" href="{{ canonical_url }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="{{ page.author | default: site.author.name }}">

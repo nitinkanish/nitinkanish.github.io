@@ -20,6 +20,7 @@
 - Dashboard copy: `_data/dashboard_pages.yml`
 - SEO titles: `_data/seo.yml`
 - Long-form content: `_data/calc_content.yml`
+- Related links: `_data/calc_relations.yml`
 - Forms: `_includes/calc-forms/{type}.html`
 - Logic: `assets/js/calculators/{type}.js`
 - Layout: `_layouts/calculator.html` (15-section dashboard)
@@ -49,8 +50,8 @@
 ### Math & Percentage Calculators
 - slug: math
 - url: https://online-calculators.com/math/
-- description: Solve everyday math problems with percentage, age, and scientific calculators. Quick, accurate results for students and professionals.
-- seo_title: Free Math Calculators — Percentage & Math Tools
+- description: Solve everyday math problems with fraction, ratio, percentage, exponent, square root, and rounding calculators. Quick, accurate results for students and professionals.
+- seo_title: Free Math Calculators — Fraction, Ratio, Percentage, Square Root & More
 
 ### Unit Converters
 - slug: converters
@@ -190,12 +191,72 @@
 - url: https://online-calculators.com/math/percentage-calculator/
 - category: math
 - calculator_type: percentage
-- description: Calculate percentages, percentage change, increase, decrease, and fraction conversions.
+- description: Free percentage calculator for X% of Y, percent change, increase, decrease, and reverse percentage — with formula shown instantly.
 - formula: Percentage = (Part / Whole) × 100
-- keywords: percentage calculator, percent calculator, percentage increase calculator
-- seo_title: Free Percentage Calculator — Increase, Decrease & Change
+- keywords: percentage calculator, percent calculator, percentage increase calculator, percentage change calculator, reverse percentage calculator, what percent calculator
+- seo_title: Free Percentage Calculator — Increase, Decrease, Change & Reverse %
+- meta_description: Calculate percentages instantly — X% of Y, percent change, increase, decrease, and reverse percentage. Free online tool with formulas shown.
 - featured: true
 - popular: true
+
+### Fraction Calculator
+- slug: fraction-calculator
+- url: https://online-calculators.com/math/fraction-calculator/
+- category: math
+- calculator_type: fraction
+- description: Free fraction calculator to add, subtract, multiply, and divide fractions — auto-simplifies to lowest terms with decimal result.
+- formula: a/b ± c/d with common denominator; result simplified via GCD
+- keywords: fraction calculator, add fractions calculator, simplify fraction calculator, fraction to decimal, multiply fractions calculator, divide fractions calculator
+- seo_title: Free Fraction Calculator — Add, Subtract, Multiply, Divide & Simplify
+- meta_description: Add, subtract, multiply, and divide fractions online. Auto-simplifies to lowest terms and shows decimal equivalent. Free fraction calculator.
+- featured: true
+- popular: true
+
+### Ratio Calculator
+- slug: ratio-calculator
+- url: https://online-calculators.com/math/ratio-calculator/
+- category: math
+- calculator_type: ratio
+- description: Free ratio calculator to simplify ratios and solve proportions — find missing values with cross-multiplication instantly.
+- formula: a:b simplified by GCD; scale via cross-multiplication
+- keywords: ratio calculator, simplify ratio calculator, proportion calculator, scale ratio calculator, ratio simplifier, cross multiplication calculator
+- seo_title: Free Ratio Calculator — Simplify Ratios & Solve Proportions
+- meta_description: Simplify ratios to lowest terms and find missing values in proportions using cross-multiplication. Free ratio and proportion calculator.
+- popular: true
+
+### Square Root Calculator
+- slug: square-root-calculator
+- url: https://online-calculators.com/math/square-root-calculator/
+- category: math
+- calculator_type: square-root
+- description: Free square root calculator — find √n for any number, detect perfect squares, and see exact or decimal results.
+- formula: √n = n^0.5
+- keywords: square root calculator, sqrt calculator, perfect square calculator, root calculator, square root of
+- seo_title: Free Square Root Calculator — √n, Perfect Squares & Decimals
+- meta_description: Calculate square roots of any non-negative number. Detects perfect squares and shows exact or decimal results. Free √ calculator online.
+
+### Exponent Calculator
+- slug: exponent-calculator
+- url: https://online-calculators.com/math/exponent-calculator/
+- category: math
+- calculator_type: exponent
+- description: Free exponent calculator — compute base raised to any power including negative and decimal exponents instantly.
+- formula: result = base^exponent
+- keywords: exponent calculator, power calculator, raise to power calculator, index calculator, negative exponent calculator
+- seo_title: Free Exponent Calculator — Power, Index & Negative Exponents
+- meta_description: Calculate base raised to any exponent — positive, negative, or decimal. Free online power calculator with instant results.
+- popular: true
+
+### Rounding Calculator
+- slug: rounding-calculator
+- url: https://online-calculators.com/math/rounding-calculator/
+- category: math
+- calculator_type: rounding
+- description: Free rounding calculator — round, floor, ceil, or truncate any number to 0–10 decimal places instantly.
+- formula: Round(n, d) = round n to d decimal places
+- keywords: rounding calculator, round to decimal places, round number calculator, decimal rounding tool, floor calculator, ceil calculator
+- seo_title: Free Rounding Calculator — Round, Floor, Ceil & Truncate Decimals
+- meta_description: Round numbers to any decimal place. Choose round, floor, ceil, or truncate mode. Free decimal rounding tool for math and finance.
 
 ### Age Calculator
 - slug: age-calculator

@@ -259,11 +259,14 @@
   slug: percentage-calculator
   category: math
   icon: percentage
-  description: Calculate percentages, percentage change, increase, decrease, and fraction conversions.
+  description: Free percentage calculator for X% of Y, percent change, increase, decrease, and reverse percentage — with formula shown instantly.
   keywords:
     - percentage calculator
     - percent calculator
     - percentage increase calculator
+    - percentage change calculator
+    - reverse percentage calculator
+    - what percent calculator
   popular: true
   featured: true
   trending: true
@@ -296,12 +299,14 @@
   slug: fraction-calculator
   category: math
   icon: math
-  description: Add, subtract, multiply, and divide fractions with automatic simplification to lowest terms.
+  description: Free fraction calculator to add, subtract, multiply, and divide fractions — auto-simplifies to lowest terms with decimal result.
   keywords:
     - fraction calculator
     - add fractions calculator
     - simplify fraction calculator
     - fraction to decimal
+    - multiply fractions calculator
+    - divide fractions calculator
   popular: true
   featured: true
   date_added: 2025-06-25
@@ -325,12 +330,14 @@
   slug: ratio-calculator
   category: math
   icon: math
-  description: Simplify ratios, scale proportions, and find missing values in equivalent ratios.
+  description: Free ratio calculator to simplify ratios and solve proportions — find missing values with cross-multiplication instantly.
   keywords:
     - ratio calculator
     - simplify ratio calculator
     - proportion calculator
     - scale ratio calculator
+    - ratio simplifier
+    - cross multiplication calculator
   popular: true
   date_added: 2025-06-25
   calculator_type: ratio
@@ -353,12 +360,13 @@
   slug: square-root-calculator
   category: math
   icon: math
-  description: Calculate square roots, check perfect squares, and see exact and decimal results.
+  description: Free square root calculator — find √n for any number, detect perfect squares, and see exact or decimal results.
   keywords:
     - square root calculator
     - sqrt calculator
     - perfect square calculator
     - root calculator
+    - square root of
   date_added: 2025-06-25
   calculator_type: square-root
   formula: "√n = n^0.5"
@@ -380,12 +388,13 @@
   slug: exponent-calculator
   category: math
   icon: math
-  description: Calculate powers and exponents — base raised to any positive, negative, or fractional exponent.
+  description: Free exponent calculator — compute base raised to any power including negative and decimal exponents instantly.
   keywords:
     - exponent calculator
     - power calculator
     - raise to power calculator
     - index calculator
+    - negative exponent calculator
   popular: true
   date_added: 2025-06-25
   calculator_type: exponent
@@ -408,12 +417,14 @@
   slug: rounding-calculator
   category: math
   icon: math
-  description: Round numbers to any decimal place using round, floor, ceil, or truncate modes.
+  description: Free rounding calculator — round, floor, ceil, or truncate any number to 0–10 decimal places instantly.
   keywords:
     - rounding calculator
     - round to decimal places
     - round number calculator
     - decimal rounding tool
+    - floor calculator
+    - ceil calculator
   date_added: 2025-06-25
   calculator_type: rounding
   formula: "Round(n, d) = round n to d decimal places"

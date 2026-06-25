@@ -1,0 +1,55 @@
+{% assign seo_entry = nil %}
+{% assign calc_data = nil %}
+{% if page.slug or page.name %}
+  {% assign seo_entry = site.data.seo.calculators[page.slug] %}
+  {% for c in site.data.calculators %}
+    {% if c.slug == page.slug or c.slug == page.name %}
+      {% assign calc_data = c %}
+    {% endif %}
+  {% endfor %}
+{% elsif page.category and page.layout == 'category' %}
+  {% assign seo_entry = site.data.seo.categories[page.slug] %}
+{% endif %}
+
+{% assign page_name = seo_entry.seo_title | default: page.seo_title | default: page.title %}
+{% assign page_desc = page.description | default: calc_data.description | default: site.description %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": {{ page.url | absolute_url | append: '#webpage' | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "name": {{ page_name | jsonify }},
+  "description": {{ page_desc | strip_html | truncate: 300 | jsonify }},
+  "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": {{ site.url | append: '#website' | jsonify }},
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  {% if page.category and page.layout == 'calculator' %}
+  "about": {
+    "@type": "Thing",
+    "name": {{ page.title | jsonify }},
+    "description": {{ page_desc | strip_html | truncate: 200 | jsonify }}
+  },
+  "mainEntity": {
+    "@id": {{ page.url | absolute_url | append: '#software' | jsonify }}
+  },
+  {% endif %}
+  {% if seo_entry.last_modified_at or page.last_modified_at %}
+  "dateModified": {{ seo_entry.last_modified_at | default: page.last_modified_at | jsonify }},
+  {% endif %}
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".dash-hero-value", "#intro-heading", ".faq-question"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }
+}
+</script>

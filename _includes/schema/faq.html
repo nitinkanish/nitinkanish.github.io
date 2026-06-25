@@ -1,9 +1,24 @@
-{% assign faqs = page.faqs | default: page.calculator.faqs %}
+{% assign faqs = page.faqs %}
+{% unless faqs %}
+  {% for c in site.data.calculators %}
+    {% if c.slug == page.slug or c.slug == page.name %}
+      {% assign faqs = c.faqs %}
+    {% endif %}
+  {% endfor %}
+{% endunless %}
+{% if page.layout == 'category' and page.faqs == nil %}
+  {% for c in site.data.categories %}
+    {% if c.slug == page.slug or c.slug == page.category %}
+      {% assign faqs = c.faqs %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 {% if faqs and faqs.size > 0 %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": {{ page.url | absolute_url | append: '#faq' | jsonify }},
   "mainEntity": [
     {% for faq in faqs %}
     {

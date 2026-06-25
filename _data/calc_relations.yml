@@ -1,0 +1,48 @@
+# Curated related-calculator links for SEO interlinking (per slug)
+percentage-calculator:
+  related:
+    - fraction-calculator
+    - ratio-calculator
+    - rounding-calculator
+    - markup-calculator
+    - scientific-calculator
+
+fraction-calculator:
+  related:
+    - percentage-calculator
+    - ratio-calculator
+    - rounding-calculator
+    - area-calculator
+    - scientific-calculator
+
+ratio-calculator:
+  related:
+    - fraction-calculator
+    - percentage-calculator
+    - exponent-calculator
+    - markup-calculator
+    - mean-median-mode-calculator
+
+square-root-calculator:
+  related:
+    - exponent-calculator
+    - scientific-calculator
+    - area-calculator
+    - standard-deviation-calculator
+    - rounding-calculator
+
+exponent-calculator:
+  related:
+    - square-root-calculator
+    - scientific-calculator
+    - compound-interest-calculator
+    - percentage-calculator
+    - rounding-calculator
+
+rounding-calculator:
+  related:
+    - percentage-calculator
+    - fraction-calculator
+    - gst-calculator
+    - profit-margin-calculator
+    - mean-median-mode-calculator
