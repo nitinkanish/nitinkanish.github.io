@@ -58,18 +58,21 @@
 })();
 
 function initSearch() {
-  const dataEl = document.getElementById('search-data');
-  if (!dataEl) return;
-
-  let data;
-  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
-
   const inputs = [
     document.getElementById('global-search'),
     document.getElementById('hero-search')
   ].filter(Boolean);
+  if (!inputs.length) return;
 
-  inputs.forEach((input) => setupSearchInput(input, data));
+  const dataUrl = document.documentElement.getAttribute('data-search-url') || '/assets/data/search-data.json';
+
+  fetch(dataUrl)
+    .then((res) => (res.ok ? res.json() : null))
+    .then((data) => {
+      if (!data) return;
+      inputs.forEach((input) => setupSearchInput(input, data));
+    })
+    .catch(() => { /* search unavailable */ });
 }
 
 function setupSearchInput(input, data) {

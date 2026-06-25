@@ -103,6 +103,17 @@ With 450+ timezone pages, the first full build can take several minutes and need
 
 **Custom domain not working:** Allow up to 24 hours for DNS propagation; verify A/CNAME records
 
+**GitHub Actions build fails (jekyll-build-pages):** Do not use the default `actions/jekyll-build-pages` workflow for this site. Use `scripts/github-pages-workflow.yml` instead (`bundle exec jekyll build` on `ubuntu-latest`). Also ensure `_config.yml` limits `jekyll-feed` to posts only (see below).
+
+**jekyll-feed / Invalid Date in feed.xml:** The `time` collection must be excluded from the RSS feed. `_config.yml` must include:
+
+```yaml
+feed:
+  collections:
+    posts:
+      path: ""
+```
+
 **Push rejected (workflow scope):** GitHub blocks OAuth apps without `workflow` scope from pushing `.github/workflows/*`. Keep the workflow template in `scripts/github-pages-workflow.yml` and create `.github/workflows/pages.yml` on GitHub.com (see above). Or re-authorize SourceTree / use a PAT with `repo` + `workflow` scopes.
 
 **Bundler / github-pages version mismatch:** Update `Gemfile` to `github-pages ~> 232` and run `bundle update github-pages` on Ruby 3.3+. Deploy via **GitHub Actions** when possible.

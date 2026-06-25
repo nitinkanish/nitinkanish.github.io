@@ -1,6 +1,9 @@
 # Copy this file to .github/workflows/pages.yml on GitHub.com (web UI).
 # SourceTree OAuth cannot push workflow files without the "workflow" scope.
-# GitHub → Add file → Create new file → paste this content → Commit.
+#
+# IMPORTANT: Replace the default "jekyll-build-pages" workflow if GitHub created one.
+# That Docker action often fails on large sites (450+ timezone pages). This workflow
+# builds with bundle exec jekyll on ubuntu-latest instead.
 
 name: Deploy Jekyll site to Pages
 

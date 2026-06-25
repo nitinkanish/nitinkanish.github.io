@@ -137,7 +137,6 @@ hubs.each do |from|
       #{faq_yaml}
       ---
 
-      #{intro_for(from, to)}
     MD
 
     File.write(filename, content)

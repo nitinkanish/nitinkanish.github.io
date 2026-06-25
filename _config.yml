@@ -36,6 +36,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# jekyll-feed: only blog posts — not calculators, categories, or time routes
+feed:
+  collections:
+    posts:
+      path: ""
+
 # Collections
 collections:
   calculators:

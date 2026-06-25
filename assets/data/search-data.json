@@ -1,0 +1,465 @@
+{
+  "calculators": [
+    {
+      "title": "EMI Calculator",
+      "slug": "emi-calculator",
+      "category": "finance",
+      "description": "Calculate monthly EMI for home, car, and personal loans with amortization breakdown.",
+      "keywords": [
+        "emi calculator",
+        "loan emi calculator",
+        "home loan emi"
+      ],
+      "url": "/finance/emi-calculator/"
+    },
+    {
+      "title": "SIP Calculator",
+      "slug": "sip-calculator",
+      "category": "finance",
+      "description": "Estimate mutual fund SIP returns with step-up options and wealth projection charts.",
+      "keywords": [
+        "sip calculator",
+        "mutual fund sip calculator",
+        "sip return calculator"
+      ],
+      "url": "/finance/sip-calculator/"
+    },
+    {
+      "title": "FD Calculator",
+      "slug": "fd-calculator",
+      "category": "finance",
+      "description": "Calculate fixed deposit maturity amount with quarterly, monthly, and annual compounding.",
+      "keywords": [
+        "fd calculator",
+        "fixed deposit calculator",
+        "fd interest calculator"
+      ],
+      "url": "/finance/fd-calculator/"
+    },
+    {
+      "title": "Compound Interest Calculator",
+      "slug": "compound-interest-calculator",
+      "category": "finance",
+      "description": "Calculate compound interest with regular contributions and visualize wealth growth over time.",
+      "keywords": [
+        "compound interest calculator",
+        "interest calculator",
+        "compounding calculator"
+      ],
+      "url": "/finance/compound-interest-calculator/"
+    },
+    {
+      "title": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "category": "health",
+      "description": "Calculate Body Mass Index and get personalized health category recommendations.",
+      "keywords": [
+        "bmi calculator",
+        "body mass index calculator",
+        "bmi chart"
+      ],
+      "url": "/health/bmi-calculator/"
+    },
+    {
+      "title": "BMR Calculator",
+      "slug": "bmr-calculator",
+      "category": "health",
+      "description": "Calculate Basal Metabolic Rate to understand daily calorie needs at rest.",
+      "keywords": [
+        "bmr calculator",
+        "basal metabolic rate calculator",
+        "metabolism calculator"
+      ],
+      "url": "/health/bmr-calculator/"
+    },
+    {
+      "title": "Calorie Calculator",
+      "slug": "calorie-calculator",
+      "category": "health",
+      "description": "Calculate daily calorie needs for weight loss, maintenance, or muscle gain goals.",
+      "keywords": [
+        "calorie calculator",
+        "daily calorie calculator",
+        "tdee calculator"
+      ],
+      "url": "/health/calorie-calculator/"
+    },
+    {
+      "title": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "category": "math",
+      "description": "Calculate percentages, percentage change, increase, decrease, and fraction conversions.",
+      "keywords": [
+        "percentage calculator",
+        "percent calculator",
+        "percentage increase calculator"
+      ],
+      "url": "/math/percentage-calculator/"
+    },
+    {
+      "title": "Age Calculator",
+      "slug": "age-calculator",
+      "category": "date-time",
+      "description": "Calculate exact age in years, months, days, hours, and minutes from date of birth.",
+      "keywords": [
+        "age calculator",
+        "date of birth calculator",
+        "how old am i"
+      ],
+      "url": "/date-time/age-calculator/"
+    },
+    {
+      "title": "Scientific Calculator",
+      "slug": "scientific-calculator",
+      "category": "scientific",
+      "description": "Full-featured scientific calculator with trigonometry, logarithms, and advanced functions.",
+      "keywords": [
+        "scientific calculator",
+        "online scientific calculator",
+        "math calculator"
+      ],
+      "url": "/scientific/scientific-calculator/"
+    },
+    {
+      "title": "Length Converter",
+      "slug": "length-converter",
+      "category": "converters",
+      "description": "Convert between meters, feet, inches, miles, kilometers, and more length units.",
+      "keywords": [
+        "length converter",
+        "feet to meters",
+        "inch to cm converter"
+      ],
+      "url": "/converters/length-converter/"
+    },
+    {
+      "title": "Weight Converter",
+      "slug": "weight-converter",
+      "category": "converters",
+      "description": "Convert between kilograms, pounds, ounces, grams, stones, and more weight units.",
+      "keywords": [
+        "weight converter",
+        "kg to lbs",
+        "pounds to kg converter"
+      ],
+      "url": "/converters/weight-converter/"
+    },
+    {
+      "title": "Temperature Converter",
+      "slug": "temperature-converter",
+      "category": "converters",
+      "description": "Convert between Celsius, Fahrenheit, and Kelvin temperature scales instantly.",
+      "keywords": [
+        "temperature converter",
+        "celsius to fahrenheit",
+        "fahrenheit to celsius"
+      ],
+      "url": "/converters/temperature-converter/"
+    },
+    {
+      "title": "Profit Margin Calculator",
+      "slug": "profit-margin-calculator",
+      "category": "business",
+      "description": "Calculate gross, operating, and net profit margins for your business pricing strategy.",
+      "keywords": [
+        "profit margin calculator",
+        "margin calculator",
+        "markup calculator"
+      ],
+      "url": "/business/profit-margin-calculator/"
+    },
+    {
+      "title": "GST Calculator",
+      "slug": "gst-calculator",
+      "category": "business",
+      "description": "Calculate GST inclusive and exclusive amounts for Indian tax rates of 5%, 12%, 18%, and 28%.",
+      "keywords": [
+        "gst calculator",
+        "gst inclusive calculator",
+        "india gst calculator"
+      ],
+      "url": "/business/gst-calculator/"
+    },
+    {
+      "title": "Pregnancy Due Date Calculator",
+      "slug": "pregnancy-calculator",
+      "category": "health",
+      "description": "Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date.",
+      "keywords": [
+        "pregnancy calculator",
+        "due date calculator",
+        "pregnancy week calculator",
+        "gestational age calculator"
+      ],
+      "url": "/health/pregnancy-calculator/"
+    },
+    {
+      "title": "Mortgage Calculator",
+      "slug": "mortgage-calculator",
+      "category": "mortgage",
+      "description": "Calculate monthly mortgage payments, total interest, and amortization for US home loans.",
+      "keywords": [
+        "mortgage calculator",
+        "home loan calculator",
+        "monthly mortgage payment",
+        "mortgage payment calculator"
+      ],
+      "url": "/mortgage/mortgage-calculator/"
+    },
+    {
+      "title": "Date Difference Calculator",
+      "slug": "date-difference-calculator",
+      "category": "date-time",
+      "description": "Calculate exact days, weeks, months, and years between any two dates instantly.",
+      "keywords": [
+        "date difference calculator",
+        "days between dates",
+        "date calculator",
+        "time between dates"
+      ],
+      "url": "/date-time/date-difference-calculator/"
+    },
+    {
+      "title": "Macro Calculator",
+      "slug": "macro-calculator",
+      "category": "fitness",
+      "description": "Calculate daily protein, carbs, and fat targets based on your calories and fitness goals.",
+      "keywords": [
+        "macro calculator",
+        "macronutrient calculator",
+        "protein calculator",
+        "iifym calculator"
+      ],
+      "url": "/fitness/macro-calculator/"
+    },
+    {
+      "title": "GPA Calculator",
+      "slug": "gpa-calculator",
+      "category": "education",
+      "description": "Calculate weighted GPA on a 4.0 scale from course grades and credit hours.",
+      "keywords": [
+        "gpa calculator",
+        "grade point average calculator",
+        "college gpa calculator",
+        "weighted gpa calculator"
+      ],
+      "url": "/education/gpa-calculator/"
+    },
+    {
+      "title": "Area Calculator",
+      "slug": "area-calculator",
+      "category": "construction",
+      "description": "Calculate area of rectangle, circle, triangle, and room layouts for construction and renovation.",
+      "keywords": [
+        "area calculator",
+        "square footage calculator",
+        "room area calculator",
+        "construction area calculator"
+      ],
+      "url": "/construction/area-calculator/"
+    },
+    {
+      "title": "Standard Deviation Calculator",
+      "slug": "standard-deviation-calculator",
+      "category": "statistics",
+      "description": "Calculate mean, variance, and standard deviation for any dataset — sample or population.",
+      "keywords": [
+        "standard deviation calculator",
+        "statistics calculator",
+        "variance calculator",
+        "mean calculator"
+      ],
+      "url": "/statistics/standard-deviation-calculator/"
+    },
+    {
+      "title": "Loan Payoff Calculator",
+      "slug": "loan-payoff-calculator",
+      "category": "finance",
+      "description": "Calculate how extra EMI payments reduce loan tenure and total interest on home, car, and personal loans.",
+      "keywords": [
+        "loan payoff calculator",
+        "extra emi calculator",
+        "loan prepayment calculator",
+        "interest savings calculator"
+      ],
+      "url": "/finance/loan-payoff-calculator/"
+    },
+    {
+      "title": "Mortgage Affordability Calculator",
+      "slug": "mortgage-affordability-calculator",
+      "category": "mortgage",
+      "description": "Calculate how much house you can afford based on income, debts, down payment, and mortgage rate.",
+      "keywords": [
+        "mortgage affordability calculator",
+        "how much house can I afford",
+        "home affordability calculator",
+        "mortgage qualification calculator"
+      ],
+      "url": "/mortgage/mortgage-affordability-calculator/"
+    },
+    {
+      "title": "Volume Calculator",
+      "slug": "volume-calculator",
+      "category": "construction",
+      "description": "Calculate volume of rectangular prisms, cylinders, and spheres for concrete, fill, and tank capacity.",
+      "keywords": [
+        "volume calculator",
+        "cubic feet calculator",
+        "concrete volume calculator",
+        "cylinder volume calculator"
+      ],
+      "url": "/construction/volume-calculator/"
+    },
+    {
+      "title": "Grade Calculator",
+      "slug": "grade-calculator",
+      "category": "education",
+      "description": "Calculate weighted course grade from assignments, exams, and project scores with custom weights.",
+      "keywords": [
+        "grade calculator",
+        "weighted grade calculator",
+        "final grade calculator",
+        "course grade calculator"
+      ],
+      "url": "/education/grade-calculator/"
+    },
+    {
+      "title": "Mean Median Mode Calculator",
+      "slug": "mean-median-mode-calculator",
+      "category": "statistics",
+      "description": "Calculate mean, median, mode, range, and count for any dataset instantly.",
+      "keywords": [
+        "mean median mode calculator",
+        "average calculator",
+        "statistics calculator",
+        "central tendency calculator"
+      ],
+      "url": "/statistics/mean-median-mode-calculator/"
+    },
+    {
+      "title": "Heart Rate Zone Calculator",
+      "slug": "heart-rate-zone-calculator",
+      "category": "fitness",
+      "description": "Calculate max heart rate and training zones for fat burn, cardio, and peak performance.",
+      "keywords": [
+        "heart rate zone calculator",
+        "max heart rate calculator",
+        "cardio zone calculator",
+        "training zones calculator"
+      ],
+      "url": "/fitness/heart-rate-zone-calculator/"
+    },
+    {
+      "title": "Speed Converter",
+      "slug": "speed-converter",
+      "category": "converters",
+      "description": "Convert speed between km/h, mph, m/s, knots, and feet per second instantly.",
+      "keywords": [
+        "speed converter",
+        "kmh to mph",
+        "mph to kmh",
+        "knots converter"
+      ],
+      "url": "/converters/speed-converter/"
+    },
+    {
+      "title": "Markup Calculator",
+      "slug": "markup-calculator",
+      "category": "business",
+      "description": "Calculate selling price, profit, and margin from cost price and markup percentage.",
+      "keywords": [
+        "markup calculator",
+        "markup percentage calculator",
+        "selling price calculator",
+        "cost plus pricing calculator"
+      ],
+      "url": "/business/markup-calculator/"
+    },
+    {
+      "title": "World Time Zone Converter",
+      "slug": "time-zone-converter",
+      "category": "time",
+      "description": "Convert time between countries and cities — live clocks and meeting planner",
+      "keywords": [
+        "time zone converter",
+        "world clock",
+        "kenya mexico time"
+      ],
+      "url": "/time/"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Finance Calculators",
+      "slug": "finance",
+      "description": "Plan your financial future with EMI, SIP, FD, compound interest, and loan calculators. Make informed investment and borrowing decisions with accurate projections.",
+      "url": "/finance/"
+    },
+    {
+      "title": "Mortgage Calculators",
+      "slug": "mortgage",
+      "description": "Calculate monthly mortgage payments, affordability, and amortization schedules for home loans and property financing.",
+      "url": "/mortgage/"
+    },
+    {
+      "title": "Health Calculators",
+      "slug": "health",
+      "description": "Track your wellness with BMI, BMR, calorie, pregnancy, and fitness calculators. Understand your body metrics and set achievable health goals.",
+      "url": "/health/"
+    },
+    {
+      "title": "Math & Percentage Calculators",
+      "slug": "math",
+      "description": "Solve everyday math problems with percentage, age, and scientific calculators. Quick, accurate results for students and professionals.",
+      "url": "/math/"
+    },
+    {
+      "title": "Unit Converters",
+      "slug": "converters",
+      "description": "Convert length, weight, temperature, and more between metric and imperial units instantly with precision.",
+      "url": "/converters/"
+    },
+    {
+      "title": "Business Calculators",
+      "slug": "business",
+      "description": "Calculate profit margins, GST, markup, and business metrics to optimize pricing and tax compliance for your enterprise.",
+      "url": "/business/"
+    },
+    {
+      "title": "Construction Calculators",
+      "slug": "construction",
+      "description": "Estimate materials, areas, volumes, and costs for construction and renovation projects.",
+      "url": "/construction/"
+    },
+    {
+      "title": "Education Calculators",
+      "slug": "education",
+      "description": "GPA, grade, and academic calculators for students and educators.",
+      "url": "/education/"
+    },
+    {
+      "title": "Statistics Calculators",
+      "slug": "statistics",
+      "description": "Mean, median, standard deviation, and statistical analysis tools for data professionals.",
+      "url": "/statistics/"
+    },
+    {
+      "title": "Scientific Calculators",
+      "slug": "scientific",
+      "description": "Advanced scientific and engineering calculators for complex mathematical operations.",
+      "url": "/scientific/"
+    },
+    {
+      "title": "Date & Time Calculators",
+      "slug": "date-time",
+      "description": "Calculate age, date differences, and time intervals with precision.",
+      "url": "/date-time/"
+    },
+    {
+      "title": "Fitness Calculators",
+      "slug": "fitness",
+      "description": "Track macros, heart rate zones, and workout metrics for optimal fitness performance.",
+      "url": "/fitness/"
+    }
+  ]
+}

@@ -86,40 +86,5 @@
   </div>
 </footer>
 
-<script type="application/json" id="search-data">
-{
-  "calculators": [
-    {% for calc in site.data.calculators %}
-    {
-      "title": {{ calc.title | jsonify }},
-      "slug": {{ calc.slug | jsonify }},
-      "category": {{ calc.category | jsonify }},
-      "description": {{ calc.description | jsonify }},
-      "keywords": {{ calc.keywords | jsonify }},
-      "url": {{ calc.category | prepend: '/' | append: '/' | append: calc.slug | append: '/' | relative_url | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %},
-    {
-      "title": "World Time Zone Converter",
-      "slug": "time-zone-converter",
-      "category": "time",
-      "description": "Convert time between countries and cities — live clocks and meeting planner",
-      "keywords": ["time zone converter", "world clock", "kenya mexico time"],
-      "url": {{ '/time/' | relative_url | jsonify }}
-    }
-  ],
-  "categories": [
-    {% for cat in site.data.categories %}
-    {
-      "title": {{ cat.title | jsonify }},
-      "slug": {{ cat.slug | jsonify }},
-      "description": {{ cat.description | jsonify }},
-      "url": {{ cat.slug | prepend: '/' | append: '/' | relative_url | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-}
-</script>
-
 <script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
