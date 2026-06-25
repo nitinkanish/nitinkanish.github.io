@@ -1,0 +1,12 @@
+# Local development overrides — use with:
+#   bundle exec jekyll serve --config _config.yml,_config_dev.yml
+#
+# Skips the 450+ timezone route pages (hub at /time/ still works).
+# For a full production build: bundle exec jekyll build
+
+exclude:
+  - _time
+
+collections:
+  time:
+    output: false
