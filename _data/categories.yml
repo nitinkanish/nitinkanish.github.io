@@ -60,13 +60,18 @@
   title: Math & Percentage Calculators
   icon: math
   description: >-
-    Solve everyday math problems with percentage, age, and scientific calculators.
-    Quick, accurate results for students and professionals.
+    Solve everyday math problems with fraction, ratio, percentage, exponent,
+    square root, and rounding calculators. Quick, accurate results for students and professionals.
   keywords:
     - math calculator
+    - fraction calculator
+    - ratio calculator
     - percentage calculator
-    - scientific calculator
   faqs:
+    - question: What math calculators are available?
+      answer: >-
+        Our math section includes fraction, ratio, percentage, square root,
+        exponent, and rounding calculators for homework, work, and everyday problems.
     - question: Can I use the scientific calculator offline?
       answer: >-
         Yes. Install Online Calculators as a PWA for offline access to cached calculators.

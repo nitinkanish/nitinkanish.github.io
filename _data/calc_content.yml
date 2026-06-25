@@ -270,6 +270,113 @@ percentage-calculator:
 
     Distinguish between **percentage points** (absolute difference) and **percent change** (relative difference). A rate moving from 10% to 15% is a 5 percentage point increase but a 50% relative increase. Always clarify which measure your context requires.
 
+fraction-calculator:
+  steps:
+    - "Choose an operation — add, subtract, multiply, or divide."
+    - "Enter the numerator and denominator for both fractions."
+    - "View the simplified result as a fraction and decimal."
+  examples:
+    - title: "1/3 + 1/4"
+      description: "Adding fractions with different denominators"
+      result: "7/12"
+    - title: "2/3 × 3/4"
+      description: "Multiplying fractions"
+      result: "1/2"
+  intro: |
+    The **Fraction Calculator** handles addition, subtraction, multiplication, and division of fractions — automatically finding common denominators and simplifying results to lowest terms. Perfect for homework, recipe scaling, and construction measurements.
+
+    ## How Fraction Operations Work
+
+    **Addition & Subtraction:** Find the least common denominator (LCD), convert both fractions, then combine numerators. **Multiplication:** Multiply numerators and denominators directly, then simplify. **Division:** Multiply by the reciprocal of the divisor.
+
+    ## Simplifying Fractions
+
+    Every result is reduced using the greatest common divisor (GCD). An improper fraction (numerator ≥ denominator) is also shown as a mixed number when helpful.
+
+ratio-calculator:
+  steps:
+    - "Choose simplify ratio or find missing proportion value."
+    - "Enter the ratio or proportion values."
+    - "View the simplified ratio or missing value instantly."
+  examples:
+    - title: "Simplify 12:8"
+      description: "Reduce to lowest terms"
+      result: "3:2"
+    - title: "3:5 = 12:?"
+      description: "Cross-multiplication"
+      result: "20"
+  intro: |
+    The **Ratio Calculator** simplifies ratios to their lowest terms and solves proportion problems using cross-multiplication. Use it for recipe adjustments, map scales, financial ratios, and any situation where proportional relationships matter.
+
+    ## Simplifying Ratios
+
+    Divide both parts of a ratio by their GCD. The ratio 12:8 becomes 3:2. Order matters — 3:2 is not the same as 2:3.
+
+    ## Proportions
+
+    If a:b = c:d, then a × d = b × c. Enter three known values to find the fourth. This is essential for scaling recipes, mixing solutions, and solving word problems.
+
+square-root-calculator:
+  steps:
+    - "Enter a non-negative number."
+    - "View the square root in decimal form."
+    - "Check whether the input is a perfect square."
+  examples:
+    - title: "√144"
+      description: "Perfect square"
+      result: "12"
+    - title: "√2"
+      description: "Irrational number"
+      result: "1.414214"
+  intro: |
+    The **Square Root Calculator** computes √n for any non-negative number, showing both exact results for perfect squares and high-precision decimal approximations for irrational roots like √2 or √3.
+
+    ## Perfect Squares
+
+    A perfect square has a whole-number root: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, and so on. The calculator flags these automatically.
+
+    ## Applications
+
+    Square roots appear in geometry (Pythagorean theorem), statistics (standard deviation), physics, engineering, and anywhere area-to-side-length conversions are needed.
+
+exponent-calculator:
+  steps:
+    - "Enter the base number."
+    - "Enter the exponent (positive, negative, or decimal)."
+    - "View the result instantly."
+  examples:
+    - title: "2^10"
+      description: "Power of 2"
+      result: "1024"
+    - title: "5^(-2)"
+      description: "Negative exponent"
+      result: "0.04"
+  intro: |
+    The **Exponent Calculator** computes base raised to any exponent — positive integers, negative powers, and decimal exponents. Essential for scientific notation, compound growth, computer science (binary powers), and algebra.
+
+    ## Exponent Rules
+
+    **Negative exponents:** b⁻ⁿ = 1/bⁿ. **Zero exponent:** b⁰ = 1 (for b ≠ 0). **Fractional exponents:** b^(1/n) = ⁿ√b. **Product rule:** bᵐ × bⁿ = b^(m+n).
+
+rounding-calculator:
+  steps:
+    - "Enter the number to round."
+    - "Set decimal places (0–10)."
+    - "Choose round, floor, ceil, or truncate mode."
+  examples:
+    - title: "Round 3.456 to 2 places"
+      description: "Standard rounding"
+      result: "3.46"
+    - title: "Floor 3.99 to 0 places"
+      description: "Always round down"
+      result: "3"
+  intro: |
+    The **Rounding Calculator** rounds numbers to any decimal place using four modes: standard round (half up), floor (always down), ceil (always up), and truncate (cut off digits). Ideal for currency, measurements, statistics, and reporting.
+
+    ## Rounding Modes
+
+    **Round:** Standard rounding — 2.5 rounds to 3. **Floor:** Always rounds down — floor(3.99) = 3. **Ceil:** Always rounds up — ceil(3.01) = 4. **Truncate:** Removes digits without adjustment — truncate(3.99, 1) = 3.9.
+
 age-calculator:
   steps:
     - "Enter your date of birth."

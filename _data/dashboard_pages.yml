@@ -269,6 +269,106 @@ percentage-calculator:
   formula_vars: ["Percentage = (Part / Whole) × 100"]
   sticky_label: "Result"
 
+fraction-calculator:
+  trust_badge: "Essential for students & cooks"
+  usage_stat: "25K+ fraction calculations this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Fraction Calculator"
+    input_subtitle: "Add, subtract, multiply, or divide — result auto-simplified"
+    results_title: "Result"
+    primary_label: "Answer"
+    metric_1_label: "Operation"
+    metric_2_label: "Decimal Value"
+    metric_3_label: "Simplified Form"
+  share: { title: "Share Result", card_heading: "Fraction Calculation" }
+  examples:
+    - { label: "Add 1/3 + 1/4", desc: "Different denominators", data: { mode: "add", num1: 1, den1: 3, num2: 1, den2: 4 } }
+    - { label: "Multiply 2/3 × 3/4", desc: "Cross multiply & simplify", data: { mode: "multiply", num1: 2, den1: 3, num2: 3, den2: 4 } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["LCD for addition/subtraction", "GCD for simplification"]
+  sticky_label: "Result"
+
+ratio-calculator:
+  trust_badge: "Used in recipes, maps & finance"
+  usage_stat: "18K+ ratio calculations this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Ratio Calculator"
+    input_subtitle: "Simplify ratios or find missing proportion values"
+    results_title: "Result"
+    primary_label: "Answer"
+    metric_1_label: "Mode"
+    metric_2_label: "Simplified Ratio"
+    metric_3_label: "Scale Factor"
+  share: { title: "Share Result", card_heading: "Ratio Calculation" }
+  examples:
+    - { label: "Simplify 12:8", desc: "Reduce to lowest terms", data: { mode: "simplify", value1: 12, value2: 8 } }
+    - { label: "3:5 = 12:?", desc: "Find missing value", data: { mode: "proportion", value1: 3, value2: 5, value3: 12 } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["a:b simplified by GCD", "Cross-multiply for proportions"]
+  sticky_label: "Result"
+
+square-root-calculator:
+  trust_badge: "Instant √ calculations"
+  usage_stat: "15K+ square root lookups this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Square Root Calculator"
+    input_subtitle: "Enter any non-negative number"
+    results_title: "Result"
+    primary_label: "Square Root"
+    metric_1_label: "Input"
+    metric_2_label: "Perfect Square?"
+    metric_3_label: "Squared Check"
+  share: { title: "Share Result", card_heading: "Square Root" }
+  examples:
+    - { label: "√144", desc: "Perfect square", data: { value: 144 } }
+    - { label: "√2", desc: "Irrational root", data: { value: 2 } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["√n = n^0.5"]
+  sticky_label: "√ Result"
+
+exponent-calculator:
+  trust_badge: "Powers made simple"
+  usage_stat: "20K+ exponent calculations this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Exponent Calculator"
+    input_subtitle: "Base raised to any exponent"
+    results_title: "Result"
+    primary_label: "Power"
+    metric_1_label: "Base"
+    metric_2_label: "Exponent"
+    metric_3_label: "Formula"
+  share: { title: "Share Result", card_heading: "Exponent Calculation" }
+  examples:
+    - { label: "2^10", desc: "Binary power", data: { base: 2, exponent: 10 } }
+    - { label: "5^(-2)", desc: "Negative exponent", data: { base: 5, exponent: -2 } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["result = base^exponent"]
+  sticky_label: "Power"
+
+rounding-calculator:
+  trust_badge: "Precise decimal rounding"
+  usage_stat: "12K+ rounding operations this month"
+  hero_badge: "MATH"
+  widget:
+    input_title: "Rounding Calculator"
+    input_subtitle: "Round, floor, ceil, or truncate to any decimal place"
+    results_title: "Result"
+    primary_label: "Rounded Value"
+    metric_1_label: "Original"
+    metric_2_label: "Mode"
+    metric_3_label: "Decimal Places"
+  share: { title: "Share Result", card_heading: "Rounded Number" }
+  examples:
+    - { label: "Round 3.456", desc: "2 decimal places", data: { value: 3.456, decimals: 2, mode: "round" } }
+    - { label: "Floor 3.99", desc: "Round down", data: { value: 3.99, decimals: 0, mode: "floor" } }
+  newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
+  formula_vars: ["Round(n, d) = n rounded to d decimal places"]
+  sticky_label: "Rounded"
+
 age-calculator:
   trust_badge: "Used by millions worldwide"
   usage_stat: "55K+ age calculations this month"

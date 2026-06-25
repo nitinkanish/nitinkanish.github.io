@@ -1,0 +1,23 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="value">Number</label>
+    <input type="number" id="value" name="value" class="form-input" value="3.456" data-validate="required|number" inputmode="decimal" step="any">
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="decimals">Decimal Places</label>
+      <input type="number" id="decimals" name="decimals" class="form-input" value="2" data-validate="required|number|min:0|max:10" inputmode="numeric" min="0" max="10">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="mode">Rounding Mode</label>
+      <select id="mode" name="mode" class="form-select">
+        <option value="round">Round (half up)</option>
+        <option value="floor">Floor (round down)</option>
+        <option value="ceil">Ceil (round up)</option>
+        <option value="truncate">Truncate (cut off)</option>
+      </select>
+    </div>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

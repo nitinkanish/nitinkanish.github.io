@@ -292,6 +292,145 @@
     - question: What is reverse percentage?
       answer: Finding the original amount before a percentage was applied. If 80 is 80% of X, then X = 80/0.80 = 100.
 
+- title: Fraction Calculator
+  slug: fraction-calculator
+  category: math
+  icon: math
+  description: Add, subtract, multiply, and divide fractions with automatic simplification to lowest terms.
+  keywords:
+    - fraction calculator
+    - add fractions calculator
+    - simplify fraction calculator
+    - fraction to decimal
+  popular: true
+  featured: true
+  date_added: 2025-06-25
+  calculator_type: fraction
+  formula: "a/b ± c/d with common denominator; result simplified via GCD"
+  faqs:
+    - question: How do I add fractions with different denominators?
+      answer: Find the least common denominator (LCD), convert both fractions, then add numerators. Example — 1/3 + 1/4 = 4/12 + 3/12 = 7/12.
+    - question: How do I simplify a fraction?
+      answer: Divide numerator and denominator by their greatest common divisor (GCD). 8/12 simplifies to 2/3.
+    - question: Can I multiply fractions directly?
+      answer: Yes. Multiply numerators together and denominators together, then simplify. 2/3 × 3/4 = 6/12 = 1/2.
+    - question: How do I divide fractions?
+      answer: Multiply by the reciprocal of the divisor. 3/4 ÷ 1/2 = 3/4 × 2/1 = 6/4 = 3/2.
+    - question: What is an improper fraction?
+      answer: A fraction where the numerator is greater than or equal to the denominator, like 7/4. It equals 1 3/4 as a mixed number.
+    - question: How do I convert a fraction to a decimal?
+      answer: Divide the numerator by the denominator. 3/8 = 0.375.
+
+- title: Ratio Calculator
+  slug: ratio-calculator
+  category: math
+  icon: math
+  description: Simplify ratios, scale proportions, and find missing values in equivalent ratios.
+  keywords:
+    - ratio calculator
+    - simplify ratio calculator
+    - proportion calculator
+    - scale ratio calculator
+  popular: true
+  date_added: 2025-06-25
+  calculator_type: ratio
+  formula: "a:b simplified by GCD; scale via cross-multiplication"
+  faqs:
+    - question: How do I simplify a ratio?
+      answer: Divide both parts by their greatest common divisor. 12:8 simplifies to 3:2.
+    - question: How do I find a missing value in a proportion?
+      answer: Use cross-multiplication. If 3:5 = x:20, then x = (3 × 20) / 5 = 12.
+    - question: What is the difference between ratio and proportion?
+      answer: A ratio compares two quantities (3:2). A proportion states two ratios are equal (3:2 = 6:4).
+    - question: Can ratios include decimals?
+      answer: Yes, but it is often clearer to convert to whole numbers first by multiplying both parts by a power of 10.
+    - question: How do I scale a ratio?
+      answer: Multiply or divide both parts by the same factor. 2:3 scaled by 4 becomes 8:12.
+    - question: Is order important in a ratio?
+      answer: Yes. 3:5 is not the same as 5:3. Always match the order to your problem context.
+
+- title: Square Root Calculator
+  slug: square-root-calculator
+  category: math
+  icon: math
+  description: Calculate square roots, check perfect squares, and see exact and decimal results.
+  keywords:
+    - square root calculator
+    - sqrt calculator
+    - perfect square calculator
+    - root calculator
+  date_added: 2025-06-25
+  calculator_type: square-root
+  formula: "√n = n^0.5"
+  faqs:
+    - question: What is a square root?
+      answer: The square root of n is a number that multiplied by itself equals n. √25 = 5 because 5 × 5 = 25.
+    - question: What is a perfect square?
+      answer: A number whose square root is a whole number. Examples include 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+    - question: Can I calculate square roots of negative numbers?
+      answer: Real square roots of negative numbers are undefined. This calculator works with non-negative inputs.
+    - question: How accurate is the decimal result?
+      answer: Results are shown to 6 decimal places. Irrational roots like √2 are approximated.
+    - question: What is the square root of zero?
+      answer: √0 = 0. Zero is the only number whose square root equals itself.
+    - question: How is square root used in real life?
+      answer: Finding side lengths from area, standard deviation calculations, Pythagorean theorem, and engineering formulas.
+
+- title: Exponent Calculator
+  slug: exponent-calculator
+  category: math
+  icon: math
+  description: Calculate powers and exponents — base raised to any positive, negative, or fractional exponent.
+  keywords:
+    - exponent calculator
+    - power calculator
+    - raise to power calculator
+    - index calculator
+  popular: true
+  date_added: 2025-06-25
+  calculator_type: exponent
+  formula: "result = base^exponent"
+  faqs:
+    - question: What is an exponent?
+      answer: An exponent shows how many times a base number is multiplied by itself. 2³ = 2 × 2 × 2 = 8.
+    - question: What does a negative exponent mean?
+      answer: A negative exponent means take the reciprocal. 2⁻³ = 1/2³ = 1/8 = 0.125.
+    - question: What is anything to the power of zero?
+      answer: Any non-zero number raised to the power of 0 equals 1. 5⁰ = 1.
+    - question: Can I use decimal exponents?
+      answer: Yes. Decimal exponents represent roots and powers combined. 9^0.5 = √9 = 3.
+    - question: What is the difference between power and exponent?
+      answer: In bⁿ, b is the base and n is the exponent. The result bⁿ is called the power.
+    - question: How large can results get?
+      answer: Very large exponents may produce Infinity. Use reasonable values for practical calculations.
+
+- title: Rounding Calculator
+  slug: rounding-calculator
+  category: math
+  icon: math
+  description: Round numbers to any decimal place using round, floor, ceil, or truncate modes.
+  keywords:
+    - rounding calculator
+    - round to decimal places
+    - round number calculator
+    - decimal rounding tool
+  date_added: 2025-06-25
+  calculator_type: rounding
+  formula: "Round(n, d) = round n to d decimal places"
+  faqs:
+    - question: How do I round to 2 decimal places?
+      answer: Look at the third decimal digit. If it is 5 or greater, round up. 3.456 rounds to 3.46.
+    - question: What is the difference between round and truncate?
+      answer: Round considers the next digit for adjustment. Truncate simply cuts off digits without changing the value. truncate(3.99, 1) = 3.9, round(3.99, 1) = 4.0.
+    - question: What does floor do?
+      answer: Floor always rounds down to the nearest value at the specified precision. floor(3.99, 0) = 3.
+    - question: What does ceil do?
+      answer: Ceil always rounds up. ceil(3.01, 0) = 4.
+    - question: How do bankers round?
+      answer: Standard rounding (round half up) is used here. 2.5 rounds to 3, 3.5 rounds to 4.
+    - question: Can I round currency amounts?
+      answer: Yes. Set decimal places to 2 for cents/paise rounding on any monetary value.
+
 - title: Age Calculator
   slug: age-calculator
   category: date-time

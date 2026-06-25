@@ -1,0 +1,25 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="mode">Calculation Type</label>
+    <select id="mode" name="mode" class="form-select">
+      <option value="simplify">Simplify Ratio (a : b)</option>
+      <option value="proportion">Find Missing Value (a : b = c : ?)</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="value1">Value A</label>
+      <input type="number" id="value1" name="value1" class="form-input" value="12" data-validate="required|number" inputmode="decimal">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="value2">Value B</label>
+      <input type="number" id="value2" name="value2" class="form-input" value="8" data-validate="required|number" inputmode="decimal">
+    </div>
+  </div>
+  <div class="form-group" id="value3-group" hidden>
+    <label class="form-label" for="value3">Value C (known)</label>
+    <input type="number" id="value3" name="value3" class="form-input" value="12" inputmode="decimal">
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

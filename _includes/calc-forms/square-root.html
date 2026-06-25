@@ -1,0 +1,9 @@
+<form id="calc-form" class="calc-form dash-form" novalidate>
+  <div class="form-group">
+    <label class="form-label" for="value">Number (n)</label>
+    <input type="number" id="value" name="value" class="form-input" value="144" data-validate="required|number|min:0" inputmode="decimal" min="0" step="any">
+    <p class="form-hint">Enter a non-negative number to find √n</p>
+  </div>
+</form>
+<div id="calc-results" class="calc-results dash-results" aria-live="polite" hidden></div>
+<div id="calc-live-region" class="visually-hidden" aria-live="polite"></div>

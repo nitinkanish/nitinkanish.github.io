@@ -97,6 +97,71 @@
       "url": "/math/percentage-calculator/"
     },
     {
+      "title": "Fraction Calculator",
+      "slug": "fraction-calculator",
+      "category": "math",
+      "description": "Add, subtract, multiply, and divide fractions with automatic simplification to lowest terms.",
+      "keywords": [
+        "fraction calculator",
+        "add fractions calculator",
+        "simplify fraction calculator",
+        "fraction to decimal"
+      ],
+      "url": "/math/fraction-calculator/"
+    },
+    {
+      "title": "Ratio Calculator",
+      "slug": "ratio-calculator",
+      "category": "math",
+      "description": "Simplify ratios, scale proportions, and find missing values in equivalent ratios.",
+      "keywords": [
+        "ratio calculator",
+        "simplify ratio calculator",
+        "proportion calculator",
+        "scale ratio calculator"
+      ],
+      "url": "/math/ratio-calculator/"
+    },
+    {
+      "title": "Square Root Calculator",
+      "slug": "square-root-calculator",
+      "category": "math",
+      "description": "Calculate square roots, check perfect squares, and see exact and decimal results.",
+      "keywords": [
+        "square root calculator",
+        "sqrt calculator",
+        "perfect square calculator",
+        "root calculator"
+      ],
+      "url": "/math/square-root-calculator/"
+    },
+    {
+      "title": "Exponent Calculator",
+      "slug": "exponent-calculator",
+      "category": "math",
+      "description": "Calculate powers and exponents — base raised to any positive, negative, or fractional exponent.",
+      "keywords": [
+        "exponent calculator",
+        "power calculator",
+        "raise to power calculator",
+        "index calculator"
+      ],
+      "url": "/math/exponent-calculator/"
+    },
+    {
+      "title": "Rounding Calculator",
+      "slug": "rounding-calculator",
+      "category": "math",
+      "description": "Round numbers to any decimal place using round, floor, ceil, or truncate modes.",
+      "keywords": [
+        "rounding calculator",
+        "round to decimal places",
+        "round number calculator",
+        "decimal rounding tool"
+      ],
+      "url": "/math/rounding-calculator/"
+    },
+    {
       "title": "Age Calculator",
       "slug": "age-calculator",
       "category": "date-time",
@@ -398,7 +463,7 @@
     {
       "title": "Math & Percentage Calculators",
       "slug": "math",
-      "description": "Solve everyday math problems with percentage, age, and scientific calculators. Quick, accurate results for students and professionals.",
+      "description": "Solve everyday math problems with fraction, ratio, percentage, exponent, square root, and rounding calculators. Quick, accurate results for students and professionals.",
       "url": "/math/"
     },
     {
