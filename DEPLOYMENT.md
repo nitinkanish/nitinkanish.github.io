@@ -4,6 +4,28 @@
 
 ## GitHub Pages
 
+### Recommended: GitHub Actions (this repo)
+
+This site has 450+ timezone route pages. Use GitHub Actions so builds use Ruby 3.3 and `github-pages` v232.
+
+**Important:** SourceTree (and some OAuth tokens) cannot push files under `.github/workflows/` without the `workflow` scope. Add the workflow on GitHub.com instead:
+
+1. Push your code to `main` (no `.github/workflows/` in the repo)
+2. On GitHub: **Add file → Create new file**
+3. Path: `.github/workflows/pages.yml`
+4. Paste the contents of `scripts/github-pages-workflow.yml` from this repo
+5. Commit on `main`
+6. Go to **Settings → Pages**
+7. Under **Build and deployment**, set **Source** to **GitHub Actions**
+8. Under **Custom domain**, enter `online-calculators.com`
+9. Enable **Enforce HTTPS**
+
+The workflow runs `bundle exec jekyll build` on Ruby 3.3 with `github-pages` v232.
+
+### Legacy: Deploy from branch
+
+Only use this if you are not using the Actions workflow. You may see bundler warnings if `Gemfile.lock` does not match the Pages-hosted gem set.
+
 1. Push this repository to GitHub
 2. Go to **Settings → Pages**
 3. Source: **Deploy from branch** → `main` → `/ (root)`
@@ -51,11 +73,15 @@ baseurl: ""
 
 ## Build Locally Before Deploy
 
+Requires **Ruby 3.3+** (see `.ruby-version`). On macOS with Homebrew Ruby:
+
 ```bash
-bundle install
-bundle exec jekyll build
+/opt/homebrew/opt/ruby/bin/bundle install
+/opt/homebrew/opt/ruby/bin/bundle exec jekyll build
 # Output in _site/
 ```
+
+With 450+ timezone pages, the first full build can take several minutes and needs ~2 GB RAM.
 
 ## Pre-Deploy Checklist
 
@@ -76,5 +102,11 @@ bundle exec jekyll build
 **404 on calculator pages:** Verify `category` field in calculator front matter matches permalink
 
 **Custom domain not working:** Allow up to 24 hours for DNS propagation; verify A/CNAME records
+
+**Push rejected (workflow scope):** GitHub blocks OAuth apps without `workflow` scope from pushing `.github/workflows/*`. Keep the workflow template in `scripts/github-pages-workflow.yml` and create `.github/workflows/pages.yml` on GitHub.com (see above). Or re-authorize SourceTree / use a PAT with `repo` + `workflow` scopes.
+
+**Bundler / github-pages version mismatch:** Update `Gemfile` to `github-pages ~> 232` and run `bundle update github-pages` on Ruby 3.3+. Deploy via **GitHub Actions** when possible.
+
+**Build killed (exit 137) or very slow:** The timezone collection has 450+ pages. Use GitHub Actions for deployment; locally, close other apps or use `bundle exec jekyll build --incremental` after a successful first build.
 
 **Plugins not working:** Only use GitHub Pages-whitelisted plugins (jekyll-feed, jekyll-sitemap, jekyll-seo-tag)
