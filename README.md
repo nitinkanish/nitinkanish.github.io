@@ -1,6 +1,6 @@
 # Online Calculators — SEO-Optimized Calculator Website
 
-A production-ready Jekyll calculator website designed for GitHub Pages. Fast, modern, mobile-first, and built to scale to 10,000+ calculators.
+A production-ready Jekyll calculator website designed for GitHub Pages. Fast, modern, mobile-first, and built to scale to 10,000+ calculators
 
 **Live URL:** [https://online-calculators.com](https://online-calculators.com)
 
