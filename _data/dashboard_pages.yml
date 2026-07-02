@@ -249,7 +249,27 @@ calorie-calculator:
   formula_vars: ["BMR × Activity Factor = TDEE"]
   sticky_label: "Daily Calories"
 
-percentage-calculator:
+percentlove-calculator:
+  trust_badge: "Fun compatibility check"
+  usage_stat: "35K+ love checks this month"
+  hero_badge: "LOVE"
+  widget:
+    input_title: "Find Love % Between"
+    input_subtitle: "Enter two names and reveal your compatibility score"
+    results_title: "Love Score"
+    primary_label: "Compatibility"
+    metric_1_label: "Band"
+    metric_2_label: "Name Match"
+    metric_3_label: "Vibe"
+  share: { title: "Share Love Result", card_heading: "Our Love Score" }
+  examples:
+    - { label: "Alex + Priya", desc: "Popular pairing", data: { name1: "Alex", name2: "Priya" } }
+    - { label: "Chris + Taylor", desc: "Nickname test", data: { name1: "Chris", name2: "Taylor" } }
+  newsletter: { title: "Fun Relationship Reads", text: "Light, playful guides on connection and communication." }
+  formula_vars: ["Name overlap score", "Sequence similarity", "Deterministic bonus"]
+  sticky_label: "Love %"
+
+age-calculator:
   trust_badge: "Used by students & professionals"
   usage_stat: "40K+ percentage calculations this month"
   hero_badge: "MATH"
@@ -368,6 +388,26 @@ rounding-calculator:
   newsletter: { title: "Math Made Easy", text: "Tips and tricks for everyday math." }
   formula_vars: ["Round(n, d) = n rounded to d decimal places"]
   sticky_label: "Rounded"
+
+love-calculator:
+  trust_badge: "Fun compatibility check"
+  usage_stat: "35K+ love checks this month"
+  hero_badge: "LOVE"
+  widget:
+    input_title: "Find Love % Between"
+    input_subtitle: "Enter two names and reveal your compatibility score"
+    results_title: "Love Score"
+    primary_label: "Compatibility"
+    metric_1_label: "Band"
+    metric_2_label: "Name Match"
+    metric_3_label: "Vibe"
+  share: { title: "Share Love Result", card_heading: "Our Love Score" }
+  examples:
+    - { label: "Alex + Priya", desc: "Popular pairing", data: { name1: "Alex", name2: "Priya" } }
+    - { label: "Chris + Taylor", desc: "Nickname test", data: { name1: "Chris", name2: "Taylor" } }
+  newsletter: { title: "Fun Relationship Reads", text: "Light, playful guides on connection and communication." }
+  formula_vars: ["Name overlap score", "Sequence similarity", "Deterministic bonus"]
+  sticky_label: "Love %"
 
 age-calculator:
   trust_badge: "Used by millions worldwide"
@@ -548,7 +588,27 @@ pregnancy-calculator:
   formula_vars: ["Due Date = LMP + 280 days", "Conception: Due = Date + 266 days"]
   sticky_label: "Gestational Age"
 
-mortgage-calculator:
+mortglove-calculator:
+  trust_badge: "Fun compatibility check"
+  usage_stat: "35K+ love checks this month"
+  hero_badge: "LOVE"
+  widget:
+    input_title: "Find Love % Between"
+    input_subtitle: "Enter two names and reveal your compatibility score"
+    results_title: "Love Score"
+    primary_label: "Compatibility"
+    metric_1_label: "Band"
+    metric_2_label: "Name Match"
+    metric_3_label: "Vibe"
+  share: { title: "Share Love Result", card_heading: "Our Love Score" }
+  examples:
+    - { label: "Alex + Priya", desc: "Popular pairing", data: { name1: "Alex", name2: "Priya" } }
+    - { label: "Chris + Taylor", desc: "Nickname test", data: { name1: "Chris", name2: "Taylor" } }
+  newsletter: { title: "Fun Relationship Reads", text: "Light, playful guides on connection and communication." }
+  formula_vars: ["Name overlap score", "Sequence similarity", "Deterministic bonus"]
+  sticky_label: "Love %"
+
+age-calculator:
   trust_badge: "Used by 50,000+ homebuyers"
   usage_stat: "30K+ mortgage calculations this month"
   hero_badge: "MORTGAGE"

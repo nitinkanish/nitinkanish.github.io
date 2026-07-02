@@ -9,7 +9,7 @@ This file helps AI agents and developers understand Online Calculators: what we 
 - **Full catalog:** https://online-calculators.com/llms-full.txt — complete list with formulas, types, and metadata.
 - **Sitemap:** https://online-calculators.com/sitemap.xml
 - **Repository:** https://github.com/nitinkanish/nitinkanish.github.io
-- **Last generated:** 2026-06-25
+- **Last generated:** 2026-07-02
 
 ## Featured Calculators
 
@@ -19,8 +19,8 @@ This file helps AI agents and developers understand Online Calculators: what we 
 - [EMI Calculator](https://online-calculators.com/finance/emi-calculator/): Calculate monthly EMI for home, car, and personal loans with amortization breakdown. Formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1).
 - [SIP Calculator](https://online-calculators.com/finance/sip-calculator/): Estimate mutual fund SIP returns with step-up options and wealth projection charts. Formula: FV = P × ((1+r)^n - 1) / r × (1+r).
 - [Pregnancy Due Date Calculator](https://online-calculators.com/health/pregnancy-calculator/): Calculate your due date, pregnancy week, trimester, and days until delivery from LMP or conception date. Formula: Due Date = LMP + 280 days (Naegele's Rule).
+- [Love Calculator](https://online-calculators.com/entertainment/love-calculator/): Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm. Formula: Compatibility score = weighted name-match signals normalized to 0-100.
 - [Compound Interest Calculator](https://online-calculators.com/finance/compound-interest-calculator/): Calculate compound interest with regular contributions and visualize wealth growth over time. Formula: A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)].
-- [Scientific Calculator](https://online-calculators.com/scientific/scientific-calculator/): Full-featured scientific calculator with trigonometry, logarithms, and advanced functions. Formula: Varies by operation.
 
 ## Business Calculators
 
@@ -64,6 +64,13 @@ _GPA, grade, and academic calculators for students and educators._
 - [GPA Calculator](https://online-calculators.com/education/gpa-calculator/): Calculate weighted GPA on a 4.0 scale from course grades and credit hours. Formula: GPA = Σ(Grade Points × Credits) / Σ(Credits).
 - [Grade Calculator](https://online-calculators.com/education/grade-calculator/): Calculate weighted course grade from assignments, exams, and project scores with custom weights. Formula: Grade = Σ(Score × Weight) / Σ(Weight).
 - [Education Calculators (category hub)](https://online-calculators.com/education/): Browse all education tools.
+
+## Entertainment Calculators
+
+_Fun calculators for playful checks like name-based love compatibility scores._
+
+- [Love Calculator](https://online-calculators.com/entertainment/love-calculator/): Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm. Formula: Compatibility score = weighted name-match signals normalized to 0-100.
+- [Entertainment Calculators (category hub)](https://online-calculators.com/entertainment/): Browse all entertainment tools.
 
 ## Finance Calculators
 

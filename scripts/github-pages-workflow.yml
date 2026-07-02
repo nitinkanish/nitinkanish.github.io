@@ -38,7 +38,11 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl ""
+        run: |
+          ruby scripts/generate_pages.rb --force
+          ruby scripts/generate_search_data.rb
+          ruby scripts/generate_llms_txt.rb
+          bundle exec jekyll build --baseurl ""
         env:
           JEKYLL_ENV: production
 

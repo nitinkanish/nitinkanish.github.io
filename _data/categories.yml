@@ -160,3 +160,17 @@
   keywords:
     - fitness calculator
     - macro calculator
+
+- slug: entertainment
+  title: Entertainment Calculators
+  icon: entertainment
+  description: >-
+    Fun calculators for playful checks like name-based love compatibility scores.
+  keywords:
+    - entertainment calculator
+    - love calculator
+    - compatibility test
+  faqs:
+    - question: Is the love calculator real?
+      answer: >-
+        It is for entertainment and curiosity. Results are playful, not scientific or predictive.

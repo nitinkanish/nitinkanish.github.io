@@ -243,7 +243,47 @@ calorie-calculator:
 
     Athletes optimizing performance, individuals starting a weight loss journey, people recovering from illness who need maintenance estimates, and anyone building a sustainable meal plan benefit from knowing their TDEE starting point.
 
-percentage-calculator:
+percentlove-calculator:
+  steps:
+    - "Enter your name and your partner or crush name."
+    - "Tap calculate to generate the love percentage."
+    - "See the compatibility band and playful insights."
+  examples:
+    - title: "Alex + Priya"
+      description: "Name-based compatibility check"
+      result: "82% (Strong Match)"
+    - title: "Chris + Taylor"
+      description: "Balanced compatibility"
+      result: "67% (Warm Match)"
+  intro: |
+    The **Love Calculator** is a fun, name-based compatibility tool that gives you a playful love percentage between two names. It is designed for entertainment and curiosity, not scientific relationship prediction.
+
+    ## How It Works
+
+    We normalize both names, compare shared letters, check sequence similarity, and add a deterministic pattern score to generate a value from 0 to 100. The same names always return the same result.
+
+    ## Score Bands
+
+    **75–100:** Strong match and high playful compatibility.
+    **60–74:** Warm match with good balance.
+    **25–59:** Mixed match with room to grow.
+    **0–24:** Low match — keep it light and fun.
+
+    ## Important Note
+
+    This calculator is for entertainment purposes only. Real relationships are built on trust, communication, respect, and shared values — not just name matching.
+  see_also:
+    - slug: age-calculator
+      label: Age Calculator
+      note: Check age-based milestones together
+    - slug: date-difference-calculator
+      label: Date Difference Calculator
+      note: Track days between special dates
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Explore percentage math behind scores
+
+age-calculator:
   steps:
     - "Choose calculation type (X% of Y, change, increase, decrease, etc.)."
     - "Enter the required values in the input fields."
@@ -481,6 +521,46 @@ rounding-calculator:
       label: Mean Median Mode Calculator
       note: Round statistical averages
 
+love-calculator:
+  steps:
+    - "Enter your name and your partner or crush name."
+    - "Tap calculate to generate the love percentage."
+    - "See the compatibility band and playful insights."
+  examples:
+    - title: "Alex + Priya"
+      description: "Name-based compatibility check"
+      result: "82% (Strong Match)"
+    - title: "Chris + Taylor"
+      description: "Balanced compatibility"
+      result: "67% (Warm Match)"
+  intro: |
+    The **Love Calculator** is a fun, name-based compatibility tool that gives you a playful love percentage between two names. It is designed for entertainment and curiosity, not scientific relationship prediction.
+
+    ## How It Works
+
+    We normalize both names, compare shared letters, check sequence similarity, and add a deterministic pattern score to generate a value from 0 to 100. The same names always return the same result.
+
+    ## Score Bands
+
+    **75–100:** Strong match and high playful compatibility.
+    **60–74:** Warm match with good balance.
+    **25–59:** Mixed match with room to grow.
+    **0–24:** Low match — keep it light and fun.
+
+    ## Important Note
+
+    This calculator is for entertainment purposes only. Real relationships are built on trust, communication, respect, and shared values — not just name matching.
+  see_also:
+    - slug: age-calculator
+      label: Age Calculator
+      note: Check age-based milestones together
+    - slug: date-difference-calculator
+      label: Date Difference Calculator
+      note: Track days between special dates
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Explore percentage math behind scores
+
 age-calculator:
   steps:
     - "Enter your date of birth."
@@ -671,7 +751,47 @@ pregnancy-calculator:
 
     Only about 5% of babies are born on the exact due date. Early ultrasound dating (dating scan at 8–12 weeks) is more accurate than LMP alone. This calculator is for informational purposes — always follow guidance from your obstetrician, midwife, or healthcare provider for prenatal care and delivery planning.
 
-mortgage-calculator:
+mortglove-calculator:
+  steps:
+    - "Enter your name and your partner or crush name."
+    - "Tap calculate to generate the love percentage."
+    - "See the compatibility band and playful insights."
+  examples:
+    - title: "Alex + Priya"
+      description: "Name-based compatibility check"
+      result: "82% (Strong Match)"
+    - title: "Chris + Taylor"
+      description: "Balanced compatibility"
+      result: "67% (Warm Match)"
+  intro: |
+    The **Love Calculator** is a fun, name-based compatibility tool that gives you a playful love percentage between two names. It is designed for entertainment and curiosity, not scientific relationship prediction.
+
+    ## How It Works
+
+    We normalize both names, compare shared letters, check sequence similarity, and add a deterministic pattern score to generate a value from 0 to 100. The same names always return the same result.
+
+    ## Score Bands
+
+    **75–100:** Strong match and high playful compatibility.
+    **60–74:** Warm match with good balance.
+    **25–59:** Mixed match with room to grow.
+    **0–24:** Low match — keep it light and fun.
+
+    ## Important Note
+
+    This calculator is for entertainment purposes only. Real relationships are built on trust, communication, respect, and shared values — not just name matching.
+  see_also:
+    - slug: age-calculator
+      label: Age Calculator
+      note: Check age-based milestones together
+    - slug: date-difference-calculator
+      label: Date Difference Calculator
+      note: Track days between special dates
+    - slug: percentage-calculator
+      label: Percentage Calculator
+      note: Explore percentage math behind scores
+
+age-calculator:
   steps:
     - "Enter your home loan amount in US dollars."
     - "Set the annual interest rate (APR)."

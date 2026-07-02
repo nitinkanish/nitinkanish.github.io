@@ -2,7 +2,7 @@
 pages:
   home:
     seo_title: "Free Online Calculators for Finance, Health, Math & Business"
-    last_modified_at: "2025-06-11"
+    last_modified_at: "2025-06-25"
   categories:
     seo_title: "All Free Calculator Categories — Finance, Health, Math & More"
     last_modified_at: "2025-06-11"
@@ -60,6 +60,9 @@ categories:
   scientific:
     seo_title: "Free Scientific Calculators — Advanced Math & Engineering Tools"
     last_modified_at: "2025-06-25"
+  entertainment:
+    seo_title: "Free Entertainment Calculators — Love Compatibility & Fun Tools"
+    last_modified_at: "2025-07-02"
 
 calculators:
   emi-calculator:
@@ -173,3 +176,7 @@ calculators:
   markup-calculator:
     seo_title: "Free Markup Calculator — Selling Price from Cost"
     last_modified_at: "2025-06-25"
+  love-calculator:
+    seo_title: "Free Love Calculator — Name Compatibility & Love Percentage Test"
+    meta_description: "Calculate a fun love percentage using two names. Instant name compatibility score with playful interpretation bands. Entertainment only."
+    last_modified_at: "2025-07-02"

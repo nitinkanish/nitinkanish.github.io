@@ -46,3 +46,12 @@ rounding-calculator:
     - gst-calculator
     - profit-margin-calculator
     - mean-median-mode-calculator
+
+
+love-calculator:
+  related:
+    - age-calculator
+    - date-difference-calculator
+    - percentage-calculator
+    - scientific-calculator
+    - mean-median-mode-calculator

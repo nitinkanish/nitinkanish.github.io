@@ -173,6 +173,20 @@
       "url": "/math/rounding-calculator/"
     },
     {
+      "title": "Love Calculator",
+      "slug": "love-calculator",
+      "category": "entertainment",
+      "description": "Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm.",
+      "keywords": [
+        "love calculator",
+        "love percentage calculator",
+        "compatibility calculator",
+        "love test",
+        "name compatibility"
+      ],
+      "url": "/entertainment/love-calculator/"
+    },
+    {
       "title": "Age Calculator",
       "slug": "age-calculator",
       "category": "date-time",
@@ -524,6 +538,12 @@
       "slug": "fitness",
       "description": "Track macros, heart rate zones, and workout metrics for optimal fitness performance.",
       "url": "/fitness/"
+    },
+    {
+      "title": "Entertainment Calculators",
+      "slug": "entertainment",
+      "description": "Fun calculators for playful checks like name-based love compatibility scores.",
+      "url": "/entertainment/"
     }
   ]
 }

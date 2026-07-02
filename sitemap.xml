@@ -1,0 +1,66 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+{% assign calc_seo = site.data.seo.calculators %}
+{% assign cat_seo = site.data.seo.categories %}
+{% assign page_seo = site.data.seo.pages %}
+{% for calc in site.data.calculators %}
+  {% assign entry = calc_seo[calc.slug] %}
+  {% assign lastmod = entry.last_modified_at | default: calc.date_added | default: site.time | date: '%Y-%m-%d' %}
+  <url>
+    <loc>{{ site.url }}/{{ calc.category }}/{{ calc.slug }}/</loc>
+    <lastmod>{{ lastmod }}T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>{% if calc.featured or calc.popular %}0.9{% else %}0.8{% endif %}</priority>
+  </url>
+{% endfor %}
+{% for cat in site.data.categories %}
+  {% assign entry = cat_seo[cat.slug] %}
+  {% assign lastmod = entry.last_modified_at | default: site.time | date: '%Y-%m-%d' %}
+  <url>
+    <loc>{{ site.url }}/{{ cat.slug }}/</loc>
+    <lastmod>{{ lastmod }}T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+{% endfor %}
+{% assign static_pages = "/|home,/categories/|categories,/about/|about,/blog/|blog,/privacy-policy/|privacy-policy,/terms-of-service/|terms-of-service,/cookie-policy/|cookie-policy" | split: "," %}
+{% for item in static_pages %}
+  {% assign parts = item | split: "|" %}
+  {% assign path = parts[0] %}
+  {% assign key = parts[1] %}
+  {% assign entry = page_seo[key] %}
+  {% assign lastmod = entry.last_modified_at | default: site.time | date: '%Y-%m-%d' %}
+  <url>
+    <loc>{{ site.url }}{{ path }}</loc>
+    <lastmod>{{ lastmod }}T00:00:00+00:00</lastmod>
+    <changefreq>{% if key == 'home' %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if key == 'home' %}1.0{% else %}0.6{% endif %}</priority>
+  </url>
+{% endfor %}
+{% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date: '%Y-%m-%d' }}T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+{% endfor %}
+  <url>
+    <loc>{{ site.url }}/llms.txt</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/llms-full.txt</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

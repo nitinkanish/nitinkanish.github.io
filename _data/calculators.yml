@@ -442,6 +442,37 @@
     - question: Can I round currency amounts?
       answer: Yes. Set decimal places to 2 for cents/paise rounding on any monetary value.
 
+- title: Love Calculator
+  slug: love-calculator
+  category: entertainment
+  icon: love
+  description: Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm.
+  keywords:
+    - love calculator
+    - love percentage calculator
+    - compatibility calculator
+    - love test
+    - name compatibility
+  popular: true
+  featured: true
+  trending: true
+  date_added: 2025-07-02
+  calculator_type: love
+  formula: "Compatibility score = weighted name-match signals normalized to 0-100"
+  faqs:
+    - question: How does the love calculator work?
+      answer: We compare both names using character overlap, sequence similarity, and a deterministic matching score, then convert it to a percentage from 0 to 100.
+    - question: Is this scientifically accurate?
+      answer: No. It is a fun and entertainment-only tool, not a scientific relationship assessment.
+    - question: Why do I get the same result each time?
+      answer: The algorithm is deterministic. The same two names always return the same score.
+    - question: Does name order matter?
+      answer: Slightly. The calculator analyzes pair order for sequence patterns, so swapping names can change the score a little.
+    - question: Can I use nicknames?
+      answer: Yes. You can enter full names, nicknames, or initials, but using consistent naming gives stable comparisons.
+    - question: What score is considered good?
+      answer: Higher scores indicate stronger playful name compatibility, but real relationships depend on trust, communication, and shared values.
+
 - title: Age Calculator
   slug: age-calculator
   category: date-time

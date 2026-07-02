@@ -1,6 +1,6 @@
 # Online Calculators — Full Catalog
 
-> Machine-readable index of all calculators, categories, and site metadata. Generated 2026-06-25. Canonical site: https://online-calculators.com
+> Machine-readable index of all calculators, categories, and site metadata. Generated 2026-07-02. Canonical site: https://online-calculators.com
 
 ## Site Metadata
 
@@ -100,6 +100,12 @@
 - url: https://online-calculators.com/fitness/
 - description: Track macros, heart rate zones, and workout metrics for optimal fitness performance.
 - seo_title: Free Fitness Calculators — Macro & Heart Rate Zone Tools
+
+### Entertainment Calculators
+- slug: entertainment
+- url: https://online-calculators.com/entertainment/
+- description: Fun calculators for playful checks like name-based love compatibility scores.
+- seo_title: Free Entertainment Calculators — Love Compatibility & Fun Tools
 
 ## Calculators
 
@@ -257,6 +263,19 @@
 - keywords: rounding calculator, round to decimal places, round number calculator, decimal rounding tool, floor calculator, ceil calculator
 - seo_title: Free Rounding Calculator — Round, Floor, Ceil & Truncate Decimals
 - meta_description: Round numbers to any decimal place. Choose round, floor, ceil, or truncate mode. Free decimal rounding tool for math and finance.
+
+### Love Calculator
+- slug: love-calculator
+- url: https://online-calculators.com/entertainment/love-calculator/
+- category: entertainment
+- calculator_type: love
+- description: Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm.
+- formula: Compatibility score = weighted name-match signals normalized to 0-100
+- keywords: love calculator, love percentage calculator, compatibility calculator, love test, name compatibility
+- seo_title: Free Love Calculator — Name Compatibility & Love Percentage Test
+- meta_description: Calculate a fun love percentage using two names. Instant name compatibility score with playful interpretation bands. Entertainment only.
+- featured: true
+- popular: true
 
 ### Age Calculator
 - slug: age-calculator
