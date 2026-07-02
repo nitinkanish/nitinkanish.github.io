@@ -271,9 +271,9 @@
 - calculator_type: love
 - description: Fun love calculator to estimate compatibility percentage from two names using a playful matching algorithm.
 - formula: Compatibility score = weighted name-match signals normalized to 0-100
-- keywords: love calculator, love percentage calculator, compatibility calculator, love test, name compatibility
-- seo_title: Free Love Calculator — Name Compatibility & Love Percentage Test
-- meta_description: Calculate a fun love percentage using two names. Instant name compatibility score with playful interpretation bands. Entertainment only.
+- keywords: love calculator, love calculator by name, love percentage calculator, compatibility calculator, love test, name compatibility
+- seo_title: Love Calculator by Name — Free Compatibility & Love Percentage Test
+- meta_description: Use this Love Calculator by Name to check fun compatibility and love percentage between two names. Instant result with playful score bands.
 - featured: true
 - popular: true
 
