@@ -4,7 +4,9 @@
 }
 
 .dash-section {
-  padding: var(--space-2xl) 0;
+  padding: var(--space-xl) 0;
+
+  @include lg { padding: calc(var(--space-xl) + var(--space-sm)) 0; }
 
   &--alt { background: var(--color-surface); }
 
@@ -17,8 +19,9 @@
 
 .dash-section-lead {
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
   max-width: 560px;
+  font-size: 0.9375rem;
 }
 
 .dash-section-header {
@@ -32,7 +35,7 @@
 
 // Hero
 .dash-hero {
-  padding: var(--space-2xl) 0;
+  padding: calc(var(--space-xl) + var(--space-sm)) 0;
   background:
     radial-gradient(ellipse 70% 80% at 90% 20%, rgba(91, 92, 246, 0.08), transparent),
     linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
@@ -41,7 +44,7 @@
 
 .dash-hero-grid {
   display: grid;
-  gap: var(--space-2xl);
+  gap: var(--space-xl);
   align-items: center;
   @include lg { grid-template-columns: 1fr 1fr; }
 }
@@ -69,13 +72,13 @@
 }
 
 .dash-hero h1 {
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
   letter-spacing: -0.03em;
   margin-bottom: var(--space-md);
 }
 
 .dash-hero-value {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: var(--space-lg);
@@ -86,7 +89,7 @@
   flex-wrap: wrap;
   gap: var(--space-lg);
   align-items: center;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   font-size: 0.875rem;
 }
 
@@ -175,6 +178,16 @@
   background: var(--color-surface);
 }
 
+@media (max-width: $bp-md - 1) {
+  .dash-hero-grid {
+    gap: var(--space-md);
+  }
+
+  .dash-hero-visual {
+    display: none;
+  }
+}
+
 // Calculator grid
 .dash-calc-grid {
   display: grid;
@@ -187,7 +200,7 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   box-shadow: var(--shadow-md);
 }
 
@@ -197,7 +210,7 @@
 }
 
 .dash-card-header {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   h3 { margin-bottom: 0.25rem; font-size: 1.125rem; }
   p { margin: 0; font-size: 0.875rem; color: var(--color-text-muted); }
   display: flex;
@@ -230,7 +243,7 @@
 
 // Form controls
 .dash-field {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .dash-field-header {
@@ -281,8 +294,8 @@
 // Results
 .dash-wealth-hero {
   text-align: center;
-  padding: var(--space-xl) 0;
-  margin-bottom: var(--space-lg);
+  padding: var(--space-md) 0;
+  margin-bottom: var(--space-md);
   background: linear-gradient(135deg, rgba(91, 92, 246, 0.06), rgba(34, 197, 94, 0.06));
   border-radius: var(--radius-lg);
 }
@@ -295,7 +308,7 @@
 }
 
 .dash-wealth-value {
-  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 800;
   color: var(--color-primary);
   letter-spacing: -0.02em;
@@ -311,15 +324,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-md);
+  padding: 0.7rem var(--space-sm);
   background: var(--color-bg);
   border-radius: var(--radius-md);
-  strong { font-size: 1rem; }
-  &--highlight strong { color: var(--color-primary); font-size: 1.125rem; }
+  strong { font-size: 0.95rem; }
+  &--highlight strong { color: var(--color-primary); font-size: 1rem; }
 }
 
 .dash-metric-label {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
 }
 
@@ -403,15 +416,16 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: var(--space-lg);
+  padding: var(--space-md);
 }
 
 // Goals
 .goals-grid {
   display: grid;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   grid-template-columns: repeat(2, 1fr);
-  @include sm { grid-template-columns: repeat(3, 1fr); }
+  @include sm { grid-template-columns: repeat(2, 1fr); }
+  @include md { grid-template-columns: repeat(3, 1fr); }
   @include lg { grid-template-columns: repeat(5, 1fr); }
 }
 
@@ -420,7 +434,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -433,13 +447,13 @@
   }
 }
 
-.goal-emoji { font-size: 2rem; }
-.goal-label { font-weight: 600; font-size: 0.9375rem; }
+.goal-emoji { font-size: 1.5rem; }
+.goal-label { font-weight: 600; font-size: 0.875rem; }
 
 .goal-ring {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 68px;
+  height: 68px;
   svg { transform: rotate(-90deg); }
   circle { fill: none; stroke-width: 6; }
   .goal-ring-bg { stroke: var(--color-border); }
@@ -473,12 +487,12 @@
 }
 
 .compare-card {
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   text-align: center;
-  strong { display: block; font-size: 1.5rem; margin: var(--space-sm) 0; }
+  strong { display: block; font-size: 1.25rem; margin: var(--space-xs) 0; }
   &--you {
     border-color: var(--color-primary);
     background: linear-gradient(180deg, var(--color-surface), var(--color-primary-light));
@@ -499,11 +513,11 @@
 .insight-card {
   display: flex;
   gap: var(--space-md);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  p { margin: 0; font-size: 0.9375rem; line-height: 1.5; }
+  p { margin: 0; font-size: 0.875rem; line-height: 1.45; }
 }
 
 .insight-icon { font-size: 1.5rem; flex-shrink: 0; }
@@ -511,7 +525,7 @@
 // Share card
 .share-layout {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
   @include lg { grid-template-columns: 1fr 1fr; align-items: start; }
 }
 
@@ -519,7 +533,7 @@
   background: linear-gradient(135deg, #5B5CF6, #7C3AED);
   color: white;
   border-radius: var(--radius-xl);
-  padding: var(--space-2xl);
+  padding: var(--space-xl);
   text-align: center;
 }
 
@@ -533,7 +547,7 @@
 .share-result-card h3 { color: white; margin: var(--space-sm) 0; }
 
 .share-card-wealth {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   margin: var(--space-md) 0;
 }
@@ -574,9 +588,9 @@
 }
 
 .example-dash-card {
-  flex: 0 0 260px;
+  flex: 0 0 240px;
   scroll-snap-align: start;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -617,8 +631,8 @@
 // Formula edu
 .formula-edu-card {
   display: grid;
-  gap: var(--space-xl);
-  padding: var(--space-2xl);
+  gap: var(--space-lg);
+  padding: var(--space-xl);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -627,7 +641,7 @@
 
 .formula-edu-box {
   background: var(--color-primary-light);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border-radius: var(--radius-lg);
   text-align: center;
   margin: var(--space-md) 0;
@@ -649,7 +663,7 @@
 }
 
 .community-card {
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
@@ -711,7 +725,7 @@
 .newsletter-card {
   display: grid;
   gap: var(--space-lg);
-  padding: var(--space-2xl);
+  padding: var(--space-xl);
   background: linear-gradient(135deg, var(--color-primary), #7C3AED);
   border-radius: var(--radius-xl);
   color: white;
@@ -731,6 +745,21 @@
 
 // FAQ search
 .faq-search-wrap { margin-bottom: var(--space-lg); max-width: 400px; }
+
+@media (max-width: $bp-sm - 1) {
+  .dash-share-btn {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .share-actions .btn {
+    width: 100%;
+  }
+
+  .dash-results-card {
+    position: static;
+  }
+}
 
 // Mobile sticky
 .mobile-sticky-bar {

@@ -47,13 +47,6 @@ layout: default
           </div>
           <span class="dash-usage">{{ dash.usage_stat }}</span>
         </div>
-        <div class="dash-hero-share">
-          <span>Share:</span>
-          <button type="button" class="dash-share-btn" data-share="whatsapp" data-share-text="{{ page.title }} — Free on {{ site.title }}">WhatsApp</button>
-          <button type="button" class="dash-share-btn" data-share="twitter" data-share-text="{{ page.title }}">X</button>
-          <button type="button" class="dash-share-btn" data-share="linkedin">LinkedIn</button>
-          <button type="button" class="dash-share-btn" data-share="copy">Copy</button>
-        </div>
       </div>
       <div class="dash-hero-visual"{% unless dash.hero_image or page.hero_image %} aria-hidden="true"{% endunless %}>
         {% if dash.hero_image or page.hero_image %}
@@ -335,15 +328,7 @@ layout: default
   <section class="dash-section" aria-labelledby="related-heading">
     <div class="container">
       <h2 id="related-heading">Related Calculators</h2>
-      <div class="related-explorer">
-        {% for cat in site.data.categories limit:6 %}
-        <a href="{{ cat.slug | prepend: '/' | append: '/' | relative_url }}" class="explorer-card icon-tint-{{ cat.slug }}">
-          {% include icon.html name=cat.icon size=24 %}
-          <span>{{ cat.title | replace: ' Calculators', '' }}</span>
-        </a>
-        {% endfor %}
-      </div>
-      <div class="calc-grid calc-grid--related" style="margin-top:2rem">
+      <div class="calc-grid calc-grid--related" style="margin-top:1rem">
         {% if related_slugs %}
           {% for rel_slug in related_slugs limit:5 %}
             {% for calc in site.data.calculators %}
